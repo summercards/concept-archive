@@ -2,13 +2,19 @@
   "site": {
     "name": "概念仓",
     "subtitle": "每个子目录是一个概念，各自成形。",
-    "updated": "2026-11-15"
+    "description": "概念仓，一个持续生长的灵感档案馆。收集尚未定型、却不想忘记的念头，每个概念各自成形。",
+    "updated": "2026-11-15",
+    "repository": "https://github.com/summercards/concept-archive"
   },
   "concepts": [
     {
       "dir": "齐物蝴蝶",
       "name": "齐物 · 胡蝶",
       "tag": "庄子 · 齐物论",
+      "category": "游戏概念",
+      "keywords": ["庄子", "梦境", "心理恐怖"],
+      "status": "概念设计书",
+      "art": "butterfly",
       "desc": "周与胡蝶，则必有分矣。此之谓物化。梦与觉之间那道门，究竟在谁那边。",
       "date": "2026-11-15"
     }
