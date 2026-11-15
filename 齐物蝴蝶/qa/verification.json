@@ -1,0 +1,456 @@
+{
+  "status": "PASS",
+  "version": "09-qiwu-hudie-commission",
+  "backgroundChecks": [
+    {
+      "selector": "header",
+      "css": "linear-gradient(110deg, rgba(18, 16, 33, 0.72), rgba(25, 20, 47, 0.82)), url(\"https://workbuddy-space-static.codebuddy.work/image/oGx60ypOqoDkDhbZaPLBVp.jpg\")",
+      "loaded": true
+    },
+    {
+      "selector": ".hero",
+      "css": "linear-gradient(115deg, rgba(18, 16, 33, 0.58), rgba(27, 22, 49, 0.64) 66%, rgba(18, 16, 33, 0.78)), url(\"https://workbuddy-space-static.codebuddy.work/image/W2LSgxtdSJkI2JfK4jurbY.jpg\")",
+      "loaded": true
+    }
+  ],
+  "imageInstances": 41,
+  "uniqueVideoFrames": 16,
+  "uniqueFilmImages": 4,
+  "imagesGenerated": 0,
+  "imageGenerationBlocked": "gpt-image-2 permission pending; user chose to keep model",
+  "filmReferences": [
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/FTFZ8hCAIdMhKFT1xzTBgj.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "幽暗水道旁重复的苍白人面与渺小粉色人物，灰紫与苔绿交叠",
+      "caption": "全篇主视觉依据：柔软的旧梦，无法承受的尺度。指定视频参考 · 非本作原创/实机 · 取样≈0s（近似） · 来源与版权",
+      "layoutRatio": 1.776324221598568
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/QEGhUfulUfAACKFMQQYVVR.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "黑发小人物靠近巨大的苍白有机茧体",
+      "caption": "定位对照：亲近的表面与过量的体积；人体让尺度变得可感。指定视频参考 · 非本作原创/实机 · 取样≈6s（近似） · 来源",
+      "layoutRatio": 1.7763226309632134
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/oGx60ypOqoDkDhbZaPLBVp.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "树根穿过幽林水道，苍白面孔在远处重复排列",
+      "caption": "世界尺度：树根、水道和重复朝向，让一条路像在等待来客。指定视频参考 · 非本作原创/实机 · 取样≈3s（近似） · 来源",
+      "layoutRatio": 1.7763573806260315
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/OUUZoi6jDLv4bzeF9fiVMT.jpg",
+      "width": 1920,
+      "height": 1280,
+      "loaded": true,
+      "alt": "枯叶蝶合翅停在叶片上，翅腹面呈现枯叶般的叶脉与伪装纹理",
+      "caption": "物种参考，非本作原创概念/实机。枯叶蝶合翅时像一片枯叶，展开才露出橙色翅面。用于研究伪装、重复中的差异，以及“先看见叶，再看见蝶”的观察顺序；不是《齐物·胡蝶》的角色、场景或成品画面。照片：Charles J. Sharp · CC BY-SA 4.0 · Wikimedia Commons ↗",
+      "layoutRatio": 1.4974106041923552
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/W2LSgxtdSJkI2JfK4jurbY.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "雾中的林木与重复苍白人面",
+      "caption": "雾白林庭：取灰紫白、苔绿与反复面向的关系，不沿用脸型。指定视频参考 · 非本作原创/实机 · 取样≈12s（近似） · 来源",
+      "layoutRatio": 1.7763571108120233
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/IGXJTQaELqc0s7pm6PSi1s.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苔地中浅粉色多节有机形体反复盘曲",
+      "caption": "赭粉眠谷：旧粉与暗苔绿的亲近感，被过量体积打断。指定视频参考 · 非本作原创/实机 · 取样≈9s（近似） · 来源",
+      "layoutRatio": 1.7763197248392404
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/ATPIcoFjF6V2BSbY2jfQom.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "巨型苍白面孔前的旧灯与背对观众的小人物",
+      "caption": "深水灯庭：局部橙灯并非安全承诺，归属也可能是引导。指定视频参考 · 非本作原创/实机 · 取样≈36s（近似） · 来源",
+      "layoutRatio": 1.7763571108120233
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/IS5xsctj31ulsiKLxKJvPV.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "小人物沿狭窄阶梯走向巨大的有机开口",
+      "caption": "身体关系：你通过接近、攀越与回看辨认连接和支撑；图中人物不是《齐物·胡蝶》探索者的角色定妆。指定视频参考 · 非本作原创/实机 · 取样≈42s（近似） · 来源",
+      "layoutRatio": 1.7763659096856736
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/cxPDI8vGjYqTlKLTieSg57.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "深绿水道远处模糊的苍白人面",
+      "caption": "收束／影调参考：暗处仍有层次；此图不是任务书桌面或安眠药道具成品。指定视频参考 · 非本作原创/实机 · 取样≈21s（近似） · 来源",
+      "layoutRatio": 1.7763197473304255
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/OU2pLsS6TrUFS96zYiM696.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "幽林水面与局部水花，远处空间被湿气收拢",
+      "caption": "脱离／声距设计联想：借水面想象门后远近，不以静帧证明声音。指定视频参考 · 非本作原创/实机 · 取样≈45s（近似） · 来源",
+      "layoutRatio": 1.7763197473304255
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/0JFhUhGmELCpEs3weT9ZLw.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "雾林枝干上重复的人面与局部红色垂迹",
+      "caption": "越界／林影参考：雾与枝干只供轮廓研究，不表示每次入梦都抵达此林地。指定视频参考 · 非本作原创/实机 · 取样≈15s（近似） · 来源",
+      "layoutRatio": 1.7763197473304255
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/oGx60ypOqoDkDhbZaPLBVp.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "树根前景外的水道和远处重复苍白形体",
+      "caption": "抵达／纵深参考：复用此帧观察前景立足处与远处雾层，不作入睡分镜。指定视频参考 · 非本作原创/实机 · 取样≈3s（近似） · 来源",
+      "layoutRatio": 1.7763197473304255
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/tSqZNSsHNAIIfAmd686t9u.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "巨大有机孔口旁的横向结构，近景植被提供空间尺度",
+      "caption": "行动命题：结构不是远景布置，而是身体必须接近、辨认与穿越的条件。指定视频参考 · 非本作原创/实机 · 取样≈24s（近似） · 来源",
+      "layoutRatio": 1.7763573806260315
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/IS5xsctj31ulsiKLxKJvPV.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "小人物沿狭窄阶梯接近巨型有机开口，身体与结构尺度悬殊",
+      "caption": "身体尺度研究：复用阶梯帧观察步幅与结构比例，不证明攀越操作；人物非《齐物·胡蝶》探索者角色定妆。指定视频参考 · 非本作原创/实机 · 取样≈42s（近似） · 来源",
+      "layoutRatio": 1.776404558081524
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/zmZIokjr5AUKadOuWd9Gbk.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "局部橙色火光照亮苍白人面旁的小人物",
+      "caption": "照明关系研究：复用火光帧，只看局部光如何联系身体与人面，不证明梦律操作。指定视频参考 · 非本作原创/实机 · 取样≈30s（近似） · 来源",
+      "layoutRatio": 1.776404558081524
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/NFwzFn4KGXpUZBTIZ6ch7R.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "火中悬置的灯具发出强橙光，周围暗部被推入虚焦",
+      "caption": "焦点研究：复用火中灯具帧，只看亮部如何把注意力从暗处拉走，不证明虚焦玩法或实机效果。指定视频参考 · 非本作原创/实机 · 取样≈33s（近似） · 来源",
+      "layoutRatio": 1.7763898662913442
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/tSqZNSsHNAIIfAmd686t9u.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "巨大有机孔口与横向结构交接，近景植被衬托空间尺度",
+      "caption": "空间判断研究：复用孔口帧观察横向结构与间隙，不证明通道运动或应对结果。指定视频参考 · 非本作原创/实机 · 取样≈24s（近似） · 来源",
+      "layoutRatio": 1.776404558081524
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/QEGhUfulUfAACKFMQQYVVR.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "黑发小人物靠近巨大苍白有机体，近处距离与体量形成反差",
+      "caption": "接近关系研究：复用此帧观察人物与苍白有机体的距离，不证明选择后果；人物非《齐物·胡蝶》探索者角色定妆。指定视频参考 · 非本作原创/实机 · 取样≈6s（近似） · 来源",
+      "layoutRatio": 1.776404558081524
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/OU2pLsS6TrUFS96zYiM696.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "幽林水面上泛起水花，暗处纵深被湿气收拢",
+      "caption": "残留感受研究：复用水面帧只联想醒后的湿气余韵，不是真实醒后卧室或操作结果。指定视频参考 · 非本作原创/实机 · 取样≈45s（近似） · 来源",
+      "layoutRatio": 1.776404558081524
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/zmZIokjr5AUKadOuWd9Gbk.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苍白巨大面孔旁的小人物手持局部火光",
+      "caption": "抵达／光与体量：小范围的暖意，不足以消除巨构的压力。指定视频参考 · 非本作原创/实机 · 取样≈30s（近似） · 来源",
+      "layoutRatio": 1.776330581075319
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/NFwzFn4KGXpUZBTIZ6ch7R.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "火光中悬置的旧灯具，橙光集中在局部",
+      "caption": "接近／灯的吸引力：强橙只作局部例外，不扩成全域金红。指定视频参考 · 非本作原创/实机 · 取样≈33s（近似） · 来源",
+      "layoutRatio": 1.7763961363384035
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/tSqZNSsHNAIIfAmd686t9u.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "有机孔口与横向结构交接的空间",
+      "caption": "变奏／间隙命题：复用此帧观察结构连接；图像不证明可玩路径或运动。指定视频参考 · 非本作原创/实机 · 取样≈24s（近似） · 来源",
+      "layoutRatio": 1.7763961363384035
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/tgmPw9g1lYBSAA8DF5o9zm.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "暗眼苍白面孔与近旁暖灯的近景",
+      "caption": "取舍／过近的观看：研究目光与灯的逼近感，不采纳此面孔为怪物。指定视频参考 · 非本作原创/实机 · 取样≈39s（近似） · 来源",
+      "layoutRatio": 1.776330581075319
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/OU2pLsS6TrUFS96zYiM696.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "幽林水面上的水花与暗处纵深",
+      "caption": "余波／湿气残留：复用水面帧作为感受对照，不充当醒后场景成品。指定视频参考 · 非本作原创/实机 · 取样≈45s（近似） · 来源",
+      "layoutRatio": 1.7763700648202712
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/GHQVfxCnKHQB1cdlnijN1M.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苍白巨大面孔的口部与横向小平台",
+      "caption": "主旨／比例关系：一个位置看似适合身体，却可能只容许一种未来。指定视频参考 · 非本作原创/实机 · 取样≈27s（近似） · 来源",
+      "layoutRatio": 1.7763612217795486
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/tgmPw9g1lYBSAA8DF5o9zm.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苍白巨大面孔的近景，暗色眼窝与牙齿在暖灯下显出非人的平静",
+      "caption": "心理恐怖的尺度：被看清的不是怪物，是一张正在等你就范的脸。指定视频参考 · 非本作原创/实机 · 取样≈39s（近似） · 来源",
+      "layoutRatio": 1.7763573806260315
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/QEGhUfulUfAACKFMQQYVVR.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苍白巨大茧体与靠近其表面的小人物",
+      "caption": "形体原则：复用茧体帧观察近处人体与连续体积，而非角色关系。指定视频参考 · 非本作原创/实机 · 取样≈6s（近似） · 来源",
+      "layoutRatio": 1.776370325525078
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/IS5xsctj31ulsiKLxKJvPV.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "侧向阶梯上的人物靠近巨型有机开口",
+      "caption": "视点原则：复用穿行帧观察方向、遮挡与身体尺度，不推断运动镜头。指定视频参考 · 非本作原创/实机 · 取样≈42s（近似） · 来源",
+      "layoutRatio": 1.776370325525078
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/cxPDI8vGjYqTlKLTieSg57.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "深绿色水道远处隐约浮出的面孔",
+      "caption": "声音原则：复用远景帧讨论可见距离与设计声距的错位，不作原声证据。指定视频参考 · 非本作原创/实机 · 取样≈21s（近似） · 来源",
+      "layoutRatio": 1.776370325525078
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/VUPOZla71YaHjil0VER6xl.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苔绿林地中露出苍白开口形体",
+      "caption": "关系研究：环境与形体的界线并不稳固；不是下列文学作品的插图。指定视频参考 · 非本作原创/实机 · 取样≈18s（近似） · 来源",
+      "layoutRatio": 1.776370325525078
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/W2LSgxtdSJkI2JfK4jurbY.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "灰紫雾中的人面林木与暗苔绿前景",
+      "caption": "影调对照：复用雾林帧，观察灰紫中调、提起的暗部与收敛的远景。指定视频参考 · 非本作原创/实机 · 取样≈12s（近似） · 来源",
+      "layoutRatio": 1.7763649641307617
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/zmZIokjr5AUKadOuWd9Gbk.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "苍白面孔旁的人物与小范围橙色火光",
+      "caption": "温度对照：复用火光帧，只研究局部暖意与冷湿底色的比例。指定视频参考 · 非本作原创/实机 · 取样≈30s（近似） · 来源",
+      "layoutRatio": 1.7763649641307617
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/ePE3MjZixBRBUNNa0LdhXn.jpg",
+      "width": 1024,
+      "height": 429,
+      "loaded": true,
+      "alt": "《盗梦空间》电影参考：城市街道在可信建筑材质中发生不可能的折转。",
+      "caption": "电影参考，非《齐物·胡蝶》原创概念/实机。折叠街道画面，保留原图比例与完整画面。Photo Credit: Warner Bros. Picture — © 2010 Warner Bros. Entertainment Inc.图源与影片资料：Film France ↗",
+      "layoutRatio": 2.3870703285120336
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/J2H1Io3CtlvZp7wXEOmODg.jpg",
+      "width": 2572,
+      "height": 1100,
+      "loaded": true,
+      "alt": "《红辣椒》索尼官方飞行都市横幅，作为连续变形的方法研究，不是游行截图或本作色板。",
+      "caption": "电影参考，非《齐物·胡蝶》原创概念/实机。索尼官方飞行都市横幅，不是游行截图；保持原图色彩，仅作空间与方向组织的辅助观察，不作为本作色板或庆典场面依据。© 2006 Madhouse, Inc. and Sony Pictures Entertainment (Japan) Inc. All Rights Reserved.图源与影片资料：Sony Pictures ↗",
+      "layoutRatio": 2.338189744178043
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/glchZLeLPiQL9bE3nSrHcS.jpg",
+      "width": 1200,
+      "height": 630,
+      "loaded": true,
+      "alt": "《入侵脑细胞》电影参考：绿金空间中居中的仪式服装人物，研究人物、服装与建筑的视觉支配关系。",
+      "caption": "电影参考，非《齐物·胡蝶》原创概念/实机。绿金空间中的居中仪式服装画面；该图本身不作为不对称巨构的示例。版权归影片权利方，图源 Inverse；此张图片的具体版权署名未核准。图源与评论：Inverse ↗",
+      "layoutRatio": 1.9047708051025654
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/7tvUPWtyH3UEUcuguVVqrD.jpg",
+      "width": 1600,
+      "height": 800,
+      "loaded": true,
+      "alt": "《攻壳机动队2：无罪》电影参考：破损人偶的面部特写，冷青暗部与浅景深",
+      "caption": "电影参考，非《齐物·胡蝶》原创概念/实机。破损人偶的面部特写；浅景深、冷青暗部与面部裂口把“人偶是否拥有灵魂”的疑问推到近景。该图不作为本作角色、怪物或场景设计依据。© 2004 Shirow Masamune/KODANSHA · IG, ITNDDTD图源与影片资料：ScreenRant ↗",
+      "layoutRatio": 2
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/FTFZ8hCAIdMhKFT1xzTBgj.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "指定视频参考对照：水道旁重复的人面，不是《去年在马里昂巴德》剧照",
+      "caption": "指定视频参考对照，非电影剧照：复用首屏帧，专看重复与身份压力。指定视频参考 · 非本作原创/实机 · 取样≈0s（近似） · 来源",
+      "layoutRatio": 1.7763504769208647
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/FTFZ8hCAIdMhKFT1xzTBgj.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "雾白林庭简报参考：幽林水道旁的苍白重复形体",
+      "caption": "简报I参考，不是概念成品：复用首屏帧，只取门后空间的色调与尺度。指定视频参考 · 非本作原创/实机 · 取样≈0s（近似） · 来源",
+      "layoutRatio": 1.7763652714192282
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/IGXJTQaELqc0s7pm6PSi1s.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "赭粉眠谷简报参考：低伏苔地中的浅粉多节体",
+      "caption": "简报II参考，不是概念成品：复用谷地帧，只取旧粉、重复与违和体量。指定视频参考 · 非本作原创/实机 · 取样≈9s（近似） · 来源",
+      "layoutRatio": 1.7763652714192282
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/ATPIcoFjF6V2BSbY2jfQom.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "深水灯庭简报参考：苍白面孔前的人物、旧灯与暗部",
+      "caption": "简报III参考，不是概念成品：复用灯庭帧，研究灯、身体与观看关系，非出口验证分镜。指定视频参考 · 非本作原创/实机 · 取样≈36s（近似） · 来源",
+      "layoutRatio": 1.7763652714192282
+    },
+    {
+      "src": "https://workbuddy-space-static.codebuddy.work/image/VUPOZla71YaHjil0VER6xl.jpg",
+      "width": 1080,
+      "height": 608,
+      "loaded": true,
+      "alt": "暗苔绿植被间露出苍白有机开口",
+      "caption": "创意北极星：复用环境边界帧，检验旧影调、辨识度与不可知之间的平衡。指定视频参考 · 非本作原创/实机 · 取样≈18s（近似） · 来源",
+      "layoutRatio": 1.7763337893296853
+    }
+  ],
+  "conceptBriefs": 3,
+  "coreFilmStudies": 5,
+  "additionalResearchEntries": 9,
+  "vectorCount": 0,
+  "pageErrors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320
+    }
+  ],
+  "preservation": {
+    "scriptContents": true,
+    "research": true,
+    "retainedNodeIds": true,
+    "oldNodeCount": 862
+  },
+  "printStatus": {
+    "background": "rgb(255, 255, 255)",
+    "navigation": "none",
+    "images": 41
+  },
+  "checked": [
+    "commission as the reason for entering dreams",
+    "honest image status and film attribution",
+    "41 hosted raster image instances loaded without cropping",
+    "all major sections and narrative subsections illustrated",
+    "five film studies",
+    "three original color domains",
+    "butterfly motif, classical opening and short-line voice",
+    "defocus grammar with readable interaction edges",
+    "psychological horror grammar, consent and ethical boundaries",
+    "four horror research notes",
+    "old microgame removed",
+    "unique IDs and anchors",
+    "reading mode",
+    "print action",
+    "chapter navigation",
+    "responsive layouts"
+  ],
+  "limits": [
+    "No original concept image generated",
+    "No game prototype or playtest",
+    "Butterfly and defocus remain design directions, not validated in a playable build",
+    "Hosted platform injection script retained; not executed in local file preview",
+    "Font stylesheet uses pinned external CDN with system-font fallback",
+    "Public exhibition and commercial-image rights not cleared"
+  ]
+}
