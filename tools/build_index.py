@@ -23,7 +23,7 @@ def main():
     for c in concepts:
         d = c["dir"]
         cards.append(
-            f"""      <a class="card" href="./{html.escape(d)}/">
+            f"""      <a class="card" href="./{html.escape(d)}/index.html">
         <h2 class="card-name">{html.escape(c["name"])}</h2>
         <p class="card-desc">{html.escape(c.get("desc", ""))}</p>
         <div class="card-meta"><span>{html.escape(c.get("tag", ""))}</span><span>{html.escape(c.get("date", ""))}</span></div>
