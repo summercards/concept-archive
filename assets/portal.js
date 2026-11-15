@@ -5,6 +5,38 @@
   const root = document.documentElement;
   const stateAttribute = 'data-concept-portal-state';
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let preference = 'system';
+  let enabled = !motion.matches;
+
+  function updateMotion(value) {
+    const nextEnabled = value === 'play' || (value === 'system' && !motion.matches);
+    if (value === preference && nextEnabled === enabled) return;
+    preference = value;
+    enabled = nextEnabled;
+    root.setAttribute('data-concept-motion', enabled ? 'on' : 'off');
+    document.dispatchEvent(new CustomEvent('conceptmotion:change', {
+      detail: { enabled, preference, reduced: motion.matches }
+    }));
+  }
+
+  window.ConceptMotion = {
+    get enabled() { return enabled; },
+    get reduced() { return motion.matches; },
+    get preference() { return preference; },
+    set(value) {
+      if (!['system', 'play', 'pause'].includes(value)) {
+        throw new TypeError('动效偏好仅支持 system、play 或 pause');
+      }
+      updateMotion(value);
+    }
+  };
+  root.setAttribute('data-concept-motion', enabled ? 'on' : 'off');
+  function onSystemMotionChange() {
+    if (preference === 'system') updateMotion('system');
+  }
+  if (motion.addEventListener) motion.addEventListener('change', onSystemMotionChange);
+  else motion.addListener(onSystemMotionChange);
+
   let transitioning = false;
   let navigationTimer;
   let cleanupTimer;
@@ -49,8 +81,13 @@
     a.concept-portal-back:focus-visible {
       outline: 2px solid #e2ddff; outline-offset: 4px;
     }
+    html[data-concept-motion="off"][${stateAttribute}]::after {
+      display: none; animation: none;
+    }
     @media (prefers-reduced-motion: reduce) {
-      html[${stateAttribute}]::after { display: none; animation: none; }
+      html:not([data-concept-motion="on"])[${stateAttribute}]::after {
+        display: none; animation: none;
+      }
     }
     @media print {
       a.concept-portal-back, html[${stateAttribute}]::after { display: none; }
@@ -97,8 +134,8 @@
     transitioning = true;
     destination = target.href;
     // 即使导航被浏览器阻止，也不能把当前页面永久留在暗幕下。
-    cleanupTimer = window.setTimeout(cancel, (motion.matches ? 0 : milliseconds) + 1500);
-    if (motion.matches) {
+    cleanupTimer = window.setTimeout(cancel, (window.ConceptMotion.enabled ? milliseconds : 0) + 1500);
+    if (!window.ConceptMotion.enabled) {
       assignDestination();
       return true;
     }
@@ -130,7 +167,7 @@
   } catch (_) {
     // 无性能信息时仍使用有限时长入场，不依赖外部资源。
   }
-  if (!motion.matches && navigationType !== 'reload' && navigationType !== 'back_forward') {
+  if (window.ConceptMotion.enabled && navigationType !== 'reload' && navigationType !== 'back_forward') {
     root.setAttribute(stateAttribute, 'enter');
     entranceTimer = window.setTimeout(() => {
       if (!transitioning) root.removeAttribute(stateAttribute);
@@ -192,10 +229,9 @@
   window.addEventListener('pageshow', event => {
     if (event.persisted) cancel();
   });
-  function onMotionChange() {
-    if (motion.matches && transitioning) assignDestination();
-    else if (motion.matches) cancel();
-  }
-  if (motion.addEventListener) motion.addEventListener('change', onMotionChange);
-  else motion.addListener(onMotionChange);
+  document.addEventListener('conceptmotion:change', () => {
+    if (window.ConceptMotion.enabled) return;
+    if (transitioning) assignDestination();
+    else cancel();
+  });
 })();

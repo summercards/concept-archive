@@ -12,15 +12,18 @@
   const indexDialog = document.getElementById("star-index");
   const resetButton = document.getElementById("view-reset");
   const announcement = document.getElementById("universe-announcement");
-  const TAU = Math.PI * 2;
+  const motionState = document.getElementById("motion-state");
+  const TAU = Math.PI * 2, DEFAULT_TILT = .36;
+  const motionEnabled = () => window.ConceptMotion ? window.ConceptMotion.enabled : !motion.matches && !userPaused;
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
   const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
   const outerOrbit = Math.max(.3, ...stars.map(star => Number(star.dataset.radius) * 1.12));
   const labelWidths = new Map();
   let width = 1, height = 1, ratio = 1, focal = 1;
   let time = 0, orbitTime = 0, lastTime = 0, frame = 0, userPaused = false;
-  let yaw = 0, targetYaw = 0, tilt = .48, targetTilt = .48, velocity = 0;
-  let proximity = 1, targetProximity = 1, drag = null, hovered = null, focused = null;
+  let yaw = 0, targetYaw = 0, tilt = DEFAULT_TILT, targetTilt = DEFAULT_TILT, velocity = 0;
+  let proximity = 1, targetProximity = 1, drag = null, hovered = null, focused = null, pressed = null;
+  let cameraOffset = { x: 0, y: 0 }, effectiveTilt = DEFAULT_TILT, effectiveRoll = -.38;
   let focusGlow = 0, focusAnchor = null;
   let pointer = { x: 0, y: 0 }, parallax = { x: 0, y: 0 };
   let journey = null, travel = 0, zoom = 1, shift = { x: 0, y: 0 };
@@ -31,9 +34,14 @@
 
   // 一份相机用于体积、星尘和真实 DOM 星体。矩阵为列主序，屏幕 y 向下。
   function updateCamera() {
-    const angle = yaw + orbitTime * .008;
-    const c = Math.cos(angle), s = Math.sin(angle), t = tilt, q = Math.sqrt(1 - t * t);
-    const cr = Math.cos(cameraRoll), sr = Math.sin(cameraRoll);
+    // 无需操作也在漂航；交互星锁定时只冻结镜头时钟，云与远星继续自己的时间。
+    const angle = yaw + orbitTime * .014 + Math.sin(orbitTime * .061) * .018;
+    effectiveTilt = clamp(tilt + Math.sin(orbitTime * .095) * .022, .23, .78);
+    effectiveRoll = cameraRoll + Math.sin(orbitTime * .075) * .018;
+    cameraOffset = { x: -width * .025 + Math.sin(orbitTime * .11) * Math.min(18, width * .018),
+      y: height * .018 + Math.sin(orbitTime * .083) * Math.min(12, height * .012) };
+    const c = Math.cos(angle), s = Math.sin(angle), t = effectiveTilt, q = Math.sqrt(1 - t * t);
+    const cr = Math.cos(effectiveRoll), sr = Math.sin(effectiveRoll);
     view.set([cr * c - sr * t * s, sr * c + cr * t * s, q * s,
       -sr * q, cr * q, -t,
       -cr * s - sr * t * c, -sr * s + cr * t * c, q * c]);
@@ -47,12 +55,14 @@
       bx = Math.max(bx, Math.abs(view[0] * x + view[6] * z) / depth);
       by = Math.max(by, Math.abs(view[1] * x + view[7] * z) / depth);
     }
-    focal = Math.min(candidate, Math.max(24, width / 2 - 42) / bx, Math.max(24, height / 2 - 104) / by);
+    candidate *= 1 + Math.sin(orbitTime * .13) * .012;
+    focal = Math.min(candidate, Math.max(24, width / 2 - 42 - Math.abs(cameraOffset.x)) / bx,
+      Math.max(24, height / 2 - 104 - Math.abs(cameraOffset.y)) / by);
   }
   function project(x, y, z) {
     const depth = Math.max(.12, cameraDistance - view[2] * x - view[5] * y - view[8] * z);
-    return { x: (view[0] * x + view[3] * y + view[6] * z) * focal / depth + parallax.x,
-      y: (view[1] * x + view[4] * y + view[7] * z) * focal / depth + parallax.y, depth };
+    return { x: (view[0] * x + view[3] * y + view[6] * z) * focal / depth + parallax.x + cameraOffset.x,
+      y: (view[1] * x + view[4] * y + view[7] * z) * focal / depth + parallax.y + cameraOffset.y, depth };
   }
   function starPosition(star) {
     const r = Number(star.dataset.radius) * 1.12, a = Number(star.dataset.angle);
@@ -66,19 +76,25 @@
   const particles = [];
   const addParticle = (x, y, z, size, alpha, color, kind) => particles.push(x, y, z, size, alpha, ...color, kind);
   // 星尘不是概念：所有有名称和点击行为的星只来自清单中的真实链接。
-  for (let i = 0; i < 11000; i += 1) {
+  for (let i = 0; i < 6200; i += 1) {
     const r = .06 + Math.pow(random(), .7) * 1.8;
-    const a = i % 2 * Math.PI + Math.log(r + .18) * 2.15 + normal() * .23;
-    addParticle(Math.cos(a) * r, normal() * (.025 + .045 * r), Math.sin(a) * r,
-      .55 + Math.pow(random(), 6) * 2, .09 + random() * .37, tones[i % 4], 1);
+    const a = i % 2 * Math.PI + Math.log(r + .18) * 2.15 + normal() * .27;
+    addParticle(Math.cos(a) * r, normal() * (.035 + .065 * r), Math.sin(a) * r,
+      .65 + Math.pow(random(), 6) * 2.3, .15 + random() * .49, tones[i % 4], 1);
   }
-  for (let i = 0; i < 470; i += 1) {
-    addParticle(random() * 2 - 1, random() * 2 - 1, random(),
-      .65 + Math.pow(random(), 8) * 2.2, .13 + random() * .42, tones[i % 4], 0);
+  // 群星铺满整个视野，不依附中央星盘。亮星仅是远景，不能冒充可进入的概念。
+  for (let i = 0; i < 1650; i += 1) {
+    addParticle(random() * 2.24 - 1.12, random() * 2.24 - 1.12, random(),
+      1.05 + Math.pow(random(), 4) * 2.6, .32 + random() * .56, tones[i % 4], 0);
   }
-  for (let i = 0; i < 80; i += 1) {
-    addParticle((random() - .5) * 4, (random() - .5) * 1.5, (random() - .5) * 3,
-      1.7 + random() * 5, .014 + random() * .045, tones[i % 4], 2);
+  for (let i = 0; i < 26; i += 1) {
+    addParticle(random() * 2.14 - 1.07, random() * 2.14 - 1.07, random(),
+      9 + random() * 10, .47 + random() * .3, tones[i % 4], 3);
+  }
+  // 稀疏前景微尘慢慢从观察者身旁经过；透明度在循环两端归零，不瞬移。
+  for (let i = 0; i < 160; i += 1) {
+    addParticle(random() * 2.3 - 1.15, random() * 2.3 - 1.15, random(),
+      1.7 + random() * 4.6, .06 + random() * .14, tones[i % 4], 2);
   }
   const particleData = new Float32Array(particles);
 
@@ -170,10 +186,10 @@
             if(float(i)>=u_steps||t>farT||transmittance<.025)break;
             vec3 p=ro+rd*t;
             float r=length(p.xz);
-            float rotation=u_time*.012/(.55+r);
+            float rotation=u_time*.022/(.55+r);
             float cs=cos(rotation),sn=sin(rotation);
             vec3 q=vec3(p.x*cs-p.z*sn,p.y,p.x*sn+p.z*cs);
-            vec3 drift=vec3(u_time*.026,-u_time*.014,u_time*.018);
+            vec3 drift=vec3(u_time*.058,-u_time*.023,u_time*.037);
             float warp=noise3(q*1.9+drift*.42)-.5;
             float a=atan(q.z,q.x);
             float phase=a*2.-log(r+.18)*4.3+warp*1.45;
@@ -216,7 +232,15 @@
       precision highp float; varying vec2 v_uv;
       uniform sampler2D u_cloud; uniform sampler2D u_noise;
       uniform vec2 u_texel; uniform vec2 u_resolution;
-      uniform vec2 u_focus; uniform float u_focusStrength; uniform float u_travel;
+      uniform vec2 u_focus; uniform float u_focusStrength; uniform float u_travel; uniform float u_time;
+      float skyNoise(vec2 p){
+        vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+        return texture2D(u_noise,(i+f+.5)/256.).r;
+      }
+      float skyFbm(vec2 p){
+        float n=.56*skyNoise(p);p=mat2(.8,.6,-.6,.8)*p*2.07+13.;
+        n+=.29*skyNoise(p);return n+.15*skyNoise(p*2.13+7.);
+      }
       void main(){
         vec3 c=texture2D(u_cloud,v_uv).rgb;
         vec3 glow=vec3(0.);
@@ -228,9 +252,18 @@
         glow+=max(vec3(0.),texture2D(u_cloud,v_uv+u_texel*vec2(-9.,-6.)).rgb-.28);
         vec2 uv=vec2(v_uv.x,1.-v_uv.y);
         float radius=length((uv-.5)*vec2(1.,.82));
-        float vignette=1.-smoothstep(.24,.76,radius)*.43;
-        vec3 base=vec3(.0196,.0235,.051);
-        c=(c+glow*.045)*vignette+base;
+        float vignette=1.-smoothstep(.24,.76,radius)*.32;
+        vec3 base=vec3(.012,.018,.033);
+        // 远处的广域银河带延伸到画外，不跟随中心星云一起转，形成环境纵深。
+        vec2 sky=(uv-.5)*vec2(u_resolution.x/u_resolution.y,1.);
+        sky=mat2(.91,-.415,.415,.91)*sky;
+        vec2 wind=vec2(u_time*.012,-u_time*.008);
+        float clouds=skyFbm(sky*5.+wind+31.);
+        float ribbon=exp(-pow((sky.y+.10+sin(sky.x*2.4)*.07+(clouds-.5)*.16)/.23,2.));
+        float lanes=smoothstep(.43,.70,skyFbm(sky*10.6-wind*.6+9.));
+        vec3 haze=mix(vec3(.029,.057,.083),vec3(.080,.052,.086),clouds);
+        base+=haze*ribbon*smoothstep(.22,.77,clouds)*(1.-lanes*.83);
+        c=(c*.82+glow*.025)*vignette+base;
         float focus=exp(-pow(length((uv-u_focus)*u_resolution)/82.,2.));
         c+=vec3(.095,.074,.12)*focus*u_focusStrength;
         c+=vec3(.025,.019,.036)*u_travel*smoothstep(.1,.8,c.r);
@@ -245,33 +278,51 @@
       attribute vec3 a_color;attribute float a_kind;
       uniform mat3 u_view; uniform vec2 u_resolution;uniform vec2 u_pointer;uniform vec2 u_shift;
       uniform float u_focal;uniform float u_distance;uniform float u_zoom;uniform float u_ratio;uniform float u_time;
-      varying vec3 v_color;varying float v_alpha;varying vec2 v_uv;varying float v_behind;
+      uniform float u_travel;
+      varying vec3 v_color;varying float v_alpha;varying vec2 v_uv;varying float v_behind;varying float v_kind;
       void main(){
         vec2 screen;float size=a_size;float alpha=a_alpha;
-        if(a_kind<.5){
-          screen=a_position.xy*u_resolution*.5+u_pointer*(.2+a_position.z*.4);
-          screen*=1.+(u_zoom-1.)*.05;v_behind=1.;
+        if(a_kind<.5||a_kind>2.5){
+          float depth=.35+a_position.z*.65;
+          vec2 drift=vec2(-u_time*.0022,u_time*.0007)*depth;
+          vec2 p=(fract((a_position.xy+1.12)/2.24+drift)*2.24-1.12)*u_resolution*.5;
+          float roll=sin(u_time*.06)*.008;
+          screen=mat2(cos(roll),sin(roll),-sin(roll),cos(roll))*p+u_pointer*(.10+a_position.z*.22);
+          screen=(screen-u_shift*.07)*(1.+(u_zoom-1.)*.12);v_behind=1.;
+          if(u_resolution.x<680.&&a_kind<.5&&a_position.z>.62)alpha=0.;
+          alpha*=.82+.18*sin(u_time*(.42+a_position.z*.34)+a_position.x*81.+a_position.y*42.);
+        }else if(a_kind>1.5){
+          float phase=fract(a_position.z+u_time*.018+u_travel*.16);
+          float perspective=1./(1.48-phase*.82);
+          vec2 p=a_position.xy+vec2(sin(u_time*.14+a_position.z*17.)*.025,cos(u_time*.09+a_position.z*9.)*.02);
+          screen=(p*u_resolution*.52*perspective+u_pointer*1.35-u_shift*.3)*(1.+(u_zoom-1.)*.4);
+          size*=perspective;alpha*=smoothstep(0.,.14,phase)*(1.-smoothstep(.78,1.,phase));v_behind=0.;
         }else{
           vec3 pos=a_position;
-          if(a_kind>1.5){pos.y+=sin(u_time*.12+pos.x*3.)*.035;pos.x+=sin(u_time*.08+pos.z)*.04;}
+          float r=length(pos.xz),a=u_time*.007/(.65+r);
+          pos.xz=mat2(cos(a),sin(a),-sin(a),cos(a))*pos.xz;
           vec3 v=u_view*pos;float depth=max(.1,u_distance-v.z);
           screen=(v.xy*u_focal/depth+u_pointer-u_shift)*u_zoom;
           size*=clamp(3.45/depth,.5,2.7)*sqrt(u_zoom);
           v_behind=1.-smoothstep(-1.,.1,v.z);
-          alpha*=.86+.14*sin(u_time*.5+a_position.x*80.);
+          alpha*=.88+.12*sin(u_time*.65+a_position.x*80.);
         }
         v_uv=vec2(screen.x/u_resolution.x+.5,.5-screen.y/u_resolution.y);
         gl_Position=vec4(screen.x/(u_resolution.x*.5),-screen.y/(u_resolution.y*.5),0.,1.);
-        gl_PointSize=max(.8,size*u_ratio);v_alpha=alpha;v_color=a_color;
+        gl_PointSize=max(1.,size*u_ratio);v_alpha=alpha;v_color=a_color;v_kind=a_kind;
       }
     `;
     const pointFragment = `
       precision mediump float;uniform sampler2D u_cloud;
-      varying vec3 v_color;varying float v_alpha;varying vec2 v_uv;varying float v_behind;
+      varying vec3 v_color;varying float v_alpha;varying vec2 v_uv;varying float v_behind;varying float v_kind;
       void main(){vec2 p=gl_PointCoord*2.-1.;float d=dot(p,p);if(d>1.)discard;
         float fog=texture2D(u_cloud,v_uv).a;
-        float visibility=mix(1.,max(.14,fog),v_behind);
+        float visibility=mix(1.,max(.22,fog),v_behind);
         float glow=exp(-d*4.)*(1.-smoothstep(.6,1.,d));
+        if(v_kind>2.5){
+          float spikes=exp(-abs(p.x)*105.-abs(p.y)*5.)+exp(-abs(p.y)*105.-abs(p.x)*5.);
+          glow=(exp(-d*155.)+exp(-d*13.)*.15+spikes*.19)*(1.-smoothstep(.6,1.,d));
+        }
         gl_FragColor=vec4(v_color,v_alpha*glow*visibility);}
     `;
     let volume, composite, points;
@@ -323,13 +374,14 @@
     function common(p) {
       const u = p.uniforms;
       if (u.u_resolution) gl.uniform2f(u.u_resolution, width, height);
-      if (u.u_pointer) gl.uniform2f(u.u_pointer, parallax.x, parallax.y);
+      if (u.u_pointer) gl.uniform2f(u.u_pointer, parallax.x + cameraOffset.x, parallax.y + cameraOffset.y);
       if (u.u_shift) gl.uniform2f(u.u_shift, shift.x, shift.y);
       if (u.u_view) gl.uniformMatrix3fv(u.u_view, false, view);
       if (u.u_focal) gl.uniform1f(u.u_focal, focal);
       if (u.u_distance) gl.uniform1f(u.u_distance, cameraDistance);
       if (u.u_zoom) gl.uniform1f(u.u_zoom, zoom);
       if (u.u_time) gl.uniform1f(u.u_time, time);
+      if (u.u_travel) gl.uniform1f(u.u_travel, travel);
       if (u.u_ratio) gl.uniform1f(u.u_ratio, ratio);
     }
     function dispose() {
@@ -431,20 +483,39 @@
       ctx.fillStyle = "#05060d"; ctx.fillRect(0, 0, width, height);
       const origin = project(0, 0, 0), size = focal / cameraDistance * 4.5 * zoom;
       ctx.save(); ctx.translate(width / 2 + (origin.x - shift.x) * zoom, height / 2 + (origin.y - shift.y) * zoom);
-      ctx.rotate(cameraRoll); ctx.scale(1, tilt + .12);
+      ctx.rotate(effectiveRoll); ctx.scale(1, effectiveTilt + .12);
       ctx.globalCompositeOperation = "screen";
-      ctx.rotate(yaw + orbitTime * .008 + time * .009);
+      ctx.rotate(yaw + orbitTime * .014 + time * .016);
       ctx.globalAlpha = .92; ctx.drawImage(texture, -size / 2, -size / 2, size, size);
       ctx.rotate(-time * .003 - .12); ctx.globalAlpha = .16;
       ctx.drawImage(texture, -size * .54, -size * .54, size * 1.08, size * 1.08);
       ctx.restore(); ctx.globalCompositeOperation = "lighter";
-      for (let i = 0; i < particleData.length; i += 27) {
-        const kind = particleData[i + 8];
-        const p = kind === 0 ? { x: particleData[i] * width / 2, y: particleData[i + 1] * height / 2 } : project(particleData[i], particleData[i + 1], particleData[i + 2]);
-        const x = width / 2 + (p.x - (kind ? shift.x : 0)) * (kind ? zoom : 1);
-        const y = height / 2 + (p.y - (kind ? shift.y : 0)) * (kind ? zoom : 1);
-        ctx.globalAlpha = particleData[i + 4] * .65; ctx.fillStyle = "#b9b4cb";
-        ctx.fillRect(x, y, particleData[i + 3] * .65, particleData[i + 3] * .65);
+      const fract = n => n - Math.floor(n);
+      for (let i = 0; i < particleData.length; i += 9) {
+        const kind = particleData[i + 8], px = particleData[i], py = particleData[i + 1], pz = particleData[i + 2];
+        if (kind === 1 && i % 27) continue;
+        let p, alpha = particleData[i + 4], size = particleData[i + 3];
+        if (kind === 0 || kind === 3) {
+          const depth = .35 + pz * .65;
+          p = { x: (fract((px + 1.12) / 2.24 - time * .0022 * depth) * 2.24 - 1.12) * width / 2,
+            y: (fract((py + 1.12) / 2.24 + time * .0007 * depth) * 2.24 - 1.12) * height / 2 };
+          alpha *= .82 + .18 * Math.sin(time * (.42 + pz * .34) + px * 81 + py * 42);
+          if (kind === 3) size = 1.8;
+        } else if (kind === 2) {
+          const phase = fract(pz + time * .018 + travel * .16), perspective = 1 / (1.48 - phase * .82);
+          p = { x: px * width * .52 * perspective, y: py * height * .52 * perspective };
+          alpha *= smooth(0, .14, phase) * (1 - smooth(.78, 1, phase)); size *= perspective;
+        } else {
+          p = project(px, py, pz);
+          p = { x: (p.x - shift.x) * zoom, y: (p.y - shift.y) * zoom };
+        }
+        const x = width / 2 + p.x, y = height / 2 + p.y;
+        ctx.globalAlpha = alpha * .8; ctx.fillStyle = "#c1c7de";
+        ctx.beginPath(); ctx.arc(x, y, Math.max(.45, size * .4), 0, TAU); ctx.fill();
+        if (kind === 3) {
+          ctx.globalAlpha = alpha * .14;
+          ctx.fillRect(x - 5, y - .35, 10, .7); ctx.fillRect(x - .35, y - 5, .7, 10);
+        }
       }
       ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over";
     } };
@@ -458,7 +529,7 @@
   try { renderer = createWebGL(); }
   catch (error) { console.info("Starfield uses the local canvas fallback:", error.message); useCanvasFallback(); }
 
-  function moving() { return !motion.matches && !userPaused && !indexDialog.open; }
+  function moving() { return motionEnabled() && !indexDialog.open && !document.hidden; }
   function requestDraw() { if (!frame && !document.hidden) frame = requestAnimationFrame(tick); }
   function placeStars() {
     const occupied = [];
@@ -486,13 +557,13 @@
     if (rawDelta > 0 && moving()) averageFrameMs = averageFrameMs * .96 + Math.min(150, rawDelta * 1000) * .04;
     if (moving()) {
       time += delta;
-      if (!hovered && !focused && !drag && !journey) orbitTime += delta;
+      if (!hovered && !focused && !pressed && !drag && !journey) orbitTime += delta;
     }
-    if (!drag && !hovered && !focused && moving() && !journey) {
+    if (!drag && !hovered && !focused && !pressed && moving() && !journey) {
       targetYaw += velocity * delta; velocity *= Math.exp(-delta * 5.5);
-    } else if (hovered || focused || !moving()) velocity = 0;
-    const blend = motion.matches || userPaused ? 1 : 1 - Math.exp(-delta * 5.8);
-    const activeStar = hovered || focused;
+    } else if (hovered || focused || pressed || !moving()) velocity = 0;
+    const blend = !motionEnabled() ? 1 : 1 - Math.exp(-delta * 5.8);
+    const activeStar = hovered || focused || pressed;
     if (activeStar) focusAnchor = activeStar;
     focusGlow += ((activeStar ? 1 : 0) - focusGlow) * blend;
     yaw += (targetYaw - yaw) * blend; tilt += (targetTilt - tilt) * blend;
@@ -516,7 +587,7 @@
       catch (_) { renderer.dispose?.(); useCanvasFallback(); renderer?.draw(); }
     }
     placeStars(); renderedFrames += 1;
-    if (resetButton) resetButton.hidden = Math.abs(targetYaw) < .06 && Math.abs(targetTilt - .48) < .025 && Math.abs(targetProximity - 1) < .03;
+    if (resetButton) resetButton.hidden = Math.abs(targetYaw) < .06 && Math.abs(targetTilt - DEFAULT_TILT) < .025 && Math.abs(targetProximity - 1) < .03;
     const settling = Math.abs(targetYaw - yaw) + Math.abs(targetTilt - tilt) + Math.abs(targetProximity - proximity)
       + Math.abs((activeStar ? 1 : 0) - focusGlow)
       + (Math.abs(pointer.x - parallax.x) + Math.abs(pointer.y - parallax.y)) * .01 > .0002;
@@ -530,11 +601,11 @@
     width = Math.max(1, space.clientWidth); height = Math.max(1, space.clientHeight);
     ratio = Math.min(devicePixelRatio || 1, 1.8, Math.sqrt(3300000 / (width * height)));
     canvas.width = Math.round(width * ratio); canvas.height = Math.round(height * ratio);
-    cameraRoll = width < 680 ? -.57 : -.30;
+    cameraRoll = width < 680 ? -.64 : -.38;
     for (const star of stars) labelWidths.set(star, star.querySelector(".concept-star-label").offsetWidth);
     requestDraw();
   }
-  function syncNear() { document.body.classList.toggle("is-near-star", Boolean(hovered || focused)); }
+  function syncNear() { document.body.classList.toggle("is-near-star", Boolean(hovered || focused || pressed)); }
   for (const star of stars) {
     star.addEventListener("pointerenter", event => {
       if (event.pointerType !== "mouse") return;
@@ -543,7 +614,14 @@
     star.addEventListener("pointerleave", () => { hovered = null; syncNear(); requestDraw(); });
     star.addEventListener("focus", () => { focused = star; velocity = 0; targetYaw = yaw; targetTilt = tilt; targetProximity = proximity; pointer = { ...parallax }; syncNear(); requestDraw(); });
     star.addEventListener("blur", () => { focused = null; syncNear(); requestDraw(); });
+    star.addEventListener("pointerdown", () => {
+      pressed = star; velocity = 0; targetYaw = yaw; targetTilt = tilt; targetProximity = proximity;
+      pointer = { ...parallax }; syncNear(); requestDraw();
+    });
   }
+  const releaseStar = () => { pressed = null; syncNear(); requestDraw(); };
+  window.addEventListener("pointerup", releaseStar);
+  window.addEventListener("pointercancel", releaseStar);
   space.addEventListener("pointerdown", event => {
     if (event.target.closest("a,button") || event.button !== 0 || journey) return;
     drag = { id: event.pointerId, x: event.clientX, y: event.clientY, last: performance.now() };
@@ -553,7 +631,7 @@
     if (journey) return;
     if (drag && drag.id === event.pointerId) {
       const now = performance.now(), dx = event.clientX - drag.x;
-      targetYaw += dx * .0035; targetTilt = clamp(targetTilt + (event.clientY - drag.y) * .0013, .30, .73);
+      targetYaw += dx * .0035; targetTilt = clamp(targetTilt + (event.clientY - drag.y) * .0013, .27, .73);
       velocity = clamp(dx * .0035 / Math.max(.016, (now - drag.last) / 1000), -1.6, 1.6);
       drag.x = event.clientX; drag.y = event.clientY; drag.last = now; requestDraw();
     } else if (finePointer.matches && moving() && !hovered && !focused) {
@@ -568,32 +646,37 @@
   space.addEventListener("lostpointercapture", stopDrag);
   space.addEventListener("pointerleave", () => { if (!hovered && !focused) pointer = { x: 0, y: 0 }; requestDraw(); });
   space.addEventListener("wheel", event => {
-    if (event.ctrlKey || event.metaKey || journey || indexDialog.open) return;
+    if (event.ctrlKey || event.metaKey || journey || pressed || indexDialog.open) return;
     event.preventDefault();
     const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? height : 1;
     targetProximity = clamp(targetProximity + event.deltaY * unit * .00038, .82, 1.23); requestDraw();
   }, { passive: false });
   resetButton?.addEventListener("click", () => {
-    targetYaw = 0; targetTilt = .48; targetProximity = 1; velocity = 0; pointer = { x: 0, y: 0 }; requestDraw();
+    targetYaw = 0; targetTilt = DEFAULT_TILT; targetProximity = 1; velocity = 0; pointer = { x: 0, y: 0 }; requestDraw();
   });
   function syncMotionButton() {
-    const paused = userPaused || motion.matches;
+    const paused = !motionEnabled();
+    const systemPaused = paused && motion.matches && (!window.ConceptMotion || ConceptMotion.preference === "system");
+    const label = paused ? systemPaused ? "播放星海动态（覆盖本页的系统减少动态设置）" : "恢复星海动态" : "暂停星海动态";
     motionButton.setAttribute("aria-pressed", String(paused));
-    motionButton.setAttribute("aria-label", motion.matches ? "已遵循系统减少动态效果设置" : paused ? "恢复星云流动" : "暂停星云流动");
-    motionButton.title = motion.matches ? "跟随系统静止" : paused ? "恢复星云流动" : "暂停星云流动";
+    motionButton.setAttribute("aria-label", label); motionButton.title = label;
+    if (motionState) motionState.textContent = systemPaused ? "静止 · 可播放" : paused ? "漂航已暂停" : "自由漂航";
   }
   motionButton.hidden = false;
   motionButton.addEventListener("click", () => {
-    if (motion.matches) { announcement.textContent = "已遵循系统减少动态效果设置，星云保持静止。"; return; }
-    userPaused = !userPaused; pointer = { ...parallax }; targetYaw = yaw; targetTilt = tilt; targetProximity = proximity;
-    velocity = 0; syncMotionButton(); lastTime = 0; requestDraw();
+    if (window.ConceptMotion) ConceptMotion.set(motionEnabled() ? "pause" : "play");
+    else { userPaused = !userPaused; changeMotion(); }
+    announcement.textContent = motionEnabled() ? "星海动态已开启。" : "星海动态已暂停。";
   });
   function changeMotion() {
-    if (motion.matches) journey = null;
+    if (!motionEnabled()) { journey = null; document.body.classList.remove("is-arriving"); }
     velocity = 0; pointer = { ...parallax }; targetYaw = yaw; targetTilt = tilt; targetProximity = proximity;
     syncMotionButton(); lastTime = 0; requestDraw();
   }
-  if (motion.addEventListener) motion.addEventListener("change", changeMotion); else motion.addListener(changeMotion);
+  document.addEventListener("conceptmotion:change", changeMotion);
+  if (!window.ConceptMotion) {
+    if (motion.addEventListener) motion.addEventListener("change", changeMotion); else motion.addListener(changeMotion);
+  }
   if (typeof indexDialog.showModal === "function") {
     indexButton.hidden = false;
     indexButton.addEventListener("click", () => { indexDialog.showModal(); requestDraw(); });
@@ -614,7 +697,7 @@
     velocity = 0; targetYaw = yaw; targetTilt = tilt; pointer = { ...parallax }; requestDraw();
   });
   function reset() {
-    journey = null; zoom = 1; travel = 0; shift = { x: 0, y: 0 }; drag = null; velocity = 0;
+    journey = null; zoom = 1; travel = 0; shift = { x: 0, y: 0 }; drag = null; pressed = null; velocity = 0;
     focused = stars.includes(document.activeElement) ? document.activeElement : null;
     hovered = finePointer.matches ? stars.find(star => star.matches(":hover")) || null : null;
     pointer = { x: 0, y: 0 }; parallax = { x: 0, y: 0 };
@@ -631,8 +714,10 @@
   window.ConceptUniverse = Object.freeze({ inspect: () => ({ renderer: rendererName, quality,
     averageFrameMs: +averageFrameMs.toFixed(2), renderedFrames, paused: !moving(), width, height,
     time: +time.toFixed(3), orbitTime: +orbitTime.toFixed(3), proximity: +proximity.toFixed(3),
+    motionEnabled: motionEnabled(), motionPreference: window.ConceptMotion?.preference || "system",
+    skyStars: 1676, foregroundDust: 160, cameraOffset: { ...cameraOffset },
     ...renderer?.diagnostics?.() }) });
-  if (!motion.matches) {
+  if (motionEnabled()) {
     document.body.classList.add("is-arriving");
     setTimeout(() => document.body.classList.remove("is-arriving"), 2100);
   }
