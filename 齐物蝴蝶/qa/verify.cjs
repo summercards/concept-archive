@@ -4,7 +4,8 @@ const assert = require('assert');
 const path = require('path');
 const base = path.join(__dirname, '..');
 const shots = path.join(base, 'previews');
-const target = process.argv[2] || path.join(base, 'index.html');
+// The visitor homepage is checked by homepage.cjs; this preserves the full v09 design-book contract.
+const target = process.argv[2] || path.join(base, 'design-notes.html');
 (async () => {
   const browser = await chromium.launch({ headless: true });
   try {
@@ -59,7 +60,8 @@ const target = process.argv[2] || path.join(base, 'index.html');
     assert(innocence.includes('不作为本作角色'));
     assert(innocence.includes('虚焦'));
     assert.equal(await page.locator('[aria-labelledby="film-innocence"] img').count(), 1);
-    const baselinePath = path.join(path.dirname(target), '.baseline', path.basename(target));
+    const baselineName = path.basename(target) === 'design-notes.html' ? 'index.html' : path.basename(target);
+    const baselinePath = path.join(path.dirname(target), '.baseline', baselineName);
     let preservation = null;
     if (fs.existsSync(baselinePath)) {
       const baseline = fs.readFileSync(baselinePath, 'utf8');

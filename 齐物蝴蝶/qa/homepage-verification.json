@@ -1,0 +1,95 @@
+{
+  "url": "file:///Users/zyq/work/%E6%A6%82%E5%BF%B5%E4%BB%93/%E9%BD%90%E7%89%A9%E8%9D%B4%E8%9D%B6/index.html",
+  "startedAt": "2026-11-15T15:26:22.414Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "默认动态及停镜按钮双向切换",
+      "status": "passed"
+    },
+    {
+      "name": "减少动态时默认停镜且所有关键内容可见",
+      "status": "passed"
+    },
+    {
+      "name": "主页文案、导航、ID、锚点及本地图片路径",
+      "status": "passed"
+    },
+    {
+      "name": "主视觉与页面图片可加载且不拉伸",
+      "status": "passed"
+    },
+    {
+      "name": "桌面首屏截图",
+      "status": "passed"
+    },
+    {
+      "name": "梦域标签点击、方向键、选中状态及配图",
+      "status": "passed"
+    },
+    {
+      "name": "三个玩法按钮及独立文案",
+      "status": "passed"
+    },
+    {
+      "name": "视频懒加载、弹窗开启、关闭按钮及 Escape",
+      "status": "passed"
+    },
+    {
+      "name": "故事、梦域、玩法各一张截图",
+      "status": "passed"
+    },
+    {
+      "name": "1440×1000 全段落无横向溢出",
+      "status": "passed"
+    },
+    {
+      "name": "1024×1000 全段落无横向溢出",
+      "status": "passed"
+    },
+    {
+      "name": "768×1000 全段落无横向溢出",
+      "status": "passed"
+    },
+    {
+      "name": "390×844 全段落无横向溢出",
+      "status": "passed"
+    },
+    {
+      "name": "320×740 全段落无横向溢出",
+      "status": "passed"
+    },
+    {
+      "name": "390 移动导航及首屏截图",
+      "status": "passed"
+    },
+    {
+      "name": "无 JavaScript 1440：故事、首梦及锚点导航可读可用",
+      "status": "passed"
+    },
+    {
+      "name": "无 JavaScript 390：故事、首梦及锚点导航可读可用",
+      "status": "passed"
+    },
+    {
+      "name": "无主页 pageerror 及本地资源加载失败",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/home-desktop.png",
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/home-story.png",
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/home-dreams.png",
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/home-experience.png",
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/home-390.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "localResourceFailures": [],
+  "finishedAt": "2026-11-15T15:26:26.826Z",
+  "summary": {
+    "passed": 18,
+    "failed": 0,
+    "screenshots": 5
+  }
+}

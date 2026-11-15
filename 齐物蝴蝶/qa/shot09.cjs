@@ -1,7 +1,7 @@
 const { chromium } = require('/Users/zyq/.npm/_npx/405f4af606701f85/node_modules/playwright');
 const path=require('path');
 const root=path.join(__dirname,'..');
-const target='file://'+path.join(root,'index.html');
+const target='file://'+path.join(root,'design-notes.html');
 const out=n=>path.join(root,'previews',n);
 (async()=>{
   const b=await chromium.launch({headless:true});

@@ -1,22 +1,27 @@
 # 齐物 · 胡蝶 / QIWU · HUDIE
 
 一份以网页呈现的 **3A 级电影化心理恐怖梦境冒险**概念设计书。
-当前版本：**09 委托入梦·蝶引概念版**。
+内容版本：**09 委托入梦·蝶引概念版**。本地入口已重做为**电影式观众主题页**，完整设计书保留于 `design-notes.html`；下列旧在线资料库链接仍是原设计书，未在本轮同步或公开发布。
 
 在线版本（资料库页面，未公开发布）：
 <https://www.workbuddy.cn/space/d/rMEIpPsml6p9UGxaWSmxVj#yotifEcPbBymFAGvGfNHtt>
 
 ## 打开方式
 
-双击 `index.html` 即可（Chrome / Safari）。这一页是自包含单文件：样式、文案、交互全在里面。
+双击 `index.html` 即可（Chrome / Safari）。新主题页使用 `assets/cinematic.css`、`assets/cinematic.js` 与本地已有图片，系统宋体与黑体字体栈，无第三方运行依赖；可断网阅读。也可在仓库根目录运行 `python3 -m http.server 8765 --bind 127.0.0.1`，访问 `http://127.0.0.1:8765/齐物蝴蝶/`。
 
-页面里的 41 张图托管在 `workbuddy-space-static.codebuddy.work`，字体走固定版本 CDN。**断网时图片不显示、字体降级为系统字体，不是本地文件缺失**；要离线看，用 `previews/` 里的截图。
+主题页包含原生滚动驱动的缓慢推镜、长镜头停留、章节显现、三梦域切换、玩法解说切换、移动章节菜单和独立影调放映窗。顶部“停镜”可关闭动态，系统减少动态偏好默认停镜；无脚本时正文、首梦和导航仍可用，其他梦域与玩法提供文本回退。视频点击打开后才分配源地址，不自动播放或发声。
+
+完整设计书 `design-notes.html` 仍是原来的自包含单文件；其中 41 张图托管在 `workbuddy-space-static.codebuddy.work`，字体走固定版本 CDN，断网时其图片不显示、字体降级为系统字体。旧设计书截图见 `previews/`，新主题页截图使用 `home-` 前缀。
 
 ## 文件构成
 
 | 路径 | 是什么 |
 |---|---|
-| `index.html` | 完整设计书成品，180 KB 单文件，含平台注入标记（`data-page-node-id`），不要改它来排版 |
+| `index.html` | 面向观众的电影式主题主页，节选故事、梦域、玩法、蝶与清醒代价 |
+| `design-notes.html` | 原09版完整设计书，保留平台标记与研究出处，作为深入阅读入口 |
+| `assets/cinematic.css` / `assets/cinematic.js` | 新主题页的独立样式与原生交互，包含响应式、停镜和减少动态支持 |
+| `qa/homepage.cjs` / `qa/homepage-verification.json` | 新主题页交互、五档宽度、减少动态与无脚本回退验收及报告 |
 | `概念草稿.html` | 最早的一页概念草稿：宣纸底、一只缓慢漂移的蝶，只谈庄周梦蝶这一条概念。引用 `../assets/base.css` |
 | `内容母稿.md` | 全文文字母稿，与页面文案一致，改文案先改这里 |
 | `assets/` | 原始素材：五部电影参考帧、用户指定视频基调的 16 张抽帧、枯叶蝶物种参考、源视频 `video-style-reference.mp4` |
@@ -24,17 +29,18 @@
 | `qa/verify.cjs` | 全量校验脚本：41 图加载与不变形、5 档宽度无溢出、导航、阅读模式、打印、0 脚本错误 |
 | `qa/shot09.cjs` | 委托区块的截图脚本 |
 | `qa/verification.json` | 上一次校验结果（`status: PASS`） |
-| `.baseline/index.html` | 校验脚本用来比对「有没有越界改动」的基准，和 `index.html` 同版本 |
+| `.baseline/index.html` | 完整设计书的09版原始基准，与 `design-notes.html` 相同；不用于新主题页比较 |
 | `archive/revision-03/` | 第三版留档（早期三色梦域方案） |
 | `archive/legacy-scripts/` | 早期版本的截图脚本，已不维护 |
 
 ## 重跑校验
 
 ```bash
-node qa/verify.cjs            # 需要本机装有 playwright 的 chromium
+node qa/homepage.cjs          # 新主题页；默认 file://，支持 HOMEPAGE_URL 指定本地服务
+node qa/verify.cjs            # 原09版完整设计书（默认 design-notes.html）
 ```
 
-结果写到 `qa/verification.json`，截图刷新 `previews/`。校验要联网（图片在平台托管）。
+需要本机已有 Playwright 与 Chromium（脚本沿用本机安装路径）。主题页验收结果写到 `qa/homepage-verification.json`，五张截图使用 `previews/home-*.png`，不需要联网。原设计书校验写到 `qa/verification.json`、刷新旧截图，需要联网加载托管图片；`.baseline/index.html` 继续作为完整设计书的原始基准，不适用于新主题页。
 
 ## 这一版讲了什么
 
