@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>齐物 · 胡蝶 — 概念仓</title>
+<link rel="stylesheet" href="../assets/base.css">
+<style>
+  .hero {
+    position: relative;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.4);
+    padding: 56px 40px 44px;
+    overflow: hidden;
+  }
+  .hero canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 34em; }
+  .hero h1 { margin-top: 12px; }
+  .quote {
+    margin: 26px 0 0;
+    padding-left: 18px;
+    border-left: 1px solid var(--ink-faint);
+    font-size: 15px;
+    line-height: 2.1;
+    color: var(--ink-soft);
+  }
+  .quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--ink-faint);
+    font-style: normal;
+  }
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-top: 34px;
+  }
+  .key {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+  }
+  .key h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  .key p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.95;
+    color: var(--ink-soft);
+  }
+  .notes { margin-top: 46px; font-size: 13.5px; line-height: 2; color: var(--ink-soft); max-width: 44em; }
+  .notes h2 { font-size: 16px; font-weight: 500; letter-spacing: 0.12em; margin: 0 0 14px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 概念仓</a>
+
+    <section class="hero">
+      <canvas id="butterfly"></canvas>
+      <div class="hero-inner">
+        <div class="eyebrow">庄子 · 齐物论</div>
+        <h1>齐物 · 胡蝶</h1>
+        <p class="lede">一个人梦见自己是蝴蝶，醒来发现自己还是那个人。问题不在梦，在于醒来这件事凭什么更真。</p>
+        <blockquote class="quote">
+          昔者庄周梦为胡蝶，栩栩然胡蝶也，自喻适志与，不知周也。俄然觉，则蘧蘧然周也。不知周之梦为胡蝶与，胡蝶之梦为周与？周与胡蝶，则必有分矣。此之谓物化。
+          <cite>《庄子 · 齐物论》</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <div class="keys">
+      <div class="key">
+        <h3>梦与觉</h3>
+        <p>梦里的蝴蝶有它完整的感受：会飞、会饿、会怕。醒来的人也有。两套感受都自洽，谁给谁发资格证？庄子把这个问题悬在那里，不判真假，只指出判据本身可疑。</p>
+      </div>
+      <div class="key">
+        <h3>物与我</h3>
+        <p>“必有分矣”——界限是有的，蝴蝶是蝴蝶，周是周。但这条界只在这一刻成立，下一刻就换了。分不是不存在，是不牢靠。</p>
+      </div>
+      <div class="key">
+        <h3>物化</h3>
+        <p>不是变成别的东西，是承认自己在不停地变成别的东西。这条概念最后落在这里：身份不是名词，是动词。</p>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h2>这份概念用来做什么</h2>
+      <p>它可以长成一个交互作品：玩家在“人”和“蝶”两个视角之间来回，每次切换世界规则变一点，但没有一次切换被明确告知是真的——判断权交给玩家，也不给他确证。</p>
+      <p>也可以只停在这里，作为一条概念存着。概念仓的规矩：先存住，不急着成产品。</p>
+    </div>
+
+    <footer>概念仓 · 齐物 · 胡蝶 · 2026-11-15</footer>
+  </div>
+
+<script>
+(function () {
+  const canvas = document.getElementById('butterfly');
+  const ctx = canvas.getContext('2d');
+  let w = 0, h = 0, t = 0;
+
+  function resize() {
+    const r = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    w = r.width; h = r.height;
+    canvas.width = Math.floor(w * dpr);
+    canvas.height = Math.floor(h * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function wing(x, y, angle, flap, side, scale) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(angle);
+    ctx.scale(1, flap);
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(side * 26 * scale, -34 * scale, side * 74 * scale, -26 * scale, side * 58 * scale, 4 * scale);
+    ctx.bezierCurveTo(side * 44 * scale, 28 * scale, side * 16 * scale, 22 * scale, 0, 0);
+    ctx.fillStyle = 'rgba(138, 90, 43, 0.13)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(30, 27, 23, 0.26)';
+    ctx.lineWidth = 0.9;
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function frame() {
+    if (!w || !h) resize();
+    ctx.clearRect(0, 0, w, h);
+
+    // 一只缓慢漂移的蝶：位置按两个不同周期叠出来，看起来没有固定轨迹
+    const cx = w * 0.72 + Math.sin(t / 260) * w * 0.09 + Math.cos(t / 610) * w * 0.04;
+    const cy = h * 0.42 + Math.cos(t / 300) * h * 0.16 + Math.sin(t / 500) * h * 0.05;
+    const flap = 0.34 + Math.abs(Math.sin(t / 190)) * 0.66;
+    const tilt = Math.sin(t / 420) * 0.22;
+
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(tilt);
+    wing(0, 0, -0.12, flap, 1, 1);
+    wing(0, 0, -0.12, flap, -1, 1);
+    ctx.beginPath();
+    ctx.moveTo(0, -8);
+    ctx.lineTo(0, 26);
+    ctx.strokeStyle = 'rgba(30, 27, 23, 0.34)';
+    ctx.lineWidth = 1.1;
+    ctx.stroke();
+    ctx.restore();
+
+    t += 16;
+    requestAnimationFrame(frame);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  frame();
+})();
+</script>
+</body>
+</html>
