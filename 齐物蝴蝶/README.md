@@ -10,7 +10,9 @@
 
 双击 `index.html` 即可（Chrome / Safari）。新主题页使用 `assets/cinematic.css`、`assets/cinematic.js` 与 `assets/generated/` 里的原创概念图，系统宋体与黑体字体栈，无第三方运行依赖；可断网阅读，影片也是本地文件。也可在仓库根目录运行 `python3 -m http.server 8765 --bind 127.0.0.1`，访问 `http://127.0.0.1:8765/齐物蝴蝶/`。
 
-主题页包含原生滚动驱动的缓慢推镜、长镜头停留、章节显现、三梦域切换、玩法解说切换、移动章节菜单和独立影调放映窗。顶部“停镜”可关闭动态，系统减少动态偏好默认停镜；无脚本时正文、首梦和导航仍可用，其他梦域与玩法提供文本回退。视频点击打开后才分配源地址，不自动播放或发声。
+主题页围绕「观察 → 留痕 → 怀疑 → 醒后核对」统一交互：委托函有可翻阅的正反面；三梦域切换保留上一场梦的短暂叠影，接缝可展开观察并主动记录；蝶模块可移焦到边界，文字和控件始终清晰；“梦中手记”只保存本次浏览亲手记下的观察，不自动推断。醒后比对会回看这些记录，空记录也可确认清醒，不设收集门槛。
+
+顶部“定心”可关闭动态（关闭后显示“入梦”以重新开启），系统减少动态偏好默认定心；停用动态不影响翻函、查证、记录与清醒状态。无脚本时正文、首梦和导航仍可用，其他梦域与玩法提供文本回退。细指针视线场只作用于画面，不替换原生光标、不劫持滚动、不要求长按；移动端使用直接触摸与原生范围滑块。手记仅在内存中保留，刷新清空，不上传，不使用本地存储。视频点击打开后才分配源地址，不自动播放或发声。
 
 完整设计书 `design-notes.html` 仍是原来的自包含单文件，其中 41 张图已全部换成本地原创概念图（`assets/generated/`），字体走固定版本 CDN，断网时字体降级为系统字体。**全站已无第三方照片、剧照或视频引用。** 设计书截图见 `previews/`，主题页截图使用 `home-` 前缀。
 
@@ -20,8 +22,9 @@
 |---|---|
 | `index.html` | 面向观众的电影式主题主页，节选故事、梦域、玩法、蝶与清醒代价 |
 | `design-notes.html` | 原09版完整设计书，保留平台标记与研究出处，作为深入阅读入口 |
-| `assets/cinematic.css` / `assets/cinematic.js` | 新主题页的独立样式与原生交互，包含响应式、停镜和减少动态支持 |
+| `assets/cinematic.css` / `assets/cinematic.js` | 主题化梦境视觉与原生交互，包含留痕状态、手记、响应式、定心和减少动态支持 |
 | `qa/homepage.cjs` / `qa/homepage-verification.json` | 新主题页交互、五档宽度、减少动态与无脚本回退验收及报告 |
+| `qa/dream-interaction.cjs` / `qa/dream-interaction-verification.json` | 梦境交互：翻函、手记去重、叠影快切、移焦、醒后核对、触屏与键盘、定心与无JS |
 | `概念草稿.html` | 最早的一页概念草稿：宣纸底、一只缓慢漂移的蝶，只谈庄周梦蝶这一条概念。引用 `../assets/base.css` |
 | `内容母稿.md` | 全文文字母稿，与页面文案一致，改文案先改这里 |
 | `assets/generated/` | **原创概念图**（gpt-image-2 生成）：林庭、眠谷、灯庭、委托桌面、坠落、巨构阶梯、蝶、醒后房间、门廊、巨面、瓷偶，含 16:9 裁切版；两个页面全部视觉来自这里 |
@@ -39,10 +42,11 @@
 
 ```bash
 node qa/homepage.cjs          # 主题页；默认 file://，支持 HOMEPAGE_URL 指定本地服务
+node qa/dream-interaction.cjs # 梦境交互状态与完整留痕闭环；同样支持 file:// 和 HOMEPAGE_URL
 node qa/verify.cjs            # 完整设计书（默认 design-notes.html）
 ```
 
-需要本机已有 Playwright 与 Chromium（脚本沿用本机安装路径）。主题页验收结果写到 `qa/homepage-verification.json`，五张截图使用 `previews/home-*.png`，不需要联网。原设计书校验写到 `qa/verification.json`、刷新旧截图，需要联网加载托管图片；`.baseline/index.html` 继续作为完整设计书的原始基准，不适用于新主题页。
+需要本机已有 Playwright 与 Chromium（脚本沿用本机安装路径）。主题页验收结果写到 `qa/homepage-verification.json`，五张截图使用 `previews/home-*.png`，不需要联网。梦境交互验收结果写到 `qa/dream-interaction-verification.json`，功能状态截图为 `previews/dream-journal.png` 与 `previews/dream-focus.png`，覆盖翻函、记录防重、快切、焦点、醒后核对和五档宽度。原设计书校验写到 `qa/verification.json`、刷新旧截图，需要联网加载托管图片；`.baseline/index.html` 继续作为完整设计书的原始基准，不适用于新主题页。
 
 ## 这一版讲了什么
 

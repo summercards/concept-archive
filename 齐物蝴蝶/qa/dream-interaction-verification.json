@@ -1,0 +1,724 @@
+{
+  "url": "http://127.0.0.1:8765/%E9%BD%90%E7%89%A9%E8%9D%B4%E8%9D%B6/",
+  "startedAt": "2026-11-15T16:12:55.043Z",
+  "status": "passed",
+  "groups": [
+    {
+      "name": "01 委托函翻面、inert 与空落款去重",
+      "status": "passed",
+      "details": {
+        "record": {
+          "count": 1,
+          "text": "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。",
+          "listItems": [
+            "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。"
+          ]
+        }
+      }
+    },
+    {
+      "name": "02 空日志、全部入口、原生模态、Tab/Esc 与焦点恢复",
+      "status": "passed",
+      "details": {
+        "visibleOpenersTested": 1,
+        "record": {
+          "count": 1,
+          "text": "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。",
+          "listItems": [
+            "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。"
+          ]
+        }
+      }
+    },
+    {
+      "name": "03 三梦域、主动接缝记录、快速切换与残影清理",
+      "status": "passed",
+      "details": {
+        "states": {
+          "forest": {
+            "text": {
+              "realm-title": "雾白林庭",
+              "realm-kicker": "灰紫白 / 冷青 / 苔色",
+              "realm-glyph": "I",
+              "realm-numeral": "01",
+              "realm-quote": "“他们叫出了一个你没听过的称呼，\n然后，等你纠正。”",
+              "realm-description": "巨根截断近路，林庭与水声重复。一间从外侧数步可绕完的林屋，内部却容纳漫长庭院。",
+              "realm-objective": "核对尺度与时序。记住蝶停下的接缝，判断这段林庭是否已经重复过。"
+            },
+            "src": "http://127.0.0.1:8765/%E9%BD%90%E7%89%A9%E8%9D%B4%E8%9D%B6/assets/generated/01-grove.jpg",
+            "alt": "原创概念图：潮湿林道两侧的巨大根系长成重复门拱，远处一名无名探索者；AI 生成，非实机",
+            "realm": "forest"
+          },
+          "valley": {
+            "text": {
+              "realm-title": "赭粉眠谷",
+              "realm-kicker": "褪粉 / 烟紫 / 锈褐",
+              "realm-glyph": "II",
+              "realm-numeral": "02",
+              "realm-quote": "“有人替你保存了一整段生活。\n只是，尺寸对不上你。”",
+              "realm-description": "层叠巨壳随节律开合。向内攀升的楼梯，没有穿过壳壁，却抵达壳体外侧。熟悉的杯子和椅背，都大了一点。",
+              "realm-objective": "比对证词与修补痕。查清巨构运动如何重接空间，又如何补写你的过去。"
+            },
+            "src": "http://127.0.0.1:8765/%E9%BD%90%E7%89%A9%E8%9D%B4%E8%9D%B6/assets/generated/02-valley.jpg",
+            "alt": "原创概念图：赭粉谷地里层叠的巨大空壳与一段向内攀升却抵达外侧的楼梯；AI 生成，非实机",
+            "realm": "valley"
+          },
+          "water": {
+            "text": {
+              "realm-title": "深水灯庭",
+              "realm-kicker": "冷青 / 深蓝紫 / 局部橙灯",
+              "realm-glyph": "III",
+              "realm-numeral": "03",
+              "realm-quote": "“灯列按你的记忆排布。\n水位，按你的说法涨落。”",
+              "realm-description": "门后接回门前，两个互斥庭院共用同一门槛。橙灯点亮近处湿面，却从不承诺安全。",
+              "realm-objective": "以水位、灯列与跨梦证据辨认伪出口，打开不再回接的路，检验真正醒来。"
+            },
+            "src": "http://127.0.0.1:8765/%E9%BD%90%E7%89%A9%E8%9D%B4%E8%9D%B6/assets/generated/03-water.jpg",
+            "alt": "原创概念图：积水柱廊里的一列橙色小灯与水中倒影，水面中央立着一扇孤门；AI 生成，非实机",
+            "realm": "water"
+          }
+        }
+      }
+    },
+    {
+      "name": "04 焦距阈值、键盘 Home/End、正文清晰度与观蝶记录",
+      "status": "passed",
+      "details": {
+        "readings": {
+          "low": "焦点在蝶。它像一片叶子，但这不是全部。",
+          "high": "焦点越过蝶。叶脉停止了，边界还在继续。记下它，别急着跟随。"
+        }
+      }
+    },
+    {
+      "name": "05 未集齐即可醒来、重复比对、返回顶部不丢记录",
+      "status": "passed",
+      "details": {
+        "record": {
+          "count": 1,
+          "text": "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。",
+          "listItems": [
+            "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。"
+          ]
+        }
+      }
+    },
+    {
+      "name": "05b 空记录也能确认醒来",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "06 停镜取消动效、语义与记录保留、双向切换",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "06b 系统 reduce 默认 still，交互仍保留语义",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "06c 无 JavaScript 1440px 关键与替代文字可读",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "06c 无 JavaScript 390px 关键与替代文字可读",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "07 五档宽度：正文、翻面、接缝、焦距、日志与回执无横向溢出",
+      "status": "passed",
+      "details": {
+        "measurements": [
+          {
+            "width": 1440,
+            "state": "top",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "story",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "dreams",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "experience",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "butterfly",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "awakening",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "credits",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "委托背面",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "接缝展开",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "焦距100",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1440,
+            "state": "日志",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": [
+              {
+                "width": 738,
+                "scroll": 738,
+                "left": 350,
+                "right": 1090
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "state": "醒来回执",
+            "viewport": 1440,
+            "document": 1440,
+            "body": 1440,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "top",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "story",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "dreams",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "experience",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "butterfly",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "awakening",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "credits",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "委托背面",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "接缝展开",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "焦距100",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 1024,
+            "state": "日志",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": [
+              {
+                "width": 738,
+                "scroll": 738,
+                "left": 142,
+                "right": 882
+              }
+            ]
+          },
+          {
+            "width": 1024,
+            "state": "醒来回执",
+            "viewport": 1024,
+            "document": 1024,
+            "body": 1024,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "top",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "story",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "dreams",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "experience",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "butterfly",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "awakening",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "credits",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "委托背面",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "接缝展开",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "焦距100",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 768,
+            "state": "日志",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": [
+              {
+                "width": 722,
+                "scroll": 722,
+                "left": 22,
+                "right": 746
+              }
+            ]
+          },
+          {
+            "width": 768,
+            "state": "醒来回执",
+            "viewport": 768,
+            "document": 768,
+            "body": 768,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "top",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "story",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "dreams",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "experience",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "butterfly",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "awakening",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "credits",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "委托背面",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "接缝展开",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "焦距100",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 390,
+            "state": "日志",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": [
+              {
+                "width": 354,
+                "scroll": 354,
+                "left": 17,
+                "right": 373
+              }
+            ]
+          },
+          {
+            "width": 390,
+            "state": "醒来回执",
+            "viewport": 390,
+            "document": 390,
+            "body": 390,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "top",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "story",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "dreams",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "experience",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "butterfly",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "awakening",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "credits",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "委托背面",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "接缝展开",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "焦距100",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          },
+          {
+            "width": 320,
+            "state": "日志",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": [
+              {
+                "width": 284,
+                "scroll": 284,
+                "left": 17,
+                "right": 303
+              }
+            ]
+          },
+          {
+            "width": 320,
+            "state": "醒来回执",
+            "viewport": 320,
+            "document": 320,
+            "body": 320,
+            "dialogs": []
+          }
+        ],
+        "widths": [
+          {
+            "width": 1440,
+            "status": "passed"
+          },
+          {
+            "width": 1024,
+            "status": "passed"
+          },
+          {
+            "width": 768,
+            "status": "passed"
+          },
+          {
+            "width": 390,
+            "status": "passed"
+          },
+          {
+            "width": 320,
+            "status": "passed"
+          }
+        ]
+      }
+    },
+    {
+      "name": "07b 移动触屏直接翻页、记录、打开日志与确认醒来",
+      "status": "passed",
+      "details": {
+        "record": {
+          "count": 2,
+          "text": "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。 深水灯庭 · 接缝 共用门槛的庭院 梦域叙述中，两处互斥庭院共用同一道门槛。 仍然存疑 / 灯亮不等于安全。仍需水位与跨梦证据验证去向。",
+          "listItems": [
+            "委托函 · 纸背 没有署名的委托 翻过纸张之后，落款仍然是空的。 仍然存疑 / 是谁留下这份委托？熟悉的笔迹，不足以证明来源。",
+            "深水灯庭 · 接缝 共用门槛的庭院 梦域叙述中，两处互斥庭院共用同一道门槛。 仍然存疑 / 灯亮不等于安全。仍需水位与跨梦证据验证去向。"
+          ]
+        }
+      }
+    },
+    {
+      "name": "07c 键盘可达、Tab 标签、方向键、Enter/Space 与 Esc",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "08 全部页面异常、控制台及资源错误汇总",
+      "status": "passed",
+      "details": {}
+    },
+    {
+      "name": "09 仅保存两张约定功能状态截图",
+      "status": "passed",
+      "details": {}
+    }
+  ],
+  "screenshots": [
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/dream-journal.png",
+    "/Users/zyq/work/概念仓/齐物蝴蝶/previews/dream-focus.png"
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "resourceFailures": [],
+  "excludedMediaAborts": [],
+  "blockedExternalRequests": [],
+  "finishedAt": "2026-11-15T16:13:51.864Z",
+  "summary": {
+    "passed": 15,
+    "failed": 0,
+    "screenshots": 2,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "resourceFailures": 0
+  }
+}

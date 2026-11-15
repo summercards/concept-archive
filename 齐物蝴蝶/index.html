@@ -27,13 +27,13 @@
       <a href="./design-notes.html" class="mobile-only">完整概念设计书 ↗</a>
     </nav>
     <div class="header-tools">
-      <button class="motion-control js-control" id="motion-toggle" type="button" aria-pressed="false" aria-label="停镜，减少动态效果"><span class="motion-symbol" aria-hidden="true"><i></i><i></i></span><span class="motion-label">停镜</span></button>
-      <button class="menu-control js-control" id="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="打开章节导航"><span>章节</span><span class="menu-symbol" aria-hidden="true"><i></i><i></i></span></button>
+      <button class="motion-control js-control" id="motion-toggle" type="button" aria-pressed="false" aria-label="定心，减少动态效果"><span class="motion-symbol" aria-hidden="true"><i></i><i></i></span><span class="motion-label">定心</span></button>
+      <button class="menu-control js-control" id="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="翻开梦境目录"><span>梦径</span><span class="menu-symbol" aria-hidden="true"><i></i><i></i></span></button>
     </div>
   </header>
   <main>
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-visual" aria-hidden="true"><img class="hero-image" src="./assets/generated/01-grove.jpg" width="1080" height="608" alt="" fetchpriority="high"><div class="hero-shade"></div><div class="hero-mist"></div></div>
+      <div class="hero-visual" aria-hidden="true"><img class="hero-image" src="./assets/generated/01-grove.jpg" width="1080" height="608" alt="" fetchpriority="high"><div class="hero-shade"></div><div class="hero-mist"></div><div class="gaze-light" aria-hidden="true"></div></div>
       <div class="hero-side" aria-hidden="true">BETWEEN DREAM &amp; WAKING</div>
       <div class="hero-content">
         <p class="eyebrow hero-eyebrow"><span class="small-line"></span>一场关于真相与清醒的梦境冒险</p>
@@ -45,6 +45,7 @@
           <a class="button button-light" href="#story"><span>接受委托</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.1"/></svg></a>
           <button class="film-trigger js-control" type="button" data-film><span class="play-orbit" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="m8 5 7 5-7 5V5Z" stroke="currentColor" stroke-width="1"/></svg></span><span>观看影调短片<small>原创概念影像 · 非游戏预告</small></span></button>
         </div>
+        <p class="dream-invitation"><span aria-hidden="true">⌁</span> 不必相信这里。先留下你看见的。<small>一段可以亲手留痕的概念体验</small></p>
       </div>
       <div class="hero-footer">
         <div class="hero-platforms"><span>单人第三人称</span><span>心理恐怖 · 梦境冒险</span><span>PC / 主机<span class="platform-note">（目标平台）</span></span></div>
@@ -59,23 +60,35 @@
         <div class="story-copy" data-reveal>
           <p class="chapter-pretitle">无署名委托 · 故事的起点</p>
           <h2 id="story-title">你不是被选中的。<br>你是<span class="serif-italic">被雇来的。</span></h2>
-          <p class="body-copy">门外的人没有留下姓名，也没有进屋。<br>他只交来一本任务书、一份写着期限的委托函，<br class="desktop-break">和一个不许追问的问题。</p>
+          <p class="body-copy">桌上那本书，你翻过很多次。<br>这一次，里面夹着一封信：一件委托、一个期限，<br class="desktop-break">和一个不许追问的问题。</p>
           <p class="body-copy">报酬不是钱。<br>是一段你确实丢掉的过去。</p>
           <div class="story-rule"><span aria-hidden="true">↳</span><p>你是无名梦境探索者，不是梦的主人。<br>你的任务：查明真相，带回证据，真正醒来。</p></div>
           <a class="text-link" href="./design-notes.html#identity">深入阅读故事设定<span aria-hidden="true">↗</span></a>
         </div>
         <div class="commission-scene" data-reveal>
           <div class="document-shadow" aria-hidden="true"></div>
-          <article class="commission-paper" aria-label="虚构委托函，故事节选">
-            <div class="paper-topline"><span>致　梦境探索者</span><span>未署名</span></div>
-            <p class="paper-en">A COMMISSION WITHOUT A NAME</p>
-            <h3>委 托 函</h3>
-            <p class="paper-question">“哪一道门，<br>能让回忆之后的时间继续？”</p>
-            <div class="paper-details"><p><span>委托事项</span>入梦。查证。带回证据。</p><p><span>交付期限</span>今夜</p><p><span>约定报酬</span>一段遗失的过去</p></div>
-            <p class="paper-note">别再查了。</p>
-            <div class="paper-signature"><span>委托人</span><span class="signature-line"></span><span>　</span></div>
-            <p class="paper-foot">落款是空的。页边那句话，却是你的笔迹。</p>
-          </article>
+          <div class="letter-folio">
+            <article class="commission-paper" id="letter-front" aria-label="虚构委托函正面，故事节选" aria-hidden="false">
+              <div class="paper-topline"><span>致　梦境探索者</span><span>未署名</span></div>
+              <p class="paper-en">A COMMISSION WITHOUT A NAME</p>
+              <h3>委 托 函</h3>
+              <p class="paper-question">“哪一道门，<br>能让回忆之后的时间继续？”</p>
+              <div class="paper-details"><p><span>委托事项</span>入梦。查证。带回证据。</p><p><span>交付期限</span>今夜</p><p><span>约定报酬</span>一段遗失的过去</p><p><span>夹在</span>你正读到的那一页</p></div>
+              <p class="paper-note">别再查了。</p>
+              <div class="paper-signature"><span>委托人</span><span class="signature-line"></span><span>　</span></div>
+              <p class="paper-foot">落款是空的。页边那句话，却是你的笔迹。</p>
+            </article>
+            <article class="commission-paper letter-reverse" id="letter-reverse" aria-label="委托函背面与观察记录" aria-hidden="true" inert>
+              <div class="paper-topline"><span>背面 · 没有署名</span><span>观察 01</span></div>
+              <p class="paper-en">WHAT THE PAPER CANNOT ANSWER</p>
+              <h3>纸没有回答。</h3>
+              <p class="reverse-question">纸背没有名字，<br>也没有一份解释。</p>
+              <div class="reverse-evidence"><span>可以确认</span><p>你读过这张纸。<br>落款仍然是空的。</p><span>尚不能确认</span><p>是谁写下了页边那句话。<br>眼熟的笔迹，不等于可靠的过去。</p></div>
+              <button class="paper-record js-control" type="button" data-record="signature"><span>记下空白落款</span><span aria-hidden="true">＋</span></button>
+              <p class="paper-foot">这里只记观察，不替你得出结论。</p>
+            </article>
+          </div>
+          <div class="letter-tools"><span class="letter-position" aria-hidden="true">正面 / 01</span><button class="letter-flip js-control" id="letter-flip" type="button" aria-pressed="false" aria-controls="letter-front letter-reverse"><span>翻到背面</span><span aria-hidden="true">↶</span></button></div>
           <span class="document-caption">NARRATIVE EXCERPT / 叙事界面演绎，非游戏画面</span>
         </div>
       </div>
@@ -103,9 +116,10 @@
         <button id="tab-water" role="tab" type="button" aria-selected="false" aria-controls="dream-panel" tabindex="-1" data-dream="water"><span class="tab-number">III</span><span>深水灯庭<small>THE DROWNED COURT</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
       </div>
       <div class="dream-panel" id="dream-panel" role="tabpanel" aria-labelledby="tab-forest" tabindex="0" data-realm="forest">
-        <div class="dream-image-wrap"><img id="dream-image" src="./assets/generated/01-grove.jpg" width="1080" height="608" alt="原创概念图：潮湿林道两侧的巨大根系长成重复门拱，远处一名无名探索者；AI 生成，非实机" loading="lazy"><div class="dream-image-shade" aria-hidden="true"></div><span class="dream-coordinate" aria-hidden="true">DREAM STUDY / <span id="realm-numeral">01</span></span><span class="dream-image-label">原创概念图（AI 生成）· 非实机</span></div>
-        <div class="dream-info"><div class="dream-info-top"><span class="eyebrow" id="realm-kicker">灰紫白 / 冷青 / 苔色</span><span class="realm-glyph" id="realm-glyph" aria-hidden="true">I</span></div><h3 id="realm-title">雾白林庭</h3><p class="dream-quote" id="realm-quote">“他们叫出了一个你没听过的称呼，<br>然后，等你纠正。”</p><p class="dream-description" id="realm-description">巨根截断近路，林庭与水声重复。一间从外侧数步可绕完的林屋，内部却容纳漫长庭院。</p><div class="dream-investigation"><span>此梦所查</span><p id="realm-objective">核对尺度与时序。记住蝶停下的接缝，判断这段林庭是否已经重复过。</p></div><a class="text-link" href="./design-notes.html#vision">阅读梦域档案<span aria-hidden="true">↗</span></a></div>
+        <div class="dream-image-wrap"><img id="dream-image" src="./assets/generated/01-grove.jpg" width="1080" height="608" alt="原创概念图：潮湿林道两侧的巨大根系长成重复门拱，远处一名无名探索者；AI 生成，非实机" loading="lazy"><div class="dream-echo" id="dream-echo" aria-hidden="true" hidden></div><div class="dream-image-shade" aria-hidden="true"></div><span class="dream-coordinate" aria-hidden="true">DREAM STUDY / <span id="realm-numeral">01</span></span><button class="seam-trigger js-control" id="seam-trigger" type="button" aria-expanded="false" aria-controls="seam-note"><span class="seam-sigil" aria-hidden="true"></span><span class="seam-label">观察接缝<small>OBSERVE THE SEAM</small></span></button><span class="dream-image-label">原创概念图（AI 生成）· 非实机</span></div>
+        <div class="dream-info"><div class="dream-info-top"><span class="eyebrow" id="realm-kicker">灰紫白 / 冷青 / 苔色</span><span class="realm-glyph" id="realm-glyph" aria-hidden="true">I</span></div><h3 id="realm-title">雾白林庭</h3><p class="dream-quote" id="realm-quote">“他们叫出了一个你没听过的称呼，<br>然后，等你纠正。”</p><p class="dream-description" id="realm-description">巨根截断近路，林庭与水声重复。一间从外侧数步可绕完的林屋，内部却容纳漫长庭院。</p><div class="dream-investigation"><span>此梦所查</span><p id="realm-objective">核对尺度与时序。记住蝶停下的接缝，判断这段林庭是否已经重复过。</p></div><div class="seam-note" id="seam-note" hidden><p class="eyebrow">一处接缝，不是一个答案。</p><p id="seam-description">相似的门拱，不足以证明你回到了原处。把重复记下，再核对水位与行走的时间。</p><button class="record-link" id="record-realm" type="button"><span>将此处留在纸上</span><span aria-hidden="true">＋</span></button><span class="seam-footnote">概念交互示意，非实机解谜。</span></div><a class="text-link" href="./design-notes.html#vision">阅读梦域档案<span aria-hidden="true">↗</span></a></div>
       </div>
+      <div class="dream-afterimage"><span id="dream-memory-line" role="status" aria-live="polite" aria-atomic="true">你看见的，会留下痕迹。你未曾查证的，仍然存疑。</span><span aria-hidden="true">THE DREAM REMEMBERS</span></div>
       <noscript><div class="noscript-realms"><h3>赭粉眠谷</h3><p>褪粉巨壳反复开合。向内的楼梯却抵达外侧；比对居民证词与修补痕迹，查清巨构如何重接空间。</p><h3>深水灯庭</h3><p>灯列依照你的记忆排布，门后却接回门前。交叉核查水位与灯列，打开一条不再回接的路。</p></div></noscript>
     </section>
 
@@ -113,7 +127,7 @@
       <div class="section-topline"><p class="eyebrow">03 / NOT JUST A WITNESS</p><span class="section-aside">电影般的世界，由你亲自介入。</span></div>
       <div class="section-heading" data-reveal><h2 id="experience-title">不是看穿梦。<br>是亲手<span class="serif-italic">走出去。</span></h2><p>身体进入世界，观察形成假设，证据改变路径。<br>不是孤立的谜题房，也不以战斗数量定义冒险。<br><span class="muted">以下为玩法设计方向，待可玩切片验证。</span></p></div>
       <div class="experience-layout">
-        <div class="play-visual" data-reveal><img id="play-image" src="./assets/generated/06-scale.jpg" width="1080" height="608" alt="原创概念图：无名探索者沿狭窄阶梯攀向巨大有机开口，身体尺度即证据；AI 生成，非实机" loading="lazy"><span class="play-viewfinder" aria-hidden="true"></span><span class="play-visual-top">THE BODY IS YOUR FIRST WITNESS</span><span class="play-visual-bottom">原创概念图（AI 生成）· 非实机</span><div class="play-caption"><span id="play-visual-index">01 / TRAVERSE</span><p id="play-visual-title">让身体，成为第一份证据。</p></div></div>
+        <div class="play-visual" data-reveal><img id="play-image" src="./assets/generated/06-scale.jpg" width="1080" height="608" alt="原创概念图：无名探索者沿狭窄阶梯攀向巨大有机开口，身体尺度即证据；AI 生成，非实机" loading="lazy"><span class="play-viewfinder" aria-hidden="true"></span><span class="play-visual-top">THE BODY IS YOUR FIRST WITNESS</span><span class="play-visual-bottom">原创概念图（AI 生成）· 非实机</span><div class="play-caption"><span id="play-visual-index">01 / TRAVERSE</span><p id="play-visual-title">让身体，成为第一份证据。</p></div><div class="play-memory" aria-hidden="true"><span class="memory-trace"></span></div></div>
         <div class="play-controls"><p class="eyebrow play-controls-label">亲历，而非旁观</p>
           <button class="play-option" type="button" data-play="0" aria-pressed="true" aria-controls="play-copy"><span class="play-number">01</span><span class="play-option-label">穿越巨构<small>TRAVERSE THE IMPOSSIBLE</small></span><span class="play-option-icon" aria-hidden="true">−</span></button>
           <button class="play-option" type="button" data-play="1" aria-pressed="false" aria-controls="play-copy"><span class="play-number">02</span><span class="play-option-label">让证据互证<small>QUESTION WHAT REMEMBERS YOU</small></span><span class="play-option-icon" aria-hidden="true">+</span></button>
@@ -128,14 +142,14 @@
     <section class="butterfly section-shell" id="butterfly" aria-labelledby="butterfly-title" data-chapter="04">
       <div class="section-topline"><p class="eyebrow">04 / THE SILENT WITNESS</p><span class="section-aside">唯一贯穿所有梦的活物。</span></div>
       <div class="butterfly-layout">
-        <figure class="butterfly-figure" data-reveal><div class="butterfly-image-window"><img src="./assets/generated/07-butterfly.jpg" width="1536" height="1024" alt="原创概念图：合翅时形似枯叶的虚构蝶停在叶缘，翅脉与叶脉几乎同形；AI 生成，非实机" loading="lazy"><div class="butterfly-reticle" aria-hidden="true"><span></span></div><span class="specimen-label">LEAF MIMICRY<br>先看见叶，再看见蝶。</span></div><figcaption>原创概念影像（AI 生成）· 虚构物种，仅取枯叶拟态观察</figcaption></figure>
+        <figure class="butterfly-figure" data-reveal><div class="butterfly-image-window" id="focus-scene"><img id="butterfly-image" src="./assets/generated/07-butterfly.jpg" width="1536" height="1024" alt="原创概念图：合翅时形似枯叶的虚构蝶停在叶缘，翅脉与叶脉几乎同形；AI 生成，非实机" loading="lazy"><div class="butterfly-reticle" aria-hidden="true"><span></span></div><div class="focus-seam" aria-hidden="true"><span class="focus-seam-line"></span><span class="focus-seam-powder"></span><span class="focus-seam-caption">叶脉停止的地方<br>轮廓仍在继续</span></div><span class="specimen-label">LEAF MIMICRY<br>先看见叶，再看见蝶。</span></div><div class="focus-console js-control"><div class="focus-endpoints"><span>看蝶</span><label for="focus-depth">移焦，看看边界</label><span>看接缝</span></div><input id="focus-depth" type="range" min="0" max="100" value="0" aria-describedby="focus-reading" aria-valuetext="焦点在蝶，向右移焦观察边界"><p id="focus-reading">焦点在蝶。它像一片叶子，但这不是全部。</p><button class="record-link" type="button" data-record="butterfly" disabled><span>记下这道边界</span><span aria-hidden="true">＋</span></button><span class="focus-footnote">调焦与线迹为网页概念演绎，不是图片中已证实的线索。</span></div><figcaption>原创概念影像（AI 生成）· 虚构物种，仅取枯叶拟态观察</figcaption></figure>
         <div class="butterfly-copy" data-reveal><p class="eyebrow">OBSERVE. DO NOT FOLLOW.</p><h2 id="butterfly-title">你<span class="serif-italic">观蝶，</span><br>不随蝶。</h2><p class="body-copy">它总比门先出现，却从不替你说话。<br>它停下的位置，可能是破绽，也可能是邀请。<br>先记录，再判断。</p><ol class="butterfly-rules"><li><span>01</span><div><h3>门可以是假的。</h3><p>蝶停下的位置要先记录，再判断门后去向。</p></div></li><li><span>02</span><div><h3>焦内是标本，焦外才是路径。</h3><p>看不清的边界，正是梦可以替你补写的地方。</p></div></li><li><span>03</span><div><h3>醒后的翅粉，才算跨梦证据。</h3><p>它证明有东西越过边界，不证明全部记忆为真。</p></div></li></ol></div>
       </div>
     </section>
 
     <section class="awakening" id="awakening" aria-labelledby="awakening-title">
       <div class="awakening-visual" aria-hidden="true"><img src="./assets/generated/09-doors.jpg" width="1536" height="726" alt="" loading="lazy"><div></div></div>
-      <div class="awakening-content" data-reveal><p class="eyebrow">THE WAY OUT IS REAL. SO IS THE COST.</p><h2 id="awakening-title">带走真相。<br>留下一段<span class="serif-italic">自己。</span></h2><p>醒来不是最后一次反转。<br>你打开的出口必须成立，亲手查证的事实不会被撤销。<br>时间继续。缺口也在。</p><a class="button button-light" href="./design-notes.html"><span>翻开完整概念设计书</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.1"/></svg></a><span class="development-note">概念开发中 · 暂无试玩及发售日期</span></div>
+      <div class="awakening-content" data-reveal><p class="eyebrow">THE WAY OUT IS REAL. SO IS THE COST.</p><h2 id="awakening-title">带走真相。<br>留下一段<span class="serif-italic">自己。</span></h2><p>醒来不是最后一次反转。<br>你打开的出口必须成立，亲手查证的事实不会被撤销。<br>时间继续。缺口也在。</p><div class="awakening-actions"><button class="button button-light js-control" id="wake-compare" type="button"><span>醒来，核对留下的痕迹</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3h8v18H8V3Zm8 18h5M12 12h1" stroke="currentColor" stroke-width="1.1"/></svg></button><a class="awakening-notes" href="./design-notes.html">翻开完整概念设计书 ↗</a></div><p class="wake-receipt" id="wake-receipt" hidden>你已经核对了留下的记录。时间继续，事实没有被撤销。</p><span class="development-note">概念开发中 · 暂无试玩及发售日期</span></div>
       <div class="awakening-bottom"><blockquote>“周与胡蝶，则必有分矣。此之谓物化。”<cite>——《庄子·齐物论》</cite></blockquote><a href="#top" class="back-top" aria-label="回到序章"><span>回到序章</span><span aria-hidden="true">↑</span></a></div><span class="frame-caption">原创概念影像（AI 生成）· 非实机</span>
     </section>
   </main>
@@ -146,6 +160,9 @@
   </footer>
   <aside class="chapter-rail" aria-label="章节定位"><a href="#top" aria-label="序章" aria-current="location"><span>序章</span><i></i></a><a href="#story" aria-label="一纸委托"><span>委托</span><i></i></a><a href="#dreams" aria-label="异梦之境"><span>异梦</span><i></i></a><a href="#experience" aria-label="亲历梦境"><span>亲历</span><i></i></a><a href="#butterfly" aria-label="观蝶"><span>观蝶</span><i></i></a></aside>
   <div class="page-progress" aria-hidden="true"><span></span></div>
+  <button class="journal-toggle js-control" type="button" data-journal aria-haspopup="dialog" aria-controls="journal-dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3h13v18H5V3Zm3 5h7m-7 4h5M3 7h3m-3 5h3m-3 5h3" stroke="currentColor" stroke-width="1"/></svg><span class="journal-toggle-label">梦中手记<small>只记下你亲手留下的</small></span><span id="journal-count">0</span></button>
+  <div class="dream-feedback" id="dream-feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="journal-dialog" id="journal-dialog" aria-labelledby="journal-title" aria-describedby="journal-intro" data-mode="dream"><div class="journal-chrome"><span>QIWU · HUDIE / FIELD NOTES</span><button type="button" data-close-journal aria-label="合上梦中手记"><span>合上</span><span aria-hidden="true">×</span></button></div><div class="journal-paper"><div class="journal-heading"><p class="journal-eyebrow" id="journal-kicker">梦中手记 / 此次浏览</p><h2 id="journal-title">只记下，<br>不急着相信。</h2><p id="journal-intro">梦会给出解释。纸只保留你亲手记下的观察。</p></div><p class="journal-empty" id="journal-empty">纸上还没有痕迹。<br><span>你可以翻阅委托函、观察梦域接缝，或为蝶移焦。也可以不留记录，直接醒来。</span></p><ol id="journal-entries" class="journal-entries"></ol><div class="journal-verdict" id="journal-verdict" hidden><p>这些是你的观察，不是梦替你作的结论。<br>没有记录，也不需要编造一段回忆。</p><button id="wake-confirm" class="paper-record" type="button"><span>确认，时间继续</span><span aria-hidden="true">↗</span></button></div><p class="journal-privacy">记录仅保留在本次打开的页面里；刷新即清空，不上传、不读取个人信息。<br>这是主题网页交互，不是游戏存档或已验证的解谜机制。</p></div></dialog>
   <dialog class="film-dialog" id="film-dialog" aria-labelledby="film-title"><div class="film-dialog-header"><div><p class="eyebrow">ORIGINAL TONE FILM</p><h2 id="film-title">梦的影调</h2></div><button type="button" class="close-film" data-close-film aria-label="关闭影调短片"><span>关闭</span><span aria-hidden="true">×</span></button></div><video id="reference-film" controls playsinline preload="none" poster="./assets/generated/film-tone-poster.jpg" aria-label="原创影调概念短片，非游戏预告或实机"></video><p class="film-dialog-caption">由本作原创概念图剪辑而成的影调短片，非游戏预告、非实机。画面只说明气质与影调，不代表最终美术或已实现玩法。</p></dialog>
 </body>
 </html>

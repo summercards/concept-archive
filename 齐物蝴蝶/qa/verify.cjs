@@ -27,7 +27,7 @@ const target = process.argv[2] || path.join(base, 'design-notes.html');
     assert.equal(await page.locator('.film-study').count(), 5);
     assert.equal(await page.locator('#ritual-modal,#experiment-scene,.story-frame').count(), 0);
     const copy = await page.locator('body').innerText();
-    for (const text of ['3A级电影化心理恐怖梦境冒险','委托入梦·蝶引概念版','齐物·胡蝶','无署名委托','委托函','入梦的缘由','一份委托，四件事','被雇来的','心理恐怖','被认识','追溯改写','自证','恐怖语法','梦境探索者','任务书','安眠药','不尽相同','雾白林庭','赭粉眠谷','深水灯庭','不对称','不预设共享梦境网络或医学解释','收束','脱离','越界','抵达','低反差','巨物','重复','不合理构造','假醒','线索','逃脱','庄周','胡蝶','虚焦','观蝶','攻壳机动队2','无罪','台词','方其梦也','弗洛伊德','环形废墟','寂静岭2','SOMA']) assert(copy.includes(text), 'Missing copy: ' + text);
+    for (const text of ['3A级电影化心理恐怖梦境冒险','委托入梦·蝶引概念版','齐物·胡蝶','无署名委托信','夹在书页','入梦的缘由','一份委托，四件事','一封信雇来的','心理恐怖','被认识','追溯改写','自证','恐怖语法','梦境探索者','任务书','安眠药','不尽相同','雾白林庭','赭粉眠谷','深水灯庭','不对称','不预设共享梦境网络或医学解释','收束','脱离','越界','抵达','低反差','巨物','重复','不合理构造','假醒','线索','逃脱','庄周','胡蝶','虚焦','观蝶','攻壳机动队2','无罪','台词','方其梦也','弗洛伊德','环形废墟','寂静岭2','SOMA']) assert(copy.includes(text), 'Missing copy: ' + text);
     for (const text of ['忆隙','Mnemic Rift','MNEMIC RIFT','枕海','Pillow Tide','林岑','舞台修复师','旧剧场修复师','承雨者','此版不展示图像','本轮不调用远端服务','16—22 周','四部电影','三张已有电影原图','三张电影原图','蝶引·虚焦']) assert(!copy.includes(text), 'Outdated copy: ' + text);
     assert.equal(await page.locator('html').getAttribute('data-page-node-id'), 'yotifEcPbBymFAGvGfNHtt');
     assert.equal(await page.locator('script[src="/page/page_comm/inject.js"]').count(), 1);

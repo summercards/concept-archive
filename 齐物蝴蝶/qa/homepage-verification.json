@@ -1,6 +1,6 @@
 {
   "url": "file:///Users/zyq/work/%E6%A6%82%E5%BF%B5%E4%BB%93/%E9%BD%90%E7%89%A9%E8%9D%B4%E8%9D%B6/index.html",
-  "startedAt": "2026-11-15T15:46:49.442Z",
+  "startedAt": "2026-11-15T23:38:50.541Z",
   "status": "passed",
   "checks": [
     {
@@ -86,7 +86,7 @@
   "pageErrors": [],
   "consoleErrors": [],
   "localResourceFailures": [],
-  "finishedAt": "2026-11-15T15:46:54.073Z",
+  "finishedAt": "2026-11-15T23:38:55.519Z",
   "summary": {
     "passed": 18,
     "failed": 0,
