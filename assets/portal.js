@@ -13,24 +13,24 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    html[${stateAttribute}] { background-color: #080914; }
+    html[${stateAttribute}] { background-color: #05060d; }
     html[${stateAttribute}]::after {
       content: ''; position: fixed; inset: 0; z-index: 2147483646;
-      background: #080914; pointer-events: none;
+      background: #05060d; pointer-events: none;
     }
     html[${stateAttribute}="enter"]::after {
       animation: concept-portal-enter 360ms ease-out both;
     }
     html[${stateAttribute}="depart"]::after {
       pointer-events: auto;
-      animation: concept-portal-depart var(--concept-portal-duration, 700ms) ease-in both;
+      animation: concept-portal-depart var(--concept-portal-duration, 1350ms) ease-in-out both;
     }
     @keyframes concept-portal-enter {
       from { opacity: 1; }
       to { opacity: 0; visibility: hidden; }
     }
     @keyframes concept-portal-depart {
-      0%, 22% { opacity: 0; }
+      0%, 62% { opacity: 0; }
       100% { opacity: 1; }
     }
     a.concept-portal-back {
@@ -40,7 +40,7 @@
       display: inline-flex; align-items: center; justify-content: center;
       box-sizing: border-box; min-width: 44px; min-height: 44px;
       padding: 0 14px; border: 1px solid rgba(210, 214, 230, .14);
-      border-radius: 24px; background: rgba(8, 9, 20, .88);
+      border-radius: 24px; background: rgba(5, 6, 13, .88);
       color: #c8cad4; font: 12px/1.4 system-ui, sans-serif;
       letter-spacing: .06em; text-decoration: none;
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
@@ -66,6 +66,8 @@
     destination = undefined;
     root.removeAttribute(stateAttribute);
     root.style.removeProperty('--concept-portal-duration');
+    root.style.removeProperty('--concept-portal-x');
+    root.style.removeProperty('--concept-portal-y');
   }
 
   function cancel() {
@@ -83,14 +85,14 @@
     }
   }
 
-  function navigate(url, { duration = 700, x, y } = {}) {
+  function navigate(url, { duration = 1350, x, y } = {}) {
     if (transitioning) return false;
     const target = new URL(url, document.baseURI);
     if (!['http:', 'https:', 'file:'].includes(target.protocol)) {
       throw new TypeError('不支持此导航协议');
     }
     const milliseconds = Number.isFinite(duration)
-      ? Math.max(0, Math.min(duration, 5000)) : 700;
+      ? Math.max(0, Math.min(duration, 5000)) : 1350;
     clearState();
     transitioning = true;
     destination = target.href;
@@ -101,6 +103,10 @@
       return true;
     }
     root.style.setProperty('--concept-portal-duration', `${milliseconds}ms`);
+    root.style.setProperty('--concept-portal-x', `${Number.isFinite(x)
+      ? Math.max(0, Math.min(100, x / Math.max(1, window.innerWidth) * 100)) : 50}%`);
+    root.style.setProperty('--concept-portal-y', `${Number.isFinite(y)
+      ? Math.max(0, Math.min(100, y / Math.max(1, window.innerHeight) * 100)) : 50}%`);
     root.setAttribute(stateAttribute, 'depart');
     navigationTimer = window.setTimeout(assignDestination, milliseconds);
     document.dispatchEvent(new CustomEvent('conceptportal:depart', {
@@ -164,7 +170,7 @@
   document.addEventListener('click', (event) => {
     const anchor = event.target instanceof Element
       ? event.target.closest('a[data-concept-star]') : null;
-    if (anchor) activate(event, anchor, 700);
+    if (anchor) activate(event, anchor, 1350);
   });
 
   function addBackLink() {

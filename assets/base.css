@@ -133,9 +133,9 @@ footer {
 }
 
 /* 概念星海：界面退后，概念成星。仅作用于主页。 */
-html.universe-root { background: #080914; color-scheme: dark; }
+html.universe-root { background: #05060d; color-scheme: dark; }
 .universe-page {
-  --space: #080914;
+  --space: #05060d;
   --light: #e4e1ef;
   --distant: #9694ad;
   margin: 0;
@@ -168,12 +168,16 @@ html.universe-root { background: #080914; color-scheme: dark; }
 .universe-status { display: flex; align-items: center; gap: 22px; }
 .universe-census { color: #c3bbd5; font: 10px/1.8 "SFMono-Regular", Consolas, monospace; letter-spacing: .14em; }
 .universe-census > span { margin-left: 8px; color: #9790a8; font: 9px/1.8 "PingFang SC", sans-serif; letter-spacing: .15em; }
-.universe-motion { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(170, 154, 202, .16); border-radius: 50%; background: rgba(8, 9, 20, .24); pointer-events: auto; }
+.universe-motion { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(170, 154, 202, .16); border-radius: 50%; background: rgba(5, 6, 13, .24); pointer-events: auto; }
 .universe-motion svg { width: 17px; height: 17px; color: #b8b0c9; }
 .universe-motion .motion-play { display: none; }
 .universe-motion[aria-pressed="true"] .motion-pause { display: none; }
 .universe-motion[aria-pressed="true"] .motion-play { display: block; }
-.universe-motion:hover { border-color: #80728e; }
+.universe-motion:hover { border-color: #80728e; background: rgba(190, 185, 215, .06); }
+.universe-motion, .universe-view-reset { transition: color .25s, border-color .25s, background .25s; }
+.universe-view-reset { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 8px; border: 0; background: transparent; color: #a9a7bc !important; font-size: 10px !important; letter-spacing: .08em; white-space: nowrap; pointer-events: auto; }
+.universe-view-reset:hover { color: #eeebf5 !important; }
+.universe-header, .universe-footer, .universe-location { transition: opacity .45s ease; }
 
 .universe-space { position: fixed; inset: 0; isolation: isolate; touch-action: none; overflow: hidden; cursor: grab; }
 .universe-space.is-dragging { cursor: grabbing; }
@@ -181,39 +185,47 @@ html.universe-root { background: #080914; color-scheme: dark; }
 .universe-ambient::before { content: ""; position: absolute; left: 24%; top: 36%; width: 52%; height: 29%; border-radius: 50%; background: radial-gradient(ellipse, rgba(180, 158, 199, .14), rgba(117, 101, 154, .05) 35%, transparent 65%); transform: rotate(-24deg); filter: blur(22px); }
 .universe-ambient::after { content: ""; position: absolute; inset: 0; opacity: .3; background-image: radial-gradient(1px 1px at 10% 22%, #d3c7e3 70%, transparent), radial-gradient(1px 1px at 71% 17%, #e6dcf2 70%, transparent), radial-gradient(1px 1px at 87% 74%, #cabee8 70%, transparent), radial-gradient(1px 1px at 24% 79%, #b0bfdc 70%, transparent), radial-gradient(1px 1px at 57% 67%, #d9c5d9 70%, transparent); background-size: 283px 251px, 397px 307px, 313px 419px, 433px 371px, 337px 283px; }
 .universe-canvas { position: absolute; inset: 0; z-index: -2; display: block; width: 100%; height: 100%; pointer-events: none; }
-.universe-vignette { position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 50% 50%, transparent 20%, rgba(8, 9, 20, .05) 50%, rgba(8, 9, 20, .52) 100%); pointer-events: none; }
+.universe-vignette { position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 50% 50%, transparent 20%, rgba(5, 6, 13, .05) 50%, rgba(5, 6, 13, .52) 100%); pointer-events: none; }
 .universe-stars { position: absolute; inset: 0; pointer-events: none; }
 .concept-star { position: absolute; display: block; width: 48px; height: 48px; margin: -24px 0 0 -24px; border-radius: 50%; color: #dcd5eb; pointer-events: auto; cursor: pointer; user-select: none; touch-action: manipulation; -webkit-user-select: none; }
 .concept-star-core { position: absolute; width: 5px; height: 5px; top: 21.5px; left: 21.5px; border-radius: 50%; background: #f6efff; box-shadow: 0 0 5px 2px var(--star-color), 0 0 17px 4px color-mix(in srgb, var(--star-color) 48%, transparent); transition: transform .5s ease, box-shadow .5s ease; }
 .concept-star-core::before, .concept-star-core::after { content: ""; position: absolute; top: 50%; left: 50%; width: 27px; height: 1px; background: linear-gradient(90deg, transparent, var(--star-color), transparent); transform: translate(-50%, -50%); opacity: .58; }
 .concept-star-core::after { width: 1px; height: 27px; background: linear-gradient(0deg, transparent, var(--star-color), transparent); }
 .concept-star-halo { position: absolute; inset: -14px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--star-color) 15%, transparent), transparent 65%); transition: transform .6s, opacity .6s; }
-.concept-star-orbit { position: absolute; inset: 10px; border: 1px solid color-mix(in srgb, var(--star-color) 35%, transparent); border-radius: 50%; opacity: 0; transform: scale(.6); transition: opacity .35s, transform .6s; }
-.concept-star-label { position: absolute; left: 47px; top: 10px; min-width: 150px; max-width: 230px; color: #e4deee; transition: opacity .4s, transform .4s; }
-.concept-star-code { display: block; color: #b4a4c8; font: 7px/1.7 "SFMono-Regular", Consolas, monospace; letter-spacing: .18em; }
-.concept-star-name { display: block; font-family: "Songti SC", "Noto Serif CJK SC", "STSong", serif; font-size: 17px; font-weight: 400; line-height: 1.9; letter-spacing: .2em; text-shadow: 0 2px 12px #080914; }
+.concept-star-orbit { position: absolute; left: 31px; top: 24px; width: 12px; height: 1px; background: var(--star-color); opacity: .24; transform: scaleX(.65); transform-origin: left; transition: opacity .3s, transform .45s; pointer-events: none; }
+.concept-star-label { position: absolute; left: 47px; top: 10px; min-width: 150px; max-width: 230px; color: #d3cedf; transition: color .3s, opacity .4s, transform .4s; }
+.concept-star-code { display: block; color: #aaa2b9; font: 8px/1.7 "SFMono-Regular", Consolas, monospace; letter-spacing: .16em; transition: color .3s; }
+.concept-star-name { display: block; font-family: "Songti SC", "Noto Serif CJK SC", "STSong", serif; font-size: 15px; font-weight: 400; line-height: 1.9; letter-spacing: .16em; text-shadow: 0 2px 12px #05060d; }
 .concept-star-detail { display: block; margin-top: 4px; color: #b9aecb; font-size: 9px; line-height: 1.9; letter-spacing: .1em; opacity: 0; transform: translateY(5px); transition: opacity .35s, transform .35s; }
 .concept-star-enter { display: block; margin-top: 12px; color: #d7ccea; font-size: 9px; letter-spacing: .14em; }
-.concept-star:hover .concept-star-core, .concept-star:focus-visible .concept-star-core { transform: scale(1.3); }
+.concept-star:hover, .concept-star:focus-visible { z-index: 2; }
+.concept-star:hover .concept-star-label, .concept-star:focus-visible .concept-star-label { color: #f2eef8; transform: translateY(-2px); }
+.concept-star:hover .concept-star-code, .concept-star:focus-visible .concept-star-code { color: #d2c8e3; }
+.concept-star:hover .concept-star-core, .concept-star:focus-visible .concept-star-core { transform: scale(1.4); box-shadow: 0 0 7px 3px var(--star-color), 0 0 26px 6px color-mix(in srgb, var(--star-color) 40%, transparent); }
 .concept-star:hover .concept-star-halo, .concept-star:focus-visible .concept-star-halo { transform: scale(1.6); }
 .concept-star:hover .concept-star-orbit, .concept-star:focus-visible .concept-star-orbit { opacity: .65; transform: scale(1); }
 .concept-star:hover .concept-star-detail, .concept-star:focus-visible .concept-star-detail { opacity: 1; transform: translateY(0); }
 .concept-star.is-label-left .concept-star-label { left: auto; right: 47px; text-align: right; }
+.concept-star.is-label-left .concept-star-orbit { left: auto; right: 31px; transform-origin: right; }
 .concept-star.is-label-above .concept-star-label { top: auto; bottom: 10px; }
 .concept-star.is-label-quiet:not(:hover):not(:focus-visible) .concept-star-label { opacity: .12; }
 .universe-location { position: absolute; left: 50%; top: calc(50% + 63px); transform: translateX(-50%); margin: 0; color: #9b8fae; opacity: .6; font: 7px/1.6 "SFMono-Regular", Consolas, monospace; letter-spacing: .24em; pointer-events: none; }
 .universe-location > span { display: block; width: 1px; height: 22px; margin: 0 auto 11px; background: linear-gradient(transparent, #746780); }
 .universe-empty { position: absolute; left: 0; top: 65%; width: 100%; text-align: center; color: #a89ab8; font-size: 12px; letter-spacing: .2em; }
 
-.universe-page .universe-footer { position: fixed; z-index: 5; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-between; align-items: end; gap: 16px; margin: 0; padding: 24px 42px max(32px, env(safe-area-inset-bottom)); color: #b2a8c4; pointer-events: none; }
+.universe-page .universe-footer { position: fixed; z-index: 5; bottom: 0; left: 0; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: end; gap: 12px 20px; margin: 0; padding: 24px 42px max(32px, env(safe-area-inset-bottom)); color: #b2a8c4; pointer-events: none; }
 .universe-footer p { margin: 0; }
-.universe-whisper { font-family: "Songti SC", "STSong", serif; font-size: 14px; font-weight: 300; letter-spacing: .2em; line-height: 1.8; }
+.universe-whisper { min-width: 0; font-family: "Songti SC", "STSong", serif; font-size: 12px; font-weight: 300; letter-spacing: .14em; line-height: 1.8; }
 .universe-whisper > span { color: #d5cade; }
-.universe-instruction { position: absolute; bottom: max(38px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); color: #a096b2; white-space: nowrap; font-size: 9px; letter-spacing: .12em; }
+.universe-instruction { align-self: center; min-width: 0; color: #9691a7; font-size: 9px; line-height: 1.8; letter-spacing: .1em; text-align: center; }
+.instruction-mobile { display: none; }
 .instruction-separator { margin: 0 12px; color: #665d78; }
 .universe-index-toggle { display: flex; align-items: center; justify-content: center; gap: 15px; min-height: 44px; margin: -10px 0; padding: 8px 0 8px 14px; border: 0; background: transparent; color: #bfb1d0; font-size: 10px !important; letter-spacing: .16em; pointer-events: auto; }
-.universe-index-toggle > span { font-size: 15px; color: #b8a4cf; }
-.universe-index { position: fixed; width: min(420px, calc(100% - 40px)); max-height: min(620px, 80svh); padding: 28px; border: 1px solid #393146; border-radius: 2px; background: rgba(15, 13, 26, .96); color: var(--light); box-shadow: 0 20px 120px #0009; }
+.universe-index-toggle { justify-self: end; white-space: nowrap; transition: color .25s; }
+.universe-index-toggle:hover { color: #f0ebf8; }
+.universe-index-toggle > span { font-size: 15px; color: #b8a4cf; transition: transform .25s; }
+.universe-index-toggle:hover > span { transform: translate(2px, -2px); }
+.universe-index { position: fixed; width: min(420px, calc(100% - 40px)); max-height: min(620px, 80svh); padding: 28px; border: 1px solid #393146; border-radius: 2px; background: rgba(5, 6, 13, .97); color: var(--light); box-shadow: 0 20px 120px #0009; }
 .universe-index::backdrop { background: rgba(6, 6, 15, .58); backdrop-filter: blur(8px); }
 .universe-index-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 22px; border-bottom: 1px solid #332d40; }
 .universe-index h2 { margin: 0; color: #d9cee6; font: 16px/1.8 "Songti SC", serif; letter-spacing: .14em; }
@@ -225,8 +237,20 @@ html.universe-root { background: #080914; color-scheme: dark; }
 .universe-index small { display: block; margin-top: 3px; color: #ac9bba; font: 9px/1.8 "PingFang SC", sans-serif; letter-spacing: .08em; }
 .universe-index nav > a:hover { color: #fff; }
 .universe-index-note { margin: 22px 0 0; color: #ac9bba; font-size: 9px; letter-spacing: .08em; }
+.universe-page.is-arriving:not(.is-travelling) .universe-header { animation: universe-arrive 900ms 80ms ease-out backwards; }
+.universe-page.is-arriving:not(.is-travelling) .universe-footer { animation: universe-arrive 1100ms 180ms ease-out backwards; }
+@keyframes universe-arrive { from { opacity: 0; } to { opacity: 1; } }
+.universe-page.is-near-star .universe-whisper, .universe-page.is-near-star .universe-instruction { opacity: .45; }
+.universe-whisper, .universe-instruction { transition: opacity .45s; }
 .universe-page.is-travelling .universe-header, .universe-page.is-travelling .universe-footer, .universe-page.is-travelling .universe-location { opacity: 0; transition: opacity .3s; }
-.universe-page.is-travelling .concept-star-label { opacity: 0; transition: opacity .2s; }
+.universe-page.is-travelling .universe-header *, .universe-page.is-travelling .universe-footer * { pointer-events: none; }
+.universe-page.is-travelling .concept-star-label { opacity: 0 !important; transition: opacity .2s; }
+.universe-reticle { position: fixed; z-index: 4; left: var(--reticle-x, 50%); top: var(--reticle-y, 50%); width: 18px; height: 18px; transform: translate(-50%, -50%); color: #c9c3da; opacity: 0; pointer-events: none; transition: opacity .3s; }
+.universe-reticle::before, .universe-reticle::after { content: ""; position: absolute; inset: 8px 4px auto; height: 1px; background: currentColor; }
+.universe-reticle::after { transform: rotate(90deg); }
+@media (hover: hover) and (pointer: fine) {
+  .universe-page.is-near-star:not(.is-travelling) .universe-reticle { opacity: .35; }
+}
 
 @media (max-width: 680px) {
   .universe-header { padding: max(24px, env(safe-area-inset-top)) 24px 16px; }
@@ -238,16 +262,27 @@ html.universe-root { background: #080914; color-scheme: dark; }
   .universe-census { font-size: 9px; }
   .universe-census > span { display: none; }
   .universe-motion { width: 40px; height: 40px; }
-  .universe-page .universe-footer { padding: 20px 24px max(26px, env(safe-area-inset-bottom)); }
-  .universe-whisper { font-size: 12px; letter-spacing: .12em; }
+  .universe-page .universe-footer { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; padding: 16px 24px max(26px, env(safe-area-inset-bottom)); }
+  .universe-whisper { grid-column: 1; grid-row: 1; font-size: 12px; letter-spacing: .12em; }
   .universe-whisper > span { display: block; }
-  .universe-instruction { bottom: max(31px, env(safe-area-inset-bottom)); font-size: 8px; letter-spacing: .04em; }
+  .universe-index-toggle { grid-column: 2; grid-row: 1; margin: 0; }
+  .universe-instruction { grid-column: 1 / -1; grid-row: 2; font-size: 9px; letter-spacing: .04em; text-align: left; overflow-wrap: anywhere; }
   .instruction-desktop { display: none; }
+  .instruction-mobile { display: inline; }
   .concept-star-name { font-size: 15px; letter-spacing: .12em; }
   .concept-star-label { min-width: 125px; max-width: 160px; }
   .concept-star-detail { opacity: .85; transform: none; font-size: 8px; letter-spacing: .04em; }
   .concept-star-enter { display: none; }
   .universe-location { top: calc(50% + 46px); font-size: 6px; }
+}
+@media (max-width: 360px) {
+  .universe-header { padding-inline: 16px; align-items: flex-start; gap: 8px; }
+  .universe-status { max-width: 112px; justify-content: flex-end; flex-wrap: wrap; gap: 4px 8px; }
+  .universe-view-reset { font-size: 9px !important; padding-inline: 4px; }
+  .universe-page .universe-footer { padding-inline: 16px; }
+  .universe-index { width: calc(100% - 24px); padding: 20px 16px; }
+  .universe-index nav > a { grid-template-columns: 22px minmax(0, 1fr) auto; gap: 10px; font-size: 15px; overflow-wrap: anywhere; }
+  .concept-star-name { font-size: 14px; }
 }
 @media (max-height: 500px) and (min-width: 681px) {
   .universe-header { padding-top: 20px; }

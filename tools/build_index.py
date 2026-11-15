@@ -23,7 +23,7 @@ PAGE = Template('''<!DOCTYPE html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#080914">
+  <meta name="theme-color" content="#05060d">
   <meta name="description" content="$description">
   <title>$name — 万千念头，各自成星</title>
   <script src="./assets/portal.js"></script>
@@ -34,7 +34,7 @@ PAGE = Template('''<!DOCTYPE html>
   <a class="universe-skip" href="#concept-stars">跳到概念星</a>
   <header class="universe-header">
     <a class="universe-wordmark" href="./index.html" aria-label="$name首页"><span class="universe-brand-star" aria-hidden="true">✧</span><span>$name<small>CONCEPT UNIVERSE</small></span></a>
-    <div class="universe-status"><span class="universe-census">$number <span>已知星体</span></span><button class="universe-motion" id="motion-toggle" type="button" aria-label="暂停星海运动" aria-pressed="false" hidden><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path class="motion-pause" d="M7 5v10m6-10v10" stroke="currentColor" stroke-width="1.2"/><path class="motion-play" d="m7 5 8 5-8 5V5Z" stroke="currentColor" stroke-width="1.2"/></svg></button></div>
+    <div class="universe-status"><button class="universe-view-reset" id="view-reset" type="button" aria-label="恢复星海初始视距" hidden>返回远景</button><span class="universe-census">$number <span>已知星体</span></span><button class="universe-motion" id="motion-toggle" type="button" aria-label="暂停星海运动" aria-pressed="false" hidden><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path class="motion-pause" d="M7 5v10m6-10v10" stroke="currentColor" stroke-width="1.2"/><path class="motion-play" d="m7 5 8 5-8 5V5Z" stroke="currentColor" stroke-width="1.2"/></svg></button></div>
   </header>
 
   <main class="universe-space" id="universe" aria-labelledby="universe-title">
