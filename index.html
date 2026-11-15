@@ -4,18 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#080914">
+  <meta name="theme-color" content="#05060d">
   <meta name="description" content="概念仓。万千念头，各自成星。在缓慢流动的银河里，靠近一颗星，进入一个独立的概念世界。">
   <title>概念仓 — 万千念头，各自成星</title>
   <script src="./assets/portal.js"></script>
   <link rel="stylesheet" href="./assets/base.css">
   <script src="./assets/galaxy.js" defer></script>
+  <noscript><style>
+    .universe-space { touch-action: auto; }
+    .universe-stars { inset: 110px 20px 160px; display: grid; align-content: start; gap: 28px; padding: 12px; overflow: auto; pointer-events: auto; }
+    .concept-star { position: relative; left: 0 !important; top: 0 !important; margin: 0; }
+    .concept-star-label { min-width: 0; width: calc(100vw - 124px); max-width: 360px; }
+    .concept-star-name { overflow-wrap: anywhere; }
+    .concept-star-detail { opacity: 1; transform: none; }
+    .concept-star-enter, .instruction-desktop { display: none; }
+    .instruction-mobile { display: inline; }
+  </style></noscript>
 </head>
 <body class="universe-page">
   <a class="universe-skip" href="#concept-stars">跳到概念星</a>
   <header class="universe-header">
     <a class="universe-wordmark" href="./index.html" aria-label="概念仓首页"><span class="universe-brand-star" aria-hidden="true">✧</span><span>概念仓<small>CONCEPT UNIVERSE</small></span></a>
-    <div class="universe-status"><span class="universe-census">01 <span>已知星体</span></span><button class="universe-motion" id="motion-toggle" type="button" aria-label="暂停星海运动" aria-pressed="false" hidden><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path class="motion-pause" d="M7 5v10m6-10v10" stroke="currentColor" stroke-width="1.2"/><path class="motion-play" d="m7 5 8 5-8 5V5Z" stroke="currentColor" stroke-width="1.2"/></svg></button></div>
+    <div class="universe-status"><button class="universe-view-reset" id="view-reset" type="button" aria-label="恢复星海初始视距" hidden>返回远景</button><span class="universe-census">01 <span>已知星体</span></span><button class="universe-motion" id="motion-toggle" type="button" aria-label="暂停星海运动" aria-pressed="false" hidden><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path class="motion-pause" d="M7 5v10m6-10v10" stroke="currentColor" stroke-width="1.2"/><path class="motion-play" d="m7 5 8 5-8 5V5Z" stroke="currentColor" stroke-width="1.2"/></svg></button></div>
   </header>
 
   <main class="universe-space" id="universe" aria-labelledby="universe-title">
@@ -31,12 +41,12 @@
       </a>
     </nav>
     <p class="universe-empty" hidden>第一颗星，尚在诞生。</p>
-    <p class="universe-location" aria-hidden="true"><span></span>ORIGIN / ∞</p>
+    <p class="universe-location" aria-hidden="true" hidden><span></span></p>
   </main>
 
   <footer class="universe-footer">
     <p class="universe-whisper">万千念头，<span>各自成星。</span></p>
-    <p class="universe-instruction"><span class="instruction-desktop">拖动星海漫游<span class="instruction-separator">·</span></span>点击星体，进入一个念头</p>
+    <p class="universe-instruction"><span class="instruction-desktop">拖动漫游<span class="instruction-separator">·</span>滚动靠近</span><span class="instruction-mobile">点击星体，进入一个念头</span></p>
     <button class="universe-index-toggle" id="index-toggle" type="button" aria-haspopup="dialog" aria-controls="star-index" hidden>星图 <span aria-hidden="true">↗</span></button>
   </footer>
 

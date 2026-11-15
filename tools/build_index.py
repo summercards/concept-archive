@@ -29,6 +29,16 @@ PAGE = Template('''<!DOCTYPE html>
   <script src="./assets/portal.js"></script>
   <link rel="stylesheet" href="./assets/base.css">
   <script src="./assets/galaxy.js" defer></script>
+  <noscript><style>
+    .universe-space { touch-action: auto; }
+    .universe-stars { inset: 110px 20px 160px; display: grid; align-content: start; gap: 28px; padding: 12px; overflow: auto; pointer-events: auto; }
+    .concept-star { position: relative; left: 0 !important; top: 0 !important; margin: 0; }
+    .concept-star-label { min-width: 0; width: calc(100vw - 124px); max-width: 360px; }
+    .concept-star-name { overflow-wrap: anywhere; }
+    .concept-star-detail { opacity: 1; transform: none; }
+    .concept-star-enter, .instruction-desktop { display: none; }
+    .instruction-mobile { display: inline; }
+  </style></noscript>
 </head>
 <body class="universe-page">
   <a class="universe-skip" href="#concept-stars">跳到概念星</a>
@@ -46,12 +56,12 @@ PAGE = Template('''<!DOCTYPE html>
 $stars
     </nav>
     <p class="universe-empty"$empty_hidden>第一颗星，尚在诞生。</p>
-    <p class="universe-location" aria-hidden="true"><span></span>ORIGIN / ∞</p>
+    <p class="universe-location" aria-hidden="true" hidden><span></span></p>
   </main>
 
   <footer class="universe-footer">
     <p class="universe-whisper">万千念头，<span>各自成星。</span></p>
-    <p class="universe-instruction"><span class="instruction-desktop">拖动星海漫游<span class="instruction-separator">·</span></span>点击星体，进入一个念头</p>
+    <p class="universe-instruction"><span class="instruction-desktop">拖动漫游<span class="instruction-separator">·</span>滚动靠近</span><span class="instruction-mobile">点击星体，进入一个念头</span></p>
     <button class="universe-index-toggle" id="index-toggle" type="button" aria-haspopup="dialog" aria-controls="star-index" hidden>星图 <span aria-hidden="true">↗</span></button>
   </footer>
 

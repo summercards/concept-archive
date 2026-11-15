@@ -193,7 +193,7 @@ html.universe-root { background: #05060d; color-scheme: dark; }
 .concept-star-core::after { width: 1px; height: 27px; background: linear-gradient(0deg, transparent, var(--star-color), transparent); }
 .concept-star-halo { position: absolute; inset: -14px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--star-color) 15%, transparent), transparent 65%); transition: transform .6s, opacity .6s; }
 .concept-star-orbit { position: absolute; left: 31px; top: 24px; width: 12px; height: 1px; background: var(--star-color); opacity: .24; transform: scaleX(.65); transform-origin: left; transition: opacity .3s, transform .45s; pointer-events: none; }
-.concept-star-label { position: absolute; left: 47px; top: 10px; min-width: 150px; max-width: 230px; color: #d3cedf; transition: color .3s, opacity .4s, transform .4s; }
+.concept-star-label { position: absolute; left: 47px; top: 10px; min-width: 150px; max-width: 230px; color: #d3cedf; translate: var(--label-shift, 0px) 0; transition: color .3s, opacity .4s, transform .4s; }
 .concept-star-code { display: block; color: #aaa2b9; font: 8px/1.7 "SFMono-Regular", Consolas, monospace; letter-spacing: .16em; transition: color .3s; }
 .concept-star-name { display: block; font-family: "Songti SC", "Noto Serif CJK SC", "STSong", serif; font-size: 15px; font-weight: 400; line-height: 1.9; letter-spacing: .16em; text-shadow: 0 2px 12px #05060d; }
 .concept-star-detail { display: block; margin-top: 4px; color: #b9aecb; font-size: 9px; line-height: 1.9; letter-spacing: .1em; opacity: 0; transform: translateY(5px); transition: opacity .35s, transform .35s; }
@@ -287,7 +287,6 @@ html.universe-root { background: #05060d; color-scheme: dark; }
 @media (max-height: 500px) and (min-width: 681px) {
   .universe-header { padding-top: 20px; }
   .universe-page .universe-footer { padding-bottom: 20px; }
-  .universe-instruction { bottom: 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .universe-page *, .universe-page *::before, .universe-page *::after { animation: none !important; transition: none !important; }
