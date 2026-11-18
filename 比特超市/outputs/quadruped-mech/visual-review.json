@@ -1,0 +1,75 @@
+{
+  "assetId": "new.quadruped-mech",
+  "scope": "原创四足机甲catalog实际图片/动画检查；非r180整机、真实弹道或物理IK认证",
+  "reviewMethod": "实际打开整体、正背面、灰模、线框、橙色装甲、动画中间态/复位和NEW分类图",
+  "conclusion": "四条独立机械腿、髋/膝/下腿/活塞/足掌、装甲机身、炮塔环、炮架、炮管、炮口制退器与后坐套筒均实际可见；动画状态中没有发现断裂、穿插或占位盒。",
+  "notes": [
+    "实际外形是轻量化四足炮台，不是人形机甲；四足宽稳支撑与前向单炮是本次契约。",
+    "动画为程序化待机/微步态/炮塔摆动/周期后坐；未接真实弹道、开火音效、粒子或导航。",
+    "截图出现浏览器GPU ReadPixels同步性能警告，但没有pageerror；不是帧率/大规模编队通过证据。"
+  ],
+  "sourceFiles": {
+    "assets/authored/quadruped-mech.js": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+    "assets/authored/contracts/quadruped-mech.json": "f22841d29d4d964c890f5a6cb11b9e89569eacb6bff521bf4075fcacd4c481d5",
+    "assets/authored/registry.json": "60c6aaddd10de94c819c9f3b9ba3c7977f00ccc27c89e72a38b413d8fd511076",
+    "assets/authored.js": "b8007d7492fbaaae0c1aa4e252c08e5797991e66cb8b768a55b957bce64533e5",
+    "previews.js": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb",
+    "app.js": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+  },
+  "automaticReportSha256": "dc1c1b1cca8edbe9000e546036c38270beee8ea35beb7a09310c4fab6c1e2761",
+  "uiReportSha256": "8142cf96673f7545d981305d8aff977bb10e0b5c13f43151be2179d34d9f574b",
+  "images": [
+    {
+      "file": "material-overall.png",
+      "sha256": "d7c8902179de4f5d14cd7786f9d35333dccf32e9a7224ef1c43abb35a690d7e3"
+    },
+    {
+      "file": "material-front.png",
+      "sha256": "7f9cd0900c3765847bbd089d0afadbf1a195a7a0537fe0be6d7f51e1c35aa8c5"
+    },
+    {
+      "file": "material-back.png",
+      "sha256": "399f484d933c0b7e12a2de04dcfdb1edebaca911835ec7950d894365dfa651e6"
+    },
+    {
+      "file": "clay-overall.png",
+      "sha256": "4908f41667397e9f8a657cd53a999e4619dd49fb3a16ec7efcc42e54e4a6dfe8"
+    },
+    {
+      "file": "wire-overall.png",
+      "sha256": "aac549aab9354613de615e9ec0140dce6e7069104795e3dace82f25262a2e036"
+    },
+    {
+      "file": "armor-orange.png",
+      "sha256": "46bf6a9a6f3bc379d9899f2ce858585c9d5314511e5ed70b0e2183aef41ea701"
+    },
+    {
+      "file": "animation-step.png",
+      "sha256": "d0fdc18afd3ee83b60607d13a0787bf3e31f17aef69ed945cbc74802510c3d57"
+    },
+    {
+      "file": "animation-paused.png",
+      "sha256": "578b9a378975e362c245c701400d31e78f82d7b5cd6d47c50b7eed19939827e0"
+    },
+    {
+      "file": "animation-reset.png",
+      "sha256": "76d7059964657119fe64182762bafdb74ac2b831200b8ddd24ad090f03b8d050"
+    },
+    {
+      "file": "library-new.png",
+      "sha256": "d09ae554025613c2c1b57f78219c2b13534270ca0846c6cd665d066434c4110c"
+    },
+    {
+      "file": "mobile.png",
+      "sha256": "cc7a19a43df8bf2facd540ae6be168524316056a4e700f13d1f9167c11f3a3b3"
+    }
+  ],
+  "notExecuted": [
+    "r180整机集成",
+    "真实弹道/开火音效",
+    "完整物理IK/导航",
+    "LOD和大规模编队性能",
+    "完整GPU/CPU内存趋势"
+  ],
+  "acceptanceWriteback": false
+}

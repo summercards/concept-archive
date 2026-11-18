@@ -1,0 +1,1173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-16T13:25:35.920Z",
+  "command": [
+    "--root",
+    "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e",
+    "--id",
+    "new.harbor-service-workbench",
+    "--base-url",
+    "http://127.0.0.1:8099/build/authoring-skill-e2e/index.html",
+    "--playwright",
+    "/Users/zyq/work/wc/node_modules/playwright",
+    "--out-dir",
+    "outputs/verification-run1"
+  ],
+  "root": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e",
+  "id": "new.harbor-service-workbench",
+  "baseUrl": "http://127.0.0.1:8099/build/authoring-skill-e2e/index.html",
+  "playwright": "/Users/zyq/work/wc/node_modules/playwright",
+  "outDir": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/outputs/verification-run1",
+  "projectFilesBefore": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/assets/authored/registry.json",
+      "sha256": "46d4cd5b6360c03036d89801a3b8d09a37e1438f334ca22438a91d26793030f8"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/assets/authored.js",
+      "sha256": "ebc555a94c430c295736b1c68c7283a41a0ac777d6c9c7a511d271516760d87a"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/previews.js",
+      "sha256": "b9ce8ce559ad4c607e43bbd2e14368a2046725fa4d0104f3324a9adba8ccc6bf"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/app.js",
+      "sha256": "684ea63912919db6b45dec7ab3d6c98354b6b0b2c9116618c3a8e2481d1a9a05"
+    },
+    "assets/authored/harbor-service-workbench.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/assets/authored/harbor-service-workbench.js",
+      "sha256": "a079559be376ab36fb06e26eba15d0761d9a7fb7b47ca137bc45a69cb9083d91"
+    }
+  },
+  "projectFilesAfter": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/assets/authored/registry.json",
+      "sha256": "46d4cd5b6360c03036d89801a3b8d09a37e1438f334ca22438a91d26793030f8"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/assets/authored.js",
+      "sha256": "ebc555a94c430c295736b1c68c7283a41a0ac777d6c9c7a511d271516760d87a"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/previews.js",
+      "sha256": "b9ce8ce559ad4c607e43bbd2e14368a2046725fa4d0104f3324a9adba8ccc6bf"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/app.js",
+      "sha256": "684ea63912919db6b45dec7ab3d6c98354b6b0b2c9116618c3a8e2481d1a9a05"
+    },
+    "assets/authored/harbor-service-workbench.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/build/authoring-skill-e2e/assets/authored/harbor-service-workbench.js",
+      "sha256": "a079559be376ab36fb06e26eba15d0761d9a7fb7b47ca137bc45a69cb9083d91"
+    }
+  },
+  "catalog": {
+    "status": "UNVERIFIED",
+    "fullPass": false,
+    "publicApi": {
+      "catalog": true,
+      "item": {
+        "id": "new.harbor-service-workbench",
+        "source": "harbor-service-workbench.js",
+        "anchor": "assets/authored/harbor-service-workbench.js",
+        "contract": {
+          "units": "m",
+          "size": [
+            1.4,
+            0.9,
+            0.65
+          ],
+          "origin": "bottom-center",
+          "forward": "+Z",
+          "qualityTier": "catalog",
+          "materials": [
+            "paint_grey",
+            "paint_blue",
+            "steel_dark",
+            "wood_pallet",
+            "rubber"
+          ],
+          "requiredParts": [
+            "frame",
+            "supportRails",
+            "top",
+            "workSurface",
+            "shelf",
+            "backBrace",
+            "drawer",
+            "drawerSlides",
+            "handle",
+            "feet",
+            "badge"
+          ],
+          "options": {
+            "seed": {
+              "type": "integer",
+              "default": 0,
+              "values": [
+                0,
+                1,
+                5
+              ],
+              "note": "仅兼容参数，不消费 ctx.rng，不改变几何或材质。"
+            },
+            "color": {
+              "type": "string",
+              "default": "paint_grey",
+              "values": [
+                "paint_grey",
+                "paint_blue"
+              ]
+            },
+            "drawerOpen": {
+              "type": "number",
+              "default": 0,
+              "values": [
+                0,
+                0.12
+              ],
+              "note": "构建时静态平移，不提供自动 update。"
+            }
+          },
+          "dynamic": false,
+          "collidersRequired": true,
+          "sizeTolerance": {
+            "meters": 0.01,
+            "percent": 0.01
+          },
+          "budget": {
+            "triangles": 6000,
+            "maxMeshes": 60
+          },
+          "nominalBounds": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.325
+            ]
+          },
+          "boundsEnvelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          },
+          "variantEnvelopes": [
+            {
+              "options": {
+                "drawerOpen": 0
+              },
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.325
+              ]
+            },
+            {
+              "options": {
+                "drawerOpen": 0.12
+              },
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.445
+              ]
+            }
+          ],
+          "baseline": {
+            "type": "new-design",
+            "referenceAssets": [
+              "prop.shelf_rack",
+              "prop.toolbox_cart"
+            ],
+            "referenceScope": "仅承重框架和收纳层级的结构级参考；未执行比较测量，不声称 measured=true。"
+          }
+        },
+        "acceptance": {
+          "catalog": "unverified",
+          "geometry": "unverified",
+          "visual": "unverified",
+          "runtime": "unverified"
+        }
+      },
+      "builder": {
+        "type": "object",
+        "hasBuild": true,
+        "keys": [
+          "build"
+        ]
+      },
+      "authoredContext": true,
+      "inspectAuthored": true,
+      "inspectResult": {
+        "ok": true,
+        "shape": [
+          "build",
+          "ctx",
+          "inspect"
+        ]
+      },
+      "publicContract": {
+        "authoredContext": "window.PREVIEWS.authoredContext(id, options) => { THREE, kit, mats, rng, sharedMaterials: Set<THREE.Material> }",
+        "inspectAuthored": "window.PREVIEWS.inspectAuthored(id, options) => object | Promise<object>（仅检查公开返回形状）",
+        "builder": "window.AUTHORED_BUILDERS[id] => { build }",
+        "catalog": "window.AUTHORED_CATALOG.items[] => { id, contract, acceptance }"
+      }
+    },
+    "entry": {
+      "id": "new.harbor-service-workbench",
+      "source": "harbor-service-workbench.js",
+      "anchor": "assets/authored/harbor-service-workbench.js",
+      "contract": {
+        "units": "m",
+        "size": [
+          1.4,
+          0.9,
+          0.65
+        ],
+        "origin": "bottom-center",
+        "forward": "+Z",
+        "qualityTier": "catalog",
+        "materials": [
+          "paint_grey",
+          "paint_blue",
+          "steel_dark",
+          "wood_pallet",
+          "rubber"
+        ],
+        "requiredParts": [
+          "frame",
+          "supportRails",
+          "top",
+          "workSurface",
+          "shelf",
+          "backBrace",
+          "drawer",
+          "drawerSlides",
+          "handle",
+          "feet",
+          "badge"
+        ],
+        "options": {
+          "seed": {
+            "type": "integer",
+            "default": 0,
+            "values": [
+              0,
+              1,
+              5
+            ],
+            "note": "仅兼容参数，不消费 ctx.rng，不改变几何或材质。"
+          },
+          "color": {
+            "type": "string",
+            "default": "paint_grey",
+            "values": [
+              "paint_grey",
+              "paint_blue"
+            ]
+          },
+          "drawerOpen": {
+            "type": "number",
+            "default": 0,
+            "values": [
+              0,
+              0.12
+            ],
+            "note": "构建时静态平移，不提供自动 update。"
+          }
+        },
+        "dynamic": false,
+        "collidersRequired": true,
+        "sizeTolerance": {
+          "meters": 0.01,
+          "percent": 0.01
+        },
+        "budget": {
+          "triangles": 6000,
+          "maxMeshes": 60
+        },
+        "nominalBounds": {
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.325
+          ]
+        },
+        "boundsEnvelope": {
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.445
+          ]
+        },
+        "variantEnvelopes": [
+          {
+            "options": {
+              "drawerOpen": 0
+            },
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.325
+            ]
+          },
+          {
+            "options": {
+              "drawerOpen": 0.12
+            },
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          }
+        ],
+        "baseline": {
+          "type": "new-design",
+          "referenceAssets": [
+            "prop.shelf_rack",
+            "prop.toolbox_cart"
+          ],
+          "referenceScope": "仅承重框架和收纳层级的结构级参考；未执行比较测量，不声称 measured=true。"
+        }
+      },
+      "acceptance": {
+        "catalog": "unverified",
+        "geometry": "unverified",
+        "visual": "unverified",
+        "runtime": "unverified"
+      }
+    },
+    "contract": {
+      "units": "m",
+      "size": [
+        1.4,
+        0.9,
+        0.65
+      ],
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "paint_grey",
+        "paint_blue",
+        "steel_dark",
+        "wood_pallet",
+        "rubber"
+      ],
+      "requiredParts": [
+        "frame",
+        "supportRails",
+        "top",
+        "workSurface",
+        "shelf",
+        "backBrace",
+        "drawer",
+        "drawerSlides",
+        "handle",
+        "feet",
+        "badge"
+      ],
+      "options": {
+        "seed": {
+          "type": "integer",
+          "default": 0,
+          "values": [
+            0,
+            1,
+            5
+          ],
+          "note": "仅兼容参数，不消费 ctx.rng，不改变几何或材质。"
+        },
+        "color": {
+          "type": "string",
+          "default": "paint_grey",
+          "values": [
+            "paint_grey",
+            "paint_blue"
+          ]
+        },
+        "drawerOpen": {
+          "type": "number",
+          "default": 0,
+          "values": [
+            0,
+            0.12
+          ],
+          "note": "构建时静态平移，不提供自动 update。"
+        }
+      },
+      "dynamic": false,
+      "collidersRequired": true,
+      "sizeTolerance": {
+        "meters": 0.01,
+        "percent": 0.01
+      },
+      "budget": {
+        "triangles": 6000,
+        "maxMeshes": 60
+      },
+      "nominalBounds": {
+        "min": [
+          -0.7,
+          0,
+          -0.325
+        ],
+        "max": [
+          0.7,
+          0.9,
+          0.325
+        ]
+      },
+      "boundsEnvelope": {
+        "min": [
+          -0.7,
+          0,
+          -0.325
+        ],
+        "max": [
+          0.7,
+          0.9,
+          0.445
+        ]
+      },
+      "variantEnvelopes": [
+        {
+          "options": {
+            "drawerOpen": 0
+          },
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.325
+          ]
+        },
+        {
+          "options": {
+            "drawerOpen": 0.12
+          },
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.445
+          ]
+        }
+      ],
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": [
+          "prop.shelf_rack",
+          "prop.toolbox_cart"
+        ],
+        "referenceScope": "仅承重框架和收纳层级的结构级参考；未执行比较测量，不声称 measured=true。"
+      }
+    }
+  },
+  "geometry": {
+    "status": "PASS",
+    "automatic": true,
+    "checks": {
+      "meshes": 33,
+      "vertices": 942,
+      "triangles": 1510,
+      "degenerateTriangles": 0,
+      "attributes": 99,
+      "size": {
+        "measured": [
+          1.399999976158142,
+          0.8999999754875898,
+          0.649999988079071
+        ],
+        "declared": [
+          1.399999976158142,
+          0.8999999754875898,
+          0.649999988079071
+        ],
+        "expected": [
+          1.4,
+          0.9,
+          0.65
+        ],
+        "tolerance": [
+          0.013999999999999999,
+          0.01,
+          0.01
+        ]
+      },
+      "checkenv": {
+        "isDefault": true,
+        "matchedIndex": 0,
+        "options": {
+          "color": "paint_grey",
+          "drawerOpen": 0,
+          "seed": 0
+        },
+        "expectedSize": [
+          1.4,
+          0.9,
+          0.65
+        ],
+        "envelope": {
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.325
+          ]
+        },
+        "boundsEnvelope": null,
+        "bbox": {
+          "min": [
+            -0.699999988079071,
+            6.705522803684971e-10,
+            -0.32499998807907104
+          ],
+          "max": [
+            0.699999988079071,
+            0.8999999761581421,
+            0.325
+          ]
+        },
+        "geometryInside": true,
+        "withinTotalEnvelope": true,
+        "collidersInside": true
+      }
+    },
+    "determinism": {
+      "equal": true,
+      "firstSha256": "e7c80f01ac4ad1682d9bc321b460badc4a6eeb59261a0a139d0d1c91ea6a6358",
+      "secondSha256": "e7c80f01ac4ad1682d9bc321b460badc4a6eeb59261a0a139d0d1c91ea6a6358"
+    },
+    "variants": [
+      {
+        "key": "seed",
+        "value": 1,
+        "changedFromDefault": false,
+        "sha256": null,
+        "counts": {
+          "meshes": 33,
+          "vertices": 942,
+          "triangles": 1510,
+          "degenerateTriangles": 0,
+          "attributes": 99,
+          "size": {
+            "measured": [
+              1.399999976158142,
+              0.8999999754875898,
+              0.649999988079071
+            ],
+            "declared": [
+              1.399999976158142,
+              0.8999999754875898,
+              0.649999988079071
+            ],
+            "expected": null,
+            "tolerance": [
+              0.013999999999999999,
+              0.01,
+              0.01
+            ]
+          },
+          "checkenv": {
+            "isDefault": false,
+            "matchedIndex": 0,
+            "options": {
+              "color": "paint_grey",
+              "drawerOpen": 0,
+              "seed": 1
+            },
+            "expectedSize": null,
+            "envelope": {
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.325
+              ]
+            },
+            "boundsEnvelope": {
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.445
+              ]
+            },
+            "bbox": {
+              "min": [
+                -0.699999988079071,
+                6.705522803684971e-10,
+                -0.32499998807907104
+              ],
+              "max": [
+                0.699999988079071,
+                0.8999999761581421,
+                0.325
+              ]
+            },
+            "geometryInside": true,
+            "withinTotalEnvelope": true,
+            "collidersInside": true
+          }
+        },
+        "size": {
+          "measured": [
+            1.399999976158142,
+            0.8999999754875898,
+            0.649999988079071
+          ],
+          "declared": [
+            1.399999976158142,
+            0.8999999754875898,
+            0.649999988079071
+          ],
+          "expected": null,
+          "tolerance": [
+            0.013999999999999999,
+            0.01,
+            0.01
+          ]
+        },
+        "checkenv": {
+          "isDefault": false,
+          "matchedIndex": 0,
+          "options": {
+            "color": "paint_grey",
+            "drawerOpen": 0,
+            "seed": 1
+          },
+          "expectedSize": null,
+          "envelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.325
+            ]
+          },
+          "boundsEnvelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          },
+          "bbox": {
+            "min": [
+              -0.699999988079071,
+              6.705522803684971e-10,
+              -0.32499998807907104
+            ],
+            "max": [
+              0.699999988079071,
+              0.8999999761581421,
+              0.325
+            ]
+          },
+          "geometryInside": true,
+          "withinTotalEnvelope": true,
+          "collidersInside": true
+        },
+        "status": "PASS",
+        "normalizedSha256": "76510e7a355d2f241dfb06c8526da85046a345386f06d5d774cdc56b6c8e0dff"
+      },
+      {
+        "key": "color",
+        "value": "paint_blue",
+        "changedFromDefault": true,
+        "sha256": null,
+        "counts": {
+          "meshes": 33,
+          "vertices": 942,
+          "triangles": 1510,
+          "degenerateTriangles": 0,
+          "attributes": 99,
+          "size": {
+            "measured": [
+              1.399999976158142,
+              0.8999999754875898,
+              0.649999988079071
+            ],
+            "declared": [
+              1.399999976158142,
+              0.8999999754875898,
+              0.649999988079071
+            ],
+            "expected": null,
+            "tolerance": [
+              0.013999999999999999,
+              0.01,
+              0.01
+            ]
+          },
+          "checkenv": {
+            "isDefault": false,
+            "matchedIndex": 0,
+            "options": {
+              "color": "paint_blue",
+              "drawerOpen": 0,
+              "seed": 0
+            },
+            "expectedSize": null,
+            "envelope": {
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.325
+              ]
+            },
+            "boundsEnvelope": {
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.445
+              ]
+            },
+            "bbox": {
+              "min": [
+                -0.699999988079071,
+                6.705522803684971e-10,
+                -0.32499998807907104
+              ],
+              "max": [
+                0.699999988079071,
+                0.8999999761581421,
+                0.325
+              ]
+            },
+            "geometryInside": true,
+            "withinTotalEnvelope": true,
+            "collidersInside": true
+          }
+        },
+        "size": {
+          "measured": [
+            1.399999976158142,
+            0.8999999754875898,
+            0.649999988079071
+          ],
+          "declared": [
+            1.399999976158142,
+            0.8999999754875898,
+            0.649999988079071
+          ],
+          "expected": null,
+          "tolerance": [
+            0.013999999999999999,
+            0.01,
+            0.01
+          ]
+        },
+        "checkenv": {
+          "isDefault": false,
+          "matchedIndex": 0,
+          "options": {
+            "color": "paint_blue",
+            "drawerOpen": 0,
+            "seed": 0
+          },
+          "expectedSize": null,
+          "envelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.325
+            ]
+          },
+          "boundsEnvelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          },
+          "bbox": {
+            "min": [
+              -0.699999988079071,
+              6.705522803684971e-10,
+              -0.32499998807907104
+            ],
+            "max": [
+              0.699999988079071,
+              0.8999999761581421,
+              0.325
+            ]
+          },
+          "geometryInside": true,
+          "withinTotalEnvelope": true,
+          "collidersInside": true
+        },
+        "status": "PASS",
+        "normalizedSha256": "dc4f41505cd039cff36221c0b803bf1549ec50c5f67ff9e8bbc1931adb34e89b"
+      },
+      {
+        "key": "drawerOpen",
+        "value": 0.12,
+        "changedFromDefault": true,
+        "sha256": null,
+        "counts": {
+          "meshes": 33,
+          "vertices": 942,
+          "triangles": 1510,
+          "degenerateTriangles": 0,
+          "attributes": 99,
+          "size": {
+            "measured": [
+              1.399999976158142,
+              0.8999999754875898,
+              0.7669999849796295
+            ],
+            "declared": [
+              1.399999976158142,
+              0.8999999754875898,
+              0.7669999849796295
+            ],
+            "expected": null,
+            "tolerance": [
+              0.013999999999999999,
+              0.01,
+              0.01
+            ]
+          },
+          "checkenv": {
+            "isDefault": false,
+            "matchedIndex": 1,
+            "options": {
+              "color": "paint_grey",
+              "drawerOpen": 0.12,
+              "seed": 0
+            },
+            "expectedSize": null,
+            "envelope": {
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.445
+              ]
+            },
+            "boundsEnvelope": {
+              "min": [
+                -0.7,
+                0,
+                -0.325
+              ],
+              "max": [
+                0.7,
+                0.9,
+                0.445
+              ]
+            },
+            "bbox": {
+              "min": [
+                -0.699999988079071,
+                6.705522803684971e-10,
+                -0.32499998807907104
+              ],
+              "max": [
+                0.699999988079071,
+                0.8999999761581421,
+                0.44199999690055847
+              ]
+            },
+            "geometryInside": true,
+            "withinTotalEnvelope": true,
+            "collidersInside": true
+          }
+        },
+        "size": {
+          "measured": [
+            1.399999976158142,
+            0.8999999754875898,
+            0.7669999849796295
+          ],
+          "declared": [
+            1.399999976158142,
+            0.8999999754875898,
+            0.7669999849796295
+          ],
+          "expected": null,
+          "tolerance": [
+            0.013999999999999999,
+            0.01,
+            0.01
+          ]
+        },
+        "checkenv": {
+          "isDefault": false,
+          "matchedIndex": 1,
+          "options": {
+            "color": "paint_grey",
+            "drawerOpen": 0.12,
+            "seed": 0
+          },
+          "expectedSize": null,
+          "envelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          },
+          "boundsEnvelope": {
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          },
+          "bbox": {
+            "min": [
+              -0.699999988079071,
+              6.705522803684971e-10,
+              -0.32499998807907104
+            ],
+            "max": [
+              0.699999988079071,
+              0.8999999761581421,
+              0.44199999690055847
+            ]
+          },
+          "geometryInside": true,
+          "withinTotalEnvelope": true,
+          "collidersInside": true
+        },
+        "status": "PASS",
+        "normalizedSha256": "c29f1bc90226e9d31749612ab0005bfa1041bb6fde5e28463df7d74b7b27a8b4"
+      }
+    ],
+    "warnings": [],
+    "normalized": {
+      "firstSha256": "e7c80f01ac4ad1682d9bc321b460badc4a6eeb59261a0a139d0d1c91ea6a6358",
+      "secondSha256": "e7c80f01ac4ad1682d9bc321b460badc4a6eeb59261a0a139d0d1c91ea6a6358"
+    },
+    "materialNames": [
+      "label",
+      "paint_blue",
+      "paint_grey",
+      "rubber",
+      "steel_dark",
+      "wood_pallet"
+    ]
+  },
+  "runtime": {
+    "status": "limitedpass",
+    "automatic": true,
+    "notExecutedMemory": [
+      "无法在本验证器中可靠执行浏览器堆内存/显存回收证明"
+    ],
+    "mountCycles": {
+      "attempted": 3,
+      "completed": 3,
+      "hookCounters": {
+        "build": 14,
+        "update": 0,
+        "reset": 0,
+        "dispose": 18
+      },
+      "status": "limitedpass"
+    },
+    "dynamic": false,
+    "hookPresence": {
+      "update": false,
+      "reset": true,
+      "dispose": true
+    },
+    "updateSamples": [],
+    "resetMatchesBaseline": null,
+    "dispose": {
+      "declared": true,
+      "calls": 10,
+      "errors": [],
+      "sharedMaterialDisposeEvents": 0,
+      "materialDisposeEvents": []
+    },
+    "builderHookCounters": {
+      "build": 6,
+      "update": 0,
+      "reset": 0,
+      "dispose": 10
+    }
+  },
+  "visual": {
+    "status": "UNVERIFIED",
+    "scope": "截图生成不等于真实视觉验收；本脚本始终不写 visual pass",
+    "screenshots": [
+      {
+        "file": "material-overall.png",
+        "display": "原材质",
+        "view": "整体",
+        "bytes": 341451
+      },
+      {
+        "file": "material-front.png",
+        "display": "原材质",
+        "view": "正面",
+        "bytes": 367497
+      },
+      {
+        "file": "material-back.png",
+        "display": "原材质",
+        "view": "背面",
+        "bytes": 349093
+      },
+      {
+        "file": "clay-overall.png",
+        "display": "纯灰几何",
+        "view": "整体",
+        "bytes": 239378
+      },
+      {
+        "file": "wire-overall.png",
+        "display": "结构线框",
+        "view": "整体",
+        "bytes": 263967
+      }
+    ],
+    "controls": {
+      "display": [
+        "原材质",
+        "纯灰几何",
+        "结构线框"
+      ],
+      "views": [
+        "整体",
+        "正面",
+        "背面",
+        "俯视"
+      ],
+      "requiredDisplay": [
+        "原材质",
+        "纯灰几何",
+        "结构线框"
+      ],
+      "requiredViews": [
+        "整体",
+        "正面",
+        "背面",
+        "俯视"
+      ],
+      "status": "PASS"
+    }
+  },
+  "pageConsole": [],
+  "errors": [],
+  "shaderMessages": [],
+  "network": {
+    "externalRejected": [],
+    "failed": []
+  },
+  "automaticChecks": {
+    "passed": true,
+    "failures": []
+  },
+  "normalizedReportSha256": "6fbc2d877c18ed5bfd6b12d9b50a9cb8ebc3136f477ce82fb33d57ae7d6ef2dc"
+}

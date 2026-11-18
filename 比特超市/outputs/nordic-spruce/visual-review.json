@@ -1,0 +1,72 @@
+{
+  "assetId": "new.nordic-spruce",
+  "scope": "原创静态树木 catalog 的实际图片检查，非精确物种鉴定或整机等价",
+  "reviewMethod": "实际打开整树、树冠放大、灰模、线框、seed19及NEW分类PNG检查",
+  "conclusion": "高耸窄冠、尖顶、下垂分枝、分级针叶与根颈均可见；加密后较首版减少裸枝骨架感。未见整块锥体替代、明显缺面或漂浮冠层。",
+  "notes": [
+    "树冠偏云杉式，保留层间透空和少量外露枝干，不以名称作植物学认证。",
+    "针叶是双面交叉渐尖三角片；近景属于程序化游戏表示，不是每根针叶闭合实体或扫描级树皮。",
+    "默认315936三角与691215顶点，仍需LOD优化才适合大量森林摆放。"
+  ],
+  "sourceSha256": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+  "contractFileSha256": "2ffec8a43c91ff929c3604670ea635a667eb3bab5fa52ca728fb47179b9a9af6",
+  "geometryReportSha256": "f6eaa1f58899649efd3b4744ef4d61f7f941a59d97c859ceeeb96db7703d81c6",
+  "uiReportSha256": "60dc4637bb5ae79639aecc9470551cfd4b9818cfe6ad3a5bc8a491dad1aec8d0",
+  "images": [
+    {
+      "file": "material-overall.png",
+      "sha256": "76973122bcc246527e88d8c425a347a5e544093b15a4cd8e64cf3d2d0c7fce9f"
+    },
+    {
+      "file": "material-portrait.png",
+      "sha256": "38adf004d04cb650577a090480af7c237fe7fd10fabdfbbf762904f83237194f"
+    },
+    {
+      "file": "material-front.png",
+      "sha256": "e6855e2eb7643428ece846c1b06afa981513d53264de82f4c56ec03eace752b1"
+    },
+    {
+      "file": "material-back.png",
+      "sha256": "685c9622dc2491a60e96714d6f27ec0e422bb18d87ccae3a09edfdcbf72da0c3"
+    },
+    {
+      "file": "crown-detail.png",
+      "sha256": "aa456b26bb7209ed6d9aab08819e895cc57c082872d218bfa8baa62f888ce361"
+    },
+    {
+      "file": "clay-overall.png",
+      "sha256": "96e3cf7de56ed9cf21cdb75d103143c30f1e521d5fe5a32408cfd93730b94e33"
+    },
+    {
+      "file": "wire-overall.png",
+      "sha256": "8febb6d07017acd9c487b212d3f425deffae2ab3941c29c6297231984104c38e"
+    },
+    {
+      "file": "seed-19.png",
+      "sha256": "a24ae75950efb0fbff27179d764ef8c1792707d61b9d429c337e92f4d5ffdbd2"
+    },
+    {
+      "file": "seed-43.png",
+      "sha256": "cc1288ae945dd4b852738b4c564942d3d871b9b56aac5cd66c5fac6796c9573f"
+    },
+    {
+      "file": "library-new.png",
+      "sha256": "a0a4639c03274f9a4b4d5153acc2ada3378cb0315495343db89449b319b8ac92"
+    }
+  ],
+  "genericVerifier": "iteration1/report.json仍为FAIL；未关闭或篡改原检查，使用完整逐数组几何检查和独立UI实测补充，不冒称通用流程成功。",
+  "runtimeWarnings": [
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "notExecuted": [
+    "r180整机集成",
+    "风摆/落雪/生长动画",
+    "远景LOD/森林实例化",
+    "完整GPU/CPU内存趋势",
+    "各移动设备帧率"
+  ],
+  "acceptanceWriteback": false
+}

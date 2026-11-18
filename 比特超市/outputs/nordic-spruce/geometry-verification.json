@@ -1,0 +1,372 @@
+{
+  "status": "PASS",
+  "assetId": "new.nordic-spruce",
+  "engine": "160",
+  "method": "同网页本地 r160 引擎，全属性TypedArray逐项校验和增量SHA256，不把完整浮点数组跨浏览器序列化。",
+  "sourceFiles": {
+    "assets/authored/nordic-spruce.js": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+    "assets/authored/contracts/nordic-spruce.json": "2ffec8a43c91ff929c3604670ea635a667eb3bab5fa52ca728fb47179b9a9af6",
+    "assets/authored/registry.json": "6ba7dc6ccaf831560618b86e4882d6d77b8729a8f1138e9d148706fab61e6aee",
+    "assets/authored.js": "c6d7eb42279ad5474f95bc657860ad57caa9d166b33c54bb4af35f8e01bbab9a",
+    "previews.js": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb",
+    "app.js": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e",
+    "vendor/three.global.js": "983332876c8ba861d2cae6c31b06b28aa5a42404ecabe9a7d1edc75d1dc36910"
+  },
+  "sameSeedRebuildEqual": true,
+  "distinctSeedsDifferent": true,
+  "rows": [
+    {
+      "seed": 7,
+      "status": "PASS",
+      "counts": {
+        "meshes": 8,
+        "vertices": 691215,
+        "triangles": 315936,
+        "degenerateTriangles": 0,
+        "materials": 2
+      },
+      "size": [
+        5.400000095367432,
+        14,
+        5.400000095367432
+      ],
+      "bbox": {
+        "min": [
+          -2.700000047683716,
+          0,
+          -2.700000047683716
+        ],
+        "max": [
+          2.700000047683716,
+          14,
+          2.700000047683716
+        ]
+      },
+      "sha256": "649f771b18741150ed27e2505f10f6314a7ae0c211f8f2908d4c9fe06f9a341c",
+      "stats": {
+        "primaryBranches": 123,
+        "secondaryBranches": 984,
+        "terminalTwigs": 3960,
+        "branchLayers": 20,
+        "roots": 8,
+        "needles": 94162,
+        "triangles": 315936,
+        "meshes": 8,
+        "materials": [
+          "wood_dark",
+          "tarp"
+        ],
+        "lod": "not implemented"
+      },
+      "colliders": [
+        {
+          "min": [
+            -0.7857205271720886,
+            0,
+            -0.8385947346687317
+          ],
+          "max": [
+            0.8757235407829285,
+            4.68,
+            0.604119062423706
+          ],
+          "surface": "wood"
+        },
+        {
+          "min": [
+            -0.24787308464726807,
+            4.68,
+            -0.2573471618884643
+          ],
+          "max": [
+            0.04351311625652114,
+            9.34,
+            0.025217538366745396
+          ],
+          "surface": "wood"
+        },
+        {
+          "min": [
+            -0.1571184084550682,
+            9.34,
+            -0.24637091159820557
+          ],
+          "max": [
+            0.045880019664764404,
+            13.830595016479492,
+            -0.09760792875473019
+          ],
+          "surface": "wood"
+        }
+      ],
+      "sockets": {
+        "base": {
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tip": {
+          "position": [
+            -0.03671894967556,
+            14,
+            -0.20075979828834534
+          ]
+        },
+        "crown": {
+          "position": [
+            -0.0955595825549194,
+            9.179343448651647,
+            -0.1574773937314034
+          ]
+        }
+      },
+      "disposal": {
+        "geometry": 8,
+        "material": 2,
+        "secondCallAdditionalEvents": 0
+      },
+      "buildAndCheckMs": 1891
+    },
+    {
+      "seed": 19,
+      "status": "PASS",
+      "counts": {
+        "meshes": 8,
+        "vertices": 707685,
+        "triangles": 323374,
+        "degenerateTriangles": 0,
+        "materials": 2
+      },
+      "size": [
+        5.400000095367432,
+        14,
+        5.400000095367432
+      ],
+      "bbox": {
+        "min": [
+          -2.700000047683716,
+          0,
+          -2.700000047683716
+        ],
+        "max": [
+          2.700000047683716,
+          14,
+          2.700000047683716
+        ]
+      },
+      "sha256": "cde30f8c0c9bc88d92e16707cd6e9631cc67e0d699366830b7720914f9033649",
+      "stats": {
+        "primaryBranches": 126,
+        "secondaryBranches": 1008,
+        "terminalTwigs": 4056,
+        "branchLayers": 20,
+        "roots": 8,
+        "needles": 96411,
+        "triangles": 323374,
+        "meshes": 8,
+        "materials": [
+          "wood_dark",
+          "tarp"
+        ],
+        "lod": "not implemented"
+      },
+      "colliders": [
+        {
+          "min": [
+            -0.7543526291847229,
+            0,
+            -0.7624453902244568
+          ],
+          "max": [
+            0.9521399140357971,
+            4.68,
+            1.0378661155700684
+          ],
+          "surface": "wood"
+        },
+        {
+          "min": [
+            -0.21330762152763702,
+            4.68,
+            -0.009554439090305802
+          ],
+          "max": [
+            0.06265052488109506,
+            9.34,
+            0.28098925406214614
+          ],
+          "surface": "wood"
+        },
+        {
+          "min": [
+            -0.1245689828284617,
+            9.34,
+            0.006439564749598503
+          ],
+          "max": [
+            0.07108884304761887,
+            13.898601531982422,
+            0.15915227568074708
+          ],
+          "surface": "wood"
+        }
+      ],
+      "sockets": {
+        "base": {
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tip": {
+          "position": [
+            0.06301727145910263,
+            14,
+            0.08403332531452179
+          ]
+        },
+        "crown": {
+          "position": [
+            -0.06436717980989665,
+            9.220996078084065,
+            0.09490024528042137
+          ]
+        }
+      },
+      "disposal": {
+        "geometry": 8,
+        "material": 2,
+        "secondCallAdditionalEvents": 0
+      },
+      "buildAndCheckMs": 1910
+    },
+    {
+      "seed": 43,
+      "status": "PASS",
+      "counts": {
+        "meshes": 8,
+        "vertices": 708033,
+        "triangles": 323444,
+        "degenerateTriangles": 0,
+        "materials": 2
+      },
+      "size": [
+        5.400000095367432,
+        14,
+        5.400000095367432
+      ],
+      "bbox": {
+        "min": [
+          -2.700000047683716,
+          0,
+          -2.700000047683716
+        ],
+        "max": [
+          2.700000047683716,
+          14,
+          2.700000047683716
+        ]
+      },
+      "sha256": "41e8a87755f16596ab225a445c1396f7d52026c78492475bc8912749b228c9ab",
+      "stats": {
+        "primaryBranches": 126,
+        "secondaryBranches": 1008,
+        "terminalTwigs": 4056,
+        "branchLayers": 20,
+        "roots": 7,
+        "needles": 96478,
+        "triangles": 323444,
+        "meshes": 8,
+        "materials": [
+          "wood_dark",
+          "tarp"
+        ],
+        "lod": "not implemented"
+      },
+      "colliders": [
+        {
+          "min": [
+            -0.869278073310852,
+            0,
+            -0.9830779433250427
+          ],
+          "max": [
+            0.7600864171981812,
+            4.68,
+            0.8366768956184387
+          ],
+          "surface": "wood"
+        },
+        {
+          "min": [
+            -0.30507084078135177,
+            4.68,
+            -0.21158377033895637
+          ],
+          "max": [
+            -0.01841772305678302,
+            9.34,
+            0.08554234124002393
+          ],
+          "surface": "wood"
+        },
+        {
+          "min": [
+            -0.20726351310408372,
+            9.34,
+            -0.19590918719768524
+          ],
+          "max": [
+            -0.004158054478466511,
+            13.894023895263672,
+            -0.03968114106726531
+          ],
+          "surface": "wood"
+        }
+      ],
+      "sockets": {
+        "base": {
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "tip": {
+          "position": [
+            -0.10532216727733612,
+            14,
+            -0.11233128607273102
+          ]
+        },
+        "crown": {
+          "position": [
+            -0.14388382410257708,
+            9.220566465283657,
+            -0.10706828991977693
+          ]
+        }
+      },
+      "disposal": {
+        "geometry": 8,
+        "material": 2,
+        "secondCallAdditionalEvents": 0
+      },
+      "buildAndCheckMs": 1940
+    }
+  ],
+  "automaticChecks": {
+    "passed": true,
+    "failures": []
+  },
+  "visual": "UNVERIFIED",
+  "notExecuted": [
+    "通用verify_asset因全量JSON/导航中断，旧失败保留iteration1。此报告只替代几何数据及有限dispose检查，不冒充原通用验证全部完成。",
+    "GPU后期整机等价",
+    "风摆/LOD/大规模森林性能",
+    "完整内存趋势"
+  ]
+}

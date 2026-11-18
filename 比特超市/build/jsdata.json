@@ -1,0 +1,1868 @@
+{
+ "fam": {
+  "asphalt": {
+   "fn": "asphalt",
+   "size": 1,
+   "tile": 2,
+   "bump": 1.6,
+   "hero": true
+  },
+  "concrete": {
+   "fn": "concrete",
+   "size": 1,
+   "tile": 3,
+   "bump": 2.5
+  },
+  "brick": {
+   "fn": "brick",
+   "size": 0.5,
+   "tile": 1.8,
+   "bump": 6
+  },
+  "epoxy": {
+   "fn": "epoxy",
+   "size": 0.5,
+   "tile": 4,
+   "bump": 3
+  },
+  "paint": {
+   "fn": "paint",
+   "size": 1,
+   "tile": 2.5,
+   "bump": 2.5,
+   "p": [
+    0.5
+   ]
+  },
+  "hull": {
+   "fn": "hull",
+   "size": 0.5,
+   "tile": 4,
+   "bump": 12
+  },
+  "galv": {
+   "fn": "galv",
+   "size": 0.5,
+   "tile": 1,
+   "bump": 0.8
+  },
+  "metal": {
+   "fn": "metal",
+   "size": 0.5,
+   "tile": 1,
+   "bump": 0.5,
+   "p": [
+    1
+   ]
+  },
+  "brushed": {
+   "fn": "brushed",
+   "size": 0.5,
+   "tile": 0.5,
+   "bump": 0.4
+  },
+  "rust": {
+   "fn": "rust",
+   "size": 0.5,
+   "tile": 1.2,
+   "bump": 3
+  },
+  "diamond": {
+   "fn": "diamond",
+   "size": 0.5,
+   "tile": 0.5,
+   "bump": 2
+  },
+  "corrugated": {
+   "fn": "corrugated",
+   "size": 0.5,
+   "tile": [
+    0.762,
+    2.286
+   ],
+   "bump": 19
+  },
+  "chainlink": {
+   "fn": "chainlink",
+   "size": 0.5,
+   "tile": 0.5,
+   "bump": 5
+  },
+  "hazard": {
+   "fn": "hazard",
+   "size": 0.5,
+   "tile": 1,
+   "bump": 2.5
+  },
+  "gunmetal": {
+   "fn": "gunmetal",
+   "size": 0.5,
+   "tile": 0.25,
+   "bump": 0.3,
+   "p": [
+    0.6
+   ]
+  },
+  "anodized": {
+   "fn": "gunmetal",
+   "size": 0.5,
+   "tile": 0.25,
+   "bump": 0.25,
+   "p": [
+    0.2
+   ],
+   "seed": 11
+  },
+  "polymer": {
+   "fn": "polymer",
+   "size": 0.25,
+   "tile": 0.1,
+   "bump": 0.4
+  },
+  "carbon": {
+   "fn": "carbon",
+   "size": 0.25,
+   "tile": 0.05,
+   "bump": 0.5
+  },
+  "fabric": {
+   "fn": "fabric",
+   "size": 0.25,
+   "tile": 0.05,
+   "bump": 0.4
+  },
+  "armor": {
+   "fn": "armor",
+   "size": 0.5,
+   "tile": 0.5,
+   "bump": 0.8
+  },
+  "wood": {
+   "fn": "wood",
+   "size": 0.5,
+   "tile": 1.2,
+   "bump": 2.6
+  },
+  "plastic": {
+   "fn": "plastic",
+   "size": 0.5,
+   "tile": 1,
+   "bump": 1
+  },
+  "tarp": {
+   "fn": "tarp",
+   "size": 0.5,
+   "tile": 1.5,
+   "bump": 20
+  },
+  "cardboard": {
+   "fn": "cardboard",
+   "size": 0.5,
+   "tile": 1,
+   "bump": 0.8
+  },
+  "rope": {
+   "fn": "rope",
+   "size": 0.25,
+   "tile": 0.1,
+   "bump": 4
+  },
+  "tire": {
+   "fn": "tire",
+   "size": 0.5,
+   "tile": [
+    0.5,
+    0.3
+   ],
+   "bump": 7
+  },
+  "glass": {
+   "fn": "glass",
+   "size": 0.5,
+   "tile": 1.5,
+   "bump": 1.5,
+   "p": [
+    0.3
+   ]
+  },
+  "glass_dirty": {
+   "fn": "glass",
+   "size": 0.5,
+   "tile": 1.5,
+   "bump": 1.5,
+   "p": [
+    1
+   ],
+   "seed": 40
+  },
+  "water": {
+   "fn": "water",
+   "size": 0.25,
+   "tile": 4,
+   "bump": 30
+  }
+ },
+ "inst": {
+  "asphalt": {
+   "set": "asphalt",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.45,
+    0.3,
+    0.5,
+    0
+   ],
+   "macro": [
+    0.22,
+    0.12,
+    0.35,
+    0.35
+   ],
+   "nrm": 1
+  },
+  "concrete": {
+   "set": "concrete",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.42,
+    0.38,
+    0.5,
+    0
+   ],
+   "macro": [
+    0.22,
+    0.12,
+    0.35,
+    0.35
+   ],
+   "nrm": 1
+  },
+  "concrete_dirty": {
+   "set": "concrete",
+   "tint": 0,
+   "color": 13616822,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.42,
+    0.38,
+    0.5,
+    0
+   ],
+   "macro": [
+    0.3,
+    0.15,
+    0.35,
+    0.9
+   ],
+   "nrm": 1
+  },
+  "concrete_painted": {
+   "set": "concrete",
+   "tint": 2,
+   "color": 9343638,
+   "rough": 0.9,
+   "metal": 1,
+   "wet": [
+    0.15,
+    0.55,
+    0.6,
+    0.3
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.5,
+    0.3
+   ],
+   "nrm": 1
+  },
+  "brick": {
+   "set": "brick",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.42,
+    0.38,
+    0.5,
+    0
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "floor_epoxy": {
+   "set": "epoxy",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.04,
+    0.75,
+    0.4,
+    0
+   ],
+   "macro": [
+    0.12,
+    0.2,
+    0.45,
+    0.25
+   ],
+   "nrm": 1
+  },
+  "paint_red": {
+   "set": "paint",
+   "tint": 1,
+   "color": 8200729,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_blue": {
+   "set": "paint",
+   "tint": 1,
+   "color": 2047846,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_green": {
+   "set": "paint",
+   "tint": 1,
+   "color": 2906692,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_yellow": {
+   "set": "paint",
+   "tint": 1,
+   "color": 12159516,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_orange": {
+   "set": "paint",
+   "tint": 1,
+   "color": 11751962,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_white": {
+   "set": "paint",
+   "tint": 1,
+   "color": 12172214,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_grey": {
+   "set": "paint",
+   "tint": 1,
+   "color": 5922920,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "paint_teal": {
+   "set": "paint",
+   "tint": 1,
+   "color": 2055523,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.2,
+    0.16,
+    0.4,
+    0.45
+   ],
+   "nrm": 1
+  },
+  "steel_galv": {
+   "set": "galv",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "steel_dark": {
+   "set": "metal",
+   "tint": 1,
+   "color": 4014406,
+   "rough": 1.15,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "steel_worn": {
+   "set": "metal",
+   "tint": 1,
+   "color": 9080466,
+   "rough": 0.9,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "steel_bare": {
+   "set": "brushed",
+   "tint": 1,
+   "color": 11843771,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.07,
+    0.06,
+    3,
+    0
+   ],
+   "nrm": 1
+  },
+  "steel_rust": {
+   "set": "rust",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.3,
+    0.6,
+    0.55,
+    0
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "diamond_plate": {
+   "set": "diamond",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "corrugated_roof": {
+   "set": "corrugated",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "chainlink": {
+   "set": "chainlink",
+   "tint": 3,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "macro": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "nrm": 1,
+   "alphaCut": true,
+   "side": 2
+  },
+  "aluminium": {
+   "set": "brushed",
+   "tint": 1,
+   "color": 12896459,
+   "rough": 1.15,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.07,
+    0.06,
+    3,
+    0
+   ],
+   "nrm": 1
+  },
+  "brass": {
+   "set": "brushed",
+   "tint": 1,
+   "color": 12753477,
+   "rough": 0.9,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.55,
+    0.5
+   ],
+   "macro": [
+    0.1,
+    0.08,
+    20,
+    0
+   ],
+   "nrm": 1
+  },
+  "hazard_stripes": {
+   "set": "hazard",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "gunmetal": {
+   "set": "gunmetal",
+   "tint": 1,
+   "color": 2764081,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.75,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.08,
+    0.06,
+    6,
+    0
+   ],
+   "nrm": 1
+  },
+  "anodized_black": {
+   "set": "anodized",
+   "tint": 1,
+   "color": 1184790,
+   "rough": 0.72,
+   "metal": 0.9,
+   "wet": [
+    0,
+    0.75,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.06,
+    0.05,
+    6,
+    0
+   ],
+   "nrm": 1
+  },
+  "polymer_black": {
+   "set": "polymer",
+   "tint": 1,
+   "color": 1513498,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.06,
+    0.06,
+    6,
+    0
+   ],
+   "nrm": 1
+  },
+  "polymer_tan": {
+   "set": "polymer",
+   "tint": 1,
+   "color": 7299144,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.7,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.06,
+    0.06,
+    6,
+    0
+   ],
+   "nrm": 1
+  },
+  "rubber": {
+   "set": "polymer",
+   "tint": 1,
+   "color": 1052688,
+   "rough": 1.4,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.6,
+    0.6,
+    0.4
+   ],
+   "macro": [
+    0.06,
+    0.06,
+    6,
+    0
+   ],
+   "nrm": 1
+  },
+  "carbon": {
+   "set": "carbon",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    0.8,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.05,
+    0.05,
+    6,
+    0
+   ],
+   "nrm": 1
+  },
+  "glove_fabric": {
+   "set": "fabric",
+   "tint": 1,
+   "color": 2303530,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.3,
+    0.7,
+    0.6,
+    0
+   ],
+   "macro": [
+    0.08,
+    0.04,
+    8,
+    0
+   ],
+   "nrm": 1
+  },
+  "armor_white": {
+   "set": "armor",
+   "tint": 1,
+   "color": 11449528,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.08,
+    0.08,
+    2.5,
+    0.15
+   ],
+   "nrm": 1
+  },
+  "armor_orange": {
+   "set": "armor",
+   "tint": 1,
+   "color": 12670234,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.08,
+    0.08,
+    2.5,
+    0.15
+   ],
+   "nrm": 1
+  },
+  "wood_pallet": {
+   "set": "wood",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.4,
+    0.5,
+    0.6,
+    0
+   ],
+   "macro": [
+    0.2,
+    0.1,
+    0.9,
+    0.4
+   ],
+   "nrm": 1
+  },
+  "wood_dark": {
+   "set": "wood",
+   "tint": 0,
+   "color": 9074794,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.4,
+    0.5,
+    0.6,
+    0
+   ],
+   "macro": [
+    0.2,
+    0.1,
+    0.9,
+    0.4
+   ],
+   "nrm": 1
+  },
+  "plastic_blue": {
+   "set": "plastic",
+   "tint": 1,
+   "color": 1920134,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.08,
+    0.62,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "plastic_red": {
+   "set": "plastic",
+   "tint": 1,
+   "color": 9314074,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.08,
+    0.62,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "plastic_grey": {
+   "set": "plastic",
+   "tint": 1,
+   "color": 4935508,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.08,
+    0.62,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "tarp": {
+   "set": "tarp",
+   "tint": 1,
+   "color": 3885626,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.08,
+    0.62,
+    0.6,
+    0.5
+   ],
+   "macro": [
+    0.1,
+    0.1,
+    1.2,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "cardboard": {
+   "set": "cardboard",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.4,
+    0.75,
+    0.6,
+    0
+   ],
+   "macro": [
+    0.14,
+    0.1,
+    0.8,
+    0.2
+   ],
+   "nrm": 1
+  },
+  "rope": {
+   "set": "rope",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.42,
+    0.38,
+    0.5,
+    0
+   ],
+   "macro": [
+    0.07,
+    0.06,
+    3,
+    0
+   ],
+   "nrm": 1
+  },
+  "tire": {
+   "set": "tire",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.1,
+    0.6,
+    0.6,
+    0.3
+   ],
+   "macro": [
+    0.07,
+    0.06,
+    3,
+    0
+   ],
+   "nrm": 1
+  },
+  "glass": {
+   "set": "glass",
+   "tint": 3,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "macro": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "nrm": 1,
+   "transparent": true
+  },
+  "glass_dirty": {
+   "set": "glass_dirty",
+   "tint": 3,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "macro": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "nrm": 1,
+   "transparent": true
+  },
+  "hull_paint": {
+   "set": "hull",
+   "tint": 1,
+   "color": 1778219,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.22,
+    0.12,
+    0.35,
+    0.35
+   ],
+   "nrm": 1
+  },
+  "hull_red": {
+   "set": "hull",
+   "tint": 1,
+   "color": 6233880,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0.05,
+    0.62,
+    0.65,
+    0.7
+   ],
+   "macro": [
+    0.22,
+    0.12,
+    0.35,
+    0.35
+   ],
+   "nrm": 1
+  },
+  "water_dark": {
+   "set": "water",
+   "tint": 0,
+   "color": 16777215,
+   "rough": 1,
+   "metal": 1,
+   "wet": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "macro": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "nrm": 1
+  }
+ },
+ "weapon": {
+  "id": "pac9",
+  "name": "PAC-9",
+  "magSize": 30,
+  "reserve": 150,
+  "damage": 26,
+  "weakPointMul": 2.2,
+  "rpm": 720,
+  "spread": 0.0125
+ },
+ "springs": {
+  "kickZ": [
+   520,
+   30
+  ],
+  "kickPitch": [
+   380,
+   26
+  ],
+  "kickYaw": [
+   300,
+   22
+  ],
+  "kickRoll": [
+   300,
+   20
+  ],
+  "swayYaw": [
+   110,
+   15
+  ],
+  "swayPitch": [
+   110,
+   15
+  ],
+  "jumpY": [
+   140,
+   13
+  ],
+  "jumpPitch": [
+   140,
+   13
+  ],
+  "bump": [
+   600,
+   30
+  ]
+ },
+ "ai": {
+  "sightRange": 45,
+  "sightCone": 200,
+  "loseSight": 4,
+  "searchTime": 8,
+  "hearRadius": 45,
+  "maxTokens": 2,
+  "maxTokensCrowd": 3,
+  "tokenGap": 1.25,
+  "exposureUp": 0.1,
+  "exposureDown": 0.45,
+  "poolGulls": 10,
+  "poolHounds": 8,
+  "maxWrecks": 5,
+  "maxBolts": 32
+ },
+ "player": {
+  "walk": 3.8,
+  "sprint": 6.4,
+  "crouch": 1.9,
+  "ads": 2.4,
+  "accelGround": 34,
+  "decelGround": 26,
+  "accelAir": 9,
+  "gravity": 21,
+  "jumpApex": 1,
+  "coyote": 0.12,
+  "jumpBuffer": 0.13,
+  "standHeight": 1.8,
+  "crouchHeight": 1.15,
+  "eyeRate": 11,
+  "stride": {
+   "walk": 1.55,
+   "sprint": 2.1,
+   "crouch": 1.05
+  },
+  "bobY": 0.024,
+  "bobX": 0.013,
+  "bobSprint": 1.9,
+  "bobAds": 0.22,
+  "rollStrafe": 0.02,
+  "landDip": 0.36,
+  "landDipMax": 0.2,
+  "fovSprint": 6,
+  "fovAds": 52,
+  "adsLook": 0.6,
+  "regenDelay": 4,
+  "regenRate": 25,
+  "recoilKeep": 0.35,
+  "recoilApply": 34,
+  "recoilRecover": 6.5,
+  "recoilHold": 0.09,
+  "shakeDecay": 1.7,
+  "shakePitch": 0.03,
+  "shakeYaw": 0.03,
+  "shakeRoll": 0.045,
+  "pitchLimit": 1.5
+ },
+ "quality": {
+  "test": {
+   "name": "test",
+   "scale": 1,
+   "msaa": 0,
+   "shadow": 1024,
+   "tex": 256,
+   "volSteps": 10,
+   "ao": true,
+   "planar": 0.5,
+   "bloom": true,
+   "motionBlur": false,
+   "rain": 0.4
+  },
+  "low": {
+   "name": "low",
+   "scale": 0.7,
+   "msaa": 0,
+   "shadow": 2048,
+   "tex": 512,
+   "volSteps": 12,
+   "ao": false,
+   "planar": 0,
+   "bloom": true,
+   "motionBlur": false,
+   "rain": 0.5
+  },
+  "medium": {
+   "name": "medium",
+   "scale": 0.85,
+   "msaa": 2,
+   "shadow": 2048,
+   "tex": 1024,
+   "volSteps": 16,
+   "ao": true,
+   "planar": 0.5,
+   "bloom": true,
+   "motionBlur": false,
+   "rain": 0.8
+  },
+  "high": {
+   "name": "high",
+   "scale": 1,
+   "msaa": 4,
+   "shadow": 4096,
+   "tex": 1024,
+   "volSteps": 24,
+   "ao": true,
+   "planar": 0.5,
+   "bloom": true,
+   "motionBlur": true,
+   "rain": 1
+  },
+  "ultra": {
+   "name": "ultra",
+   "scale": 1,
+   "msaa": 4,
+   "shadow": 4096,
+   "tex": 2048,
+   "volSteps": 40,
+   "ao": true,
+   "planar": 1,
+   "bloom": true,
+   "motionBlur": true,
+   "rain": 1
+  }
+ },
+ "sfx": {
+  "rifle_shot": {
+   "gen": "KR",
+   "n": 4,
+   "sr": "ki",
+   "peak": 0.97,
+   "bus": "near",
+   "max": 5,
+   "pri": 9,
+   "boot": 1
+  },
+  "rifle_tail_out": {
+   "gen": "QR",
+   "n": 2,
+   "sr": "Xn",
+   "peak": 0.5,
+   "bus": "dry",
+   "max": 3,
+   "pri": 8,
+   "boot": 1
+  },
+  "rifle_tail_in": {
+   "gen": "e8",
+   "n": 2,
+   "sr": "Xn",
+   "peak": 0.62,
+   "bus": "dry",
+   "max": 3,
+   "pri": 8,
+   "boot": 1
+  },
+  "rifle_dry": {
+   "gen": "t8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.5,
+   "bus": "near",
+   "max": 2,
+   "pri": 6,
+   "boot": 1
+  },
+  "reload_magout": {
+   "gen": "n8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.6,
+   "bus": "near",
+   "max": 2,
+   "pri": 6
+  },
+  "reload_magin": {
+   "gen": "i8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.65,
+   "bus": "near",
+   "max": 2,
+   "pri": 6
+  },
+  "reload_bolt": {
+   "gen": "s8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.8,
+   "bus": "near",
+   "max": 2,
+   "pri": 6
+  },
+  "shell_bounce": {
+   "gen": "o8",
+   "n": 3,
+   "sr": "ki",
+   "peak": 0.3,
+   "bus": "world",
+   "max": 4,
+   "pri": 1,
+   "ref": 2,
+   "roll": 1
+  },
+  "step_concrete": {
+   "gen": "r8",
+   "n": 4,
+   "sr": "Xn",
+   "peak": 0.45,
+   "bus": "near",
+   "max": 3,
+   "pri": 3,
+   "boot": 1
+  },
+  "step_water": {
+   "gen": "a8",
+   "n": 3,
+   "sr": "Xn",
+   "peak": 0.5,
+   "bus": "near",
+   "max": 3,
+   "pri": 3,
+   "boot": 1
+  },
+  "step_metal": {
+   "gen": "l8",
+   "n": 3,
+   "sr": "Xn",
+   "peak": 0.5,
+   "bus": "near",
+   "max": 3,
+   "pri": 3,
+   "boot": 1
+  },
+  "land": {
+   "gen": "c8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.7,
+   "bus": "near",
+   "max": 2,
+   "pri": 4
+  },
+  "jump": {
+   "gen": "u8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.35,
+   "bus": "near",
+   "max": 2,
+   "pri": 3
+  },
+  "hurt": {
+   "gen": "h8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.85,
+   "bus": "dry",
+   "max": 2,
+   "pri": 8
+  },
+  "ear_ring": {
+   "gen": "f8",
+   "n": 1,
+   "sr": "pl",
+   "peak": 0.2,
+   "bus": "dry",
+   "max": 1,
+   "pri": 5
+  },
+  "impact_metal": {
+   "gen": "d8",
+   "n": 3,
+   "sr": "ki",
+   "peak": 0.7,
+   "bus": "world",
+   "max": 4,
+   "pri": 4,
+   "ref": 4,
+   "roll": 0.7
+  },
+  "impact_concrete": {
+   "gen": "p8",
+   "n": 3,
+   "sr": "ki",
+   "peak": 0.7,
+   "bus": "world",
+   "max": 4,
+   "pri": 4,
+   "ref": 4,
+   "roll": 0.7
+  },
+  "impact_wood": {
+   "gen": "m8",
+   "n": 2,
+   "sr": "ki",
+   "peak": 0.7,
+   "bus": "world",
+   "max": 3,
+   "pri": 4,
+   "ref": 4,
+   "roll": 0.7
+  },
+  "impact_water": {
+   "gen": "g8",
+   "n": 2,
+   "sr": "Xn",
+   "peak": 0.6,
+   "bus": "world",
+   "max": 3,
+   "pri": 4,
+   "ref": 4,
+   "roll": 0.7
+  },
+  "impact_enemy": {
+   "gen": "v8",
+   "n": 3,
+   "sr": "ki",
+   "peak": 0.75,
+   "bus": "world",
+   "max": 4,
+   "pri": 5,
+   "ref": 5,
+   "roll": 0.6
+  },
+  "impact_glass": {
+   "gen": "x8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.6,
+   "bus": "world",
+   "max": 2,
+   "pri": 4,
+   "ref": 4,
+   "roll": 0.7
+  },
+  "whiz": {
+   "gen": "b8",
+   "n": 3,
+   "sr": "ki",
+   "peak": 0.5,
+   "bus": "world",
+   "max": 3,
+   "pri": 5,
+   "ref": 2.5,
+   "roll": 0.6
+  },
+  "ricochet": {
+   "gen": "y8",
+   "n": 3,
+   "sr": "ki",
+   "peak": 0.4,
+   "bus": "world",
+   "max": 2,
+   "pri": 3,
+   "ref": 5,
+   "roll": 0.6
+  },
+  "gull_fire": {
+   "gen": "E8",
+   "n": 2,
+   "sr": "ki",
+   "peak": 0.85,
+   "bus": "world",
+   "max": 5,
+   "pri": 7,
+   "ref": 7,
+   "roll": 0.55
+  },
+  "hound_fire": {
+   "gen": "S8",
+   "n": 2,
+   "sr": "ki",
+   "peak": 0.95,
+   "bus": "world",
+   "max": 5,
+   "pri": 7,
+   "ref": 8,
+   "roll": 0.5
+  },
+  "hound_step": {
+   "gen": "T8",
+   "n": 3,
+   "sr": "Xn",
+   "peak": 0.7,
+   "bus": "world",
+   "max": 4,
+   "pri": 3,
+   "ref": 5,
+   "roll": 0.8
+  },
+  "gull_die": {
+   "gen": "A8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.85,
+   "bus": "world",
+   "max": 3,
+   "pri": 7,
+   "ref": 7,
+   "roll": 0.5
+  },
+  "hound_die": {
+   "gen": "R8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.9,
+   "bus": "world",
+   "max": 3,
+   "pri": 7,
+   "ref": 7,
+   "roll": 0.5
+  },
+  "telegraph": {
+   "gen": "P8",
+   "n": 2,
+   "sr": "Xn",
+   "peak": 0.42,
+   "bus": "world",
+   "max": 4,
+   "pri": 6,
+   "ref": 6,
+   "roll": 0.6
+  },
+  "alert": {
+   "gen": "C8",
+   "n": 2,
+   "sr": "Xn",
+   "peak": 0.5,
+   "bus": "world",
+   "max": 3,
+   "pri": 6,
+   "ref": 8,
+   "roll": 0.5
+  },
+  "explosion": {
+   "gen": "I8",
+   "n": 2,
+   "sr": "ki",
+   "peak": 0.97,
+   "bus": "world",
+   "max": 3,
+   "pri": 10,
+   "ref": 12,
+   "roll": 0.5
+  },
+  "relay_cut": {
+   "gen": "z8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.75,
+   "bus": "world",
+   "max": 2,
+   "pri": 8,
+   "ref": 6,
+   "roll": 0.5
+  },
+  "thunder": {
+   "gen": "D8",
+   "n": 2,
+   "sr": "pl",
+   "peak": 0.8,
+   "bus": "dry",
+   "max": 2,
+   "pri": 6
+  },
+  "foghorn": {
+   "gen": "L8",
+   "n": 1,
+   "sr": "pl",
+   "peak": 0.5,
+   "bus": "world",
+   "max": 1,
+   "pri": 2
+  },
+  "gull_cry": {
+   "gen": "k8",
+   "n": 2,
+   "sr": "pl",
+   "peak": 0.4,
+   "bus": "world",
+   "max": 2,
+   "pri": 1
+  },
+  "halyard": {
+   "gen": "F8",
+   "n": 2,
+   "sr": "Xn",
+   "peak": 0.3,
+   "bus": "world",
+   "max": 2,
+   "pri": 1
+  },
+  "container_bang": {
+   "gen": "U8",
+   "n": 1,
+   "sr": "pl",
+   "peak": 0.6,
+   "bus": "world",
+   "max": 1,
+   "pri": 2
+  },
+  "ui_click": {
+   "gen": "N8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.3,
+   "bus": "dry",
+   "max": 2,
+   "pri": 9
+  },
+  "ui_hover": {
+   "gen": "B8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.12,
+   "bus": "dry",
+   "max": 2,
+   "pri": 9
+  },
+  "objective": {
+   "gen": "Z8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.6,
+   "bus": "music",
+   "max": 1,
+   "pri": 9
+  },
+  "objective_all": {
+   "gen": "j8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.65,
+   "bus": "music",
+   "max": 1,
+   "pri": 9
+  },
+  "complete": {
+   "gen": "J8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.7,
+   "bus": "music",
+   "max": 1,
+   "pri": 9
+  },
+  "death": {
+   "gen": "K8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.75,
+   "bus": "music",
+   "max": 1,
+   "pri": 9
+  },
+  "gull_rotor": {
+   "gen": "_8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.6,
+   "ref": 5,
+   "roll": 0.9
+  },
+  "hound_servo": {
+   "gen": "M8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.42,
+   "ref": 4,
+   "roll": 1
+  },
+  "relay_hum": {
+   "gen": "w8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.4,
+   "ref": 2.5,
+   "roll": 1.4
+  },
+  "rain": {
+   "gen": "O8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.5
+  },
+  "rain_interior": {
+   "gen": "H8",
+   "n": 1,
+   "sr": "Xn",
+   "peak": 0.7
+  },
+  "wind": {
+   "gen": "V8",
+   "n": 1,
+   "sr": "pl",
+   "peak": 0.5
+  },
+  "sea": {
+   "gen": "W8",
+   "n": 1,
+   "sr": "pl",
+   "peak": 0.5,
+   "ref": 10,
+   "roll": 0.6
+  },
+  "music_drone": {
+   "gen": "G8",
+   "n": 1,
+   "sr": "Fr.sr",
+   "peak": 0.5
+  },
+  "music_ost": {
+   "gen": "q8",
+   "n": 1,
+   "sr": "Fr.sr",
+   "peak": 0.45
+  },
+  "music_perc": {
+   "gen": "X8",
+   "n": 1,
+   "sr": "Fr.sr",
+   "peak": 0.7
+  },
+  "music_brass": {
+   "gen": "Y8",
+   "n": 1,
+   "sr": "Fr.sr",
+   "peak": 0.45
+  },
+  "music_motif": {
+   "gen": "$8",
+   "n": 1,
+   "sr": "Fr.sr",
+   "peak": 0.45
+  },
+  "ir_outdoor": {
+   "gen": "Q8",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.9
+  },
+  "ir_shed": {
+   "gen": "eC",
+   "n": 1,
+   "sr": "ki",
+   "peak": 0.9
+  }
+ }
+}

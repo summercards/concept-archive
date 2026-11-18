@@ -1,0 +1,41 @@
+{
+  "title": "XENO SIEGE / BASTION 07",
+  "mode": "same-method-new-theme",
+  "source": "/Users/zyq/work/工程参考/几猫国产3A大作_V1(4).html",
+  "sourceSha256": "9e55b5200b088adaf8e1152da04efc0d3b25e236e6baf2dee96f81e23e084966",
+  "engine": "Three.js r180 / original embedded vendor byte-preserved",
+  "vendorSha256": "b918227191f67f20da222cd2aea768814e3304cde453ab4f23d2ca713dbf8775",
+  "outputSha256": "611d73095c2872f58c30c31ebea175169c759fdd066fc195aae3ae3a5e23e3a5",
+  "outputBytes": 1530327,
+  "fragments": {
+    "core.js": "c29209f23f1de21a311174af96cd5025a1a9b13b5808ddd438ca47729afdc4a7",
+    "life.js": "0a3acfb7a1eb8bbbfa41a949e8b52a15bad96ab011f9ee7171e44b82dbf1dcdd",
+    "game.js": "074cb5d72cf2781460af2058e4b9d5f47a15260379a683bfcfd4a683800eaa08",
+    "audio.js": "ef226618183a9bedbad8149c8be90cf7a2472d749f021de2970bce1564814e0a"
+  },
+  "retained": [
+    "米制几何及UV",
+    "程序材质、ORM、法线与湿润",
+    "HDR末端映射",
+    "PCSS风格软阴影",
+    "双相机第一人称动作",
+    "原版程序声音/雨/音乐接口",
+    "输入→游戏→玩家/武器→敌群→FX/HUD→渲染顺序"
+  ],
+  "replaced": [
+    "港区布局与海岸线",
+    "冷月城市天空",
+    "防卫基地与异星地表",
+    "虫群InstancedMesh、攀爬堆叠和波次",
+    "基地护盾任务与基地HUD文案",
+    "粗粒爆浆、冲击环和池化大特效"
+  ],
+  "knownScope": [
+    "程序化第一人称防卫战纵切片，非商业AAA制作规模",
+    "虫群采用受控程序动画和InstancedMesh，不是布娃娃或完整多层NavMesh",
+    "虫群损伤/核心护盾/攀爬状态与原版射线战斗桥接，完整波次战术AI未宣称",
+    "无外部模型贴图和联网资源",
+    "实际听音、真机触控、长时性能需另验"
+  ],
+  "syntax": "passed"
+}

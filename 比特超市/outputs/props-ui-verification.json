@@ -1,0 +1,403 @@
+{
+  "status": "PASS",
+  "static": {
+    "source": {
+      "path": "/Users/zyq/work/工程参考/几猫国产3A大作_V1(4).html",
+      "sha256": "9e55b5200b088adaf8e1152da04efc0d3b25e236e6baf2dee96f81e23e084966"
+    },
+    "generated": {
+      "path": "assets/code/props-builder.js",
+      "sha256": "0e4a75b1e38276fce7b3d86a8e7ee64277e13acea4b0060d0a734c77dfe5a672"
+    },
+    "packedModule": {
+      "path": "assets/modules.js",
+      "sha256": "0600175e57eb7af2b1e5ccc51974578eb126e499e8dd5ca97d3b992e8ab48964"
+    },
+    "manifest": {
+      "path": "build/props-source.json",
+      "sha256": "81d1af768dbd8a188ea60844ac191b7166715d03d2a8e73a33b6acb8633cc4e7"
+    },
+    "container": {
+      "path": "assets/code/container-builder.js",
+      "sha256": "1a13382d4dd8a66b50367b5cd97b3dcd8123cdf37bbdc5c4e53717e1c469c28d"
+    },
+    "app": {
+      "path": "app.js",
+      "sha256": "7c6efe085deccec5274167ce7ec6127011a4a9e9da3030a2892f35d53526d64f"
+    },
+    "previews": {
+      "path": "previews.js",
+      "sha256": "3275f1959592a8db74791482c97b3aba8af684ec28f17f0e16c4ef99317e9708"
+    },
+    "data": {
+      "path": "assets/data.js",
+      "sha256": "80da076d5e07fd56401f46a603fe66d97c4a94141a3ec29c5d2192655804f3ea"
+    }
+  },
+  "stableInputs": true,
+  "total": 36,
+  "errors": [],
+  "mobileOverflow": 0,
+  "rows": [
+    {
+      "id": "container20",
+      "builder": "M3/zA",
+      "vertices": "15102",
+      "triangles": "5338",
+      "doors": "0",
+      "fail": null,
+      "note": "原版 M3 → zA · 11 材质网格 · 15,102 顶点 · 5,338 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "container40",
+      "builder": "M3/zA",
+      "vertices": "18444",
+      "triangles": "6452",
+      "doors": "0",
+      "fail": null,
+      "note": "原版 M3 → zA · 11 材质网格 · 18,444 顶点 · 6,452 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "container40hc",
+      "builder": "M3/zA",
+      "vertices": "18476",
+      "triangles": "6478",
+      "doors": "0",
+      "fail": null,
+      "note": "原版 M3 → zA · 12 材质网格 · 18,476 顶点 · 6,478 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "jersey_barrier",
+      "builder": "Yg/jersey_barrier",
+      "vertices": "1680",
+      "triangles": "604",
+      "prop": "jersey_barrier",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → jersey_barrier · 2 网格 · 1,680 顶点 · 604 三角 · 2 碰撞盒"
+    },
+    {
+      "id": "light_mast",
+      "builder": "Yg/light_mast",
+      "vertices": "6771",
+      "triangles": "2794",
+      "prop": "light_mast",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → light_mast · 5 网格 · 6,771 顶点 · 2,794 三角 · 2 碰撞盒"
+    },
+    {
+      "id": "fence_panel",
+      "builder": "Yg/fence_panel",
+      "vertices": "1894",
+      "triangles": "1142",
+      "prop": "fence_panel",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → fence_panel · 3 网格 · 1,894 顶点 · 1,142 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "guard_booth",
+      "builder": "Yg/guard_booth",
+      "vertices": "5661",
+      "triangles": "3088",
+      "prop": "guard_booth",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → guard_booth · 15 网格 · 5,661 顶点 · 3,088 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "gate_arm",
+      "builder": "Yg/gate_arm",
+      "vertices": "848",
+      "triangles": "1132",
+      "prop": "gate_arm",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → gate_arm · 11 网格 · 848 顶点 · 1,132 三角 · 3 碰撞盒"
+    },
+    {
+      "id": "bollard_mooring",
+      "builder": "Yg/bollard_mooring",
+      "vertices": "1894",
+      "triangles": "1304",
+      "prop": "bollard_mooring",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → bollard_mooring · 2 网格 · 1,894 顶点 · 1,304 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "bollard_post",
+      "builder": "Yg/bollard_post",
+      "vertices": "512",
+      "triangles": "478",
+      "prop": "bollard_post",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → bollard_post · 2 网格 · 512 顶点 · 478 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "relay_node",
+      "builder": "Yg/relay_node",
+      "vertices": "9975",
+      "triangles": "5908",
+      "prop": "relay_node",
+      "dynamic": "true",
+      "state": "live",
+      "level": "6.367855526694164",
+      "fail": null,
+      "note": "原版 Yg.build → relay_node · 20 网格 · 9,975 顶点 · 5,908 三角 · 3 碰撞盒"
+    },
+    {
+      "id": "shelf_rack",
+      "builder": "Yg/shelf_rack",
+      "vertices": "9716",
+      "triangles": "6394",
+      "prop": "shelf_rack",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → shelf_rack · 14 网格 · 9,716 顶点 · 6,394 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "stairs_metal",
+      "builder": "Yg/stairs_metal",
+      "vertices": "2920",
+      "triangles": "3152",
+      "prop": "stairs_metal",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → stairs_metal · 4 网格 · 2,920 顶点 · 3,152 三角 · 17 碰撞盒"
+    },
+    {
+      "id": "catwalk",
+      "builder": "Yg/catwalk",
+      "vertices": "2212",
+      "triangles": "1508",
+      "prop": "catwalk",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → catwalk · 3 网格 · 2,212 顶点 · 1,508 三角 · 3 碰撞盒"
+    },
+    {
+      "id": "reefer_unit",
+      "builder": "Yg/reefer_unit",
+      "vertices": "5285",
+      "triangles": "3580",
+      "prop": "reefer_unit",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → reefer_unit · 14 网格 · 5,285 顶点 · 3,580 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "barrel",
+      "builder": "Yg/barrel",
+      "vertices": "722",
+      "triangles": "1048",
+      "prop": "barrel",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → barrel · 4 网格 · 722 顶点 · 1,048 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "pallet",
+      "builder": "Yg/pallet",
+      "vertices": "560",
+      "triangles": "632",
+      "prop": "pallet",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → pallet · 2 网格 · 560 顶点 · 632 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "pallet_stack",
+      "builder": "Yg/pallet_stack",
+      "vertices": "4416",
+      "triangles": "2560",
+      "prop": "pallet_stack",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → pallet_stack · 2 网格 · 4,416 顶点 · 2,560 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "crate_wood",
+      "builder": "Yg/crate_wood",
+      "vertices": "1288",
+      "triangles": "1476",
+      "prop": "crate_wood",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → crate_wood · 7 网格 · 1,288 顶点 · 1,476 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "crate_stack",
+      "builder": "Yg/crate_stack",
+      "vertices": "3248",
+      "triangles": "2552",
+      "prop": "crate_stack",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → crate_stack · 12 网格 · 3,248 顶点 · 2,552 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "ibc_tote",
+      "builder": "Yg/ibc_tote",
+      "vertices": "1937",
+      "triangles": "2122",
+      "prop": "ibc_tote",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → ibc_tote · 9 网格 · 1,937 顶点 · 2,122 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "forklift",
+      "builder": "Yg/forklift",
+      "vertices": "10987",
+      "triangles": "11628",
+      "prop": "forklift",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → forklift · 21 网格 · 10,987 顶点 · 11,628 三角 · 11 碰撞盒"
+    },
+    {
+      "id": "cable_reel",
+      "builder": "Yg/cable_reel",
+      "vertices": "2131",
+      "triangles": "2442",
+      "prop": "cable_reel",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → cable_reel · 10 网格 · 2,131 顶点 · 2,442 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "tire_stack",
+      "builder": "Yg/tire_stack",
+      "vertices": "1680",
+      "triangles": "2560",
+      "prop": "tire_stack",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → tire_stack · 1 网格 · 1,680 顶点 · 2,560 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "dumpster",
+      "builder": "Yg/dumpster",
+      "vertices": "2480",
+      "triangles": "2742",
+      "prop": "dumpster",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → dumpster · 12 网格 · 2,480 顶点 · 2,742 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "generator",
+      "builder": "Yg/generator",
+      "vertices": "3901",
+      "triangles": "2962",
+      "prop": "generator",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → generator · 17 网格 · 3,901 顶点 · 2,962 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "jerry_can",
+      "builder": "Yg/jerry_can",
+      "vertices": "640",
+      "triangles": "884",
+      "prop": "jerry_can",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → jerry_can · 4 网格 · 640 顶点 · 884 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "traffic_cone",
+      "builder": "Yg/traffic_cone",
+      "vertices": "313",
+      "triangles": "380",
+      "prop": "traffic_cone",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → traffic_cone · 3 网格 · 313 顶点 · 380 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "gas_cylinders",
+      "builder": "Yg/gas_cylinders",
+      "vertices": "2179",
+      "triangles": "2822",
+      "prop": "gas_cylinders",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → gas_cylinders · 13 网格 · 2,179 顶点 · 2,822 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "tarp_cargo",
+      "builder": "Yg/tarp_cargo",
+      "vertices": "2618",
+      "triangles": "2976",
+      "prop": "tarp_cargo",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → tarp_cargo · 6 网格 · 2,618 顶点 · 2,976 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "sandbags",
+      "builder": "Yg/sandbags",
+      "vertices": "3024",
+      "triangles": "2646",
+      "prop": "sandbags",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → sandbags · 1 网格 · 3,024 顶点 · 2,646 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "toolbox_cart",
+      "builder": "Yg/toolbox_cart",
+      "vertices": "2384",
+      "triangles": "2336",
+      "prop": "toolbox_cart",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → toolbox_cart · 15 网格 · 2,384 顶点 · 2,336 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "floodlight_stand",
+      "builder": "Yg/floodlight_stand",
+      "vertices": "1446",
+      "triangles": "1398",
+      "prop": "floodlight_stand",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → floodlight_stand · 5 网格 · 1,446 顶点 · 1,398 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "cardboard_boxes",
+      "builder": "Yg/cardboard_boxes",
+      "vertices": "1242",
+      "triangles": "1472",
+      "prop": "cardboard_boxes",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → cardboard_boxes · 8 网格 · 1,242 顶点 · 1,472 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "pipe_stack",
+      "builder": "Yg/pipe_stack",
+      "vertices": "1795",
+      "triangles": "2104",
+      "prop": "pipe_stack",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → pipe_stack · 6 网格 · 1,795 顶点 · 2,104 三角 · 1 碰撞盒"
+    },
+    {
+      "id": "sign_post",
+      "builder": "Yg/sign_post",
+      "vertices": "504",
+      "triangles": "620",
+      "prop": "sign_post",
+      "dynamic": "false",
+      "fail": null,
+      "note": "原版 Yg.build → sign_post · 7 网格 · 504 顶点 · 620 三角 · 2 碰撞盒"
+    }
+  ],
+  "scope": "36 件实际页面构造与原材质/灰模/线框切换；五件关键变体、中继三状态、390宽；不等于全体人工视觉或GPU等价。"
+}

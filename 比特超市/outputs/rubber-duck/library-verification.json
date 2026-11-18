@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "results": [
+    {
+      "check": "homepage",
+      "original": 283,
+      "authored": 2,
+      "recent": [
+        "#/a/new.rubber-duck",
+        "#/a/new.harbor-service-workbench"
+      ],
+      "fail": []
+    },
+    {
+      "check": "search",
+      "matches": [
+        "小黄鸭 · 软胶玩具rubber-duck"
+      ]
+    },
+    {
+      "check": "detail-links",
+      "links": [
+        {
+          "text": "打开源码文件 →",
+          "href": "assets/authored/rubber-duck.js"
+        },
+        {
+          "text": "打开 contract 文件 →",
+          "href": "assets/authored/contracts/rubber-duck.json"
+        },
+        {
+          "text": "打开独立验收报告 →",
+          "href": "outputs/rubber-duck/asset-review.html"
+        }
+      ]
+    },
+    {
+      "check": "closed-shell",
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "edgeCount": 11328,
+      "triangles": 7552
+    },
+    {
+      "check": "regression",
+      "hash": "#/authoring",
+      "h1": "新资产也走完整制作链"
+    },
+    {
+      "check": "regression",
+      "hash": "#/alignment",
+      "h1": "能复刻，不等于已复刻完成"
+    },
+    {
+      "check": "regression",
+      "hash": "#/a/prop.container40hc",
+      "h1": "40 尺高柜container40hc"
+    },
+    {
+      "check": "LAN",
+      "url": "http://10.30.70.199:8100/index.html#/a/new.rubber-duck",
+      "status": "PASS"
+    },
+    {
+      "check": "mobile",
+      "width": 390,
+      "overflow": 0
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.should-not-write",
+  "designStatus": "draft-unimplemented",
+  "instructions": [
+    "将此文件作为完整设计契约，按 assetId 关联 registry；只将 registryEntry 放入 registry.json 的 entries 数组。",
+    "此模板以 1.2×1.8×0.5 米双门维修柜为设计示例，不代表已构造、已测量或已通过验收。",
+    "按实际新设计替换名称、部件及尺寸；补齐 null、待确认文字和需要的数组。未填写不能视为通过。",
+    "先确认显式 root 和宿主 API，再实现 source；按可信参考实测设置预算，不使用统一阈值。"
+  ],
+  "registryEntry": {
+    "id": "new.should-not-write",
+    "source": "should-not-write.js",
+    "name": "原创资产 should-not-write（设计草稿）",
+    "summary": "原创资产 should-not-write（设计草稿）；尚未实现几何，未进行 runtime/visual 验收。",
+    "tags": [
+      "原创",
+      "程序化资产"
+    ],
+    "contract": {
+      "units": "m",
+      "size": [
+        1.2,
+        1.8,
+        0.5
+      ],
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "paint_grey",
+        "steel_dark"
+      ],
+      "requiredParts": [
+        "frame",
+        "panel"
+      ],
+      "options": {},
+      "collidersRequired": true,
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": []
+      }
+    },
+    "acceptance": {
+      "catalog": "unverified",
+      "geometry": "unverified",
+      "visual": "unverified",
+      "runtime": "unverified"
+    }
+  },
+  "designContract": {
+    "intent": "制作原创港区维修柜，而非原版整机或原版资产的逐点复刻。",
+    "coordinateSystem": {
+      "units": "m",
+      "up": "+Y",
+      "forward": "+Z",
+      "origin": "bottom-center",
+      "sizeOrder": [
+        "widthX",
+        "heightY",
+        "depthZ"
+      ],
+      "size": [
+        1.2,
+        1.8,
+        0.5
+      ],
+      "nominalBounds": {
+        "min": [
+          -0.6,
+          0,
+          -0.25
+        ],
+        "max": [
+          0.6,
+          1.8,
+          0.25
+        ]
+      },
+      "sizeToleranceM": null,
+      "protrusionsAndMotionEnvelope": "待确认把手、脚座和开门范围是否计入静置 size，并提供测量依据。"
+    },
+    "silhouette": {
+      "front": "双门竖向柜体，保留底座、门框、门缝与功能五金层级。",
+      "side": "待确定背板、框体、门板与把手的前后层次及凸出量。",
+      "back": "待确定背板连接、安装孔和可见装配结构。",
+      "designEvidence": []
+    },
+    "functionalParts": [
+      {
+        "name": "frame",
+        "role": "待实现的原创几何部件",
+        "parent": "root",
+        "sizeM": null,
+        "positionM": null
+      },
+      {
+        "name": "panel",
+        "role": "待实现的原创几何部件",
+        "parent": "root",
+        "sizeM": null,
+        "positionM": null
+      }
+    ],
+    "openingsAndThickness": {
+      "shellM": null,
+      "doorM": null,
+      "backM": null,
+      "shelfM": null,
+      "frameReturnM": null,
+      "clearOpeningSizeM": null,
+      "interiorDepthM": null,
+      "visibleInterior": "待补充开门后可见的内壁、层板、背板和连接细节。"
+    },
+    "assembly": {
+      "connections": [],
+      "hingeAxes": [],
+      "fastenersAndWelds": [],
+      "loadPath": "待说明柜体、层板、底座与地面的承重关系。"
+    },
+    "seamsAndHardware": {
+      "doorGapM": null,
+      "panelGapM": null,
+      "bevelRadiusM": null,
+      "handleProjectionM": null,
+      "lockGeometry": "待说明锁体尺寸、凸出量和可见几何。",
+      "geometryVersusDecal": "影响轮廓、开口、厚度及功能的结构使用几何；贴花仅承担表面信息。"
+    },
+    "surfaceAndUV": {
+      "mappingStrategy": "按实际宿主使用 metricBox、planeUV 或显式米制 UV；排查 Builder.box r0 默认 UV。",
+      "materialSpecifications": [
+        {
+          "id": "paint_grey",
+          "status": "unverified",
+          "note": "待按宿主材质账本核对"
+        },
+        {
+          "id": "steel_dark",
+          "status": "unverified",
+          "note": "待按宿主材质账本核对"
+        }
+      ],
+      "texelDensityMeasurements": [],
+      "uvDirectionAndSeams": "待逐表面说明方向、米制密度、接缝和允许的例外。",
+      "decals": [],
+      "decalRequirements": [
+        "实际尺寸和方向",
+        "表面偏移与边距",
+        "无镜像文字或 z-fighting",
+        "来源与使用权限"
+      ],
+      "ownership": "ctx.mats 缓存及共享纹理归宿主；仅回收当前资产独占资源。"
+    },
+    "collision": {
+      "space": "model-local",
+      "colliders": [],
+      "surfaceIdentifiers": [],
+      "requiredCornerChecks": 8,
+      "openingPolicy": "保持可用柜口和层板空间，不用整体实心 AABB 堵住需要交互的开口。",
+      "dynamicPolicy": "待声明门体碰撞随动或宿主支持的替代策略，并检查全运动范围。"
+    },
+    "sockets": {
+      "definitions": {},
+      "orientationConvention": "待与宿主对齐；无挂点时明确不适用并说明理由。",
+      "motionPolicy": "待说明安装点是否固定在柜体或随门运动。"
+    },
+    "variants": {
+      "optionDefinitions": {},
+      "allowedCombinations": [],
+      "coverageMatrix": [],
+      "invariants": [
+        "requiredParts 保持可查",
+        "尺寸、开口与装配满足各变体契约"
+      ],
+      "status": "待明确是否提供变体；无变体时显式声明不适用。"
+    },
+    "seed": {
+      "default": null,
+      "testSeeds": [],
+      "provider": "宿主按 opts.seed 为每次 build 提供独立确定性的 ctx.rng。",
+      "allowedChanges": [],
+      "invariants": [
+        "功能结构",
+        "requiredParts",
+        "碰撞有效性"
+      ],
+      "normalization": "比较时排除 UUID 和时间戳；待记录实际摘要算法和对比字段。"
+    },
+    "dynamic": {
+      "enabled": null,
+      "decision": "待确认仅静态门姿态还是运行时开门；不得根据模板描述宣称已支持动态。",
+      "dtUnits": "s",
+      "attachment": "动态时挂载 root.update(dt) 和 root.reset()；按资源所有权提供 root.dispose()。",
+      "stateInputs": [],
+      "motions": [],
+      "noMergeParts": [
+        "door.left",
+        "door.right",
+        "handle.left",
+        "handle.right",
+        "lock"
+      ],
+      "resetRequirements": [
+        "初始变换",
+        "状态",
+        "碰撞",
+        "挂点",
+        "不推进随机序列"
+      ],
+      "disposeRequirements": [
+        "不释放 ctx.mats 共享缓存",
+        "无残留监听或计时器",
+        "重复调用安全"
+      ]
+    },
+    "lodAndBudget": {
+      "referenceMeasurements": [],
+      "levels": [],
+      "limits": {
+        "triangles": null,
+        "drawCalls": null,
+        "materials": null,
+        "textures": null,
+        "textureMemoryBytes": null,
+        "buildTimeMs": null,
+        "frameCostMs": null
+      },
+      "rationale": "待按可信参考资产、目标距离、测量环境与功能复杂度实测确定；null 不是零预算或通过。",
+      "noLodReason": null
+    }
+  },
+  "qualityComparators": [],
+  "comparatorRequiredFields": [
+    "assetId",
+    "功能层级和尺寸",
+    "options 与 seed",
+    "相机与 renderer 版本",
+    "真实图片",
+    "性能测量及解释"
+  ],
+  "verificationPlan": {
+    "gate": "catalog",
+    "catalogRenderer": "r160 棚拍，执行前核对实际版本与材质烘焙链。",
+    "fullSceneGate": "r180 full-scene 独立验收；原版整机待恢复，不宣称与 catalog 等价。",
+    "geometry": [
+      "finite position/normal/UV/transform",
+      "非空真实 bbox",
+      "真实结构及厚度",
+      "requiredParts",
+      "米制 UV",
+      "collider 八角",
+      "socket",
+      "determinism"
+    ],
+    "runtime": [
+      "dynamic lifecycle 或明确不适用",
+      "variants 覆盖",
+      "重复构建与释放的 memory 趋势",
+      "console/pageerror/资源失败",
+      "LOD 与预算"
+    ],
+    "visual": [
+      "三角度最终材质 PNG",
+      "clay PNG",
+      "wire PNG",
+      "关键结构和动态近景",
+      "实际打开图片逐项检查"
+    ],
+    "acceptanceWriteback": "仅根据真实报告逐项写回；未执行保持 unverified，截图成功不自动置 visual pass。"
+  },
+  "evidence": {
+    "root": null,
+    "commands": [],
+    "versions": {},
+    "sourceDigest": null,
+    "contractDigest": null,
+    "testReports": [],
+    "images": {
+      "threeAngles": [],
+      "clay": [],
+      "wire": [],
+      "detailsAndVariants": []
+    },
+    "results": {
+      "catalog": "未执行",
+      "geometry": "未执行",
+      "visual": "未执行",
+      "runtime": "未执行"
+    },
+    "failures": [],
+    "notExecuted": [
+      "几何尚未实现",
+      "参考与预算尚未实测",
+      "未运行宿主或浏览器验收",
+      "未完成真实视觉检查",
+      "r180 full-scene 未验收"
+    ]
+  }
+}

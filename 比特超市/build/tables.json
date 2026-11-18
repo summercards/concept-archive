@@ -1,0 +1,1178 @@
+{
+ "source": {
+  "path": "/Users/zyq/work/工程参考/几猫国产3A大作_V1(4).html",
+  "bytes": 1425707,
+  "chars": 1422128,
+  "lines": 6215,
+  "businessStart": "L4191:C51307"
+ },
+ "modules": [
+  {
+   "ns": "lt",
+   "role": "three",
+   "anchor": "L360:C100",
+   "chars": 712983,
+   "kb": 696.3,
+   "functions": 543,
+   "numericLiterals": 10200,
+   "ctxRefs": {
+    "mats": 0,
+    "scene": 0,
+    "events": 0,
+    "render": 0,
+    "physics": 0,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 0,
+    "time": 0,
+    "rng": 0,
+    "quality": 0,
+    "level": 0,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "Vg",
+   "role": "render",
+   "anchor": "L4191:C62571",
+   "chars": 55655,
+   "kb": 54.4,
+   "functions": 23,
+   "numericLiterals": 1524,
+   "ctxRefs": {
+    "mats": 7,
+    "scene": 1,
+    "events": 4,
+    "render": 2,
+    "physics": 0,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 1,
+    "time": 4,
+    "rng": 0,
+    "quality": 12,
+    "level": 5,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "qg",
+   "role": "mats",
+   "anchor": "L4744:C23425",
+   "chars": 82900,
+   "kb": 81.0,
+   "functions": 39,
+   "numericLiterals": 4132,
+   "ctxRefs": {
+    "mats": 1,
+    "scene": 1,
+    "events": 0,
+    "render": 2,
+    "physics": 0,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 0,
+    "time": 0,
+    "rng": 0,
+    "quality": 2,
+    "level": 6,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "$g",
+   "role": "props",
+   "anchor": "L5453:C13896",
+   "chars": 117261,
+   "kb": 114.5,
+   "functions": 96,
+   "numericLiterals": 4874,
+   "ctxRefs": {
+    "mats": 54,
+    "scene": 1,
+    "events": 0,
+    "render": 0,
+    "physics": 0,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 0,
+    "time": 0,
+    "rng": 2,
+    "quality": 0,
+    "level": 0,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "cv",
+   "role": "level",
+   "anchor": "L5453:C131157",
+   "chars": 45266,
+   "kb": 44.2,
+   "functions": 45,
+   "numericLiterals": 2380,
+   "ctxRefs": {
+    "mats": 7,
+    "scene": 1,
+    "events": 0,
+    "render": 0,
+    "physics": 3,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 0,
+    "time": 0,
+    "rng": 3,
+    "quality": 0,
+    "level": 0,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "mv",
+   "role": "backdrop",
+   "anchor": "L5453:C176423",
+   "chars": 53151,
+   "kb": 51.9,
+   "functions": 38,
+   "numericLiterals": 3059,
+   "ctxRefs": {
+    "mats": 20,
+    "scene": 1,
+    "events": 0,
+    "render": 0,
+    "physics": 3,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 0,
+    "time": 0,
+    "rng": 0,
+    "quality": 0,
+    "level": 0,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "vv",
+   "role": "ground",
+   "anchor": "L5474:C2492",
+   "chars": 40466,
+   "kb": 39.5,
+   "functions": 19,
+   "numericLiterals": 1763,
+   "ctxRefs": {
+    "mats": 9,
+    "scene": 4,
+    "events": 1,
+    "render": 8,
+    "physics": 0,
+    "input": 0,
+    "player": 0,
+    "weapon": 0,
+    "camera": 1,
+    "time": 0,
+    "rng": 3,
+    "quality": 3,
+    "level": 6,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "Sv",
+   "role": "fx",
+   "anchor": "L5825:C5420",
+   "chars": 126308,
+   "kb": 123.3,
+   "functions": 157,
+   "numericLiterals": 4582,
+   "ctxRefs": {
+    "mats": 2,
+    "scene": 2,
+    "events": 20,
+    "render": 7,
+    "physics": 15,
+    "input": 1,
+    "player": 6,
+    "weapon": 1,
+    "camera": 7,
+    "time": 0,
+    "rng": 0,
+    "quality": 0,
+    "level": 9,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "Xv",
+   "role": "weapon",
+   "anchor": "L5939:C109406",
+   "chars": 58083,
+   "kb": 56.7,
+   "functions": 40,
+   "numericLiterals": 2123,
+   "ctxRefs": {
+    "mats": 1,
+    "scene": 1,
+    "events": 5,
+    "render": 3,
+    "physics": 0,
+    "input": 3,
+    "player": 4,
+    "weapon": 1,
+    "camera": 4,
+    "time": 0,
+    "rng": 3,
+    "quality": 0,
+    "level": 0,
+    "hud": 0
+   }
+  },
+  {
+   "ns": "ex",
+   "role": "enemies",
+   "anchor": "L6065:C16111",
+   "chars": 54961,
+   "kb": 53.7,
+   "functions": 31,
+   "numericLiterals": 1718,
+   "ctxRefs": {
+    "mats": 5,
+    "scene": 1,
+    "events": 7,
+    "render": 4,
+    "physics": 3,
+    "input": 0,
+    "player": 6,
+    "weapon": 0,
+    "camera": 2,
+    "time": 0,
+    "rng": 2,
+    "quality": 0,
+    "level": 0,
+    "hud": 0
+   }
+  }
+ ],
+ "tables": {
+  "world": "{min:new W(-40,0,-30),max:new W(40,30,30),groundY:0,seaY:-1.6,quayX:30}",
+  "sun": "{dir:new W(.916,.225,.331).normalize(),color:new Ve(1,.72,.42),intensity:9}",
+  "sky": "{zenith:new Ve(.055,.085,.13),horizon:new Ve(.95,.55,.28),horizonAway:new Ve(.16,.22,.3),fog:new Ve(.42,.47,.52)}",
+  "volume": "{volSunScale:.85,volAmbient:.2,volSigma:.0034,volMaxDist:170,volFarHaze:.42,volInteriorDust:6,aoRadius:.9,aoIntensity:1.6,aoStrength:.95,bloom:.065,bloomMix:.62,dirt:.1,streak:.03,streakThreshold:2.2,flare:.16,key:.12,minExposure:.6,maxExposure:2,adaptTau:1.5,agxMix:.25,ca:.0013,vignette:.3,grain:.02,sharpen:.3,lookPower:1.18,lookSat:1.22}",
+  "quality": "{test:{name:\"test\",scale:1,msaa:0,shadow:1024,tex:256,volSteps:10,ao:!0,planar:.5,bloom:!0,motionBlur:!1,rain:.4},low:{name:\"low\",scale:.7,msaa:0,shadow:2048,tex:512,volSteps:12,ao:!1,planar:0,bloom:!0,motionBlur:!1,rain:.5},medium:{name:\"medium\",scale:.85,msaa:2,shadow:2048,tex:1024,volSteps:16,ao:!0,planar:.5,bloom:!0,motionBlur:!1,rain:.8},high:{name:\"high\",scale:1,msaa:4,shadow:4096,tex:1024,volSteps:24,ao:!0,planar:.5,bloom:!0,motionBlur:!0,rain:1},ultra:{name:\"ultra\",scale:1,msaa:4,shadow:4096,tex:2048,volSteps:40,ao:!0,planar:1,bloom:!0,motionBlur:!0,rain:1}}",
+  "player_scale": "{eye:1.68,crouchEye:1.05,radius:.32,height:1.8,fov:74,viewFov:54}",
+  "props": "{container20:[6.06,2.59,2.44,\"paint_red\",\"metal\"],container40:[12.19,2.59,2.44,\"paint_blue\",\"metal\"],container40hc:[12.19,2.9,2.44,\"paint_green\",\"metal\"],jersey_barrier:[3,.81,.6,\"concrete\",\"concrete\"],light_mast:[.5,14,.5,\"steel_galv\",\"metal\"],fence_panel:[3,2.4,.08,\"chainlink\",\"metal\"],guard_booth:[2.6,2.7,2.2,\"paint_white\",\"metal\"],gate_arm:[5,1.1,.3,\"hazard_stripes\",\"metal\"],bollard_mooring:[.7,.6,.7,\"steel_dark\",\"metal\"],bollard_post:[.17,1,.17,\"paint_yellow\",\"metal\"],relay_node:[1.2,2.4,.8,\"paint_grey\",\"metal\"],shelf_rack:[2.7,4.2,1.1,\"paint_orange\",\"metal\"],stairs_metal:[3,2.6,1,\"diamond_plate\",\"metal\"],catwalk:[3,1.1,1.2,\"diamond_plate\",\"metal\"],reefer_unit:[.5,2.3,2.3,\"paint_white\",\"metal\"],barrel:[.6,.9,.6,\"paint_blue\",\"metal\"],pallet:[1.2,.144,1,\"wood_pallet\",\"wood\"],pallet_stack:[1.2,1.15,1,\"wood_pallet\",\"wood\"],crate_wood:[1.1,1,.9,\"wood_pallet\",\"wood\"],crate_stack:[1.2,1.9,1,\"wood_pallet\",\"wood\"],ibc_tote:[1.2,1.16,1,\"plastic_grey\",\"metal\"],forklift:[3.4,2.2,1.25,\"paint_yellow\",\"metal\"],cable_reel:[1.3,1.3,.8,\"wood_dark\",\"wood\"],tire_stack:[.8,1,.8,\"tire\",\"rubber\"],dumpster:[1.9,1.35,1.1,\"paint_green\",\"metal\"],generator:[2.2,1.4,1,\"paint_yellow\",\"metal\"],jerry_can:[.35,.47,.17,\"paint_green\",\"metal\"],traffic_cone:[.36,.7,.36,\"plastic_red\",\"rubber\"],gas_cylinders:[.9,1.6,.5,\"steel_dark\",\"metal\"],tarp_cargo:[2.4,1.5,1.4,\"tarp\",\"dirt\"],sandbags:[2,.9,.6,\"tarp\",\"dirt\"],toolbox_cart:[.9,.95,.5,\"plastic_red\",\"metal\"],floodlight_stand:[1,2.2,1,\"paint_yellow\",\"metal\"],cardboard_boxes:[1,.8,.8,\"cardboard\",\"wood\"],pipe_stack:[6,.9,1.2,\"steel_rust\",\"metal\"],sign_post:[.6,2.4,.08,\"paint_white\",\"metal\"]}",
+  "material_family": "{asphalt:{fn:\"asphalt\",size:1,tile:2,bump:1.6,hero:!0},concrete:{fn:\"concrete\",size:1,tile:3,bump:2.5},brick:{fn:\"brick\",size:.5,tile:1.8,bump:6},epoxy:{fn:\"epoxy\",size:.5,tile:4,bump:3},paint:{fn:\"paint\",size:1,tile:2.5,bump:2.5,p:[.5]},hull:{fn:\"hull\",size:.5,tile:4,bump:12},galv:{fn:\"galv\",size:.5,tile:1,bump:.8},metal:{fn:\"metal\",size:.5,tile:1,bump:.5,p:[1]},brushed:{fn:\"brushed\",size:.5,tile:.5,bump:.4},rust:{fn:\"rust\",size:.5,tile:1.2,bump:3},diamond:{fn:\"diamond\",size:.5,tile:.5,bump:2},corrugated:{fn:\"corrugated\",size:.5,tile:[.762,2.286],bump:19},chainlink:{fn:\"chainlink\",size:.5,tile:.5,bump:5},hazard:{fn:\"hazard\",size:.5,tile:1,bump:2.5},gunmetal:{fn:\"gunmetal\",size:.5,tile:.25,bump:.3,p:[.6]},anodized:{fn:\"gunmetal\",size:.5,tile:.25,bump:.25,p:[.2],seed:11},polymer:{fn:\"polymer\",size:.25,tile:.1,bump:.4},carbon:{fn:\"carbon\",size:.25,tile:.05,bump:.5},fabric:{fn:\"fabric\",size:.25,tile:.05,bump:.4},armor:{fn:\"armor\",size:.5,tile:.5,bump:.8},wood:{fn:\"wood\",size:.5,tile:1.2,bump:2.6},plastic:{fn:\"plastic\",size:.5,tile:1,bump:1},tarp:{fn:\"tarp\",size:.5,tile:1.5,bump:20},cardboard:{fn:\"cardboard\",size:.5,tile:1,bump:.8},rope:{fn:\"rope\",size:.25,tile:.1,bump:4},tire:{fn:\"tire\",size:.5,tile:[.5,.3],bump:7},glass:{fn:\"glass\",size:.5,tile:1.5,bump:1.5,p:[.3]},glass_dirty:{fn:\"glass\",size:.5,tile:1.5,bump:1.5,p:[1],seed:40},water:{fn:\"water\",size:.25,tile:4,bump:30}}",
+  "material_instance": "{asphalt:Nt(\"asphalt\",{wet:[.45,.3,.5,0],macro:o1}),concrete:Nt(\"concrete\",{macro:o1}),concrete_dirty:Nt(\"concrete\",{color:13616822,macro:[.3,.15,.35,.9]}),concrete_painted:Nt(\"concrete\",{tint:2,color:9343638,rough:.9,wet:[.15,.55,.6,.3],macro:[.14,.1,.5,.3]}),brick:Nt(\"brick\"),floor_epoxy:Nt(\"epoxy\",{wet:[.04,.75,.4,0],macro:[.12,.2,.45,.25]}),paint_red:Xa(8200729),paint_blue:Xa(2047846),paint_green:Xa(2906692),paint_yellow:Xa(12159516),paint_orange:Xa(11751962),paint_white:Xa(12172214),paint_grey:Xa(5922920),paint_teal:Xa(2055523),steel_galv:Nt(\"galv\",{wet:aa}),steel_dark:Nt(\"metal\",{tint:1,color:4014406,rough:1.15,wet:aa}),steel_worn:Nt(\"metal\",{tint:1,color:9080466,rough:.9,wet:aa}),steel_bare:Nt(\"brushed\",{tint:1,color:11843771,wet:aa,macro:r1}),steel_rust:Nt(\"rust\",{wet:uA}),diamond_plate:Nt(\"diamond\",{wet:aa}),corrugated_roof:Nt(\"corrugated\",{wet:aa}),chainlink:Nt(\"chainlink\",{tint:3,alphaCut:!0,side:2,wet:s1,macro:a1}),aluminium:Nt(\"brushed\",{tint:1,color:12896459,rough:1.15,wet:aa,macro:r1}),brass:Nt(\"brushed\",{tint:1,color:12753477,rough:.9,wet:aa,macro:[.1,.08,20,0]}),hazard_stripes:Nt(\"hazard\",{wet:kc}),gunmetal:Nt(\"gunmetal\",{tint:1,color:2764081,wet:[0,.75,.6,.5],macro:[.08,.06,6,0]}),anodized_black:Nt(\"anodized\",{tint:1,color:1184790,rough:.72,metal:.9,wet:[0,.75,.6,.5],macro:[.06,.05,6,0]}),polymer_black:Nt(\"polymer\",{tint:1,color:1513498,wet:[0,.7,.6,.5],macro:[.06,.06,6,0]}),polymer_tan:Nt(\"polymer\",{tint:1,color:7299144,wet:[0,.7,.6,.5],macro:[.06,.06,6,0]}),rubber:Nt(\"polymer\",{tint:1,color:1052688,rough:1.4,wet:[.05,.6,.6,.4],macro:[.06,.06,6,0]}),carbon:Nt(\"carbon\",{wet:[0,.8,.6,.5],macro:[.05,.05,6,0]}),glove_fabric:Nt(\"fabric\",{tint:1,color:2303530,wet:[.3,.7,.6,0],macro:[.08,.04,8,0]}),armor_white:Nt(\"armor\",{tint:1,color:11449528,wet:kc,macro:[.08,.08,2.5,.15]}),armor_orange:Nt(\"armor\",{tint:1,color:12670234,wet:kc,macro:[.08,.08,2.5,.15]}),wood_pallet:Nt(\"wood\",{wet:u3,macro:[.2,.1,.9,.4]}),wood_dark:Nt(\"wood\",{color:9074794,wet:u3,macro:[.2,.1,.9,.4]}),plastic_blue:Nt(\"plastic\",{tint:1,color:1920134,wet:i1}),plastic_red:Nt(\"plastic\",{tint:1,color:9314074,wet:i1}),plastic_grey:Nt(\"plastic\",{tint:1,color:4935508,wet:i1}),tarp:Nt(\"tarp\",{tint:1,color:3885626,wet:i1,macro:[.1,.1,1.2,.2]}),cardboard:Nt(\"cardboard\",{wet:[.4,.75,.6,0]}),rope:Nt(\"rope\",{macro:r1}),tire:Nt(\"tire\",{wet:[.1,.6,.6,.3],macro:r1}),glass:Nt(\"glass\",{tint:3,transparent:!0,wet:s1,macro:a1}),glass_dirty:Nt(\"glass_dirty\",{tint:3,transparent:!0,wet:s1,macro:a1}),hull_paint:Nt(\"hull\",{tint:1,color:1778219,wet:kc,macro:o1}),hull_red:Nt(\"hull\",{tint:1,color:6233880,wet:kc,macro:o1}),water_dark:Nt(\"water\",{wet:s1,macro:a1})}",
+  "player_tuning": "{walk:3.8,sprint:6.4,crouch:1.9,ads:2.4,accelGround:34,decelGround:26,accelAir:9,gravity:21,jumpApex:1,coyote:.12,jumpBuffer:.13,standHeight:Pi.height,crouchHeight:1.15,eyeRate:11,stride:{walk:1.55,sprint:2.1,crouch:1.05},bobY:.024,bobX:.013,bobSprint:1.9,bobAds:.22,rollStrafe:.02,landDip:.36,landDipMax:.2,fovSprint:6,fovAds:52,adsLook:.6,regenDelay:4,regenRate:25,recoilKeep:.35,recoilApply:34,recoilRecover:6.5,recoilHold:.09,shakeDecay:1.7,shakePitch:.03,shakeYaw:.03,shakeRoll:.045,pitchLimit:1.5}",
+  "ai_tuning": "{gull:Zv,hound:Kv,sightRange:45,sightCone:200,loseSight:4,searchTime:8,hearRadius:45,maxTokens:2,maxTokensCrowd:3,tokenGap:1.25,exposureUp:.1,exposureDown:.45,poolGulls:10,poolHounds:8,maxWrecks:5,maxBolts:32}"
+ },
+ "tableMeta": {
+  "world": {
+   "var": "oi",
+   "label": "世界尺度与岸线",
+   "kind": "env",
+   "anchor": "L4191:C51314",
+   "chars": 71,
+   "numericLiterals": 9,
+   "entries": 5
+  },
+  "sun": {
+   "var": "Mn",
+   "label": "太阳方向/颜色/强度",
+   "kind": "env",
+   "anchor": "L4191:C51389",
+   "chars": 75,
+   "numericLiterals": 2,
+   "entries": 3
+  },
+  "sky": {
+   "var": "en",
+   "label": "天空四色与雾色",
+   "kind": "env",
+   "anchor": "L4191:C51468",
+   "chars": 113,
+   "numericLiterals": 0,
+   "entries": 4
+  },
+  "volume": {
+   "var": "g",
+   "label": "体积光参数（render 内）",
+   "kind": "env",
+   "anchor": "L4744:C569",
+   "chars": 341,
+   "numericLiterals": 8,
+   "entries": 26
+  },
+  "quality": {
+   "var": "Pr",
+   "label": "五档画质预设",
+   "kind": "preset",
+   "anchor": "L4191:C51664",
+   "chars": 572,
+   "numericLiterals": 42,
+   "entries": 60
+  },
+  "player_scale": {
+   "var": "Pi",
+   "label": "玩家尺度与相机 FOV",
+   "kind": "preset",
+   "anchor": "L4191:C51585",
+   "chars": 65,
+   "numericLiterals": 5,
+   "entries": 6
+  },
+  "props": {
+   "var": "Gi",
+   "label": "道具尺寸台账",
+   "kind": "model",
+   "anchor": "L5453:C13986",
+   "chars": 1631,
+   "numericLiterals": 69,
+   "entries": 36
+  },
+  "material_family": {
+   "var": "c3",
+   "label": "材质族：米制尺寸/平铺/凹凸",
+   "kind": "material",
+   "anchor": "L5294:C17715",
+   "chars": 1392,
+   "numericLiterals": 45,
+   "entries": 154
+  },
+  "material_instance": {
+   "var": "l1",
+   "label": "材质实例：色/粗糙/湿润/脏污",
+   "kind": "material",
+   "anchor": "L5294:C19452",
+   "chars": 2659,
+   "numericLiterals": 88,
+   "entries": 169
+  },
+  "player_tuning": {
+   "var": "Mt",
+   "label": "玩家运动调参",
+   "kind": "number",
+   "anchor": "L5939:C100464",
+   "chars": 503,
+   "numericLiterals": 23,
+   "entries": 39
+  },
+  "ai_tuning": {
+   "var": "Ui",
+   "label": "敌人感知与令牌调参",
+   "kind": "number",
+   "anchor": "L6065:C60541",
+   "chars": 209,
+   "numericLiterals": 12,
+   "entries": 16
+  }
+ },
+ "ledger": {
+  "props": [
+   {
+    "id": "container20",
+    "size": [
+     6.06,
+     2.59,
+     2.44
+    ],
+    "material": "paint_red",
+    "surface": "metal"
+   },
+   {
+    "id": "container40",
+    "size": [
+     12.19,
+     2.59,
+     2.44
+    ],
+    "material": "paint_blue",
+    "surface": "metal"
+   },
+   {
+    "id": "container40hc",
+    "size": [
+     12.19,
+     2.9,
+     2.44
+    ],
+    "material": "paint_green",
+    "surface": "metal"
+   },
+   {
+    "id": "jersey_barrier",
+    "size": [
+     3.0,
+     0.81,
+     0.6
+    ],
+    "material": "concrete",
+    "surface": "concrete"
+   },
+   {
+    "id": "light_mast",
+    "size": [
+     0.5,
+     14.0,
+     0.5
+    ],
+    "material": "steel_galv",
+    "surface": "metal"
+   },
+   {
+    "id": "fence_panel",
+    "size": [
+     3.0,
+     2.4,
+     0.08
+    ],
+    "material": "chainlink",
+    "surface": "metal"
+   },
+   {
+    "id": "guard_booth",
+    "size": [
+     2.6,
+     2.7,
+     2.2
+    ],
+    "material": "paint_white",
+    "surface": "metal"
+   },
+   {
+    "id": "gate_arm",
+    "size": [
+     5.0,
+     1.1,
+     0.3
+    ],
+    "material": "hazard_stripes",
+    "surface": "metal"
+   },
+   {
+    "id": "bollard_mooring",
+    "size": [
+     0.7,
+     0.6,
+     0.7
+    ],
+    "material": "steel_dark",
+    "surface": "metal"
+   },
+   {
+    "id": "bollard_post",
+    "size": [
+     0.17,
+     1.0,
+     0.17
+    ],
+    "material": "paint_yellow",
+    "surface": "metal"
+   },
+   {
+    "id": "relay_node",
+    "size": [
+     1.2,
+     2.4,
+     0.8
+    ],
+    "material": "paint_grey",
+    "surface": "metal"
+   },
+   {
+    "id": "shelf_rack",
+    "size": [
+     2.7,
+     4.2,
+     1.1
+    ],
+    "material": "paint_orange",
+    "surface": "metal"
+   },
+   {
+    "id": "stairs_metal",
+    "size": [
+     3.0,
+     2.6,
+     1.0
+    ],
+    "material": "diamond_plate",
+    "surface": "metal"
+   },
+   {
+    "id": "catwalk",
+    "size": [
+     3.0,
+     1.1,
+     1.2
+    ],
+    "material": "diamond_plate",
+    "surface": "metal"
+   },
+   {
+    "id": "reefer_unit",
+    "size": [
+     0.5,
+     2.3,
+     2.3
+    ],
+    "material": "paint_white",
+    "surface": "metal"
+   },
+   {
+    "id": "barrel",
+    "size": [
+     0.6,
+     0.9,
+     0.6
+    ],
+    "material": "paint_blue",
+    "surface": "metal"
+   },
+   {
+    "id": "pallet",
+    "size": [
+     1.2,
+     0.144,
+     1.0
+    ],
+    "material": "wood_pallet",
+    "surface": "wood"
+   },
+   {
+    "id": "pallet_stack",
+    "size": [
+     1.2,
+     1.15,
+     1.0
+    ],
+    "material": "wood_pallet",
+    "surface": "wood"
+   },
+   {
+    "id": "crate_wood",
+    "size": [
+     1.1,
+     1.0,
+     0.9
+    ],
+    "material": "wood_pallet",
+    "surface": "wood"
+   },
+   {
+    "id": "crate_stack",
+    "size": [
+     1.2,
+     1.9,
+     1.0
+    ],
+    "material": "wood_pallet",
+    "surface": "wood"
+   },
+   {
+    "id": "ibc_tote",
+    "size": [
+     1.2,
+     1.16,
+     1.0
+    ],
+    "material": "plastic_grey",
+    "surface": "metal"
+   },
+   {
+    "id": "forklift",
+    "size": [
+     3.4,
+     2.2,
+     1.25
+    ],
+    "material": "paint_yellow",
+    "surface": "metal"
+   },
+   {
+    "id": "cable_reel",
+    "size": [
+     1.3,
+     1.3,
+     0.8
+    ],
+    "material": "wood_dark",
+    "surface": "wood"
+   },
+   {
+    "id": "tire_stack",
+    "size": [
+     0.8,
+     1.0,
+     0.8
+    ],
+    "material": "tire",
+    "surface": "rubber"
+   },
+   {
+    "id": "dumpster",
+    "size": [
+     1.9,
+     1.35,
+     1.1
+    ],
+    "material": "paint_green",
+    "surface": "metal"
+   },
+   {
+    "id": "generator",
+    "size": [
+     2.2,
+     1.4,
+     1.0
+    ],
+    "material": "paint_yellow",
+    "surface": "metal"
+   },
+   {
+    "id": "jerry_can",
+    "size": [
+     0.35,
+     0.47,
+     0.17
+    ],
+    "material": "paint_green",
+    "surface": "metal"
+   },
+   {
+    "id": "traffic_cone",
+    "size": [
+     0.36,
+     0.7,
+     0.36
+    ],
+    "material": "plastic_red",
+    "surface": "rubber"
+   },
+   {
+    "id": "gas_cylinders",
+    "size": [
+     0.9,
+     1.6,
+     0.5
+    ],
+    "material": "steel_dark",
+    "surface": "metal"
+   },
+   {
+    "id": "tarp_cargo",
+    "size": [
+     2.4,
+     1.5,
+     1.4
+    ],
+    "material": "tarp",
+    "surface": "dirt"
+   },
+   {
+    "id": "sandbags",
+    "size": [
+     2.0,
+     0.9,
+     0.6
+    ],
+    "material": "tarp",
+    "surface": "dirt"
+   },
+   {
+    "id": "toolbox_cart",
+    "size": [
+     0.9,
+     0.95,
+     0.5
+    ],
+    "material": "plastic_red",
+    "surface": "metal"
+   },
+   {
+    "id": "floodlight_stand",
+    "size": [
+     1.0,
+     2.2,
+     1.0
+    ],
+    "material": "paint_yellow",
+    "surface": "metal"
+   },
+   {
+    "id": "cardboard_boxes",
+    "size": [
+     1.0,
+     0.8,
+     0.8
+    ],
+    "material": "cardboard",
+    "surface": "wood"
+   },
+   {
+    "id": "pipe_stack",
+    "size": [
+     6.0,
+     0.9,
+     1.2
+    ],
+    "material": "steel_rust",
+    "surface": "metal"
+   },
+   {
+    "id": "sign_post",
+    "size": [
+     0.6,
+     2.4,
+     0.08
+    ],
+    "material": "paint_white",
+    "surface": "metal"
+   }
+  ],
+  "propsCustom": [
+   "container20",
+   "container40",
+   "container40hc",
+   "jersey_barrier",
+   "light_mast",
+   "fence_panel",
+   "guard_booth",
+   "gate_arm",
+   "bollard_mooring",
+   "bollard_post",
+   "sign_post",
+   "floodlight_stand",
+   "stairs_metal",
+   "catwalk",
+   "shelf_rack",
+   "reefer_unit",
+   "relay_node",
+   "barrel",
+   "pallet",
+   "pallet_stack",
+   "crate_wood",
+   "crate_stack",
+   "ibc_tote",
+   "cable_reel",
+   "tire_stack",
+   "jerry_can",
+   "traffic_cone",
+   "gas_cylinders",
+   "pipe_stack",
+   "tarp_cargo",
+   "sandbags",
+   "cardboard_boxes",
+   "forklift",
+   "generator",
+   "dumpster",
+   "toolbox_cart"
+  ],
+  "propBuilders": [
+   {
+    "id": "container20",
+    "group": "container-loop",
+    "callback": "M3",
+    "registration": "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t))",
+    "registrationAnchor": "L5453:C70076",
+    "functionAnchor": "L5453:C33336",
+    "sourceAnchors": {
+     "M3": "L5453:C33336",
+     "zA": "L5453:C24884"
+    }
+   },
+   {
+    "id": "container40",
+    "group": "container-loop",
+    "callback": "M3",
+    "registration": "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t))",
+    "registrationAnchor": "L5453:C70076",
+    "functionAnchor": "L5453:C33336",
+    "sourceAnchors": {
+     "M3": "L5453:C33336",
+     "zA": "L5453:C24884"
+    }
+   },
+   {
+    "id": "container40hc",
+    "group": "container-loop",
+    "callback": "M3",
+    "registration": "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t))",
+    "registrationAnchor": "L5453:C70076",
+    "functionAnchor": "L5453:C33336",
+    "sourceAnchors": {
+     "M3": "L5453:C33336",
+     "zA": "L5453:C24884"
+    }
+   },
+   {
+    "id": "jersey_barrier",
+    "group": "direct",
+    "callback": "S3",
+    "registration": "_i(\"jersey_barrier\",S3)",
+    "registrationAnchor": "L5453:C70157",
+    "functionAnchor": "L5453:C33991"
+   },
+   {
+    "id": "light_mast",
+    "group": "direct",
+    "callback": "T3",
+    "registration": "_i(\"light_mast\",T3)",
+    "registrationAnchor": "L5453:C70181",
+    "functionAnchor": "L5453:C36210"
+   },
+   {
+    "id": "fence_panel",
+    "group": "direct",
+    "callback": "A3",
+    "registration": "_i(\"fence_panel\",A3)",
+    "registrationAnchor": "L5453:C70201",
+    "functionAnchor": "L5453:C38499"
+   },
+   {
+    "id": "guard_booth",
+    "group": "direct",
+    "callback": "R3",
+    "registration": "_i(\"guard_booth\",R3)",
+    "registrationAnchor": "L5453:C70222",
+    "functionAnchor": "L5453:C39956"
+   },
+   {
+    "id": "gate_arm",
+    "group": "direct",
+    "callback": "C3",
+    "registration": "_i(\"gate_arm\",C3)",
+    "registrationAnchor": "L5453:C70243",
+    "functionAnchor": "L5453:C44205"
+   },
+   {
+    "id": "bollard_mooring",
+    "group": "direct",
+    "callback": "P3",
+    "registration": "_i(\"bollard_mooring\",P3)",
+    "registrationAnchor": "L5453:C70261",
+    "functionAnchor": "L5453:C45841"
+   },
+   {
+    "id": "bollard_post",
+    "group": "direct",
+    "callback": "I3",
+    "registration": "_i(\"bollard_post\",I3)",
+    "registrationAnchor": "L5453:C70286",
+    "functionAnchor": "L5453:C46774"
+   },
+   {
+    "id": "sign_post",
+    "group": "direct",
+    "callback": "z3",
+    "registration": "_i(\"sign_post\",z3)",
+    "registrationAnchor": "L5453:C70308",
+    "functionAnchor": "L5453:C47827"
+   },
+   {
+    "id": "floodlight_stand",
+    "group": "direct",
+    "callback": "D3",
+    "registration": "_i(\"floodlight_stand\",D3)",
+    "registrationAnchor": "L5453:C70327",
+    "functionAnchor": "L5453:C48964"
+   },
+   {
+    "id": "stairs_metal",
+    "group": "direct",
+    "callback": "k3",
+    "registration": "_i(\"stairs_metal\",k3)",
+    "registrationAnchor": "L5453:C70353",
+    "functionAnchor": "L5453:C50747"
+   },
+   {
+    "id": "catwalk",
+    "group": "direct",
+    "callback": "F3",
+    "registration": "_i(\"catwalk\",F3)",
+    "registrationAnchor": "L5453:C70375",
+    "functionAnchor": "L5453:C52818"
+   },
+   {
+    "id": "shelf_rack",
+    "group": "direct",
+    "callback": "U3",
+    "registration": "_i(\"shelf_rack\",U3)",
+    "registrationAnchor": "L5453:C70392",
+    "functionAnchor": "L5453:C55732"
+   },
+   {
+    "id": "reefer_unit",
+    "group": "direct",
+    "callback": "N3",
+    "registration": "_i(\"reefer_unit\",N3)",
+    "registrationAnchor": "L5453:C70412",
+    "functionAnchor": "L5453:C57696"
+   },
+   {
+    "id": "relay_node",
+    "group": "direct",
+    "callback": "B3",
+    "registration": "_i(\"relay_node\",B3)",
+    "registrationAnchor": "L5453:C70433",
+    "functionAnchor": "L5453:C61318"
+   },
+   {
+    "id": "barrel",
+    "group": "J3",
+    "callback": "HA",
+    "registration": "i(\"barrel\",(e,t={})=>{let n=Math.abs(t.seed|0)%4;return wf(`barrel|${t.color}|${!!t.lying}|${!!t.open}|${n}`,()=>HA(e,t,n))})",
+    "registrationAnchor": "L5453:C100778",
+    "functionAnchor": "L5453:C81434"
+   },
+   {
+    "id": "pallet",
+    "group": "J3",
+    "callback": "VA",
+    "registration": "i(\"pallet\",(e,t={})=>{let n=Math.abs(t.seed|0)%4;return wf(`pallet|${!!t.broken}|${n}`,()=>VA(e,t,n))})",
+    "registrationAnchor": "L5453:C100904",
+    "functionAnchor": "L5453:C84155"
+   },
+   {
+    "id": "pallet_stack",
+    "group": "J3",
+    "callback": "WA",
+    "registration": "i(\"pallet_stack\",(e,t={})=>WA(e,t))",
+    "registrationAnchor": "L5453:C101008",
+    "functionAnchor": "L5453:C84260"
+   },
+   {
+    "id": "crate_wood",
+    "group": "J3",
+    "callback": "GA",
+    "registration": "i(\"crate_wood\",(e,t={})=>GA(e,t))",
+    "registrationAnchor": "L5453:C101044",
+    "functionAnchor": "L5453:C87218"
+   },
+   {
+    "id": "crate_stack",
+    "group": "J3",
+    "callback": "qA",
+    "registration": "i(\"crate_stack\",(e,t={})=>qA(e,t))",
+    "registrationAnchor": "L5453:C101078",
+    "functionAnchor": "L5453:C87423"
+   },
+   {
+    "id": "ibc_tote",
+    "group": "J3",
+    "callback": "XA",
+    "registration": "i(\"ibc_tote\",(e,t={})=>XA(e,t))",
+    "registrationAnchor": "L5453:C101113",
+    "functionAnchor": "L5453:C88417"
+   },
+   {
+    "id": "cable_reel",
+    "group": "J3",
+    "callback": "YA",
+    "registration": "i(\"cable_reel\",(e,t={})=>YA(e,t))",
+    "registrationAnchor": "L5453:C101145",
+    "functionAnchor": "L5453:C91648"
+   },
+   {
+    "id": "tire_stack",
+    "group": "J3",
+    "callback": "$A",
+    "registration": "i(\"tire_stack\",(e,t={})=>$A(e,t))",
+    "registrationAnchor": "L5453:C101179",
+    "functionAnchor": "L5453:C94138"
+   },
+   {
+    "id": "jerry_can",
+    "group": "J3",
+    "callback": "ZA",
+    "registration": "i(\"jerry_can\",(e,t={})=>{let n=Math.abs(t.seed|0)%2;return wf(`jerry|${t.color}|${n}`,()=>ZA(e,t,n))})",
+    "registrationAnchor": "L5453:C101213",
+    "functionAnchor": "L5453:C94549"
+   },
+   {
+    "id": "traffic_cone",
+    "group": "J3",
+    "callback": "jA",
+    "registration": "i(\"traffic_cone\",(e,t={})=>{let n=Math.abs(t.seed|0)%3;return wf(`cone|${!!t.lying}|${n}`,()=>jA(e,t,n))})",
+    "registrationAnchor": "L5453:C101316",
+    "functionAnchor": "L5453:C95819"
+   },
+   {
+    "id": "gas_cylinders",
+    "group": "J3",
+    "callback": "JA",
+    "registration": "i(\"gas_cylinders\",(e,t={})=>JA(e,t))",
+    "registrationAnchor": "L5453:C101423",
+    "functionAnchor": "L5453:C96606"
+   },
+   {
+    "id": "pipe_stack",
+    "group": "J3",
+    "callback": "KA",
+    "registration": "i(\"pipe_stack\",(e,t={})=>KA(e,t))}",
+    "registrationAnchor": "L5453:C101460",
+    "functionAnchor": "L5453:C99053"
+   },
+   {
+    "id": "tarp_cargo",
+    "group": "eb",
+    "callback": "QA",
+    "registration": "i(\"tarp_cargo\",(e,t={})=>QA(e,t))",
+    "registrationAnchor": "L5453:C109690",
+    "functionAnchor": "L5453:C101726"
+   },
+   {
+    "id": "sandbags",
+    "group": "eb",
+    "callback": "tR",
+    "registration": "i(\"sandbags\",(e,t={})=>tR(e,t))",
+    "registrationAnchor": "L5453:C109724",
+    "functionAnchor": "L5453:C105847"
+   },
+   {
+    "id": "cardboard_boxes",
+    "group": "eb",
+    "callback": "nR",
+    "registration": "i(\"cardboard_boxes\",(e,t={})=>nR(e,t))}",
+    "registrationAnchor": "L5453:C109756",
+    "functionAnchor": "L5453:C108905"
+   },
+   {
+    "id": "forklift",
+    "group": "sb",
+    "callback": "oR",
+    "registration": "i(\"forklift\",(e,t={})=>oR(e,t))",
+    "registrationAnchor": "L5453:C131003",
+    "functionAnchor": "L5453:C111029"
+   },
+   {
+    "id": "generator",
+    "group": "sb",
+    "callback": "rR",
+    "registration": "i(\"generator\",(e,t={})=>rR(e,t))",
+    "registrationAnchor": "L5453:C131035",
+    "functionAnchor": "L5453:C120182"
+   },
+   {
+    "id": "dumpster",
+    "group": "sb",
+    "callback": "aR",
+    "registration": "i(\"dumpster\",(e,t={})=>aR(e,t))",
+    "registrationAnchor": "L5453:C131068",
+    "functionAnchor": "L5453:C124584"
+   },
+   {
+    "id": "toolbox_cart",
+    "group": "sb",
+    "callback": "lR",
+    "registration": "i(\"toolbox_cart\",(e,t={})=>lR(e,t))}",
+    "registrationAnchor": "L5453:C131100",
+    "functionAnchor": "L5453:C127775"
+   }
+  ],
+  "materialFamilies": [
+   "asphalt",
+   "concrete",
+   "brick",
+   "epoxy",
+   "paint",
+   "hull",
+   "galv",
+   "metal",
+   "brushed",
+   "rust",
+   "diamond",
+   "corrugated",
+   "chainlink",
+   "hazard",
+   "gunmetal",
+   "anodized",
+   "polymer",
+   "carbon",
+   "fabric",
+   "armor",
+   "wood",
+   "plastic",
+   "tarp",
+   "cardboard",
+   "rope",
+   "tire",
+   "glass",
+   "glass_dirty",
+   "water"
+  ],
+  "materialInstances": [
+   "asphalt",
+   "concrete",
+   "concrete_dirty",
+   "concrete_painted",
+   "brick",
+   "floor_epoxy",
+   "paint_red",
+   "paint_blue",
+   "paint_green",
+   "paint_yellow",
+   "paint_orange",
+   "paint_white",
+   "paint_grey",
+   "paint_teal",
+   "steel_galv",
+   "steel_dark",
+   "steel_worn",
+   "steel_bare",
+   "steel_rust",
+   "diamond_plate",
+   "corrugated_roof",
+   "chainlink",
+   "aluminium",
+   "brass",
+   "hazard_stripes",
+   "gunmetal",
+   "anodized_black",
+   "polymer_black",
+   "polymer_tan",
+   "rubber",
+   "carbon",
+   "glove_fabric",
+   "armor_white",
+   "armor_orange",
+   "wood_pallet",
+   "wood_dark",
+   "plastic_blue",
+   "plastic_red",
+   "plastic_grey",
+   "tarp",
+   "cardboard",
+   "rope",
+   "tire",
+   "glass",
+   "glass_dirty",
+   "hull_paint",
+   "hull_red",
+   "water_dark"
+  ],
+  "springSet": {
+   "kickZ": [
+    520,
+    30
+   ],
+   "kickPitch": [
+    380,
+    26
+   ],
+   "kickYaw": [
+    300,
+    22
+   ],
+   "kickRoll": [
+    300,
+    20
+   ]
+  }
+ }
+}

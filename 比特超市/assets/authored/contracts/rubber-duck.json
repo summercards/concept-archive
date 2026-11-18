@@ -1,0 +1,71 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.rubber-duck",
+  "designStatus": "implemented-awaiting-current-verification",
+  "registryEntry": {
+    "id": "new.rubber-duck",
+    "source": "rubber-duck.js",
+    "name": "小黄鸭 · 软胶玩具",
+    "summary": "原创代码生成的圆润软胶小黄鸭，连续鸭身与头颈、上翘尾部、独立上下鸭嘴、黑眼睛、水滴翅膀和底部气阀。默认黄色，支持奶油色变体；尺寸 15 × 18 × 21 cm。",
+    "tags": ["原创", "小黄鸭", "玩具", "软胶", "程序化", "可换色"],
+    "contract": {
+      "units": "m",
+      "size": [0.15, 0.18, 0.21],
+      "sizeTolerance": {"meters": 0.001, "percent": 0.01},
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": ["rubber", "polymer_black", "plastic_grey"],
+      "requiredParts": ["body", "beak.upper", "beak.lower", "eye.left", "eye.right", "wing.left", "wing.right", "base.valve"],
+      "options": {"color": {"type": "string", "default": "yellow", "values": ["yellow", "cream"]}},
+      "variantEnvelopes": [],
+      "collidersRequired": true,
+      "dynamic": false,
+      "budget": {"triangles": 24000, "maxMeshes": 14},
+      "baseline": {"type": "new-design", "referenceAssets": ["prop.barrel"], "scope": "只对照现有道具的真实部件、分拆碰撞与资源规范；小黄鸭为近景有机曲面原创，不套用油桶的面数限制。"}
+    },
+    "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+    "evidence": {"report": "outputs/rubber-duck/asset-review.html"}
+  },
+  "designContract": {
+    "intent": "制作原创橡胶浴盆鸭的静态展示道具，既有可爱的玩具轮廓，也有可查询的几何部件与正式入库信息。不是原版角色复刻，不提供真实玩具制造安全认证。",
+    "coordinateSystem": {"units": "m", "up": "+Y", "forward": "+Z", "origin": "bottom-center", "sizeOrder": ["widthX", "heightY", "depthZ"], "size": [0.15, 0.18, 0.21], "nominalBounds": {"min": [-0.075, 0, -0.105], "max": [0.075, 0.18, 0.105]}, "sizeToleranceM": 0.001},
+    "silhouette": {"front": "大头、短而宽扁橙嘴、两颗黑眼，身体下宽上收，不用工业盒体替代。", "side": "鸭身与头颈平滑融合，胸腹圆润，尾尖上翘。", "back": "尾部和左右翅膀保留实际轮廓，整体左右对称。", "designEvidence": ["本文件文字设计；最终证据来自网页实渲染。"]},
+    "functionalParts": [
+      {"name": "body", "role": "SDF 平滑融合头、颈、躯干和尾，真实三角网格，不是材质上的图案。"},
+      {"name": "beak.upper", "role": "带真实厚度的橙色上嘴。"},
+      {"name": "beak.lower", "role": "独立下嘴及可见嘴缝。"},
+      {"name": "eye.left", "role": "左侧黑色圆眼，使用几何而非平面图。"},
+      {"name": "eye.right", "role": "右侧黑色圆眼。"},
+      {"name": "wing.left", "role": "左侧浮雕水滴翅膀，接入侧腹。"},
+      {"name": "wing.right", "role": "右侧浮雕水滴翅膀。"},
+      {"name": "base.valve", "role": "底部压平接地与气阀，非物理发声模块。"}
+    ],
+    "openingsAndThickness": {"shell": "展示用闭合外表面，不模拟可挤压中空壳或材料有限元。", "beak": "上下嘴均有厚度与间隙；不以一条贴花假装嘴部。", "valve": "底部气阀采用实体结构；不包含空气流动/发声模拟。"},
+    "assembly": {"connections": ["外壳体块以连续场融合，避免头身简单球体交界。", "眼睛、鸭嘴和翅膀根部应实际接入外壳，不漂浮。", "气阀藏在底部，与平底正确接触。"], "loadPath": "静态展示，平底落在 y=0；无支腿或悬浮底座。"},
+    "surfaceAndUV": {
+      "mappingStrategy": "外壳有参数化 UV，附属曲面有 UV；本设计使用无图像贴图的物理软胶材质，曲面 UV 不当作已验证的米制照片纹理密度。",
+      "materialSpecifications": [
+        {"category": "rubber", "recipe": "资产自有 MeshPhysicalMaterial：黄色/奶油色体、橙嘴，metalness=0，roughness=0.34，clearcoat=0.12；不冒用旧橡胶烘焙配方。"},
+        {"category": "polymer_black", "recipe": "资产自有深色眼与嘴缝，roughness=0.22。"},
+        {"category": "plastic_grey", "recipe": "资产自有灰色阀件。"}
+      ],
+      "decals": [],
+      "ownership": "同次 build 的部件复用本资产 4 组独占材质；不修改、不 clone、不释放 ctx.mats 的共享缓存。dispose 幂等回收本资产几何与材质。"
+    },
+    "collision": {"space": "model-local", "colliders": ["躯干保守 AABB", "头嘴保守 AABB"], "surfaceIdentifiers": ["rubber"], "requiredCornerChecks": 8, "openingPolicy": "无可进入空间。碰撞为静态交互粗代理，未模拟软体或浮力。", "dynamicPolicy": "静态不随动。"},
+    "sockets": {"definitions": {"grip": {"position": [0, 0.08, 0], "purpose": "拿取参考点"}, "base": {"position": [0, 0, 0], "purpose": "放置基点"}}, "orientationConvention": "模型局部坐标，+Z 正面。"},
+    "variants": {"optionDefinitions": {"color": {"default": "yellow", "values": ["yellow", "cream"]}}, "allowedCombinations": ["yellow", "cream"], "invariants": ["几何、尺寸、碰撞与挂点不因换色改变"], "coverageMatrix": ["黄色默认", "奶油色"]},
+    "seed": {"default": null, "testSeeds": [], "allowedChanges": [], "reason": "无随机细节，不提供没有作用的 seed 控件；同配置严格确定性。"},
+    "dynamic": {"enabled": false, "decision": "静态玩具道具。转向由预览相机控制，不伪称资产动画。", "disposeRequirements": ["幂等", "不释放宿主缓存", "无自启动计时器"]},
+    "lodAndBudget": {
+      "referenceMeasurements": [{"assetId": "prop.barrel", "source": "outputs/props-ui-verification.json 的已有记录，非本轮重跑", "vertices": 722, "triangles": 1048, "meshes": 4, "scope": "结构与资源规约参考，不是有机曲面面数对照。"}],
+      "limits": {"triangles": 24000, "drawCalls": 14, "materials": 4},
+      "rationale": "近景可拖拽的小型连续曲面，相对工业油桶需要更高的轮廓采样；采用低 draw-call、约 2 万面级预算，不宣称可大规模实例化无优化。",
+      "noLodReason": "本轮为资产库近景检查版；大量放置、远景 LOD 和移动端帧率/内存趋势待集成时实测。"
+    }
+  },
+  "qualityComparators": [{"assetId": "prop.barrel", "scope": "部件、元数据、实际预览模式与资源规范参考，非轮廓临摹或像素相等。"}],
+  "verificationPlan": {"gate": "catalog", "renderer": "当前网页 r160 棚拍", "automatic": ["静态契约与源码校验", "实际构建与几何有效性", "必要部件、碰撞八角、尺寸及预算", "两次确定性与换色变体", "多角度/灰模/线框截图", "有限运行与释放事件"], "supplementary": ["实际看图检查圆润轮廓、眼嘴装配和翅膀接合", "首页、NEW 分类、搜索与局域网访问"], "acceptanceWriteback": "registry 四项保持 unverified；自动报告和人工检查另存独立证据，不自动签发完整认证。"},
+  "evidence": {"testReports": ["outputs/rubber-duck/release/report.json"], "images": {"threeAngles": ["outputs/rubber-duck/release/material-overall.png", "outputs/rubber-duck/release/material-front.png", "outputs/rubber-duck/release/material-back.png"], "clay": ["outputs/rubber-duck/release/clay-overall.png"], "wire": ["outputs/rubber-duck/release/wire-overall.png"]}, "notExecuted": ["原版 r180 整机集成", "软体、浮力、音效", "大规模实例化与 LOD", "完整内存趋势验收"]}
+}

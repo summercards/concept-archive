@@ -1,0 +1,53 @@
+{
+  "assetId": "new.rubber-duck",
+  "scope": "网页 catalog 棚拍的实际图片检查；非 r180 整机或全部质量签证",
+  "reviewMethod": "实际打开真实网页渲染 PNG 检查，非仅判断文件存在",
+  "conclusion": "已检查图中主体轮廓、头颈融合、上下嘴、眼睛、翅膀、尾、接地完整可见；未发现初版尾尖缺面或多余底盘环。",
+  "notes": [
+    "近景曲面仍存在采样离散与尾部造型转折，不宣称制造级曲面。",
+    "黄色/奶油色使用自有物理软胶材质，标准自动摘要只比较材质名所以 changedFromDefault=false 不代表颜色无变化；换色效果另有实图。"
+  ],
+  "sourceSha256": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+  "contractFileSha256": "15fe5bc5ab8665a31b92b657f31d53b00b63b99dccd8b4d89b730fd7b247b1ad",
+  "automaticReportSha256": "20b9744764b091476a2de965b99ae9af151ad899ffd83f58228b3d7546979172",
+  "automaticNormalizedReportSha256": "35801394b6d2f5b6de699d3375c2664bf4851bd17eb214d8d3a4c46a78df677f",
+  "automaticVisualStatusUnchanged": "UNVERIFIED",
+  "images": [
+    {
+      "file": "release/material-overall.png",
+      "sha256": "e5ee7d1bee90d9372d15730883c0cbb7738e68e15629d370a3b00b9fa1406dd8"
+    },
+    {
+      "file": "release/material-front.png",
+      "sha256": "1bf3c0f4081fae773a1e9e08544b6c93745e7b7d987ab2bbf7eed300e32ca6db"
+    },
+    {
+      "file": "release/material-back.png",
+      "sha256": "c2cb36c980432f2af63451ec17627f3e7149d73df2488b7c00b2bc6cc9c5ad4f"
+    },
+    {
+      "file": "release/clay-overall.png",
+      "sha256": "6f5a86431623f3be020446d8680dc1697ef6739be772800f7b12042d9a14fb83"
+    },
+    {
+      "file": "release/wire-overall.png",
+      "sha256": "0db8454b3e26b8622fd5a11d22c1454101aa1cb828cf5ce35238cf780fc22775"
+    },
+    {
+      "file": "cream-variant.png",
+      "sha256": "d10f77556744b05248b57a5448246edf3432bd77036ebda2324b66b472d00b5c"
+    },
+    {
+      "file": "library-recent.png",
+      "sha256": "7ad2dc30e56d24015c83ecb3bb890b26ad4df9af4ee5322b1c16b08320e73b0d"
+    }
+  ],
+  "notExecuted": [
+    "r180整机集成",
+    "软体与浮力",
+    "音效",
+    "LOD与大规模实例化",
+    "全部内存趋势与资源生命周期证明"
+  ],
+  "acceptanceWriteback": false
+}

@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>新资产制作 · code-asset-authoring</title><style>
+:root{color-scheme:dark;--bg:#0b1118;--card:#131d29;--line:#2a384a;--ink:#eaf0f7;--muted:#a0b1c4;--orange:#ffb86b;--green:#84dfb6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:1180px;margin:auto;padding:44px 24px 80px}h1{font-size:38px;line-height:1.3}h2{margin-top:42px;font-size:24px}.kicker{font:12px ui-monospace,monospace;letter-spacing:.15em;color:var(--orange)}p{color:var(--muted)}a{color:var(--orange)}code,pre{font-family:ui-monospace,Menlo,monospace}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#080e15;border:1px solid var(--line);border-radius:9px;padding:20px;font-size:13px}.card,.notice{padding:22px;background:var(--card);border:1px solid var(--line);border-radius:10px}.notice{border-left:3px solid var(--orange);margin:22px 0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid h3{margin-top:0;font-size:18px}.step{color:var(--orange);font:12px ui-monospace,monospace}.badge{display:inline-block;background:#15362c;color:var(--green);padding:5px 12px;border-radius:20px;margin:8px 8px 8px 0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--orange)}td{color:var(--muted)}.tablewrap{overflow:auto}figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}figure img{width:100%;display:block}figcaption{padding:14px;color:var(--muted);font-size:13px}.images{display:grid;grid-template-columns:2fr 1fr;gap:14px}.button{border:1px solid var(--orange);padding:9px 14px;border-radius:6px;text-decoration:none;display:inline-block;margin-right:8px}small{color:var(--muted)}@media(max-width:760px){main{padding:28px 16px}h1{font-size:29px}.grid,.images{grid-template-columns:1fr}}
+</style></head><body><main><div class="kicker">CODE ASSET LEDGER / AUTHORING</div><h1>用同一套制作链，生产新的代码资产</h1><p>已创建用户级技能 <code>code-asset-authoring</code>，并为网页增加原创资产独立注册、预览和验收入口。默认直接编写程序化几何，复用网页的米制建模工具、程序材质、贴花和棚拍宿主；不是让图片生成器生成一张“像模型”的图片。</p><span class="badge">技能结构校验通过</span><span class="badge">脚手架 / 构建 / 预览 / 检查 / 打包已实测</span><p><a class="button" href="code-asset-authoring.zip">下载技能包</a><a class="button" href="../index.html#/authoring">返回网页制作入口</a></p>
+<h2>以后直接这样提需求</h2><div class="card"><p style="color:var(--ink);margin:0">使用 <b>code-asset-authoring</b>，在这个代码资产库制作一个 1.2×1.8×0.5m 双门维修柜。带真实内腔、两层层板、门轴、铰链、锁把、开合变体和材质标签。使用灰漆、深钢和少量锈蚀，底面中心为原点。按网页标准生成代码、入库、做灰模/线框/三视角检查，并交付通过项与未执行项。</p></div><p>宽 X × 高 Y × 深 Z；单位米、Y 向上、+Z 朝正面。还可补充参考图、近看距离、交互、变体和性能用途。缺少影响结构的关键信息会先确认，其余设计决策会写进契约，不会悄悄删减细节。</p>
+<h2>制作顺序</h2><div class="grid"><section class="card"><div class="step">01 / DESIGN CONTRACT</div><h3>先定结构和质量</h3><p>尺寸、轮廓、板厚、内腔、承重连接、门轴、功能件、材质尺度、碰撞、挂点、变体和预算。选已真实检查过的同类资产作质量对照。</p></section><section class="card"><div class="step">02 / BUILD & REGISTER</div><h3>代码构造＋独立入库</h3><p>实现 <code>build(ctx, options)</code>，保留具名部件。原创源码、完整契约和注册表独立保存，不修改原版提取基线。</p></section><section class="card"><div class="step">03 / VERIFY & REVIEW</div><h3>自动检查＋实际看图</h3><p>检查几何、尺寸、部件、碰撞、确定性和所测变体，生成三角度、灰模与线框。再实际检查结构、UV、材质和装配，不能自动把截图生成当质量通过。</p></section></div>
+<h2>模型制作会调用哪些功能？</h2><div class="tablewrap"><table><thead><tr><th>工作</th><th>调用能力</th><th>用途与限制</th></tr></thead><tbody><tr><td>实体结构</td><td><code>ctx.kit.metricBox / bevelBox / cylinder / tube / place</code></td><td>生成板件、支架、管线、轴和把手，保持真实厚度、米制 UV 和尺度。不是一个总包围盒。</td></tr><tr><td>层级与合批</td><td><code>THREE.Group / Mesh、kit.merge / Builder / batch</code></td><td>requiredParts 必须可查；动态部件 noMerge。核对 Builder 材质解析与 r=0 非米制 UV 路径。</td></tr><tr><td>程序表面</td><td><code>ctx.mats.get(id, options)</code></td><td>调用已登记程序材质与 GPU 烘焙。不得自行把缺贴图降成纯色；新增材质族需额外实现与验收。</td></tr><tr><td>标签与发光</td><td><code>ctx.mats.label / decal / number / emissive</code></td><td>真实 Canvas 标签、污迹、编号与发光。标签 UV 可明确用0–1，不用于代替实体门缝和五金。</td></tr><tr><td>变体与随机</td><td><code>options、ctx.rng</code></td><td>每次构造独立 seed，参数与合法值写入契约；不同姿态声明运动包络。</td></tr><tr><td>动态与重置</td><td><code>root.userData.update / reset / dispose</code></td><td>宿主驱动秒制时间；模型不自启 RAF。只清理独占资源，不能销毁共享材质。</td></tr><tr><td>碰撞与挂点</td><td><code>userData.colliders / sockets</code></td><td>逐盒八角核对；不以实心总盒堵住开口，活动件与挂点须按契约联动。</td></tr><tr><td>预览和证据</td><td><code>原创 NEW 分类、原材质 / 灰模 / 线框 / 视角 / 变体</code></td><td>用与网页相同的检查宿主；保留源码/契约hash、真实截图和报告。</td></tr></tbody></table></div>
+<h2>文件与入口</h2><pre>~/.workbuddy/skills/code-asset-authoring/
+  SKILL.md
+  scripts/asset_author.py        # doctor / scaffold / check / pack
+  scripts/verify_asset.cjs       # 真实浏览器检查及截图
+  references/                   # API、质量标准
+  assets/                       # 脚手架、完整契约、原创学习样品
+
+项目根目录/
+  assets/authored/registry.json           # {schemaVersion:1, assets:[]}
+  assets/authored/&lt;slug&gt;.js              # 唯一 build 导出
+  assets/authored/contracts/&lt;slug&gt;.json  # 完整设计契约
+  tools/build_authored.py                 # 构建原创账本
+  assets/authored.js                      # 生成文件，不手改</pre>
+<h2>可执行命令</h2><pre>SKILL_DIR="$HOME/.workbuddy/skills/code-asset-authoring"
+ROOT="/Users/zyq/WorkBuddy/2026-11-15-17-10-04"
+ID="new.harbor-repair-cabinet"
+
+python3 -B "$SKILL_DIR/scripts/asset_author.py" doctor --root "$ROOT"
+python3 -B "$SKILL_DIR/scripts/asset_author.py" scaffold --root "$ROOT" --id "$ID" \
+  --name "港区双门维修柜" --size "1.2,1.8,0.5" \
+  --materials "paint_grey,steel_dark" --parts "body,frame,door.left,door.right,handle"
+
+# 随后实现生成的源码，并填完完整设计契约；默认脚手架故意抛错。
+python3 -B "$SKILL_DIR/scripts/asset_author.py" check --root "$ROOT" --id "$ID"
+python3 -B "$ROOT/tools/build_authored.py" --root "$ROOT"
+
+# 先确认 BASE_URL 属于此 root、Playwright 路径真实、证据父目录存在。
+node "$SKILL_DIR/scripts/verify_asset.cjs" --root "$ROOT" --id "$ID" \
+  --base-url "http://127.0.0.1:8099/index.html" \
+  --playwright "/Users/zyq/work/wc/node_modules/playwright" \
+  --out-dir "$ROOT/outputs/repair-cabinet-evidence"
+
+python3 -B "$SKILL_DIR/scripts/asset_author.py" pack --root "$ROOT" --id "$ID" \
+  --evidence "$ROOT/outputs/repair-cabinet-evidence/report.json"</pre><p>普通使用不需要手敲这些命令，直接提制作需求即可。命令公开便于复现。scaffold、check、pack 都不会自动签发 PASS；注册表保留 unverified，证据由独立报告绑定。</p>
+<h2>技能链路实测：原创维修工作台</h2><p>样品仅在项目 build 下的隔离宿主验证，没有加入正式资产库。测得 33 网格、942 顶点、1510 三角、零退化面；尺寸约 1.4×0.9×0.65m。确定性、换色、静态抽屉姿态、碰撞和有限生命周期检查通过；三轮重新挂载无页面错误，共享材质未被 dispose。</p><div class="images"><figure><img src="authoring-skill-example/material-overall.png" alt="技能链路测试的原创工作台"><figcaption>真实宿主原材质渲染；不是概念图。样品用于证明制作链路，不作为已认证用户成品。</figcaption></figure><figure><img src="authoring-skill-example/clay-overall.png" alt="工作台灰模结构"><figcaption>同模型灰模检查，查看真实几何、厚度与功能层级。</figcaption></figure></div><p><a href="authoring-skill-example/report.json">查看真实测试报告 →</a></p><div class="notice"><b style="color:var(--ink)">标准边界：</b>当前目标是网页 catalog 检查标准。自动 geometry 与运行检查不能证明全部 UV 品质、所有选项组合、显存回收或最终艺术质量。样品报告 visual 仍为 UNVERIFIED；原版 r180 整机光影也未在此认证。原创设计按自己的契约和可信参考验收，不冒用原版逐顶点零误差指标。</div><small>原创注册链独立于 window.DB，正式原版283条保持不变。仅执行可信本地源码；静态 AST 约束不是安全沙箱。</small></main></body></html>

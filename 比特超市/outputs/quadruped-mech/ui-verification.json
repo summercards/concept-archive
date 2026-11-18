@@ -1,0 +1,423 @@
+{
+  "status": "PASS",
+  "assetId": "new.quadruped-mech",
+  "scope": "真实r160网页，多角度/灰模/线框/橙色变体/两个额外seed/播放暂停复位/3轮重复挂载/首页NEW搜索/LAN/390宽。",
+  "sourceFiles": {
+    "assets/authored/quadruped-mech.js": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+    "assets/authored/contracts/quadruped-mech.json": "c5a2798c17485fe4f81ecdc0211e8aa52230446df3729f4d69cd15c0a50ed153",
+    "assets/authored/registry.json": "60c6aaddd10de94c819c9f3b9ba3c7977f00ccc27c89e72a38b413d8fd511076",
+    "assets/authored.js": "b8007d7492fbaaae0c1aa4e252c08e5797991e66cb8b768a55b957bce64533e5",
+    "previews.js": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb",
+    "app.js": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+  },
+  "api": {
+    "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+    "revision": "160",
+    "contract": {
+      "units": "m",
+      "size": [
+        4.82,
+        2.68,
+        6.16
+      ],
+      "sizeTolerance": {
+        "meters": 0.05,
+        "percent": 0.02
+      },
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "paint_grey",
+        "paint_orange",
+        "steel_dark",
+        "gunmetal",
+        "rubber",
+        "hazard_stripes"
+      ],
+      "requiredParts": [
+        "body.chassis",
+        "body.front-plate",
+        "body.rear-power",
+        "turret.ring",
+        "turret.gun-mount",
+        "cannon.barrel",
+        "cannon.muzzle",
+        "cannon.recoil-sleeve",
+        "leg.front-left",
+        "leg.front-right",
+        "leg.rear-left",
+        "leg.rear-right"
+      ],
+      "options": {
+        "seed": {
+          "type": "integer",
+          "default": 7,
+          "values": [
+            7,
+            19,
+            43
+          ]
+        },
+        "armor": {
+          "type": "string",
+          "default": "grey",
+          "values": [
+            "grey",
+            "orange"
+          ]
+        }
+      },
+      "variantEnvelopes": [],
+      "collidersRequired": true,
+      "dynamic": true,
+      "budget": {
+        "triangles": 60000,
+        "maxMeshes": 260
+      },
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": [
+          "prop.forklift"
+        ],
+        "scope": "仅对照现有载具/机械资产的结构层级、材料所有权、碰撞与动画生命周期；不复刻原版外形。"
+      }
+    },
+    "original": 283,
+    "authored": 4
+  },
+  "shots": [
+    {
+      "file": "material-overall.png",
+      "sha256": "d7c8902179de4f5d14cd7786f9d35333dccf32e9a7224ef1c43abb35a690d7e3",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "material-front.png",
+      "sha256": "7f9cd0900c3765847bbd089d0afadbf1a195a7a0537fe0be6d7f51e1c35aa8c5",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          -0.0008221864128121759,
+          4.75879414603711,
+          11.088957294322043
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0,
+        "pitch": 0.3,
+        "distance": 11.611030543660217
+      }
+    },
+    {
+      "file": "material-back.png",
+      "sha256": "399f484d933c0b7e12a2de04dcfdb1edebaca911835ec7950d894365dfa651e6",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          -0.0008221864128108175,
+          4.75879414603711,
+          -11.095925015099013
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0.3,
+        "distance": 11.611030543660217
+      }
+    },
+    {
+      "file": "clay-overall.png",
+      "sha256": "4908f41667397e9f8a657cd53a999e4619dd49fb3a16ec7efcc42e54e4a6dfe8",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "wire-overall.png",
+      "sha256": "aac549aab9354613de615e9ec0140dce6e7069104795e3dace82f25262a2e036",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "armor-orange.png",
+      "sha256": "46bf6a9a6f3bc379d9899f2ce858585c9d5314511e5ed70b0e2183aef41ea701",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "orange"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "animation-step.png",
+      "sha256": "d0fdc18afd3ee83b60607d13a0787bf3e31f17aef69ed945cbc74802510c3d57",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "animation-paused.png",
+      "sha256": "578b9a378975e362c245c701400d31e78f82d7b5cd6d47c50b7eed19939827e0",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "animation-reset.png",
+      "sha256": "76d7059964657119fe64182762bafdb74ac2b831200b8ddd24ad090f03b8d050",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 7,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "seed-19.png",
+      "sha256": "52ddb0b1fc6dd552f4bc97b8ad59df16de2190d693412b2f7cc1153c44f4105a",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 19,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    },
+    {
+      "file": "seed-43.png",
+      "sha256": "d6d77b3790a639e640b7c12c5b853b878df4f8bd97580bfee4dd82def298119d",
+      "assetId": "new.quadruped-mech",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "options": {
+        "seed": 43,
+        "armor": "grey"
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          8.244423887398264,
+          5.2866485118354545,
+          9.785617194618288
+        ],
+        "target": [
+          -0.0008221864128121759,
+          1.3275000002235176,
+          -0.0034838603884856933
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 13.397217592464141
+      }
+    }
+  ],
+  "recent": [
+    "#/a/new.quadruped-mech",
+    "#/a/new.nordic-spruce",
+    "#/a/new.rubber-duck",
+    "#/a/new.harbor-service-workbench"
+  ],
+  "animation": {
+    "options": {
+      "seed": 7,
+      "armor": "grey"
+    },
+    "buttons": [
+      "原材质",
+      "纯灰几何",
+      "结构线框",
+      "整体",
+      "正面",
+      "背面",
+      "俯视",
+      "7",
+      "19",
+      "43",
+      "grey",
+      "orange",
+      "播放",
+      "暂停",
+      "重置"
+    ]
+  },
+  "mobile": {
+    "width": 390,
+    "overflow": 0
+  },
+  "errors": [],
+  "warnings": [
+    "[.WebGL-0x11c00868c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x11c00868c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x11c00868c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x11c00868c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "notExecuted": [
+    "r180整机",
+    "真实弹道与开火音效",
+    "完整物理IK/导航",
+    "LOD和大规模编队性能"
+  ]
+}

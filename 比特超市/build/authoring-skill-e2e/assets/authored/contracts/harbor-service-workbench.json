@@ -1,0 +1,553 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.harbor-service-workbench",
+  "designStatus": "implemented-unverified",
+  "instructions": [
+    "这是完整契约包，不是裸 registry entry；仅 registryEntry 对象用于未来登记。",
+    "技能样例文件名为 workbench-example.js；未来入库时须另以 harbor-service-workbench.js 保存源码，以匹配 new.harbor-service-workbench。本次不注册或复制到项目。",
+    "seed 仅为兼容参数，不改变几何或材质，不要求不同 seed 的模型摘要必须不同。"
+  ],
+  "registryEntry": {
+    "id": "new.harbor-service-workbench",
+    "source": "harbor-service-workbench.js",
+    "name": "港区原创维修工作台",
+    "summary": "原创四腿钢框架维修台，含真实厚度木台面、下层板、背侧加劲梁、抽屉和拉手、脚垫与平面标签；提供灰蓝换色及静态抽屉姿态，未完成真实视觉验收。",
+    "tags": [
+      "原创",
+      "港区",
+      "维修",
+      "工作台",
+      "程序化资产"
+    ],
+    "contract": {
+      "units": "m",
+      "size": [
+        1.4,
+        0.9,
+        0.65
+      ],
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "paint_grey",
+        "paint_blue",
+        "steel_dark",
+        "wood_pallet",
+        "rubber"
+      ],
+      "requiredParts": [
+        "frame",
+        "supportRails",
+        "top",
+        "workSurface",
+        "shelf",
+        "backBrace",
+        "drawer",
+        "drawerSlides",
+        "handle",
+        "feet",
+        "badge"
+      ],
+      "options": {
+        "seed": {
+          "type": "integer",
+          "default": 0,
+          "values": [
+            0,
+            1,
+            5
+          ],
+          "note": "仅兼容参数，不消费 ctx.rng，不改变几何或材质。"
+        },
+        "color": {
+          "type": "string",
+          "default": "paint_grey",
+          "values": [
+            "paint_grey",
+            "paint_blue"
+          ]
+        },
+        "drawerOpen": {
+          "type": "number",
+          "default": 0,
+          "values": [
+            0,
+            0.12
+          ],
+          "note": "构建时静态平移，不提供自动 update。"
+        }
+      },
+      "dynamic": false,
+      "collidersRequired": true,
+      "sizeTolerance": {
+        "meters": 0.01,
+        "percent": 0.01
+      },
+      "budget": {
+        "triangles": 6000,
+        "maxMeshes": 60
+      },
+      "nominalBounds": {
+        "min": [
+          -0.7,
+          0,
+          -0.325
+        ],
+        "max": [
+          0.7,
+          0.9,
+          0.325
+        ]
+      },
+      "boundsEnvelope": {
+        "min": [
+          -0.7,
+          0,
+          -0.325
+        ],
+        "max": [
+          0.7,
+          0.9,
+          0.445
+        ]
+      },
+      "variantEnvelopes": [
+        {
+          "options": {
+            "drawerOpen": 0
+          },
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.325
+          ]
+        },
+        {
+          "options": {
+            "drawerOpen": 0.12
+          },
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.445
+          ]
+        }
+      ],
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": [
+          "prop.shelf_rack",
+          "prop.toolbox_cart"
+        ],
+        "referenceScope": "仅承重框架和收纳层级的结构级参考；未执行比较测量，不声称 measured=true。"
+      }
+    },
+    "acceptance": {
+      "catalog": "unverified",
+      "geometry": "unverified",
+      "visual": "unverified",
+      "runtime": "unverified"
+    }
+  },
+  "designContract": {
+    "intent": "原创港区维修台，不复刻原版，不复制原版构造源码；仅复用宿主几何工具和缓存材质。",
+    "coordinateSystem": {
+      "units": "m",
+      "up": "+Y",
+      "forward": "+Z",
+      "origin": "bottom-center",
+      "sizeOrder": [
+        "widthX",
+        "heightY",
+        "depthZ"
+      ],
+      "size": [
+        1.4,
+        0.9,
+        0.65
+      ],
+      "nominalBounds": {
+        "min": [
+          -0.7,
+          0,
+          -0.325
+        ],
+        "max": [
+          0.7,
+          0.9,
+          0.325
+        ]
+      },
+      "sizeToleranceM": 0.01,
+      "protrusionsAndMotionEnvelope": "默认把手、标签和脚垫包含于 nominalBounds。drawerOpen=0.12 允许前向扩展至 0.445；contract.size 是闭合名义尺寸，root.userData.size 为当前姿态实测 bbox 跨度。验证开启姿态应使用 variantEnvelopes/boundsEnvelope，而非强制等于闭合 size。"
+    },
+    "silhouette": {
+      "front": "低矮厚木台面、漆装包边、中央有间隙抽屉及钢拉手。",
+      "side": "开放四腿结构，下层置物板后退，台面由周边钢梁承托。",
+      "back": "背侧横梁与两根斜撑加劲，不封成实心背墙。"
+    },
+    "functionalParts": [
+      {
+        "name": "frame",
+        "parent": "root",
+        "role": "四根 0.06×0.78×0.06m 钢腿"
+      },
+      {
+        "name": "supportRails",
+        "parent": "root",
+        "role": "前后左右钢支撑框，中心 y=0.78m"
+      },
+      {
+        "name": "top",
+        "parent": "root",
+        "role": "顶面及灰/蓝漆包边"
+      },
+      {
+        "name": "workSurface",
+        "parent": "top",
+        "sizeM": [
+          1.4,
+          0.06,
+          0.65
+        ],
+        "positionM": [
+          0,
+          0.87,
+          0
+        ],
+        "role": "真实厚度木台面"
+      },
+      {
+        "name": "shelf",
+        "parent": "root",
+        "role": "1.12×0.055×0.45m 木板与前后钢边梁"
+      },
+      {
+        "name": "backBrace",
+        "parent": "root",
+        "role": "横梁和两根钢斜撑"
+      },
+      {
+        "name": "drawer",
+        "parent": "root",
+        "role": "独立前板、底板、侧板及窄缝层次"
+      },
+      {
+        "name": "drawerSlides",
+        "parent": "root",
+        "role": "左右两条钢滑轨"
+      },
+      {
+        "name": "handle",
+        "parent": "root",
+        "role": "钢拉手与两端安装座"
+      },
+      {
+        "name": "feet",
+        "parent": "root",
+        "role": "四个 0.085×0.06×0.085m 橡胶脚垫，底面 y=0"
+      },
+      {
+        "name": "badge",
+        "parent": "root",
+        "role": "包含实际标签平面 label_workbench，不是空 Group"
+      }
+    ],
+    "openingsAndThickness": {
+      "topM": 0.06,
+      "shelfM": 0.055,
+      "frameM": 0.06,
+      "drawerFrontM": 0.03,
+      "visibleInterior": "腿间开放；抽屉前板、底板、侧板相互独立，不以实心盒冒充全部收纳结构。"
+    },
+    "assembly": {
+      "connections": [
+        "台面由周边钢梁承托",
+        "四根钢腿落到橡胶脚垫",
+        "下层板由前后边梁约束",
+        "背侧两根斜撑连接横梁和腿",
+        "拉手有独立端座"
+      ],
+      "loadPath": "台面 → 周边钢梁 → 四腿 → 脚垫 → 地面。",
+      "hingeAxes": []
+    },
+    "seamsAndHardware": {
+      "drawerGapM": 0.018,
+      "geometryVersusDecal": "厚度、滑轨、拉手和框架为实体几何；标签为单面贴花，不承担结构。"
+    },
+    "surfaceAndUV": {
+      "mappingStrategy": "实体盒用 kit.metricBox 米制 UV，圆柱和管件用 kit.cylinder/tube。",
+      "uvDirectionAndSeams": "实体表面按米映射；标签为明确例外，使用 THREE.PlaneGeometry(0.18,0.035) 原生 0–1 UV 贴完整标签。",
+      "materialSpecifications": [
+        {
+          "id": "paint_grey",
+          "role": "默认漆面"
+        },
+        {
+          "id": "paint_blue",
+          "role": "蓝漆变体"
+        },
+        {
+          "id": "steel_dark",
+          "role": "钢框和五金"
+        },
+        {
+          "id": "wood_pallet",
+          "role": "台面和层板"
+        },
+        {
+          "id": "rubber",
+          "role": "脚垫"
+        }
+      ],
+      "decals": [
+        {
+          "name": "label_workbench",
+          "text": "M-14",
+          "sizeM": [
+            0.18,
+            0.035
+          ],
+          "positionM": [
+            -0.47,
+            0.867,
+            0.325
+          ],
+          "normal": [
+            0,
+            0,
+            1
+          ],
+          "material": "ctx.mats.label 返回的 material",
+          "style": "不传未确认的 color/seed/style 选项，沿用宿主标签服务默认样式。",
+          "uvException": "0–1 完整图像贴花，不用六面盒或米制重复 UV"
+        }
+      ],
+      "texelDensityMeasurements": [],
+      "ownership": "所有 mats.get/label 资源均由宿主服务跟踪；本资产只 dispose 独占几何，不释放缓存材质或纹理。"
+    },
+    "collision": {
+      "space": "model-local",
+      "colliders": "8 个 AABB：台面、四腿、下层板、抽屉、背梁。",
+      "surfaceIdentifiers": [
+        "wood_pallet",
+        "steel_dark",
+        "paint_grey",
+        "paint_blue"
+      ],
+      "requiredCornerChecks": 8,
+      "openingPolicy": "不使用整体实心盒封堵腿间空间。",
+      "dynamicPolicy": "构建时抽屉 collider 的 z 随 drawerOpen 静态偏移；无逐帧运动。reset 恢复初始姿态和抽屉碰撞，不推进 rng。"
+    },
+    "sockets": {
+      "definitions": {
+        "workSurface": {
+          "position": [
+            0,
+            0.9,
+            0
+          ]
+        }
+      },
+      "motionPolicy": "台面 socket 固定，不随抽屉移动。"
+    },
+    "variants": {
+      "optionDefinitions": {
+        "seed": {
+          "type": "integer",
+          "default": 0,
+          "values": [
+            0,
+            1,
+            5
+          ]
+        },
+        "color": {
+          "type": "string",
+          "default": "paint_grey",
+          "values": [
+            "paint_grey",
+            "paint_blue"
+          ]
+        },
+        "drawerOpen": {
+          "type": "number",
+          "default": 0,
+          "values": [
+            0,
+            0.12
+          ]
+        }
+      },
+      "allowedCombinations": "3 个兼容 seed × 2 种漆色 × 2 个静态抽屉姿态，共 12 组。",
+      "coverageMatrix": [
+        "全部 12 组的 Node 几何构造检查；浏览器视觉覆盖尚未执行"
+      ],
+      "invariants": [
+        "color 不改变几何",
+        "seed 不改变几何或材质",
+        "requiredParts 有真实几何后代",
+        "抽屉外展按 registryEntry.contract.variantEnvelopes 验证"
+      ],
+      "status": "未完成真实网页变体验收。"
+    },
+    "seed": {
+      "default": 0,
+      "testSeeds": [
+        0,
+        1,
+        5
+      ],
+      "provider": "宿主兼容输入；本样例不消费 ctx.rng。",
+      "allowedChanges": [],
+      "invariants": [
+        "几何",
+        "材质",
+        "碰撞",
+        "部件层级"
+      ],
+      "normalization": "比较时排除 UUID 和兼容元数据 options.seed；不同 seed 不要求摘要变化。"
+    },
+    "dynamic": {
+      "enabled": false,
+      "decision": "纯静态姿态，无 userData.update、dynamic 选项、RAF 或计时器。",
+      "attachment": "仅 root.userData.reset/dispose。",
+      "motions": [],
+      "resetRequirements": [
+        "恢复构建时抽屉、滑轨、把手姿态及抽屉碰撞",
+        "不重建几何",
+        "不消费随机数"
+      ],
+      "disposeRequirements": [
+        "每个独占几何仅释放一次",
+        "重复调用安全",
+        "不释放共享材质和纹理"
+      ]
+    },
+    "lodAndBudget": {
+      "referenceMeasurements": [],
+      "levels": [
+        {
+          "name": "catalog",
+          "triangles": 6000,
+          "maxMeshes": 60
+        }
+      ],
+      "limits": {
+        "triangles": 6000,
+        "maxMeshes": 60
+      },
+      "rationale": "这是该工作台 example 的设计目标，不是全项目统一标准；crate_wood1288v 等已有量级仅供背景，不构成本次参考测量或通过证据。",
+      "noLodReason": "catalog 静态示例暂不实现 LOD。"
+    }
+  },
+  "qualityComparators": [
+    "prop.shelf_rack",
+    "prop.toolbox_cart"
+  ],
+  "comparatorScope": "结构级，未实测比较。",
+  "verificationPlan": {
+    "geometry": [
+      "真实 THREE 与 kit 构造",
+      "finite 属性/矩阵",
+      "默认 bbox 与开启包络",
+      "requiredParts",
+      "collider 八角",
+      "标签 0–1 UV 和 +Z 法线",
+      "预算",
+      "同 seed 确定性及兼容 seed 不变化"
+    ],
+    "runtime": [
+      "reset 恢复初始姿态和抽屉碰撞",
+      "dispose 幂等且不释放共享缓存"
+    ],
+    "render": [
+      "三角度材质图",
+      "clay",
+      "wire",
+      "抽屉和标签近景",
+      "实际打开图片检查"
+    ],
+    "acceptanceWriteback": "保持四项 unverified；Node 构造测试不代表浏览器 E2E、视觉或内存趋势验收。"
+  },
+  "evidence": {
+    "testReports": [],
+    "nodeConstructionCheck": {
+      "threeRevision": "160",
+      "scope": "Node 内运行真实 vendor/three.global.js 与 assets/code/modeling-kit.js；模块导入/导出仅在内存改写。mats.get 使用真实 toStandard 和测试缓存；mats.label 为 THREE 材质替身，不绘制纹理。不是浏览器 E2E。",
+      "combinations": 12,
+      "meshesPerBuild": 33,
+      "trianglesPerBuild": 1510,
+      "degenerateTriangles": 0,
+      "defaultBBox": {
+        "min": [
+          -0.699999988079071,
+          6.705522803684971e-10,
+          -0.32499998807907104
+        ],
+        "max": [
+          0.699999988079071,
+          0.8999999761581421,
+          0.325
+        ]
+      },
+      "openBBox": {
+        "min": [
+          -0.699999988079071,
+          6.705522803684971e-10,
+          -0.32499998807907104
+        ],
+        "max": [
+          0.699999988079071,
+          0.8999999761581421,
+          0.44199999690055847
+        ]
+      },
+      "checksExecuted": [
+        "finite position/normal/UV/matrix",
+        "索引范围和非退化面",
+        "当前姿态实测 size",
+        "默认尺寸与变体包络",
+        "11 个 requiredParts 含几何",
+        "碰撞八角与腿间空位",
+        "socket",
+        "标签 0–1 UV 和 +Z 法线",
+        "同参数重建一致",
+        "不同兼容 seed 不改变几何/材质",
+        "reset 恢复姿态和抽屉碰撞",
+        "dispose 幂等且共享材质未释放"
+      ],
+      "visualVerified": false
+    },
+    "images": {
+      "threeAngles": [],
+      "clay": [],
+      "wire": [],
+      "detailsAndVariants": []
+    },
+    "results": {
+      "catalog": "unverified",
+      "geometry": "unverified",
+      "render": "unverified",
+      "runtime": "unverified"
+    },
+    "notExecuted": [
+      "主项目未注册",
+      "浏览器 E2E 未执行",
+      "未视觉验证",
+      "未测量内存趋势",
+      "未实测参考比较"
+    ]
+  }
+}

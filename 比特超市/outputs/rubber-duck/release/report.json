@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-17T05:24:25.262Z",
+  "command": [
+    "--root",
+    "/Users/zyq/WorkBuddy/2026-11-15-17-10-04",
+    "--id",
+    "new.rubber-duck",
+    "--base-url",
+    "http://127.0.0.1:8099/index.html",
+    "--playwright",
+    "/Users/zyq/work/wc/node_modules/playwright",
+    "--out-dir",
+    "outputs/rubber-duck/release"
+  ],
+  "root": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04",
+  "id": "new.rubber-duck",
+  "baseUrl": "http://127.0.0.1:8099/index.html",
+  "playwright": "/Users/zyq/work/wc/node_modules/playwright",
+  "outDir": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/outputs/rubber-duck/release",
+  "projectFilesBefore": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/registry.json",
+      "sha256": "a177f018e9965e9a8ce377dcd665d46adca6f6f603e1b35b5da240bbd8642e56"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored.js",
+      "sha256": "1db2210a751ef07c23b5cc271564f3cd496b66aac22aba4c0d36a7b3def8ec40"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/previews.js",
+      "sha256": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/app.js",
+      "sha256": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+    },
+    "assets/authored/rubber-duck.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/rubber-duck.js",
+      "sha256": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec"
+    },
+    "assets/authored/contracts/rubber-duck.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/contracts/rubber-duck.json",
+      "sha256": "15fe5bc5ab8665a31b92b657f31d53b00b63b99dccd8b4d89b730fd7b247b1ad"
+    }
+  },
+  "projectFilesAfter": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/registry.json",
+      "sha256": "a177f018e9965e9a8ce377dcd665d46adca6f6f603e1b35b5da240bbd8642e56"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored.js",
+      "sha256": "1db2210a751ef07c23b5cc271564f3cd496b66aac22aba4c0d36a7b3def8ec40"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/previews.js",
+      "sha256": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/app.js",
+      "sha256": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+    },
+    "assets/authored/rubber-duck.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/rubber-duck.js",
+      "sha256": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec"
+    },
+    "assets/authored/contracts/rubber-duck.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/contracts/rubber-duck.json",
+      "sha256": "15fe5bc5ab8665a31b92b657f31d53b00b63b99dccd8b4d89b730fd7b247b1ad"
+    }
+  },
+  "catalog": {
+    "status": "UNVERIFIED",
+    "fullPass": false,
+    "publicApi": {
+      "catalog": true,
+      "item": {
+        "id": "new.rubber-duck",
+        "source": "rubber-duck.js",
+        "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+        "anchor": "assets/authored/rubber-duck.js",
+        "contract": {
+          "units": "m",
+          "size": [
+            0.15,
+            0.18,
+            0.21
+          ],
+          "sizeTolerance": {
+            "meters": 0.001,
+            "percent": 0.01
+          },
+          "origin": "bottom-center",
+          "forward": "+Z",
+          "qualityTier": "catalog",
+          "materials": [
+            "rubber",
+            "polymer_black",
+            "plastic_grey"
+          ],
+          "requiredParts": [
+            "body",
+            "beak.upper",
+            "beak.lower",
+            "eye.left",
+            "eye.right",
+            "wing.left",
+            "wing.right",
+            "base.valve"
+          ],
+          "options": {
+            "color": {
+              "type": "string",
+              "default": "yellow",
+              "values": [
+                "yellow",
+                "cream"
+              ]
+            }
+          },
+          "variantEnvelopes": [],
+          "collidersRequired": true,
+          "dynamic": false,
+          "budget": {
+            "triangles": 24000,
+            "maxMeshes": 14
+          },
+          "baseline": {
+            "type": "new-design",
+            "referenceAssets": [
+              "prop.barrel"
+            ],
+            "scope": "只对照现有道具的真实部件、分拆碰撞与资源规范；小黄鸭为近景有机曲面原创，不套用油桶的面数限制。"
+          }
+        },
+        "acceptance": {
+          "catalog": "unverified",
+          "geometry": "unverified",
+          "visual": "unverified",
+          "runtime": "unverified"
+        }
+      },
+      "builder": {
+        "type": "object",
+        "hasBuild": true,
+        "keys": [
+          "build"
+        ]
+      },
+      "authoredContext": true,
+      "inspectAuthored": true,
+      "inspectResult": {
+        "ok": true,
+        "shape": [
+          "build",
+          "ctx",
+          "inspect"
+        ]
+      },
+      "publicContract": {
+        "authoredContext": "window.PREVIEWS.authoredContext(id, options) => { THREE, kit, mats, rng, sharedMaterials: Set<THREE.Material> }",
+        "inspectAuthored": "window.PREVIEWS.inspectAuthored(id, options) => object | Promise<object>（仅检查公开返回形状）",
+        "builder": "window.AUTHORED_BUILDERS[id] => { build }",
+        "catalog": "window.AUTHORED_CATALOG.items[] => { id, contract, acceptance }"
+      }
+    },
+    "entry": {
+      "id": "new.rubber-duck",
+      "source": "rubber-duck.js",
+      "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+      "anchor": "assets/authored/rubber-duck.js",
+      "contract": {
+        "units": "m",
+        "size": [
+          0.15,
+          0.18,
+          0.21
+        ],
+        "sizeTolerance": {
+          "meters": 0.001,
+          "percent": 0.01
+        },
+        "origin": "bottom-center",
+        "forward": "+Z",
+        "qualityTier": "catalog",
+        "materials": [
+          "rubber",
+          "polymer_black",
+          "plastic_grey"
+        ],
+        "requiredParts": [
+          "body",
+          "beak.upper",
+          "beak.lower",
+          "eye.left",
+          "eye.right",
+          "wing.left",
+          "wing.right",
+          "base.valve"
+        ],
+        "options": {
+          "color": {
+            "type": "string",
+            "default": "yellow",
+            "values": [
+              "yellow",
+              "cream"
+            ]
+          }
+        },
+        "variantEnvelopes": [],
+        "collidersRequired": true,
+        "dynamic": false,
+        "budget": {
+          "triangles": 24000,
+          "maxMeshes": 14
+        },
+        "baseline": {
+          "type": "new-design",
+          "referenceAssets": [
+            "prop.barrel"
+          ],
+          "scope": "只对照现有道具的真实部件、分拆碰撞与资源规范；小黄鸭为近景有机曲面原创，不套用油桶的面数限制。"
+        }
+      },
+      "acceptance": {
+        "catalog": "unverified",
+        "geometry": "unverified",
+        "visual": "unverified",
+        "runtime": "unverified"
+      }
+    },
+    "contract": {
+      "units": "m",
+      "size": [
+        0.15,
+        0.18,
+        0.21
+      ],
+      "sizeTolerance": {
+        "meters": 0.001,
+        "percent": 0.01
+      },
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "rubber",
+        "polymer_black",
+        "plastic_grey"
+      ],
+      "requiredParts": [
+        "body",
+        "beak.upper",
+        "beak.lower",
+        "eye.left",
+        "eye.right",
+        "wing.left",
+        "wing.right",
+        "base.valve"
+      ],
+      "options": {
+        "color": {
+          "type": "string",
+          "default": "yellow",
+          "values": [
+            "yellow",
+            "cream"
+          ]
+        }
+      },
+      "variantEnvelopes": [],
+      "collidersRequired": true,
+      "dynamic": false,
+      "budget": {
+        "triangles": 24000,
+        "maxMeshes": 14
+      },
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": [
+          "prop.barrel"
+        ],
+        "scope": "只对照现有道具的真实部件、分拆碰撞与资源规范；小黄鸭为近景有机曲面原创，不套用油桶的面数限制。"
+      }
+    }
+  },
+  "geometry": {
+    "status": "PASS",
+    "automatic": true,
+    "checks": {
+      "meshes": 9,
+      "vertices": 5151,
+      "triangles": 9584,
+      "degenerateTriangles": 0,
+      "attributes": 27,
+      "size": {
+        "measured": [
+          0.15000000596046448,
+          0.18000000715255737,
+          0.20999999344348907
+        ],
+        "declared": [
+          0.15000000596046448,
+          0.18000000715255737,
+          0.20999999344348907
+        ],
+        "expected": [
+          0.15,
+          0.18,
+          0.21
+        ],
+        "tolerance": [
+          0.0015,
+          0.0018,
+          0.0021
+        ]
+      },
+      "checkenv": {
+        "isDefault": true,
+        "matchedIndex": null,
+        "options": {
+          "color": "yellow"
+        },
+        "expectedSize": [
+          0.15,
+          0.18,
+          0.21
+        ],
+        "envelope": {
+          "min": [
+            -0.075,
+            0,
+            -0.105
+          ],
+          "max": [
+            0.075,
+            0.18,
+            0.105
+          ]
+        },
+        "boundsEnvelope": null,
+        "bbox": {
+          "min": [
+            -0.07500000298023224,
+            0,
+            -0.10499999672174454
+          ],
+          "max": [
+            0.07500000298023224,
+            0.18000000715255737,
+            0.10499999672174454
+          ]
+        },
+        "geometryInside": true,
+        "withinTotalEnvelope": true,
+        "collidersInside": true
+      }
+    },
+    "determinism": {
+      "equal": true,
+      "firstSha256": "2b3134430f0af0f7c7de36c0424d103fd05e44b54220131a36ca0f5dab5bddc4",
+      "secondSha256": "2b3134430f0af0f7c7de36c0424d103fd05e44b54220131a36ca0f5dab5bddc4"
+    },
+    "variants": [
+      {
+        "key": "color",
+        "value": "cream",
+        "changedFromDefault": false,
+        "sha256": null,
+        "counts": {
+          "meshes": 9,
+          "vertices": 5151,
+          "triangles": 9584,
+          "degenerateTriangles": 0,
+          "attributes": 27,
+          "size": {
+            "measured": [
+              0.15000000596046448,
+              0.18000000715255737,
+              0.20999999344348907
+            ],
+            "declared": [
+              0.15000000596046448,
+              0.18000000715255737,
+              0.20999999344348907
+            ],
+            "expected": [
+              0.15,
+              0.18,
+              0.21
+            ],
+            "tolerance": [
+              0.0015,
+              0.0018,
+              0.0021
+            ]
+          },
+          "checkenv": {
+            "isDefault": false,
+            "matchedIndex": null,
+            "options": {
+              "color": "cream"
+            },
+            "expectedSize": [
+              0.15,
+              0.18,
+              0.21
+            ],
+            "envelope": {
+              "min": [
+                -0.075,
+                0,
+                -0.105
+              ],
+              "max": [
+                0.075,
+                0.18,
+                0.105
+              ]
+            },
+            "boundsEnvelope": null,
+            "bbox": {
+              "min": [
+                -0.07500000298023224,
+                0,
+                -0.10499999672174454
+              ],
+              "max": [
+                0.07500000298023224,
+                0.18000000715255737,
+                0.10499999672174454
+              ]
+            },
+            "geometryInside": true,
+            "withinTotalEnvelope": true,
+            "collidersInside": true
+          }
+        },
+        "size": {
+          "measured": [
+            0.15000000596046448,
+            0.18000000715255737,
+            0.20999999344348907
+          ],
+          "declared": [
+            0.15000000596046448,
+            0.18000000715255737,
+            0.20999999344348907
+          ],
+          "expected": [
+            0.15,
+            0.18,
+            0.21
+          ],
+          "tolerance": [
+            0.0015,
+            0.0018,
+            0.0021
+          ]
+        },
+        "checkenv": {
+          "isDefault": false,
+          "matchedIndex": null,
+          "options": {
+            "color": "cream"
+          },
+          "expectedSize": [
+            0.15,
+            0.18,
+            0.21
+          ],
+          "envelope": {
+            "min": [
+              -0.075,
+              0,
+              -0.105
+            ],
+            "max": [
+              0.075,
+              0.18,
+              0.105
+            ]
+          },
+          "boundsEnvelope": null,
+          "bbox": {
+            "min": [
+              -0.07500000298023224,
+              0,
+              -0.10499999672174454
+            ],
+            "max": [
+              0.07500000298023224,
+              0.18000000715255737,
+              0.10499999672174454
+            ]
+          },
+          "geometryInside": true,
+          "withinTotalEnvelope": true,
+          "collidersInside": true
+        },
+        "status": "PASS",
+        "normalizedSha256": "8369d7fc2d35420a25574441670b48b7b51c1755f4b11365a8c4af5afd10d271"
+      }
+    ],
+    "warnings": [],
+    "normalized": {
+      "firstSha256": "2b3134430f0af0f7c7de36c0424d103fd05e44b54220131a36ca0f5dab5bddc4",
+      "secondSha256": "2b3134430f0af0f7c7de36c0424d103fd05e44b54220131a36ca0f5dab5bddc4"
+    },
+    "materialNames": [
+      "plastic_grey",
+      "polymer_black",
+      "rubber"
+    ]
+  },
+  "runtime": {
+    "status": "limitedpass",
+    "automatic": true,
+    "notExecutedMemory": [
+      "无法在本验证器中可靠执行浏览器堆内存/显存回收证明"
+    ],
+    "mountCycles": {
+      "attempted": 3,
+      "completed": 3,
+      "hookCounters": {
+        "build": 15,
+        "update": 0,
+        "reset": 0,
+        "dispose": 17
+      },
+      "status": "limitedpass"
+    },
+    "dynamic": false,
+    "hookPresence": {
+      "update": false,
+      "reset": false,
+      "dispose": true
+    },
+    "updateSamples": [],
+    "resetMatchesBaseline": null,
+    "dispose": {
+      "declared": true,
+      "calls": 6,
+      "errors": [],
+      "sharedMaterialDisposeEvents": 0,
+      "materialDisposeEvents": [
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "polymer_black",
+          "shared": false
+        },
+        {
+          "name": "plastic_grey",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "polymer_black",
+          "shared": false
+        },
+        {
+          "name": "plastic_grey",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "polymer_black",
+          "shared": false
+        },
+        {
+          "name": "plastic_grey",
+          "shared": false
+        }
+      ]
+    },
+    "builderHookCounters": {
+      "build": 4,
+      "update": 0,
+      "reset": 0,
+      "dispose": 6
+    }
+  },
+  "visual": {
+    "status": "UNVERIFIED",
+    "scope": "截图生成不等于真实视觉验收；本脚本始终不写 visual pass",
+    "screenshots": [
+      {
+        "file": "material-overall.png",
+        "display": "原材质",
+        "view": "整体",
+        "bytes": 124341,
+        "sha256": "e5ee7d1bee90d9372d15730883c0cbb7738e68e15629d370a3b00b9fa1406dd8",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.rubber-duck",
+        "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+        "contractHash": "2946557f96ac61f45b2ae2998c222b7b58f12b6ad03192a8c5e5d8511038f5ca",
+        "options": "{\"color\":\"yellow\"}",
+        "camera": "{\"fov\":34,\"position\":[0.3786795747562809,0.27183189329223906,0.44958423212259885],\"target\":[0,0.09000000357627869,0],\"yaw\":0.7,\"pitch\":0.3,\"distance\":0.6152942696210828}"
+      },
+      {
+        "file": "material-front.png",
+        "display": "原材质",
+        "view": "正面",
+        "bytes": 128594,
+        "sha256": "1bf3c0f4081fae773a1e9e08544b6c93745e7b7d987ab2bbf7eed300e32ca6db",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.rubber-duck",
+        "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+        "contractHash": "2946557f96ac61f45b2ae2998c222b7b58f12b6ad03192a8c5e5d8511038f5ca",
+        "options": "{\"color\":\"yellow\"}",
+        "camera": "{\"fov\":34,\"position\":[0,0.2567521840908655,0.5390644669838244],\"target\":[0,0.09000000357627869,0],\"yaw\":0,\"pitch\":0.3,\"distance\":0.5642665941475926}"
+      },
+      {
+        "file": "material-back.png",
+        "display": "原材质",
+        "view": "背面",
+        "bytes": 138633,
+        "sha256": "c2cb36c980432f2af63451ec17627f3e7149d73df2488b7c00b2bc6cc9c5ad4f",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.rubber-duck",
+        "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+        "contractHash": "2946557f96ac61f45b2ae2998c222b7b58f12b6ad03192a8c5e5d8511038f5ca",
+        "options": "{\"color\":\"yellow\"}",
+        "camera": "{\"fov\":34,\"position\":[6.601635740258146e-17,0.2567521840908655,-0.5390644669838244],\"target\":[0,0.09000000357627869,0],\"yaw\":3.141592653589793,\"pitch\":0.3,\"distance\":0.5642665941475926}"
+      },
+      {
+        "file": "clay-overall.png",
+        "display": "纯灰几何",
+        "view": "整体",
+        "bytes": 117436,
+        "sha256": "6f5a86431623f3be020446d8680dc1697ef6739be772800f7b12042d9a14fb83",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.rubber-duck",
+        "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+        "contractHash": "2946557f96ac61f45b2ae2998c222b7b58f12b6ad03192a8c5e5d8511038f5ca",
+        "options": "{\"color\":\"yellow\"}",
+        "camera": "{\"fov\":34,\"position\":[0.3786795747562809,0.27183189329223906,0.44958423212259885],\"target\":[0,0.09000000357627869,0],\"yaw\":0.7,\"pitch\":0.3,\"distance\":0.6152942696210828}"
+      },
+      {
+        "file": "wire-overall.png",
+        "display": "结构线框",
+        "view": "整体",
+        "bytes": 158579,
+        "sha256": "0db8454b3e26b8622fd5a11d22c1454101aa1cb828cf5ce35238cf780fc22775",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.rubber-duck",
+        "sourceHash": "043bf522190614ed099efbec576afb434103f489b8b4fed50e4f8b7ebcc812ec",
+        "contractHash": "2946557f96ac61f45b2ae2998c222b7b58f12b6ad03192a8c5e5d8511038f5ca",
+        "options": "{\"color\":\"yellow\"}",
+        "camera": "{\"fov\":34,\"position\":[0.3786795747562809,0.27183189329223906,0.44958423212259885],\"target\":[0,0.09000000357627869,0],\"yaw\":0.7,\"pitch\":0.3,\"distance\":0.6152942696210828}"
+      }
+    ],
+    "controls": {
+      "display": [
+        "原材质",
+        "纯灰几何",
+        "结构线框"
+      ],
+      "views": [
+        "整体",
+        "正面",
+        "背面",
+        "俯视"
+      ],
+      "requiredDisplay": [
+        "原材质",
+        "纯灰几何",
+        "结构线框"
+      ],
+      "requiredViews": [
+        "整体",
+        "正面",
+        "背面",
+        "俯视"
+      ],
+      "status": "PASS"
+    }
+  },
+  "pageConsole": [],
+  "errors": [],
+  "shaderMessages": [],
+  "network": {
+    "externalRejected": [],
+    "failed": []
+  },
+  "automaticChecks": {
+    "passed": true,
+    "failures": []
+  },
+  "normalizedReportSha256": "35801394b6d2f5b6de699d3375c2664bf4851bd17eb214d8d3a4c46a78df677f"
+}

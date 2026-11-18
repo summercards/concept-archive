@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "builder": "M3/zA",
+      "vertices": "15102",
+      "triangles": "5338",
+      "doors": "0"
+    },
+    {
+      "builder": "M3/zA",
+      "vertices": "18444",
+      "triangles": "6452",
+      "doors": "0"
+    },
+    {
+      "builder": "M3/zA",
+      "vertices": "18476",
+      "triangles": "6478",
+      "doors": "0"
+    }
+  ],
+  "errors": []
+}

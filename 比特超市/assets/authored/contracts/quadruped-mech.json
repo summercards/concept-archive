@@ -1,0 +1,45 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.quadruped-mech",
+  "designStatus": "implemented-awaiting-current-verification",
+  "registryEntry": {
+    "id": "new.quadruped-mech",
+    "source": "quadruped-mech.js",
+    "name": "四足机甲 · 火炮平台",
+    "summary": "原创程序化四足战斗机甲：装甲机身、四组分级机械腿、可摆动炮塔与一门带制退器和后坐套筒的火炮。支持灰/橙装甲与三种细节 seed，含待机微动、步态微动、炮塔摆动和四秒周期火炮后坐动画。",
+    "tags": ["原创", "四足", "机甲", "火炮", "动画", "程序化", "战斗载具"],
+    "contract": {
+      "units": "m", "size": [4.82, 2.68, 6.16], "sizeTolerance": {"meters": 0.05, "percent": 0.02},
+      "origin": "bottom-center", "forward": "+Z", "qualityTier": "catalog",
+      "materials": ["paint_grey", "paint_orange", "steel_dark", "gunmetal", "rubber", "hazard_stripes"],
+      "requiredParts": ["body.chassis", "body.front-plate", "body.rear-power", "turret.ring", "turret.gun-mount", "cannon.barrel", "cannon.muzzle", "cannon.recoil-sleeve", "leg.front-left", "leg.front-right", "leg.rear-left", "leg.rear-right"],
+      "options": {"seed": {"type": "integer", "default": 7, "values": [7, 19, 43]}, "armor": {"type": "string", "default": "grey", "values": ["grey", "orange"]}},
+      "variantEnvelopes": [], "collidersRequired": true, "dynamic": true,
+      "budget": {"triangles": 60000, "maxMeshes": 260},
+      "baseline": {"type": "new-design", "referenceAssets": ["prop.forklift"], "scope": "仅对照现有载具/机械资产的结构层级、材料所有权、碰撞与动画生命周期；不复刻原版外形。"}
+    },
+    "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+    "evidence": {"report": "outputs/quadruped-mech/asset-review.html"}
+  },
+  "designContract": {
+    "intent": "制作一件可独立预览的原创四足机甲战斗平台，重点检查真实机械装配、四足运动层级和单门火炮后坐；不是原版角色复刻，不声称武器系统具备真实弹道。",
+    "coordinateSystem": {"units": "m", "up": "+Y", "forward": "+Z", "origin": "bottom-center", "sizeOrder": ["widthX", "heightY", "depthZ"], "size": [2.8, 2.8, 4.8], "sizeToleranceM": 0.03},
+    "silhouette": {"front": "低矮宽体、四足支撑、前向单炮；炮口高于机身并明显突出。", "side": "腿部有髋/膝两段机械链，炮塔与炮管形成前后层次，背部有动力舱。", "back": "后动力舱、排气结构和后腿装甲可见；左右不完全镜像。", "designEvidence": ["用户文字需求与本契约，实际形态以网页材质/灰模/线框图检查。"]},
+    "functionalParts": [
+      {"name": "body.chassis", "role": "承重底盘和主装甲实体。"}, {"name": "body.front-plate", "role": "前装甲、光学槽和牵引环。"}, {"name": "body.rear-power", "role": "后部动力舱、散热片、排气和供能线缆。"},
+      {"name": "turret.ring", "role": "真实环形轴承座、齿圈和螺栓。"}, {"name": "turret.gun-mount", "role": "炮耳轴、炮架和炮塔装甲连接。"}, {"name": "cannon.barrel", "role": "有内膛的炮管、热套和加强箍。"}, {"name": "cannon.muzzle", "role": "有厚度的炮口制退器和泄压孔。"}, {"name": "cannon.recoil-sleeve", "role": "炮管后坐套筒、导杆和缓冲器。"},
+      {"name": "leg.front-left", "role": "前左完整机械腿组，含髋、上腿、膝、下腿、活塞和足端。"}, {"name": "leg.front-right", "role": "前右完整机械腿组。"}, {"name": "leg.rear-left", "role": "后左完整机械腿组。"}, {"name": "leg.rear-right", "role": "后右完整机械腿组。"}
+    ],
+    "openingsAndThickness": {"armor": "主装甲、侧裙和腿部护甲均为有厚度实体；传感器槽与散热片为独立几何。", "cannon": "炮口、炮膛、热套和制退器都有径向厚度，禁止用单根圆柱代替整炮。", "legs": "足掌有实体底板与防滑齿，液压活塞是独立圆柱链。"},
+    "assembly": {"connections": ["炮塔yaw节点挂在环形底座", "炮管后坐节点挂在炮架", "每腿按leg→hip→upper→knee→lower→foot层级", "活塞端点接入上腿/膝附近"], "loadPath": "底盘经髋轴、两段腿和足掌传递到地面；静态碰撞只粗代理金属结构。"},
+    "surfaceAndUV": {"mappingStrategy": "装甲盒/炮管/液压件均使用米制UV或轴向投影；无外部纹理，颜色、粗糙度和金属感由资产自有材质提供。", "materialSpecifications": [{"category": "paint_grey/paint_orange", "recipe": "自有机甲漆面，非旧道具烘焙材质。"}, {"category": "steel_dark/gunmetal", "recipe": "结构钢、炮管与轴承金属。"}, {"category": "rubber", "recipe": "足掌和管线软质橡胶。"}, {"category": "hazard_stripes", "recipe": "少量识别色装饰，不承担结构。"}], "decals": [], "ownership": "每次build自有几何和6组材质；不写入ctx.sharedMaterials，dispose重复调用安全。"},
+    "collision": {"space": "model-local", "colliders": ["底盘", "四条上/下腿", "四个足端"], "surfaceIdentifiers": ["metal", "rubber"], "requiredCornerChecks": 8, "openingPolicy": "炮管与脚间空间不是可进入游戏空间，本轮碰撞为机械平台粗代理。", "dynamicPolicy": "update时随腿节点和机身姿态刷新AABB；动画不改变整体尺寸包络。"},
+    "sockets": {"definitions": {"base": "放置基点", "turret": "炮塔中心", "muzzle": "炮口参考点", "mount.front": "前部挂载点", "mount.rear": "后动力舱挂载点"}, "orientationConvention": "局部坐标，+Z为炮口/正面方向。"},
+    "variants": {"optionDefinitions": {"seed": {"default": 7, "values": [7, 19, 43], "changes": "装甲细节偏角和线缆位置"}, "armor": {"default": "grey", "values": ["grey", "orange"], "changes": "装甲主色与识别色分配，几何不变"}}, "coverageMatrix": ["seed 7/grey", "seed 19/grey", "seed 43/grey", "seed 7/orange"], "invariants": ["四足层级", "火炮结构", "整体尺寸包络", "动画钩子"]},
+    "seed": {"default": 7, "testSeeds": [7, 19, 43], "provider": "宿主按options.seed隔离ctx.rng；本实现仅将seed映射为离散装甲细节，不使用Math.random。"},
+    "dynamic": {"enabled": true, "dtUnits": "s", "stateInputs": ["root.userData.update(dt)"], "motions": ["机身呼吸/待机", "四腿交替微步态", "炮塔缓慢摆动", "四秒周期炮管快速后坐与平滑复位"], "hooks": ["update", "reset", "dispose"], "noMergeParts": ["leg.front-left", "leg.front-right", "leg.rear-left", "leg.rear-right", "turret.yaw", "cannon.recoil", "cannon.barrel", "cannon.muzzle"], "resetRequirements": ["phase=0", "炮塔归零", "炮管归位", "腿姿态初始", "碰撞和socket刷新"], "disposeRequirements": ["幂等", "无计时器/RAF", "不释放共享缓存"]},
+    "lodAndBudget": {"referenceMeasurements": [{"assetId": "prop.forklift", "triangles": 11628, "meshes": 21, "source": "既有道具页面记录，作为机械结构层级对照"}], "limits": {"triangles": 60000, "drawCalls": 180, "materials": 6}, "rationale": "近景可动机械需要关节、炮管和液压件实体；预算明显高于普通静态道具但控制在catalog单件范围。", "noLodReason": "本轮为单机甲近景；远景LOD/群体性能待另行制作。"}
+  },
+  "verificationPlan": {"gate": "catalog", "renderer": "当前网页r160棚拍", "automatic": ["源码/契约静态校验", "真实几何属性与预算", "必要层级/碰撞/挂点", "seed/armor变体", "update/reset/dispose与动画采样", "多角度灰模线框与开火后坐截图"], "supplementary": ["实际查看四足装配、炮口厚度、腿足接地和动态截图", "首页NEW/中文搜索/LAN/390宽"], "acceptanceWriteback": "registry四项保持unverified，报告和人工图像结论独立保存。"},
+  "evidence": {"testReports": ["outputs/quadruped-mech/iteration2/report.json", "outputs/quadruped-mech/ui-verification.json"], "verificationMethod": "先用实测包围盒修正尺寸/网格预算契约，再由verify_asset完成真实几何和runtime检查；网页UI报告另测炮塔/炮管/四腿动画、橙色变体、seed与入库可见性。", "verificationMethod": "通用verify_asset在真实尺寸契约和网格预算修正后通过；网页UI报告另测动画按钮、播放/暂停/重置、多角度和4种入库资产，visual仍需独立看图。", "notExecuted": ["r180整机集成", "真实弹道/开火音效", "完整物理IK和导航", "远景LOD/群体性能", "完整内存趋势"]}
+}

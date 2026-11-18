@@ -1,0 +1,5216 @@
+{
+  "source": {
+    "path": "/Users/zyq/work/工程参考/几猫国产3A大作_V1(4).html",
+    "bytes": 1425707,
+    "sha256": "9e55b5200b088adaf8e1152da04efc0d3b25e236e6baf2dee96f81e23e084966"
+  },
+  "generated": {
+    "path": "assets/code/props-builder.js",
+    "bytes": 128659,
+    "sha256": "0e4a75b1e38276fce7b3d86a8e7ee64277e13acea4b0060d0a734c77dfe5a672"
+  },
+  "extraction": {
+    "parser": "node:internal/deps/acorn/acorn/dist/acorn",
+    "parserVersion": "8.15.0",
+    "sourceUnit": "sourceByteOffset/sourceByteEnd are UTF-8 byte offsets; sourceCodeUnitOffset/sourceCodeUnitEnd are UTF-16 code-unit offsets; sourceCodePointOffset/sourceCodePointEnd are Unicode code-point offsets; sourceLineColumn is 1-based HTML Unicode code-unit line/column",
+    "originalScriptTagOffset": 32034,
+    "propCount": 36,
+    "props": {
+      "container20": {
+        "builder": "M3",
+        "entryCallback": "(e,t)=>M3(e,i,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "M3",
+            "call": "M3(e,i,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "M3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "doors",
+          "seed",
+          "wear"
+        ],
+        "materialDependencies": [
+          "decal",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "M3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t));"
+      },
+      "container40": {
+        "builder": "M3",
+        "entryCallback": "(e,t)=>M3(e,i,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "M3",
+            "call": "M3(e,i,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "M3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "doors",
+          "seed",
+          "wear"
+        ],
+        "materialDependencies": [
+          "decal",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "M3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t));"
+      },
+      "container40hc": {
+        "builder": "M3",
+        "entryCallback": "(e,t)=>M3(e,i,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "M3",
+            "call": "M3(e,i,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "M3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "doors",
+          "seed",
+          "wear"
+        ],
+        "materialDependencies": [
+          "decal",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "M3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t));"
+      },
+      "jersey_barrier": {
+        "builder": "S3",
+        "entryCallback": "S3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "S3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "S3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed",
+          "stripe"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "S3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"jersey_barrier\",S3);"
+      },
+      "light_mast": {
+        "builder": "T3",
+        "entryCallback": "T3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "T3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "T3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "on"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive",
+          "get"
+        ],
+        "optionSources": [
+          "T3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"light_mast\",T3);"
+      },
+      "fence_panel": {
+        "builder": "A3",
+        "entryCallback": "A3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "A3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "A3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "lean",
+          "posts",
+          "seed"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "A3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"fence_panel\",A3);"
+      },
+      "guard_booth": {
+        "builder": "R3",
+        "entryCallback": "R3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "R3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "R3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "on",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "R3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"guard_booth\",R3);"
+      },
+      "gate_arm": {
+        "builder": "C3",
+        "entryCallback": "C3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "C3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "C3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "open"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive",
+          "get"
+        ],
+        "optionSources": [
+          "C3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"gate_arm\",C3);"
+      },
+      "bollard_mooring": {
+        "builder": "P3",
+        "entryCallback": "P3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "P3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "P3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "P3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"bollard_mooring\",P3);"
+      },
+      "bollard_post": {
+        "builder": "I3",
+        "entryCallback": "I3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "I3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "I3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "I3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"bollard_post\",I3);"
+      },
+      "relay_node": {
+        "builder": "B3",
+        "entryCallback": "B3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "B3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "B3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "id",
+          "label",
+          "seed",
+          "state"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "B3"
+        ],
+        "dynamicHooks": {
+          "update": true,
+          "setState": true,
+          "noMerge": true,
+          "userData": true
+        },
+        "registration": "_i(\"relay_node\",B3);"
+      },
+      "shelf_rack": {
+        "builder": "U3",
+        "entryCallback": "U3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "U3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "U3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "U3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"shelf_rack\",U3);"
+      },
+      "stairs_metal": {
+        "builder": "k3",
+        "entryCallback": "k3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "k3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "k3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [],
+        "materialDependencies": [],
+        "optionSources": [
+          "k3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"stairs_metal\",k3);"
+      },
+      "catwalk": {
+        "builder": "F3",
+        "entryCallback": "F3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "F3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "F3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "rails"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "F3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"catwalk\",F3);"
+      },
+      "reefer_unit": {
+        "builder": "N3",
+        "entryCallback": "N3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "N3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "N3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "flip",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "N3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"reefer_unit\",N3);"
+      },
+      "barrel": {
+        "builder": "HA",
+        "entryCallback": "(e,t={})=>{let n=Math.abs(t.seed|0)%4;return wf(`barrel|${t.color}|${!!t.lying}|${!!t.open}|${n}`,()=>HA(e,t,n))}",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "wf",
+            "call": "wf(`barrel|${t.color}|${!!t.lying}|${!!t.open}|${n}`,()=>HA(e,t,n))",
+            "role": "wrapper"
+          },
+          {
+            "name": "HA",
+            "call": "HA(e,t,n)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "HA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "lying",
+          "open",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal",
+          "label"
+        ],
+        "optionSources": [
+          "wf",
+          "HA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"barrel\",(e,t={})=>{let n=Math.abs(t.seed|0)%4;return wf(`barrel|${t.color}|${!!t.lying}|${!!t.open}|${n}`,()=>HA(e,t,n))})"
+      },
+      "pallet": {
+        "builder": "VA",
+        "entryCallback": "(e,t={})=>{let n=Math.abs(t.seed|0)%4;return wf(`pallet|${!!t.broken}|${n}`,()=>VA(e,t,n))}",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "wf",
+            "call": "wf(`pallet|${!!t.broken}|${n}`,()=>VA(e,t,n))",
+            "role": "wrapper"
+          },
+          {
+            "name": "VA",
+            "call": "VA(e,t,n)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "VA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "broken",
+          "seed"
+        ],
+        "materialDependencies": [
+          "label"
+        ],
+        "optionSources": [
+          "wf",
+          "VA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"pallet\",(e,t={})=>{let n=Math.abs(t.seed|0)%4;return wf(`pallet|${!!t.broken}|${n}`,()=>VA(e,t,n))})"
+      },
+      "pallet_stack": {
+        "builder": "WA",
+        "entryCallback": "(e,t={})=>WA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "WA",
+            "call": "WA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "WA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "count",
+          "seed"
+        ],
+        "materialDependencies": [
+          "label"
+        ],
+        "optionSources": [
+          "WA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"pallet_stack\",(e,t={})=>WA(e,t))"
+      },
+      "crate_wood": {
+        "builder": "GA",
+        "entryCallback": "(e,t={})=>GA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "GA",
+            "call": "GA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "GA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "code",
+          "label",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "GA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"crate_wood\",(e,t={})=>GA(e,t))"
+      },
+      "crate_stack": {
+        "builder": "qA",
+        "entryCallback": "(e,t={})=>qA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "qA",
+            "call": "qA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "qA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "qA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"crate_stack\",(e,t={})=>qA(e,t))"
+      },
+      "ibc_tote": {
+        "builder": "XA",
+        "entryCallback": "(e,t={})=>XA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "XA",
+            "call": "XA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "XA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "XA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"ibc_tote\",(e,t={})=>XA(e,t))"
+      },
+      "forklift": {
+        "builder": "oR",
+        "entryCallback": "(e,t={})=>oR(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "oR",
+            "call": "oR(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "oR"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "forksUp",
+          "number",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive",
+          "label"
+        ],
+        "optionSources": [
+          "oR"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"forklift\",(e,t={})=>oR(e,t))"
+      },
+      "cable_reel": {
+        "builder": "YA",
+        "entryCallback": "(e,t={})=>YA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "YA",
+            "call": "YA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "YA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "YA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"cable_reel\",(e,t={})=>YA(e,t))"
+      },
+      "tire_stack": {
+        "builder": "$A",
+        "entryCallback": "(e,t={})=>$A(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "$A",
+            "call": "$A(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "$A"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "count",
+          "seed"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "$A"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"tire_stack\",(e,t={})=>$A(e,t))"
+      },
+      "dumpster": {
+        "builder": "aR",
+        "entryCallback": "(e,t={})=>aR(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "aR",
+            "call": "aR(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "aR"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "label",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "aR"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"dumpster\",(e,t={})=>aR(e,t))"
+      },
+      "generator": {
+        "builder": "rR",
+        "entryCallback": "(e,t={})=>rR(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "rR",
+            "call": "rR(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "rR"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "label",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal",
+          "emissive"
+        ],
+        "optionSources": [
+          "rR"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"generator\",(e,t={})=>rR(e,t))"
+      },
+      "jerry_can": {
+        "builder": "ZA",
+        "entryCallback": "(e,t={})=>{let n=Math.abs(t.seed|0)%2;return wf(`jerry|${t.color}|${n}`,()=>ZA(e,t,n))}",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "wf",
+            "call": "wf(`jerry|${t.color}|${n}`,()=>ZA(e,t,n))",
+            "role": "wrapper"
+          },
+          {
+            "name": "ZA",
+            "call": "ZA(e,t,n)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "ZA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "wf",
+          "ZA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"jerry_can\",(e,t={})=>{let n=Math.abs(t.seed|0)%2;return wf(`jerry|${t.color}|${n}`,()=>ZA(e,t,n))})"
+      },
+      "traffic_cone": {
+        "builder": "jA",
+        "entryCallback": "(e,t={})=>{let n=Math.abs(t.seed|0)%3;return wf(`cone|${!!t.lying}|${n}`,()=>jA(e,t,n))}",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "wf",
+            "call": "wf(`cone|${!!t.lying}|${n}`,()=>jA(e,t,n))",
+            "role": "wrapper"
+          },
+          {
+            "name": "jA",
+            "call": "jA(e,t,n)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "jA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "lying",
+          "seed"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "wf",
+          "jA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"traffic_cone\",(e,t={})=>{let n=Math.abs(t.seed|0)%3;return wf(`cone|${!!t.lying}|${n}`,()=>jA(e,t,n))})"
+      },
+      "gas_cylinders": {
+        "builder": "JA",
+        "entryCallback": "(e,t={})=>JA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "JA",
+            "call": "JA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "JA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal",
+          "label"
+        ],
+        "optionSources": [
+          "JA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"gas_cylinders\",(e,t={})=>JA(e,t))"
+      },
+      "tarp_cargo": {
+        "builder": "QA",
+        "entryCallback": "(e,t={})=>QA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "QA",
+            "call": "QA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "QA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "label"
+        ],
+        "optionSources": [
+          "QA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"tarp_cargo\",(e,t={})=>QA(e,t))"
+      },
+      "sandbags": {
+        "builder": "tR",
+        "entryCallback": "(e,t={})=>tR(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "tR",
+            "call": "tR(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "tR"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "courses",
+          "seed"
+        ],
+        "materialDependencies": [],
+        "optionSources": [
+          "tR"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"sandbags\",(e,t={})=>tR(e,t))"
+      },
+      "toolbox_cart": {
+        "builder": "lR",
+        "entryCallback": "(e,t={})=>lR(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "lR",
+            "call": "lR(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "lR"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "color",
+          "label",
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "lR"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"toolbox_cart\",(e,t={})=>lR(e,t))"
+      },
+      "floodlight_stand": {
+        "builder": "D3",
+        "entryCallback": "D3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "D3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "D3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "on",
+          "seed"
+        ],
+        "materialDependencies": [
+          "emissive"
+        ],
+        "optionSources": [
+          "D3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"floodlight_stand\",D3);"
+      },
+      "cardboard_boxes": {
+        "builder": "nR",
+        "entryCallback": "(e,t={})=>nR(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "nR",
+            "call": "nR(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "nR"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "decal"
+        ],
+        "optionSources": [
+          "nR"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"cardboard_boxes\",(e,t={})=>nR(e,t))"
+      },
+      "pipe_stack": {
+        "builder": "KA",
+        "entryCallback": "(e,t={})=>KA(e,t)",
+        "entryKind": "callback",
+        "builderChain": [
+          {
+            "name": "KA",
+            "call": "KA(e,t)",
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "KA"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed"
+        ],
+        "materialDependencies": [
+          "label"
+        ],
+        "optionSources": [
+          "KA"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "i(\"pipe_stack\",(e,t={})=>KA(e,t))"
+      },
+      "sign_post": {
+        "builder": "z3",
+        "entryCallback": "z3",
+        "entryKind": "direct",
+        "builderChain": [
+          {
+            "name": "z3",
+            "call": null,
+            "role": "builder"
+          }
+        ],
+        "innerBuilders": [
+          "z3"
+        ],
+        "defaultOptions": {},
+        "defaultParameter": "t={}",
+        "optionKeys": [
+          "seed",
+          "sign",
+          "text"
+        ],
+        "materialDependencies": [
+          "decal",
+          "get",
+          "label"
+        ],
+        "optionSources": [
+          "z3"
+        ],
+        "dynamicHooks": {
+          "update": false,
+          "setState": false,
+          "noMerge": false,
+          "userData": false
+        },
+        "registration": "_i(\"sign_post\",z3);"
+      }
+    },
+    "publicAPI": [
+      "createPropService(ctx)",
+      "buildProp(ctx,id,opts={})",
+      "Yg(ctx).names()",
+      "Yg(ctx).has(id)",
+      "Yg(ctx).build(id,opts)",
+      "_i(id,builder)",
+      "Gi",
+      "Xg",
+      "jn",
+      "Kn",
+      "io"
+    ],
+    "exactDependencies": [
+      "three@0.180.0",
+      "ctx.mats.get(name, options?)",
+      "ctx.mats.label(id, options?)",
+      "ctx.mats.decal(id)",
+      "ctx.mats.emissive(color, intensity)",
+      "console.error (only observed to reject original Yg fallback)",
+      "original top-level prop dependency closure"
+    ],
+    "aliasAudit": {
+      "Ae": {
+        "originalBinding": "Ae",
+        "brExport": "Vector2",
+        "generated": "THREE.Vector2"
+      },
+      "Ci": {
+        "originalBinding": "Ci",
+        "brExport": "TorusGeometry",
+        "generated": "THREE.TorusGeometry"
+      },
+      "In": {
+        "originalBinding": "In",
+        "brExport": "Euler",
+        "generated": "THREE.Euler"
+      },
+      "Jr": {
+        "originalBinding": "Jr",
+        "brExport": "CatmullRomCurve3",
+        "generated": "THREE.CatmullRomCurve3"
+      },
+      "Kr": {
+        "originalBinding": "Kr",
+        "brExport": "TubeGeometry",
+        "generated": "THREE.TubeGeometry"
+      },
+      "Lt": {
+        "originalBinding": "Lt",
+        "brExport": "Quaternion",
+        "generated": "THREE.Quaternion"
+      },
+      "Qe": {
+        "originalBinding": "Qe",
+        "brExport": "Mesh",
+        "generated": "THREE.Mesh"
+      },
+      "Ve": {
+        "originalBinding": "Ve",
+        "brExport": "Color",
+        "generated": "THREE.Color"
+      },
+      "W": {
+        "originalBinding": "W",
+        "brExport": "Vector3",
+        "generated": "THREE.Vector3"
+      },
+      "Xs": {
+        "originalBinding": "Xs",
+        "brExport": "ShapeUtils",
+        "generated": "THREE.ShapeUtils"
+      },
+      "Ye": {
+        "originalBinding": "Ye",
+        "brExport": "Matrix4",
+        "generated": "THREE.Matrix4"
+      },
+      "Ys": {
+        "originalBinding": "Ys",
+        "brExport": "CylinderGeometry",
+        "generated": "THREE.CylinderGeometry"
+      },
+      "ar": {
+        "originalBinding": "ar",
+        "brExport": "LatheGeometry",
+        "generated": "THREE.LatheGeometry"
+      },
+      "bs": {
+        "originalBinding": "bs",
+        "brExport": "MathUtils",
+        "generated": "THREE.MathUtils"
+      },
+      "et": {
+        "originalBinding": "et",
+        "brExport": "BufferAttribute",
+        "generated": "THREE.BufferAttribute"
+      },
+      "ls": {
+        "originalBinding": "ls",
+        "brExport": "SphereGeometry",
+        "generated": "THREE.SphereGeometry"
+      },
+      "nt": {
+        "originalBinding": "nt",
+        "brExport": "BufferGeometry",
+        "generated": "THREE.BufferGeometry"
+      },
+      "rn": {
+        "originalBinding": "rn",
+        "brExport": "PlaneGeometry",
+        "generated": "THREE.PlaneGeometry"
+      },
+      "un": {
+        "originalBinding": "un",
+        "brExport": "BoxGeometry",
+        "generated": "THREE.BoxGeometry"
+      },
+      "wt": {
+        "originalBinding": "wt",
+        "brExport": "Group",
+        "generated": "THREE.Group"
+      }
+    },
+    "includedBindings": [
+      "$3",
+      "$A",
+      "$a",
+      "$e",
+      "A3",
+      "At",
+      "B3",
+      "BA",
+      "Bc",
+      "C3",
+      "CA",
+      "D3",
+      "DA",
+      "Dc",
+      "E1",
+      "E3",
+      "F3",
+      "FA",
+      "Fc",
+      "Fg",
+      "Fn",
+      "Fy",
+      "G3",
+      "GA",
+      "Ge",
+      "Gi",
+      "H3",
+      "HA",
+      "I3",
+      "IA",
+      "Ii",
+      "Ir",
+      "J3",
+      "JA",
+      "Ja",
+      "Jg",
+      "Jn",
+      "Jt",
+      "K3",
+      "KA",
+      "Kg",
+      "Kn",
+      "L3",
+      "LA",
+      "Lc",
+      "Ly",
+      "M1",
+      "M3",
+      "Mf",
+      "Mi",
+      "Mo",
+      "N3",
+      "NA",
+      "Nc",
+      "Ny",
+      "O3",
+      "OA",
+      "Oc",
+      "P1",
+      "P3",
+      "PA",
+      "Q3",
+      "QA",
+      "Qg",
+      "Qi",
+      "R3",
+      "RA",
+      "S1",
+      "S3",
+      "T1",
+      "T3",
+      "U3",
+      "UA",
+      "Uc",
+      "Uo",
+      "Uy",
+      "V3",
+      "VA",
+      "W3",
+      "WA",
+      "X3",
+      "XA",
+      "Xg",
+      "Y3",
+      "YA",
+      "Yg",
+      "Z3",
+      "ZA",
+      "Za",
+      "Zg",
+      "_1",
+      "_3",
+      "_f",
+      "_i",
+      "_o",
+      "aR",
+      "b1",
+      "b3",
+      "bf",
+      "ca",
+      "cn",
+      "d1",
+      "db",
+      "eR",
+      "eb",
+      "eo",
+      "es",
+      "ev",
+      "f1",
+      "fb",
+      "g1",
+      "g3",
+      "gn",
+      "gr",
+      "h1",
+      "hn",
+      "hv",
+      "iR",
+      "ib",
+      "il",
+      "io",
+      "j3",
+      "jA",
+      "ja",
+      "je",
+      "jg",
+      "jn",
+      "k3",
+      "kA",
+      "ky",
+      "lR",
+      "la",
+      "lt",
+      "m1",
+      "m3",
+      "mn",
+      "mr",
+      "nR",
+      "nb",
+      "nv",
+      "oR",
+      "ot",
+      "p1",
+      "p3",
+      "pI",
+      "pr",
+      "q3",
+      "qA",
+      "qi",
+      "rR",
+      "ri",
+      "rl",
+      "sR",
+      "sa",
+      "sb",
+      "t0",
+      "tR",
+      "tb",
+      "to",
+      "tt",
+      "tv",
+      "us",
+      "v1",
+      "v3",
+      "vn",
+      "vr",
+      "w1",
+      "w3",
+      "wf",
+      "wi",
+      "x1",
+      "x3",
+      "y1",
+      "y3",
+      "z3",
+      "zA",
+      "zi",
+      "zr"
+    ],
+    "registrations": [
+      "for(let i of[\"container20\",\"container40\",\"container40hc\"])_i(i,(e,t)=>M3(e,i,t));",
+      "_i(\"jersey_barrier\",S3);",
+      "_i(\"light_mast\",T3);",
+      "_i(\"fence_panel\",A3);",
+      "_i(\"guard_booth\",R3);",
+      "_i(\"gate_arm\",C3);",
+      "_i(\"bollard_mooring\",P3);",
+      "_i(\"bollard_post\",I3);",
+      "_i(\"sign_post\",z3);",
+      "_i(\"floodlight_stand\",D3);",
+      "_i(\"stairs_metal\",k3);",
+      "_i(\"catwalk\",F3);",
+      "_i(\"shelf_rack\",U3);",
+      "_i(\"reefer_unit\",N3);",
+      "_i(\"relay_node\",B3);",
+      "J3(_i);",
+      "eb(_i);",
+      "sb(_i);"
+    ],
+    "fragments": {
+      "lt": {
+        "sourceByteOffset": 32173,
+        "sourceByteEnd": 32183,
+        "sourceCodeUnitOffset": 32134,
+        "sourceCodeUnitEnd": 32144,
+        "sourceCodePointOffset": 32134,
+        "sourceCodePointEnd": 32144,
+        "sourceLineColumn": {
+          "line": 360,
+          "column": 100
+        },
+        "sourceCodeUnitLength": 10,
+        "fragmentSha256": "145f88603ef1d5365de9aa1865bae9623aa0a473ae1dd18779cc980b32790874",
+        "bindings": [
+          "lt"
+        ],
+        "freeRefs": []
+      },
+      "il": {
+        "sourceByteOffset": 735758,
+        "sourceByteEnd": 736093,
+        "sourceCodeUnitOffset": 735719,
+        "sourceCodeUnitEnd": 736054,
+        "sourceCodePointOffset": 735719,
+        "sourceCodePointEnd": 736054,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 53173
+        },
+        "sourceCodeUnitLength": 335,
+        "fragmentSha256": "10e7f3df5d615d6c5d51b253ff5e49e911bc5b3fcf834735837ea1aa24d44713",
+        "bindings": [
+          "il"
+        ],
+        "freeRefs": [
+          "Math",
+          "il"
+        ]
+      },
+      "sa": {
+        "sourceByteOffset": 737442,
+        "sourceByteEnd": 739960,
+        "sourceCodeUnitOffset": 737403,
+        "sourceCodeUnitEnd": 739921,
+        "sourceCodePointOffset": 737403,
+        "sourceCodePointEnd": 739921,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 54857
+        },
+        "sourceCodeUnitLength": 2518,
+        "fragmentSha256": "d70c274e8193082615b94a222d2a27410c51da7b0c558f60c24d8884abbc212d",
+        "bindings": [
+          "sa"
+        ],
+        "freeRefs": [
+          "Ly",
+          "Object",
+          "Set",
+          "console",
+          "nt"
+        ]
+      },
+      "Ly": {
+        "sourceByteOffset": 739960,
+        "sourceByteEnd": 741166,
+        "sourceCodeUnitOffset": 739921,
+        "sourceCodeUnitEnd": 741127,
+        "sourceCodePointOffset": 739921,
+        "sourceCodePointEnd": 741127,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 57375
+        },
+        "sourceCodeUnitLength": 1206,
+        "fragmentSha256": "c8ed0249566ad762bbe02a553daf7c7c3a48a29c7f9de781ea2c668f8cca9bac",
+        "bindings": [
+          "Ly"
+        ],
+        "freeRefs": [
+          "console",
+          "et"
+        ]
+      },
+      "$e": {
+        "sourceByteOffset": 741179,
+        "sourceByteEnd": 741503,
+        "sourceCodeUnitOffset": 741140,
+        "sourceCodeUnitEnd": 741464,
+        "sourceCodePointOffset": 741140,
+        "sourceCodePointEnd": 741464,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 58594
+        },
+        "sourceCodeUnitLength": 324,
+        "fragmentSha256": "fd4fe7017a32537555acc33b8267c0325b5bebee263461656af81e482bb8ebf1",
+        "bindings": [
+          "$e"
+        ],
+        "freeRefs": [
+          "Math",
+          "un"
+        ]
+      },
+      "ot": {
+        "sourceByteOffset": 742403,
+        "sourceByteEnd": 742706,
+        "sourceCodeUnitOffset": 742364,
+        "sourceCodeUnitEnd": 742667,
+        "sourceCodePointOffset": 742364,
+        "sourceCodePointEnd": 742667,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 59818
+        },
+        "sourceCodeUnitLength": 303,
+        "fragmentSha256": "ced894422b55f778f98b84b9b400d740fef9f823206edf8c264c35b88e213895",
+        "bindings": [
+          "ot"
+        ],
+        "freeRefs": [
+          "Math",
+          "Ys"
+        ]
+      },
+      "Fn": {
+        "sourceByteOffset": 742706,
+        "sourceByteEnd": 743014,
+        "sourceCodeUnitOffset": 742667,
+        "sourceCodeUnitEnd": 742975,
+        "sourceCodePointOffset": 742667,
+        "sourceCodePointEnd": 742975,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60121
+        },
+        "sourceCodeUnitLength": 308,
+        "fragmentSha256": "049fc57caca70bc0c074e0b19863c4a543a31ddc71177beca8b9fdf4e06a9264",
+        "bindings": [
+          "Fn"
+        ],
+        "freeRefs": [
+          "Jr",
+          "Kr",
+          "Math",
+          "W"
+        ]
+      },
+      "ky": {
+        "sourceByteOffset": 743014,
+        "sourceByteEnd": 743066,
+        "sourceCodeUnitOffset": 742975,
+        "sourceCodeUnitEnd": 743027,
+        "sourceCodePointOffset": 742975,
+        "sourceCodePointEnd": 743027,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60429
+        },
+        "sourceCodeUnitLength": 52,
+        "fragmentSha256": "2c20c2519a97a90aab661357e962e90c80f056f0fa8e7797275d3f45e5a70ebe",
+        "bindings": [
+          "ky",
+          "Fy",
+          "Uy",
+          "Ny",
+          "Fg"
+        ],
+        "freeRefs": [
+          "In",
+          "Lt",
+          "W",
+          "Ye"
+        ]
+      },
+      "Dc": {
+        "sourceByteOffset": 743066,
+        "sourceByteEnd": 743287,
+        "sourceCodeUnitOffset": 743027,
+        "sourceCodeUnitEnd": 743248,
+        "sourceCodePointOffset": 743027,
+        "sourceCodePointEnd": 743248,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60481
+        },
+        "sourceCodeUnitLength": 221,
+        "fragmentSha256": "a8baf3ea1bb07c56ca26afd0575fb31e9c0eb9f3e5f8d21897bca4572f025fce",
+        "bindings": [
+          "Dc"
+        ],
+        "freeRefs": [
+          "Fg",
+          "Fy",
+          "Ny",
+          "Uy",
+          "ky"
+        ]
+      },
+      "Lc": {
+        "sourceByteOffset": 743287,
+        "sourceByteEnd": 743534,
+        "sourceCodeUnitOffset": 743248,
+        "sourceCodeUnitEnd": 743495,
+        "sourceCodePointOffset": 743248,
+        "sourceCodePointEnd": 743495,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60702
+        },
+        "sourceCodeUnitLength": 247,
+        "fragmentSha256": "885dad993af68c37ec1b44954996ac2b5de250530fa4eb3fd33c02e4c018e44a",
+        "bindings": [
+          "Lc"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "et"
+        ]
+      },
+      "Ii": {
+        "sourceByteOffset": 743534,
+        "sourceByteEnd": 744179,
+        "sourceCodeUnitOffset": 743495,
+        "sourceCodeUnitEnd": 744140,
+        "sourceCodePointOffset": 743495,
+        "sourceCodePointEnd": 744140,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60949
+        },
+        "sourceCodeUnitLength": 645,
+        "fragmentSha256": "5b1785e4df9a4fe83f993d5d0d002dbc381b64584330a61b42fc1ab41dbd9763",
+        "bindings": [
+          "Ii"
+        ],
+        "freeRefs": [
+          "Boolean",
+          "Float32Array",
+          "Object",
+          "et",
+          "nt",
+          "sa"
+        ]
+      },
+      "Qi": {
+        "sourceByteOffset": 745054,
+        "sourceByteEnd": 745156,
+        "sourceCodeUnitOffset": 745015,
+        "sourceCodeUnitEnd": 745117,
+        "sourceCodePointOffset": 745015,
+        "sourceCodePointEnd": 745117,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 62469
+        },
+        "sourceCodeUnitLength": 102,
+        "fragmentSha256": "aa29c2a3e2ea142bde531836793644b75e1ccf9058fedc0610327536181acd89",
+        "bindings": [
+          "Qi"
+        ],
+        "freeRefs": [
+          "Qe"
+        ]
+      },
+      "Gi": {
+        "sourceByteOffset": 884008,
+        "sourceByteEnd": 885653,
+        "sourceCodeUnitOffset": 883755,
+        "sourceCodeUnitEnd": 885400,
+        "sourceCodePointOffset": 883755,
+        "sourceCodePointEnd": 885400,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 13979
+        },
+        "sourceCodeUnitLength": 1645,
+        "fragmentSha256": "e27648ac5f8b96b98e9b94119ae06df33293f44a2e4f75134b0a2d40a46f30f0",
+        "bindings": [
+          "Gi",
+          "Xg"
+        ],
+        "freeRefs": []
+      },
+      "_i": {
+        "sourceByteOffset": 885653,
+        "sourceByteEnd": 885678,
+        "sourceCodeUnitOffset": 885400,
+        "sourceCodeUnitEnd": 885425,
+        "sourceCodePointOffset": 885400,
+        "sourceCodePointEnd": 885425,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 15624
+        },
+        "sourceCodeUnitLength": 25,
+        "fragmentSha256": "d5925f6e847c3b77082f6fac1a4f0bb54d2e83a7db66df427945d6b0ad28a15a",
+        "bindings": [
+          "_i"
+        ],
+        "freeRefs": [
+          "Xg"
+        ]
+      },
+      "Yg": {
+        "sourceByteOffset": 885678,
+        "sourceByteEnd": 886186,
+        "sourceCodeUnitOffset": 885425,
+        "sourceCodeUnitEnd": 885933,
+        "sourceCodePointOffset": 885425,
+        "sourceCodePointEnd": 885933,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 15649
+        },
+        "sourceCodeUnitLength": 508,
+        "fragmentSha256": "ae440bf10a39a049686e5e185f71ee7323fcd8965656594063ae457ae78144f0",
+        "bindings": [
+          "Yg"
+        ],
+        "freeRefs": [
+          "$e",
+          "Gi",
+          "Object",
+          "Qi",
+          "Xg",
+          "console",
+          "wt"
+        ]
+      },
+      "$a": {
+        "sourceByteOffset": 886586,
+        "sourceByteEnd": 886750,
+        "sourceCodeUnitOffset": 886333,
+        "sourceCodeUnitEnd": 886497,
+        "sourceCodePointOffset": 886333,
+        "sourceCodePointEnd": 886497,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16557
+        },
+        "sourceCodeUnitLength": 164,
+        "fragmentSha256": "1c744d95a821cedda3a88ec6397281b11f281e7b176ea5499ccc365e712a0295",
+        "bindings": [
+          "$a"
+        ],
+        "freeRefs": [
+          "Math"
+        ]
+      },
+      "h1": {
+        "sourceByteOffset": 886750,
+        "sourceByteEnd": 886833,
+        "sourceCodeUnitOffset": 886497,
+        "sourceCodeUnitEnd": 886580,
+        "sourceCodePointOffset": 886497,
+        "sourceCodePointEnd": 886580,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16721
+        },
+        "sourceCodeUnitLength": 83,
+        "fragmentSha256": "472833b3b6409ef5db5e4d63b746bd9724fc098d029b003ef1b63ffbb0c2ca5f",
+        "bindings": [
+          "h1"
+        ],
+        "freeRefs": [
+          "Math"
+        ]
+      },
+      "ri": {
+        "sourceByteOffset": 886833,
+        "sourceByteEnd": 887013,
+        "sourceCodeUnitOffset": 886580,
+        "sourceCodeUnitEnd": 886760,
+        "sourceCodePointOffset": 886580,
+        "sourceCodePointEnd": 886760,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16804
+        },
+        "sourceCodeUnitLength": 180,
+        "fragmentSha256": "b80c502c38cfc03192f023c5729ea2ce28d7aa1af8a3f17baf37371eb5806b07",
+        "bindings": [
+          "ri"
+        ],
+        "freeRefs": [
+          "Math",
+          "h1"
+        ]
+      },
+      "RA": {
+        "sourceByteOffset": 887013,
+        "sourceByteEnd": 887175,
+        "sourceCodeUnitOffset": 886760,
+        "sourceCodeUnitEnd": 886922,
+        "sourceCodePointOffset": 886760,
+        "sourceCodePointEnd": 886922,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16984
+        },
+        "sourceCodeUnitLength": 162,
+        "fragmentSha256": "ce83625555539479ef3ba12e66f925c6724803f2c281520941e9ec4259b1f2a1",
+        "bindings": [
+          "RA",
+          "mn",
+          "Ir"
+        ],
+        "freeRefs": [
+          "Math",
+          "RA"
+        ]
+      },
+      "p3": {
+        "sourceByteOffset": 887175,
+        "sourceByteEnd": 888633,
+        "sourceCodeUnitOffset": 886922,
+        "sourceCodeUnitEnd": 888380,
+        "sourceCodePointOffset": 886922,
+        "sourceCodePointEnd": 888380,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 17146
+        },
+        "sourceCodeUnitLength": 1458,
+        "fragmentSha256": "afc57a9cae37c764b56bcdbe329c38f09ffae5b6b8b2df17c3d1e626bc137fcb",
+        "bindings": [
+          "p3"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "Math",
+          "et",
+          "nt"
+        ]
+      },
+      "m3": {
+        "sourceByteOffset": 888633,
+        "sourceByteEnd": 889095,
+        "sourceCodeUnitOffset": 888380,
+        "sourceCodeUnitEnd": 888842,
+        "sourceCodePointOffset": 888380,
+        "sourceCodePointEnd": 888842,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 18604
+        },
+        "sourceCodeUnitLength": 462,
+        "fragmentSha256": "2b05f023ce3e8b887679546534e66b7b9b6e7616eddcc900f40adea485fa593d",
+        "bindings": [
+          "m3"
+        ],
+        "freeRefs": []
+      },
+      "la": {
+        "sourceByteOffset": 889095,
+        "sourceByteEnd": 890184,
+        "sourceCodeUnitOffset": 888842,
+        "sourceCodeUnitEnd": 889931,
+        "sourceCodePointOffset": 888842,
+        "sourceCodePointEnd": 889931,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 19066
+        },
+        "sourceCodeUnitLength": 1089,
+        "fragmentSha256": "1d2777959b7a36ebcf823f3ddca5a0ab631e3fb9b51ada83a628bb17e9225ee4",
+        "bindings": [
+          "la"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "Math",
+          "et",
+          "m3",
+          "nt"
+        ]
+      },
+      "CA": {
+        "sourceByteOffset": 890184,
+        "sourceByteEnd": 890305,
+        "sourceCodeUnitOffset": 889931,
+        "sourceCodeUnitEnd": 890052,
+        "sourceCodePointOffset": 889931,
+        "sourceCodePointEnd": 890052,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 20155
+        },
+        "sourceCodeUnitLength": 121,
+        "fragmentSha256": "01ed5ad58e9012c3ab266ae7c741710e606adb2c2c70ec8189ffc2ed4e426ddd",
+        "bindings": [
+          "CA"
+        ],
+        "freeRefs": []
+      },
+      "Uc": {
+        "sourceByteOffset": 890305,
+        "sourceByteEnd": 890547,
+        "sourceCodeUnitOffset": 890052,
+        "sourceCodeUnitEnd": 890294,
+        "sourceCodePointOffset": 890052,
+        "sourceCodePointEnd": 890294,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 20276
+        },
+        "sourceCodeUnitLength": 242,
+        "fragmentSha256": "be476ccd09d22dd7fcf837afb382f0ca30a009117144e55c5d88ffc05cb015db",
+        "bindings": [
+          "Uc"
+        ],
+        "freeRefs": [
+          "CA",
+          "Math"
+        ]
+      },
+      "pr": {
+        "sourceByteOffset": 890547,
+        "sourceByteEnd": 891066,
+        "sourceCodeUnitOffset": 890294,
+        "sourceCodeUnitEnd": 890813,
+        "sourceCodePointOffset": 890294,
+        "sourceCodePointEnd": 890813,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 20518
+        },
+        "sourceCodeUnitLength": 519,
+        "fragmentSha256": "2b5f0ddaf6f0e64c3b358d114d1bfe9645bf45b2b070aadc484da44b148e6a7a",
+        "bindings": [
+          "pr"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "Math",
+          "et",
+          "nt"
+        ]
+      },
+      "cn": {
+        "sourceByteOffset": 891066,
+        "sourceByteEnd": 891102,
+        "sourceCodeUnitOffset": 890813,
+        "sourceCodeUnitEnd": 890849,
+        "sourceCodePointOffset": 890813,
+        "sourceCodePointEnd": 890849,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21037
+        },
+        "sourceCodeUnitLength": 36,
+        "fragmentSha256": "4e2ca6fcb90ad4e632a68d3ff4eb78af1ff4ad8d12ebb0eedd0c025d1179ade3",
+        "bindings": [
+          "cn"
+        ],
+        "freeRefs": [
+          "rn"
+        ]
+      },
+      "Nc": {
+        "sourceByteOffset": 891102,
+        "sourceByteEnd": 891225,
+        "sourceCodeUnitOffset": 890849,
+        "sourceCodeUnitEnd": 890972,
+        "sourceCodePointOffset": 890849,
+        "sourceCodePointEnd": 890972,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21073
+        },
+        "sourceCodeUnitLength": 123,
+        "fragmentSha256": "a27642577b77204b9772cd36f4d2bd7c15b339b39399e0e961ba05ec3e096dcc",
+        "bindings": [
+          "Nc"
+        ],
+        "freeRefs": [
+          "rn"
+        ]
+      },
+      "PA": {
+        "sourceByteOffset": 891225,
+        "sourceByteEnd": 891307,
+        "sourceCodeUnitOffset": 890972,
+        "sourceCodeUnitEnd": 891054,
+        "sourceCodePointOffset": 890972,
+        "sourceCodePointEnd": 891054,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21196
+        },
+        "sourceCodeUnitLength": 82,
+        "fragmentSha256": "96fa95c2679e4dde26ba248d25e7134d94ac169ec4c25020a60587c4c295aad0",
+        "bindings": [
+          "PA"
+        ],
+        "freeRefs": []
+      },
+      "mr": {
+        "sourceByteOffset": 891307,
+        "sourceByteEnd": 891386,
+        "sourceCodeUnitOffset": 891054,
+        "sourceCodeUnitEnd": 891133,
+        "sourceCodePointOffset": 891054,
+        "sourceCodePointEnd": 891133,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21278
+        },
+        "sourceCodeUnitLength": 79,
+        "fragmentSha256": "4dd69f77bd169a398569cd76fe4a9449adde49b6d4eb51a08e5a629c12bfe80b",
+        "bindings": [
+          "mr"
+        ],
+        "freeRefs": [
+          "Math",
+          "ls"
+        ]
+      },
+      "g1": {
+        "sourceByteOffset": 891386,
+        "sourceByteEnd": 891451,
+        "sourceCodeUnitOffset": 891133,
+        "sourceCodeUnitEnd": 891198,
+        "sourceCodePointOffset": 891133,
+        "sourceCodePointEnd": 891198,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21357
+        },
+        "sourceCodeUnitLength": 65,
+        "fragmentSha256": "316e4c6cfa502b162955695f4509486cb5880e20a0f0f74bbc9bd4bbf724a258",
+        "bindings": [
+          "g1"
+        ],
+        "freeRefs": [
+          "Ae",
+          "ar"
+        ]
+      },
+      "f1": {
+        "sourceByteOffset": 891451,
+        "sourceByteEnd": 891510,
+        "sourceCodeUnitOffset": 891198,
+        "sourceCodeUnitEnd": 891257,
+        "sourceCodePointOffset": 891198,
+        "sourceCodePointEnd": 891257,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21422
+        },
+        "sourceCodeUnitLength": 59,
+        "fragmentSha256": "d0817e907602d6b27e3d79dfec1b1441fe690451cd464af42529822f0ffa4e8e",
+        "bindings": [
+          "f1",
+          "Fc",
+          "g3",
+          "d1",
+          "p1"
+        ],
+        "freeRefs": [
+          "In",
+          "Lt",
+          "W",
+          "Ye"
+        ]
+      },
+      "je": {
+        "sourceByteOffset": 891510,
+        "sourceByteEnd": 891668,
+        "sourceCodeUnitOffset": 891257,
+        "sourceCodeUnitEnd": 891415,
+        "sourceCodePointOffset": 891257,
+        "sourceCodePointEnd": 891415,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21481
+        },
+        "sourceCodeUnitLength": 158,
+        "fragmentSha256": "613f501a7c83692a7517388128060078c5eea02b41b36ce5d5aaee20b7157231",
+        "bindings": [
+          "je"
+        ],
+        "freeRefs": [
+          "Fc",
+          "d1",
+          "f1",
+          "g3",
+          "p1"
+        ]
+      },
+      "_o": {
+        "sourceByteOffset": 891668,
+        "sourceByteEnd": 891809,
+        "sourceCodeUnitOffset": 891415,
+        "sourceCodeUnitEnd": 891556,
+        "sourceCodePointOffset": 891415,
+        "sourceCodePointEnd": 891556,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21639
+        },
+        "sourceCodeUnitLength": 141,
+        "fragmentSha256": "a65ed02313e72b03296cb9208c39683843c85a052ec85e309c603a289d005364",
+        "bindings": [
+          "_o"
+        ],
+        "freeRefs": [
+          "Fc",
+          "Ye",
+          "d1",
+          "f1",
+          "p1"
+        ]
+      },
+      "jn": {
+        "sourceByteOffset": 891809,
+        "sourceByteEnd": 893518,
+        "sourceCodeUnitOffset": 891556,
+        "sourceCodeUnitEnd": 893265,
+        "sourceCodePointOffset": 891556,
+        "sourceCodePointEnd": 893265,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21780
+        },
+        "sourceCodeUnitLength": 1709,
+        "fragmentSha256": "c4ad6c781e8ab020f803af1befdbf477b7306f28c8d773880aa2a27f9c499b39",
+        "bindings": [
+          "jn"
+        ],
+        "freeRefs": [
+          "$e",
+          "Fn",
+          "Ii",
+          "Lc",
+          "Lt",
+          "Map",
+          "Math",
+          "PA",
+          "W",
+          "Ye",
+          "Zg",
+          "cn",
+          "je",
+          "ot",
+          "p1",
+          "p3"
+        ]
+      },
+      "Zg": {
+        "sourceByteOffset": 893518,
+        "sourceByteEnd": 893664,
+        "sourceCodeUnitOffset": 893265,
+        "sourceCodeUnitEnd": 893411,
+        "sourceCodePointOffset": 893265,
+        "sourceCodePointEnd": 893411,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23489
+        },
+        "sourceCodeUnitLength": 146,
+        "fragmentSha256": "ea40cfc5ce2bf734384df581c027df0bee3e069754d6b533406c0ec47863951b",
+        "bindings": [
+          "Zg"
+        ],
+        "freeRefs": [
+          "Qe",
+          "wt"
+        ]
+      },
+      "qi": {
+        "sourceByteOffset": 893664,
+        "sourceByteEnd": 893744,
+        "sourceCodeUnitOffset": 893411,
+        "sourceCodeUnitEnd": 893491,
+        "sourceCodePointOffset": 893411,
+        "sourceCodePointEnd": 893491,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23635
+        },
+        "sourceCodeUnitLength": 80,
+        "fragmentSha256": "b6d8c32c83b5ed252b354b04984bd610c2887c75c9a969a1e1b988e6f39b9ff5",
+        "bindings": [
+          "qi"
+        ],
+        "freeRefs": []
+      },
+      "m1": {
+        "sourceByteOffset": 893744,
+        "sourceByteEnd": 893763,
+        "sourceCodeUnitOffset": 893491,
+        "sourceCodeUnitEnd": 893510,
+        "sourceCodePointOffset": 893491,
+        "sourceCodePointEnd": 893510,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23715
+        },
+        "sourceCodeUnitLength": 19,
+        "fragmentSha256": "395b8b21cbac2f0ed9954f291adda9530094d54bdc288d1638dfd0223a2cb15b",
+        "bindings": [
+          "m1"
+        ],
+        "freeRefs": [
+          "WeakMap"
+        ]
+      },
+      "Mi": {
+        "sourceByteOffset": 893763,
+        "sourceByteEnd": 894044,
+        "sourceCodeUnitOffset": 893510,
+        "sourceCodeUnitEnd": 893791,
+        "sourceCodePointOffset": 893510,
+        "sourceCodePointEnd": 893791,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23734
+        },
+        "sourceCodeUnitLength": 281,
+        "fragmentSha256": "b63076ed77b9e9a330a5623e6cac7c7015d548e23d6fff2df49bd97322968b7a",
+        "bindings": [
+          "Mi"
+        ],
+        "freeRefs": [
+          "JSON",
+          "Map",
+          "Math",
+          "m1"
+        ]
+      },
+      "Jn": {
+        "sourceByteOffset": 894044,
+        "sourceByteEnd": 894269,
+        "sourceCodeUnitOffset": 893791,
+        "sourceCodeUnitEnd": 894016,
+        "sourceCodePointOffset": 893791,
+        "sourceCodePointEnd": 894016,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24015
+        },
+        "sourceCodeUnitLength": 225,
+        "fragmentSha256": "ddc1174f6d5b142699070224f9b1809acd9c5505d49639140a6d9c251e0c20aa",
+        "bindings": [
+          "Jn"
+        ],
+        "freeRefs": [
+          "Map",
+          "m1"
+        ]
+      },
+      "Bc": {
+        "sourceByteOffset": 894269,
+        "sourceByteEnd": 894913,
+        "sourceCodeUnitOffset": 894016,
+        "sourceCodeUnitEnd": 894660,
+        "sourceCodePointOffset": 894016,
+        "sourceCodePointEnd": 894660,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24240
+        },
+        "sourceCodeUnitLength": 644,
+        "fragmentSha256": "48fc18278552107d1f9a62b90b7cad1d51cda9fa7cf47d7d706f349181935605",
+        "bindings": [
+          "Bc",
+          "_3",
+          "v1",
+          "v3",
+          "jg",
+          "Jt",
+          "IA",
+          "x3",
+          "y3",
+          "bf",
+          "b3",
+          "Uo",
+          "x1",
+          "y1"
+        ],
+        "freeRefs": [
+          "Map"
+        ]
+      },
+      "zA": {
+        "sourceByteOffset": 894913,
+        "sourceByteEnd": 903403,
+        "sourceCodeUnitOffset": 894660,
+        "sourceCodeUnitEnd": 903112,
+        "sourceCodePointOffset": 894660,
+        "sourceCodePointEnd": 903112,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24884
+        },
+        "sourceCodeUnitLength": 8452,
+        "fragmentSha256": "3a3ca0afafde834addfe3e3d4f144a22fc5af6b7dcfd184b8a58bd2f58fd73a5",
+        "bindings": [
+          "zA"
+        ],
+        "freeRefs": [
+          "$a",
+          "$e",
+          "Bc",
+          "Float32Array",
+          "Gi",
+          "Ir",
+          "Jn",
+          "Jt",
+          "Math",
+          "Mi",
+          "Nc",
+          "Uc",
+          "Uo",
+          "_3",
+          "_o",
+          "b3",
+          "bf",
+          "bs",
+          "cn",
+          "et",
+          "je",
+          "jn",
+          "la",
+          "mn",
+          "pr",
+          "ri",
+          "v1",
+          "v3",
+          "x1",
+          "y1",
+          "y3"
+        ]
+      },
+      "M3": {
+        "sourceByteOffset": 903403,
+        "sourceByteEnd": 904020,
+        "sourceCodeUnitOffset": 903112,
+        "sourceCodeUnitEnd": 903729,
+        "sourceCodePointOffset": 903112,
+        "sourceCodePointEnd": 903729,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 33336
+        },
+        "sourceCodeUnitLength": 617,
+        "fragmentSha256": "a7ad5141eab26da7d00742f354d18323c3aee5d77853b7f889c8a2f5b58761c4",
+        "bindings": [
+          "M3"
+        ],
+        "freeRefs": [
+          "Gi",
+          "IA",
+          "Jt",
+          "Map",
+          "Math",
+          "Zg",
+          "_3",
+          "bs",
+          "jg",
+          "qi",
+          "x3",
+          "zA"
+        ]
+      },
+      "ca": {
+        "sourceByteOffset": 904020,
+        "sourceByteEnd": 904058,
+        "sourceCodeUnitOffset": 903729,
+        "sourceCodeUnitEnd": 903767,
+        "sourceCodePointOffset": 903729,
+        "sourceCodePointEnd": 903767,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 33953
+        },
+        "sourceCodeUnitLength": 38,
+        "fragmentSha256": "30bbec9c8dcf35b808eb1ba4bdd1c206651947cd45428c20f90d7c08a1001e0d",
+        "bindings": [
+          "ca",
+          "hn"
+        ],
+        "freeRefs": [
+          "Gi",
+          "Math"
+        ]
+      },
+      "S3": {
+        "sourceByteOffset": 904058,
+        "sourceByteEnd": 905685,
+        "sourceCodeUnitOffset": 903767,
+        "sourceCodeUnitEnd": 905394,
+        "sourceCodePointOffset": 903767,
+        "sourceCodePointEnd": 905394,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 33991
+        },
+        "sourceCodeUnitLength": 1627,
+        "fragmentSha256": "f0f32c17620c673fe6660c07163dc411fa8e7dc2b2df7f369f93e10a6232d34a",
+        "bindings": [
+          "S3"
+        ],
+        "freeRefs": [
+          "$a",
+          "Ir",
+          "Math",
+          "Nc",
+          "ca",
+          "cn",
+          "hn",
+          "je",
+          "jn",
+          "la",
+          "mn",
+          "qi",
+          "ri"
+        ]
+      },
+      "w3": {
+        "sourceByteOffset": 905685,
+        "sourceByteEnd": 906277,
+        "sourceCodeUnitOffset": 905394,
+        "sourceCodeUnitEnd": 905986,
+        "sourceCodePointOffset": 905394,
+        "sourceCodePointEnd": 905986,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 35618
+        },
+        "sourceCodeUnitLength": 592,
+        "fragmentSha256": "09007e8a86f2c75c01e7922b04b118991c81121289c4925993a4551c65e4949a",
+        "bindings": [
+          "w3"
+        ],
+        "freeRefs": [
+          "$e",
+          "_o",
+          "cn",
+          "hn",
+          "je"
+        ]
+      },
+      "T3": {
+        "sourceByteOffset": 906277,
+        "sourceByteEnd": 908566,
+        "sourceCodeUnitOffset": 905986,
+        "sourceCodeUnitEnd": 908275,
+        "sourceCodePointOffset": 905986,
+        "sourceCodePointEnd": 908275,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 36210
+        },
+        "sourceCodeUnitLength": 2289,
+        "fragmentSha256": "492ab2bfb8450ded83b5f2d84cffea52126497275c9f73c117d5b58a78261ab6",
+        "bindings": [
+          "T3"
+        ],
+        "freeRefs": [
+          "Jn",
+          "Math",
+          "ca",
+          "hn",
+          "jn",
+          "mn",
+          "qi",
+          "ri",
+          "w3"
+        ]
+      },
+      "A3": {
+        "sourceByteOffset": 908566,
+        "sourceByteEnd": 910023,
+        "sourceCodeUnitOffset": 908275,
+        "sourceCodeUnitEnd": 909732,
+        "sourceCodePointOffset": 908275,
+        "sourceCodePointEnd": 909732,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 38499
+        },
+        "sourceCodeUnitLength": 1457,
+        "fragmentSha256": "86d25ec13cbea425cd3e0e3117490fd25fadb021fd4b41653027e75b369e5abc",
+        "bindings": [
+          "A3"
+        ],
+        "freeRefs": [
+          "$a",
+          "$e",
+          "Math",
+          "ca",
+          "je",
+          "jn",
+          "mn",
+          "qi",
+          "ri",
+          "rn"
+        ]
+      },
+      "R3": {
+        "sourceByteOffset": 910023,
+        "sourceByteEnd": 914280,
+        "sourceCodeUnitOffset": 909732,
+        "sourceCodeUnitEnd": 913981,
+        "sourceCodePointOffset": 909732,
+        "sourceCodePointEnd": 913981,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 39956
+        },
+        "sourceCodeUnitLength": 4249,
+        "fragmentSha256": "3b7826cfd7f8af666c208639e9c49524dc988ff0105376917857e96eaedf84d9",
+        "bindings": [
+          "R3"
+        ],
+        "freeRefs": [
+          "$e",
+          "Jn",
+          "Math",
+          "Mi",
+          "Nc",
+          "ca",
+          "cn",
+          "hn",
+          "je",
+          "jn",
+          "mn",
+          "pr",
+          "qi",
+          "ri"
+        ]
+      },
+      "C3": {
+        "sourceByteOffset": 914280,
+        "sourceByteEnd": 915916,
+        "sourceCodeUnitOffset": 913981,
+        "sourceCodeUnitEnd": 915617,
+        "sourceCodePointOffset": 913981,
+        "sourceCodePointEnd": 915617,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 44205
+        },
+        "sourceCodeUnitLength": 1636,
+        "fragmentSha256": "127297471ac7bbd36c63217d619d34d7d9fe2a17425feb196fc3148b3d910f99",
+        "bindings": [
+          "C3"
+        ],
+        "freeRefs": [
+          "$e",
+          "Jn",
+          "_o",
+          "bs",
+          "ca",
+          "hn",
+          "je",
+          "jn",
+          "mn",
+          "ot",
+          "qi"
+        ]
+      },
+      "P3": {
+        "sourceByteOffset": 915916,
+        "sourceByteEnd": 916849,
+        "sourceCodeUnitOffset": 915617,
+        "sourceCodeUnitEnd": 916550,
+        "sourceCodePointOffset": 915617,
+        "sourceCodePointEnd": 916550,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 45841
+        },
+        "sourceCodeUnitLength": 933,
+        "fragmentSha256": "9e73a726b5abbe04aac407ba7febfc8fa21cb601947d1fd947ed57b7d4ca1378",
+        "bindings": [
+          "P3"
+        ],
+        "freeRefs": [
+          "Math",
+          "ca",
+          "g1",
+          "hn",
+          "je",
+          "jn",
+          "mn",
+          "mr",
+          "qi",
+          "ri"
+        ]
+      },
+      "I3": {
+        "sourceByteOffset": 916849,
+        "sourceByteEnd": 917759,
+        "sourceCodeUnitOffset": 916550,
+        "sourceCodeUnitEnd": 917460,
+        "sourceCodePointOffset": 916550,
+        "sourceCodePointEnd": 917460,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 46774
+        },
+        "sourceCodeUnitLength": 910,
+        "fragmentSha256": "7889e27a0d0284cd063d6fc99fa77cf3b0eb542f27ba573db68cec613ae41679",
+        "bindings": [
+          "I3"
+        ],
+        "freeRefs": [
+          "ca",
+          "hn",
+          "je",
+          "jn",
+          "mn",
+          "mr",
+          "qi",
+          "ri"
+        ]
+      },
+      "Jg": {
+        "sourceByteOffset": 917759,
+        "sourceByteEnd": 917968,
+        "sourceCodeUnitOffset": 917460,
+        "sourceCodeUnitEnd": 917603,
+        "sourceCodePointOffset": 917460,
+        "sourceCodePointEnd": 917603,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 47684
+        },
+        "sourceCodeUnitLength": 143,
+        "fragmentSha256": "8345c784c3260cf33886ff1db8aebc8fff999a5efd1444fbfc7cc0c105b728bf",
+        "bindings": [
+          "Jg",
+          "E3"
+        ],
+        "freeRefs": []
+      },
+      "z3": {
+        "sourceByteOffset": 917968,
+        "sourceByteEnd": 919105,
+        "sourceCodeUnitOffset": 917603,
+        "sourceCodeUnitEnd": 918740,
+        "sourceCodePointOffset": 917603,
+        "sourceCodePointEnd": 918740,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 47827
+        },
+        "sourceCodeUnitLength": 1137,
+        "fragmentSha256": "7aa7f008878c3cb2ef5c85ba50f1a5719eddb445f38cacd323cc1c940a07d056",
+        "bindings": [
+          "z3"
+        ],
+        "freeRefs": [
+          "E3",
+          "Jg",
+          "Jn",
+          "Mi",
+          "_o",
+          "ca",
+          "hn",
+          "jn",
+          "qi"
+        ]
+      },
+      "D3": {
+        "sourceByteOffset": 919105,
+        "sourceByteEnd": 920850,
+        "sourceCodeUnitOffset": 918740,
+        "sourceCodeUnitEnd": 920485,
+        "sourceCodePointOffset": 918740,
+        "sourceCodePointEnd": 920485,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 48964
+        },
+        "sourceCodeUnitLength": 1745,
+        "fragmentSha256": "b03d5d8c647545646a6c5ff97622ae22dfc8803d5e573e10210766dca47d79d5",
+        "bindings": [
+          "D3"
+        ],
+        "freeRefs": [
+          "$a",
+          "$e",
+          "Math",
+          "_o",
+          "ca",
+          "cn",
+          "hn",
+          "je",
+          "jn",
+          "mr",
+          "qi"
+        ]
+      },
+      "b1": {
+        "sourceByteOffset": 920850,
+        "sourceByteEnd": 920888,
+        "sourceCodeUnitOffset": 920485,
+        "sourceCodeUnitEnd": 920523,
+        "sourceCodePointOffset": 920485,
+        "sourceCodePointEnd": 920523,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 50709
+        },
+        "sourceCodeUnitLength": 38,
+        "fragmentSha256": "26f43ebbf2ee9a86cb064ef63ba7c83037d3a9c1103197ece91577c5d78570b9",
+        "bindings": [
+          "b1",
+          "wi"
+        ],
+        "freeRefs": [
+          "Gi",
+          "Math"
+        ]
+      },
+      "k3": {
+        "sourceByteOffset": 920888,
+        "sourceByteEnd": 922959,
+        "sourceCodeUnitOffset": 920523,
+        "sourceCodeUnitEnd": 922594,
+        "sourceCodePointOffset": 920523,
+        "sourceCodePointEnd": 922594,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 50747
+        },
+        "sourceCodeUnitLength": 2071,
+        "fragmentSha256": "4258178c0dc62ba9bb8ea5bbff4445f38f4fa7d19318a4e95d0bc59397526e6e",
+        "bindings": [
+          "k3"
+        ],
+        "freeRefs": [
+          "b1",
+          "je",
+          "jn",
+          "mr",
+          "qi"
+        ]
+      },
+      "F3": {
+        "sourceByteOffset": 922959,
+        "sourceByteEnd": 924011,
+        "sourceCodeUnitOffset": 922594,
+        "sourceCodeUnitEnd": 923646,
+        "sourceCodePointOffset": 922594,
+        "sourceCodePointEnd": 923646,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 52818
+        },
+        "sourceCodeUnitLength": 1052,
+        "fragmentSha256": "01e2b0ca8e3d2da0e9d8953f72befebf2366a4c616a173909885213c4e3b3a00",
+        "bindings": [
+          "F3"
+        ],
+        "freeRefs": [
+          "$e",
+          "b1",
+          "je",
+          "jn",
+          "qi"
+        ]
+      },
+      "L3": {
+        "sourceByteOffset": 924011,
+        "sourceByteEnd": 924348,
+        "sourceCodeUnitOffset": 923646,
+        "sourceCodeUnitEnd": 923983,
+        "sourceCodePointOffset": 923646,
+        "sourceCodePointEnd": 923983,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 53870
+        },
+        "sourceCodeUnitLength": 337,
+        "fragmentSha256": "eed6d111d8afac0ad8c8b12f089991c6ca39bad76bd4cbb91559f8aa1ecd4cce",
+        "bindings": [
+          "L3"
+        ],
+        "freeRefs": [
+          "$e",
+          "je"
+        ]
+      },
+      "DA": {
+        "sourceByteOffset": 924348,
+        "sourceByteEnd": 925877,
+        "sourceCodeUnitOffset": 923983,
+        "sourceCodeUnitEnd": 925508,
+        "sourceCodePointOffset": 923983,
+        "sourceCodePointEnd": 925508,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 54207
+        },
+        "sourceCodeUnitLength": 1525,
+        "fragmentSha256": "6f92fe8b5318c7e44945b2766d1e3367a9889f978f2eb995efa281d528025846",
+        "bindings": [
+          "DA"
+        ],
+        "freeRefs": [
+          "$e",
+          "L3",
+          "Math",
+          "Mi",
+          "je",
+          "pr",
+          "wi"
+        ]
+      },
+      "U3": {
+        "sourceByteOffset": 925877,
+        "sourceByteEnd": 927857,
+        "sourceCodeUnitOffset": 925508,
+        "sourceCodeUnitEnd": 927472,
+        "sourceCodePointOffset": 925508,
+        "sourceCodePointEnd": 927472,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 55732
+        },
+        "sourceCodeUnitLength": 1964,
+        "fragmentSha256": "221556dd5d848a88cc7570cace7ab144793c75db68aa1b77f902e04ba98d61af",
+        "bindings": [
+          "U3"
+        ],
+        "freeRefs": [
+          "$a",
+          "$e",
+          "DA",
+          "Math",
+          "Mi",
+          "String",
+          "b1",
+          "cn",
+          "je",
+          "jn",
+          "mn",
+          "qi",
+          "wi"
+        ]
+      },
+      "N3": {
+        "sourceByteOffset": 927857,
+        "sourceByteEnd": 931416,
+        "sourceCodeUnitOffset": 927472,
+        "sourceCodeUnitEnd": 931019,
+        "sourceCodePointOffset": 927472,
+        "sourceCodePointEnd": 931019,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 57696
+        },
+        "sourceCodeUnitLength": 3547,
+        "fragmentSha256": "fbe6a633041bb689641cc5285055f3728d1eff33efe029c02c228c24e38fb159",
+        "bindings": [
+          "N3"
+        ],
+        "freeRefs": [
+          "$e",
+          "Jn",
+          "Mi",
+          "_o",
+          "b1",
+          "cn",
+          "je",
+          "jn",
+          "mn",
+          "mr",
+          "pr",
+          "qi",
+          "ri",
+          "wi"
+        ]
+      },
+      "es": {
+        "sourceByteOffset": 931416,
+        "sourceByteEnd": 931491,
+        "sourceCodeUnitOffset": 931019,
+        "sourceCodeUnitEnd": 931094,
+        "sourceCodePointOffset": 931019,
+        "sourceCodePointEnd": 931094,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 61243
+        },
+        "sourceCodeUnitLength": 75,
+        "fragmentSha256": "7cf67dd0f46886cb7d4284be7bed206e0c8af4ec6d607aff4fcd03720a51f9d1",
+        "bindings": [
+          "es",
+          "Kg",
+          "LA",
+          "kA"
+        ],
+        "freeRefs": [
+          "Math",
+          "Ve"
+        ]
+      },
+      "B3": {
+        "sourceByteOffset": 931491,
+        "sourceByteEnd": 940287,
+        "sourceCodeUnitOffset": 931094,
+        "sourceCodeUnitEnd": 939852,
+        "sourceCodePointOffset": 931094,
+        "sourceCodePointEnd": 939852,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 61318
+        },
+        "sourceCodeUnitLength": 8758,
+        "fragmentSha256": "74cd9873ddb75037790c1d42051d412cf8c3c41ab0b3cfa18251f38091278000",
+        "bindings": [
+          "B3"
+        ],
+        "freeRefs": [
+          "$e",
+          "Gi",
+          "Ii",
+          "Jn",
+          "Kg",
+          "LA",
+          "Math",
+          "Mi",
+          "Qe",
+          "Ve",
+          "_o",
+          "cn",
+          "es",
+          "g1",
+          "je",
+          "jn",
+          "kA",
+          "mn",
+          "mr",
+          "ot",
+          "pr",
+          "qi",
+          "ri",
+          "wt"
+        ]
+      },
+      "expr@907818": {
+        "sourceByteOffset": 940287,
+        "sourceByteEnd": 940368,
+        "sourceCodeUnitOffset": 939852,
+        "sourceCodeUnitEnd": 939933,
+        "sourceCodePointOffset": 939852,
+        "sourceCodePointEnd": 939933,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70076
+        },
+        "sourceCodeUnitLength": 81,
+        "fragmentSha256": "894ba22b2dfadb7e57c9c6e2209c74237c5ff44d997fe96108051b89d44cbaf0",
+        "bindings": [],
+        "freeRefs": [
+          "M3",
+          "_i",
+          "i"
+        ]
+      },
+      "expr@907899": {
+        "sourceByteOffset": 940368,
+        "sourceByteEnd": 940392,
+        "sourceCodeUnitOffset": 939933,
+        "sourceCodeUnitEnd": 939957,
+        "sourceCodePointOffset": 939933,
+        "sourceCodePointEnd": 939957,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70157
+        },
+        "sourceCodeUnitLength": 24,
+        "fragmentSha256": "5f85b37db52d01cbb8ec6b8e8160bc55988a3cf25964c8dd7552bb5cdf457efb",
+        "bindings": [],
+        "freeRefs": [
+          "S3",
+          "_i"
+        ]
+      },
+      "expr@907923": {
+        "sourceByteOffset": 940392,
+        "sourceByteEnd": 940412,
+        "sourceCodeUnitOffset": 939957,
+        "sourceCodeUnitEnd": 939977,
+        "sourceCodePointOffset": 939957,
+        "sourceCodePointEnd": 939977,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70181
+        },
+        "sourceCodeUnitLength": 20,
+        "fragmentSha256": "a0760e4947b8cfdd081c8350094d36317c8b21b0a267e2affbd60ab89009e2af",
+        "bindings": [],
+        "freeRefs": [
+          "T3",
+          "_i"
+        ]
+      },
+      "expr@907943": {
+        "sourceByteOffset": 940412,
+        "sourceByteEnd": 940433,
+        "sourceCodeUnitOffset": 939977,
+        "sourceCodeUnitEnd": 939998,
+        "sourceCodePointOffset": 939977,
+        "sourceCodePointEnd": 939998,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70201
+        },
+        "sourceCodeUnitLength": 21,
+        "fragmentSha256": "ed9598359e583419350b2cb7b8f3faed36b0bc7c18281ad194c060836284e890",
+        "bindings": [],
+        "freeRefs": [
+          "A3",
+          "_i"
+        ]
+      },
+      "expr@907964": {
+        "sourceByteOffset": 940433,
+        "sourceByteEnd": 940454,
+        "sourceCodeUnitOffset": 939998,
+        "sourceCodeUnitEnd": 940019,
+        "sourceCodePointOffset": 939998,
+        "sourceCodePointEnd": 940019,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70222
+        },
+        "sourceCodeUnitLength": 21,
+        "fragmentSha256": "5c4c14500baa404a274c51ecf53a7d64a38d2496c9d3653271bdd0ff6bd2b2d7",
+        "bindings": [],
+        "freeRefs": [
+          "R3",
+          "_i"
+        ]
+      },
+      "expr@907985": {
+        "sourceByteOffset": 940454,
+        "sourceByteEnd": 940472,
+        "sourceCodeUnitOffset": 940019,
+        "sourceCodeUnitEnd": 940037,
+        "sourceCodePointOffset": 940019,
+        "sourceCodePointEnd": 940037,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70243
+        },
+        "sourceCodeUnitLength": 18,
+        "fragmentSha256": "cb8caf9882cb3612636bc191f2bf48e46eb3383a07392ad01c37b71287a63273",
+        "bindings": [],
+        "freeRefs": [
+          "C3",
+          "_i"
+        ]
+      },
+      "expr@908003": {
+        "sourceByteOffset": 940472,
+        "sourceByteEnd": 940497,
+        "sourceCodeUnitOffset": 940037,
+        "sourceCodeUnitEnd": 940062,
+        "sourceCodePointOffset": 940037,
+        "sourceCodePointEnd": 940062,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70261
+        },
+        "sourceCodeUnitLength": 25,
+        "fragmentSha256": "5e67a0f5fc8dcabd4271b78f7278fc95341ba76c091d7f4af1f4830bf3242e32",
+        "bindings": [],
+        "freeRefs": [
+          "P3",
+          "_i"
+        ]
+      },
+      "expr@908028": {
+        "sourceByteOffset": 940497,
+        "sourceByteEnd": 940519,
+        "sourceCodeUnitOffset": 940062,
+        "sourceCodeUnitEnd": 940084,
+        "sourceCodePointOffset": 940062,
+        "sourceCodePointEnd": 940084,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70286
+        },
+        "sourceCodeUnitLength": 22,
+        "fragmentSha256": "d599f0541b285d625feaf75911e493376d5167579dc545c60b0849ba6b97c32c",
+        "bindings": [],
+        "freeRefs": [
+          "I3",
+          "_i"
+        ]
+      },
+      "expr@908050": {
+        "sourceByteOffset": 940519,
+        "sourceByteEnd": 940538,
+        "sourceCodeUnitOffset": 940084,
+        "sourceCodeUnitEnd": 940103,
+        "sourceCodePointOffset": 940084,
+        "sourceCodePointEnd": 940103,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70308
+        },
+        "sourceCodeUnitLength": 19,
+        "fragmentSha256": "17baf36d649a67267ccbc957e09debf6d245df3a876ee9127c5f28d1b12f867a",
+        "bindings": [],
+        "freeRefs": [
+          "_i",
+          "z3"
+        ]
+      },
+      "expr@908069": {
+        "sourceByteOffset": 940538,
+        "sourceByteEnd": 940564,
+        "sourceCodeUnitOffset": 940103,
+        "sourceCodeUnitEnd": 940129,
+        "sourceCodePointOffset": 940103,
+        "sourceCodePointEnd": 940129,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70327
+        },
+        "sourceCodeUnitLength": 26,
+        "fragmentSha256": "60b2cc910531ec0e5ae47b3f09ac3f205eac8f8110de3fd6161dab85fbc54629",
+        "bindings": [],
+        "freeRefs": [
+          "D3",
+          "_i"
+        ]
+      },
+      "expr@908095": {
+        "sourceByteOffset": 940564,
+        "sourceByteEnd": 940586,
+        "sourceCodeUnitOffset": 940129,
+        "sourceCodeUnitEnd": 940151,
+        "sourceCodePointOffset": 940129,
+        "sourceCodePointEnd": 940151,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70353
+        },
+        "sourceCodeUnitLength": 22,
+        "fragmentSha256": "fea388542b261660c9b86c5fd279e22d5437e056761d327df67f2973853e2e3e",
+        "bindings": [],
+        "freeRefs": [
+          "_i",
+          "k3"
+        ]
+      },
+      "expr@908117": {
+        "sourceByteOffset": 940586,
+        "sourceByteEnd": 940603,
+        "sourceCodeUnitOffset": 940151,
+        "sourceCodeUnitEnd": 940168,
+        "sourceCodePointOffset": 940151,
+        "sourceCodePointEnd": 940168,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70375
+        },
+        "sourceCodeUnitLength": 17,
+        "fragmentSha256": "f392fe6d82f06a8614633645ce4c4d0ca936ea100ab97a98b6d0d97a7d46c9df",
+        "bindings": [],
+        "freeRefs": [
+          "F3",
+          "_i"
+        ]
+      },
+      "expr@908134": {
+        "sourceByteOffset": 940603,
+        "sourceByteEnd": 940623,
+        "sourceCodeUnitOffset": 940168,
+        "sourceCodeUnitEnd": 940188,
+        "sourceCodePointOffset": 940168,
+        "sourceCodePointEnd": 940188,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70392
+        },
+        "sourceCodeUnitLength": 20,
+        "fragmentSha256": "bf9d328d11beaa0de7d65a98203ddb9815b1f0ea4fe45a955ee2dc3b36a9bc2e",
+        "bindings": [],
+        "freeRefs": [
+          "U3",
+          "_i"
+        ]
+      },
+      "expr@908154": {
+        "sourceByteOffset": 940623,
+        "sourceByteEnd": 940644,
+        "sourceCodeUnitOffset": 940188,
+        "sourceCodeUnitEnd": 940209,
+        "sourceCodePointOffset": 940188,
+        "sourceCodePointEnd": 940209,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70412
+        },
+        "sourceCodeUnitLength": 21,
+        "fragmentSha256": "1602cb3aed14e25888e467f4d1a58e47136a7a3856fcd58c2370cfd12e657bca",
+        "bindings": [],
+        "freeRefs": [
+          "N3",
+          "_i"
+        ]
+      },
+      "expr@908175": {
+        "sourceByteOffset": 940644,
+        "sourceByteEnd": 940664,
+        "sourceCodeUnitOffset": 940209,
+        "sourceCodeUnitEnd": 940229,
+        "sourceCodePointOffset": 940209,
+        "sourceCodePointEnd": 940229,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70433
+        },
+        "sourceCodeUnitLength": 20,
+        "fragmentSha256": "51334844a5448655302c043ac0a9a1e579bdf3d695b62cb6cefabbeefac58a0c",
+        "bindings": [],
+        "freeRefs": [
+          "B3",
+          "_i"
+        ]
+      },
+      "At": {
+        "sourceByteOffset": 940664,
+        "sourceByteEnd": 940730,
+        "sourceCodeUnitOffset": 940229,
+        "sourceCodeUnitEnd": 940295,
+        "sourceCodePointOffset": 940229,
+        "sourceCodePointEnd": 940295,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70453
+        },
+        "sourceCodeUnitLength": 66,
+        "fragmentSha256": "bc6acea3f9e31f8b58344420ddde1467c4c319f17b8cab559c216dcc77e34909",
+        "bindings": [
+          "At",
+          "tt",
+          "zi"
+        ],
+        "freeRefs": [
+          "Math"
+        ]
+      },
+      "Za": {
+        "sourceByteOffset": 940730,
+        "sourceByteEnd": 940893,
+        "sourceCodeUnitOffset": 940295,
+        "sourceCodeUnitEnd": 940458,
+        "sourceCodePointOffset": 940295,
+        "sourceCodePointEnd": 940458,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70519
+        },
+        "sourceCodeUnitLength": 163,
+        "fragmentSha256": "2530f76e08edf0f04d3352e8d36471dfcec9078c1a64f08ff166b637de02c6bc",
+        "bindings": [
+          "Za"
+        ],
+        "freeRefs": [
+          "Math"
+        ]
+      },
+      "gn": {
+        "sourceByteOffset": 940893,
+        "sourceByteEnd": 941199,
+        "sourceCodeUnitOffset": 940458,
+        "sourceCodeUnitEnd": 940764,
+        "sourceCodePointOffset": 940458,
+        "sourceCodePointEnd": 940764,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70682
+        },
+        "sourceCodeUnitLength": 306,
+        "fragmentSha256": "566239f2c2c1b19e4c4da344b3393ceeac149a0ebd0173929d5e36986e1c9f6b",
+        "bindings": [
+          "gn"
+        ],
+        "freeRefs": [
+          "Math",
+          "Za"
+        ]
+      },
+      "Mf": {
+        "sourceByteOffset": 941199,
+        "sourceByteEnd": 941453,
+        "sourceCodeUnitOffset": 940764,
+        "sourceCodeUnitEnd": 941018,
+        "sourceCodePointOffset": 940764,
+        "sourceCodePointEnd": 941018,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 70988
+        },
+        "sourceCodeUnitLength": 254,
+        "fragmentSha256": "6d72fea9779467ac9758d7bfecff0500bc2deac0bbeab588478b00a73c1a9033",
+        "bindings": [
+          "Mf"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "et",
+          "nt"
+        ]
+      },
+      "us": {
+        "sourceByteOffset": 941453,
+        "sourceByteEnd": 942228,
+        "sourceCodeUnitOffset": 941018,
+        "sourceCodeUnitEnd": 941793,
+        "sourceCodePointOffset": 941018,
+        "sourceCodePointEnd": 941793,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 71242
+        },
+        "sourceCodeUnitLength": 775,
+        "fragmentSha256": "603421e2a65100b25d9a0bef8131b6e1d3a41e521f6321f9ef22b41957903e2b",
+        "bindings": [
+          "us"
+        ],
+        "freeRefs": [
+          "At",
+          "Math",
+          "Mf"
+        ]
+      },
+      "Ge": {
+        "sourceByteOffset": 942228,
+        "sourceByteEnd": 943333,
+        "sourceCodeUnitOffset": 941793,
+        "sourceCodeUnitEnd": 942898,
+        "sourceCodePointOffset": 941793,
+        "sourceCodePointEnd": 942898,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 72017
+        },
+        "sourceCodeUnitLength": 1105,
+        "fragmentSha256": "2fbb1b74e29ad1420af55129944b5fe61fbc2c7335a5270c4d259d4e9b51c149",
+        "bindings": [
+          "Ge"
+        ],
+        "freeRefs": [
+          "Math",
+          "Mf"
+        ]
+      },
+      "eo": {
+        "sourceByteOffset": 943333,
+        "sourceByteEnd": 944147,
+        "sourceCodeUnitOffset": 942898,
+        "sourceCodeUnitEnd": 943712,
+        "sourceCodePointOffset": 942898,
+        "sourceCodePointEnd": 943712,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 73122
+        },
+        "sourceCodeUnitLength": 814,
+        "fragmentSha256": "111c71b1d9d6efaaeb8a2618529264a404e26fe7d7ac8c196914268c5d515e54",
+        "bindings": [
+          "eo"
+        ],
+        "freeRefs": [
+          "Math",
+          "W",
+          "un",
+          "zi"
+        ]
+      },
+      "to": {
+        "sourceByteOffset": 944147,
+        "sourceByteEnd": 944293,
+        "sourceCodeUnitOffset": 943712,
+        "sourceCodeUnitEnd": 943858,
+        "sourceCodePointOffset": 943712,
+        "sourceCodePointEnd": 943858,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 73936
+        },
+        "sourceCodeUnitLength": 146,
+        "fragmentSha256": "a5e4c301e7c5da22d1be7f9955e5f34b17a37aad94e31b36ae998db0633dc221",
+        "bindings": [
+          "to"
+        ],
+        "freeRefs": [
+          "W"
+        ]
+      },
+      "gr": {
+        "sourceByteOffset": 944293,
+        "sourceByteEnd": 945035,
+        "sourceCodeUnitOffset": 943858,
+        "sourceCodeUnitEnd": 944600,
+        "sourceCodePointOffset": 943858,
+        "sourceCodePointEnd": 944600,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 74082
+        },
+        "sourceCodeUnitLength": 742,
+        "fragmentSha256": "35a4783e495f5cda3aa41a42dcf97d20cde57819563096b87f5eab970276c3f5",
+        "bindings": [
+          "gr"
+        ],
+        "freeRefs": [
+          "Array",
+          "Float32Array",
+          "Map",
+          "Math",
+          "W",
+          "et"
+        ]
+      },
+      "M1": {
+        "sourceByteOffset": 945035,
+        "sourceByteEnd": 945426,
+        "sourceCodeUnitOffset": 944600,
+        "sourceCodeUnitEnd": 944991,
+        "sourceCodePointOffset": 944600,
+        "sourceCodePointEnd": 944991,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 74824
+        },
+        "sourceCodeUnitLength": 391,
+        "fragmentSha256": "973ce069b67fa8e1c90b9ed104373069fe6b60089be937b678b7c7b556b604e4",
+        "bindings": [
+          "M1"
+        ],
+        "freeRefs": [
+          "Object"
+        ]
+      },
+      "ev": {
+        "sourceByteOffset": 945426,
+        "sourceByteEnd": 945625,
+        "sourceCodeUnitOffset": 944991,
+        "sourceCodeUnitEnd": 945190,
+        "sourceCodePointOffset": 944991,
+        "sourceCodePointEnd": 945190,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 75215
+        },
+        "sourceCodeUnitLength": 199,
+        "fragmentSha256": "f6a23f7719694f4c31b6a23c4f6a8600873711343e4662467a15219126909f12",
+        "bindings": [
+          "ev"
+        ],
+        "freeRefs": [
+          "Array"
+        ]
+      },
+      "O3": {
+        "sourceByteOffset": 945625,
+        "sourceByteEnd": 945674,
+        "sourceCodeUnitOffset": 945190,
+        "sourceCodeUnitEnd": 945239,
+        "sourceCodePointOffset": 945190,
+        "sourceCodePointEnd": 945239,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 75414
+        },
+        "sourceCodeUnitLength": 49,
+        "fragmentSha256": "2e3cf8375e4ebe06e2319ed75c7a936db7acbf239322ea2689c42cc7dbf4cde7",
+        "bindings": [
+          "O3",
+          "FA",
+          "_1",
+          "H3"
+        ],
+        "freeRefs": [
+          "Lt",
+          "W",
+          "Ye"
+        ]
+      },
+      "vn": {
+        "sourceByteOffset": 945674,
+        "sourceByteEnd": 945936,
+        "sourceCodeUnitOffset": 945239,
+        "sourceCodeUnitEnd": 945501,
+        "sourceCodePointOffset": 945239,
+        "sourceCodePointEnd": 945501,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 75463
+        },
+        "sourceCodeUnitLength": 262,
+        "fragmentSha256": "ab2d926da2de9b9d932b55330be10d6c2030382d16c427229ebf47a91d543964",
+        "bindings": [
+          "vn"
+        ],
+        "freeRefs": [
+          "FA",
+          "H3",
+          "O3",
+          "W",
+          "_1",
+          "ot"
+        ]
+      },
+      "Mo": {
+        "sourceByteOffset": 945936,
+        "sourceByteEnd": 946838,
+        "sourceCodeUnitOffset": 945501,
+        "sourceCodeUnitEnd": 946403,
+        "sourceCodePointOffset": 945501,
+        "sourceCodePointEnd": 946403,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 75725
+        },
+        "sourceCodeUnitLength": 902,
+        "fragmentSha256": "26bb02a3d14d7beec935bcb056a76af0f928ecf7b9e0d18ea6f1d1db52dc51f9",
+        "bindings": [
+          "Mo"
+        ],
+        "freeRefs": [
+          "Ae",
+          "Math",
+          "Mf",
+          "Xs"
+        ]
+      },
+      "vr": {
+        "sourceByteOffset": 946838,
+        "sourceByteEnd": 947402,
+        "sourceCodeUnitOffset": 946403,
+        "sourceCodeUnitEnd": 946967,
+        "sourceCodePointOffset": 946403,
+        "sourceCodePointEnd": 946967,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 76627
+        },
+        "sourceCodeUnitLength": 564,
+        "fragmentSha256": "09b42f7664563e4fedb7cb3dbca15d4213ade24c1339069c37cbec638071b4d9",
+        "bindings": [
+          "vr"
+        ],
+        "freeRefs": [
+          "Ii",
+          "Math",
+          "Mf"
+        ]
+      },
+      "_f": {
+        "sourceByteOffset": 947402,
+        "sourceByteEnd": 947438,
+        "sourceCodeUnitOffset": 946967,
+        "sourceCodeUnitEnd": 947003,
+        "sourceCodePointOffset": 946967,
+        "sourceCodePointEnd": 947003,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 77191
+        },
+        "sourceCodeUnitLength": 36,
+        "fragmentSha256": "fe2fd2a1ca5ff254db961a67952977cad03555ec81ee45a5f552a34b8e5e9c89",
+        "bindings": [
+          "_f"
+        ],
+        "freeRefs": [
+          "rn"
+        ]
+      },
+      "UA": {
+        "sourceByteOffset": 947438,
+        "sourceByteEnd": 947705,
+        "sourceCodeUnitOffset": 947003,
+        "sourceCodeUnitEnd": 947270,
+        "sourceCodePointOffset": 947003,
+        "sourceCodePointEnd": 947270,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 77227
+        },
+        "sourceCodeUnitLength": 267,
+        "fragmentSha256": "1978abdc8c62304ea32045ac7c32e42d3e5315df5e145f204b3213cf8f9eb1e2",
+        "bindings": [
+          "UA"
+        ],
+        "freeRefs": [
+          "Math",
+          "Mf"
+        ]
+      },
+      "ja": {
+        "sourceByteOffset": 947705,
+        "sourceByteEnd": 947857,
+        "sourceCodeUnitOffset": 947270,
+        "sourceCodeUnitEnd": 947422,
+        "sourceCodePointOffset": 947270,
+        "sourceCodePointEnd": 947422,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 77494
+        },
+        "sourceCodeUnitLength": 152,
+        "fragmentSha256": "7471f60b8cfaca2f48f99ab33454175c5d894329fe55e8c9b32b2ad90852a6da",
+        "bindings": [
+          "ja"
+        ],
+        "freeRefs": [
+          "At",
+          "Ci"
+        ]
+      },
+      "Y3": {
+        "sourceByteOffset": 947857,
+        "sourceByteEnd": 947996,
+        "sourceCodeUnitOffset": 947422,
+        "sourceCodeUnitEnd": 947561,
+        "sourceCodePointOffset": 947422,
+        "sourceCodePointEnd": 947561,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 77646
+        },
+        "sourceCodeUnitLength": 139,
+        "fragmentSha256": "aa422c9bd4ae1327e8c6a5f443615cdd4f754f0c13c52cfb3cb86eacc0e18cec",
+        "bindings": [
+          "Y3"
+        ],
+        "freeRefs": [
+          "At",
+          "ls"
+        ]
+      },
+      "NA": {
+        "sourceByteOffset": 947996,
+        "sourceByteEnd": 948555,
+        "sourceCodeUnitOffset": 947561,
+        "sourceCodeUnitEnd": 948120,
+        "sourceCodePointOffset": 947561,
+        "sourceCodePointEnd": 948120,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 77785
+        },
+        "sourceCodeUnitLength": 559,
+        "fragmentSha256": "8edb335fc21c73a6b3bc4d299db5d817d1d3de06562e9af7b8c4cf427185368d",
+        "bindings": [
+          "NA"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "et"
+        ]
+      },
+      "V3": {
+        "sourceByteOffset": 948555,
+        "sourceByteEnd": 948840,
+        "sourceCodeUnitOffset": 948120,
+        "sourceCodeUnitEnd": 948405,
+        "sourceCodePointOffset": 948120,
+        "sourceCodePointEnd": 948405,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 78344
+        },
+        "sourceCodeUnitLength": 285,
+        "fragmentSha256": "d3280a3e740e7ffd0f49af52488fa33ba1bc059268364a4eca3cbf4118becac3",
+        "bindings": [
+          "V3"
+        ],
+        "freeRefs": []
+      },
+      "Ja": {
+        "sourceByteOffset": 948840,
+        "sourceByteEnd": 948884,
+        "sourceCodeUnitOffset": 948405,
+        "sourceCodeUnitEnd": 948449,
+        "sourceCodePointOffset": 948405,
+        "sourceCodePointEnd": 948449,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 78629
+        },
+        "sourceCodeUnitLength": 44,
+        "fragmentSha256": "5693ac34ff815d28ad1eaed05c261a123e9b696225f2708c640d03a85447196c",
+        "bindings": [
+          "Ja"
+        ],
+        "freeRefs": [
+          "V3"
+        ]
+      },
+      "pI": {
+        "sourceByteOffset": 948884,
+        "sourceByteEnd": 948936,
+        "sourceCodeUnitOffset": 948449,
+        "sourceCodeUnitEnd": 948501,
+        "sourceCodePointOffset": 948449,
+        "sourceCodePointEnd": 948501,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 78673
+        },
+        "sourceCodeUnitLength": 52,
+        "fragmentSha256": "fbdd67bf10da81eca3c50e5eb7cc616d6e126adeca1a1565deba28ac12972451",
+        "bindings": [
+          "pI",
+          "W3",
+          "G3",
+          "q3",
+          "Qg"
+        ],
+        "freeRefs": [
+          "In",
+          "Lt",
+          "W",
+          "Ye"
+        ]
+      },
+      "BA": {
+        "sourceByteOffset": 948936,
+        "sourceByteEnd": 949140,
+        "sourceCodeUnitOffset": 948501,
+        "sourceCodeUnitEnd": 948705,
+        "sourceCodePointOffset": 948501,
+        "sourceCodePointEnd": 948705,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 78725
+        },
+        "sourceCodeUnitLength": 204,
+        "fragmentSha256": "59c9e1f0c0dcc511a25335ccd1fe3d2ca7e30da52096b0bc45d05b49890852a5",
+        "bindings": [
+          "BA"
+        ],
+        "freeRefs": [
+          "G3",
+          "Qg",
+          "W3",
+          "Ye",
+          "q3"
+        ]
+      },
+      "Kn": {
+        "sourceByteOffset": 949140,
+        "sourceByteEnd": 950893,
+        "sourceCodeUnitOffset": 948705,
+        "sourceCodeUnitEnd": 950458,
+        "sourceCodePointOffset": 948705,
+        "sourceCodePointEnd": 950458,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 78929
+        },
+        "sourceCodeUnitLength": 1753,
+        "fragmentSha256": "90c2eafceb9ccbfa7a25bb53d5ae08144cfd56c425d626e43ac5368d6293a612",
+        "bindings": [
+          "Kn",
+          "X3"
+        ],
+        "freeRefs": [
+          "BA",
+          "Dc",
+          "Gi",
+          "Ii",
+          "Map",
+          "Math",
+          "NA",
+          "Qe",
+          "UA",
+          "Ye",
+          "_f",
+          "gn",
+          "il",
+          "wt",
+          "zi"
+        ]
+      },
+      "wf": {
+        "sourceByteOffset": 950893,
+        "sourceByteEnd": 950968,
+        "sourceCodeUnitOffset": 950458,
+        "sourceCodeUnitEnd": 950533,
+        "sourceCodePointOffset": 950458,
+        "sourceCodePointEnd": 950533,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 80682
+        },
+        "sourceCodeUnitLength": 75,
+        "fragmentSha256": "cf6fb855b0474083d7e3fab86d27f8206cbc651d51301862a39e11f1a45adf6d",
+        "bindings": [
+          "wf"
+        ],
+        "freeRefs": [
+          "X3"
+        ]
+      },
+      "j3": {
+        "sourceByteOffset": 950968,
+        "sourceByteEnd": 951031,
+        "sourceCodeUnitOffset": 950533,
+        "sourceCodeUnitEnd": 950596,
+        "sourceCodePointOffset": 950533,
+        "sourceCodePointEnd": 950596,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 80757
+        },
+        "sourceCodeUnitLength": 63,
+        "fragmentSha256": "542a16be89e32fc9981d215cd603b6fa4a9a7ab87759a804d1e3c283fca91a54",
+        "bindings": [
+          "j3"
+        ],
+        "freeRefs": [
+          "zi"
+        ]
+      },
+      "$3": {
+        "sourceByteOffset": 951031,
+        "sourceByteEnd": 951200,
+        "sourceCodeUnitOffset": 950596,
+        "sourceCodeUnitEnd": 950765,
+        "sourceCodePointOffset": 950596,
+        "sourceCodePointEnd": 950765,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 80820
+        },
+        "sourceCodeUnitLength": 169,
+        "fragmentSha256": "af0d158631c9c6ad2508a48e0d36705921139748d6ef108d3abfab4535ca6050",
+        "bindings": [
+          "$3"
+        ],
+        "freeRefs": [
+          "lt"
+        ]
+      },
+      "w1": {
+        "sourceByteOffset": 951200,
+        "sourceByteEnd": 951257,
+        "sourceCodeUnitOffset": 950765,
+        "sourceCodeUnitEnd": 950822,
+        "sourceCodePointOffset": 950765,
+        "sourceCodePointEnd": 950822,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 80989
+        },
+        "sourceCodeUnitLength": 57,
+        "fragmentSha256": "38b6df1861335f0990faee095e1f732b6477a0b9bcf5c21a87b0aa6547d34bb6",
+        "bindings": [
+          "w1"
+        ],
+        "freeRefs": [
+          "At",
+          "tt"
+        ]
+      },
+      "OA": {
+        "sourceByteOffset": 951257,
+        "sourceByteEnd": 951645,
+        "sourceCodeUnitOffset": 950822,
+        "sourceCodeUnitEnd": 951210,
+        "sourceCodePointOffset": 950822,
+        "sourceCodePointEnd": 951210,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 81046
+        },
+        "sourceCodeUnitLength": 388,
+        "fragmentSha256": "9583d652fcf88120feb181894cbbf15ba7ec21bf350ac3fd6ccf7b3f70c36ab0",
+        "bindings": [
+          "OA"
+        ],
+        "freeRefs": []
+      },
+      "HA": {
+        "sourceByteOffset": 951645,
+        "sourceByteEnd": 953275,
+        "sourceCodeUnitOffset": 951210,
+        "sourceCodeUnitEnd": 952840,
+        "sourceCodePointOffset": 951210,
+        "sourceCodePointEnd": 952840,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 81434
+        },
+        "sourceCodeUnitLength": 1630,
+        "fragmentSha256": "f2343889a5e7fe15e345328f1047faa3dbed918d26368e51a53c2d76c88e22c3",
+        "bindings": [
+          "HA"
+        ],
+        "freeRefs": [
+          "At",
+          "Ja",
+          "Kn",
+          "Math",
+          "OA",
+          "gn",
+          "ot",
+          "to",
+          "tt",
+          "us",
+          "zi"
+        ]
+      },
+      "S1": {
+        "sourceByteOffset": 953275,
+        "sourceByteEnd": 954366,
+        "sourceCodeUnitOffset": 952840,
+        "sourceCodeUnitEnd": 953931,
+        "sourceCodePointOffset": 952840,
+        "sourceCodePointEnd": 953931,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 83064
+        },
+        "sourceCodeUnitLength": 1091,
+        "fragmentSha256": "5f8d64d769123b5f2714f15fdceb0f3e071fa3e56f6c898bbb9f6a41ebd0674e",
+        "bindings": [
+          "S1"
+        ],
+        "freeRefs": [
+          "$e",
+          "At",
+          "Ge",
+          "Mo",
+          "tt"
+        ]
+      },
+      "VA": {
+        "sourceByteOffset": 954366,
+        "sourceByteEnd": 954471,
+        "sourceCodeUnitOffset": 953931,
+        "sourceCodeUnitEnd": 954036,
+        "sourceCodePointOffset": 953931,
+        "sourceCodePointEnd": 954036,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 84155
+        },
+        "sourceCodeUnitLength": 105,
+        "fragmentSha256": "bcd3bf75917cdef6346a6e1fd755c4577072407409728f0cb646700c9a1c0877",
+        "bindings": [
+          "VA"
+        ],
+        "freeRefs": [
+          "Kn",
+          "S1"
+        ]
+      },
+      "WA": {
+        "sourceByteOffset": 954471,
+        "sourceByteEnd": 954828,
+        "sourceCodeUnitOffset": 954036,
+        "sourceCodeUnitEnd": 954393,
+        "sourceCodePointOffset": 954036,
+        "sourceCodePointEnd": 954393,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 84260
+        },
+        "sourceCodeUnitLength": 357,
+        "fragmentSha256": "8d24054a89f68e5cb42434a839b54498f82cac1fa56872d2f8aa25db0ec66adc",
+        "bindings": [
+          "WA"
+        ],
+        "freeRefs": [
+          "At",
+          "Kn",
+          "S1",
+          "zi"
+        ]
+      },
+      "E1": {
+        "sourceByteOffset": 954828,
+        "sourceByteEnd": 957437,
+        "sourceCodeUnitOffset": 954393,
+        "sourceCodeUnitEnd": 956994,
+        "sourceCodePointOffset": 954393,
+        "sourceCodePointEnd": 956994,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 84617
+        },
+        "sourceCodeUnitLength": 2601,
+        "fragmentSha256": "abc35be4cfb558eb1b40eea0187708a349b55ebb37f73f0c91cfecaed1a460db",
+        "bindings": [
+          "E1"
+        ],
+        "freeRefs": [
+          "$3",
+          "$e",
+          "At",
+          "Ge",
+          "Math",
+          "tt",
+          "w1"
+        ]
+      },
+      "GA": {
+        "sourceByteOffset": 957437,
+        "sourceByteEnd": 957674,
+        "sourceCodeUnitOffset": 956994,
+        "sourceCodeUnitEnd": 957199,
+        "sourceCodePointOffset": 956994,
+        "sourceCodePointEnd": 957199,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 87218
+        },
+        "sourceCodeUnitLength": 205,
+        "fragmentSha256": "de45411cb815e44b67f84758c5a80753fbf05c1c8e464108aacaea10d687bfc2",
+        "bindings": [
+          "GA"
+        ],
+        "freeRefs": [
+          "E1",
+          "Kn"
+        ]
+      },
+      "qA": {
+        "sourceByteOffset": 957674,
+        "sourceByteEnd": 958684,
+        "sourceCodeUnitOffset": 957199,
+        "sourceCodeUnitEnd": 958193,
+        "sourceCodePointOffset": 957199,
+        "sourceCodePointEnd": 958193,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 87423
+        },
+        "sourceCodeUnitLength": 994,
+        "fragmentSha256": "e90d04e34c651c76560baef9875e7cf0c52f600bf51ea619032eec01eb406412",
+        "bindings": [
+          "qA"
+        ],
+        "freeRefs": [
+          "E1",
+          "Ge",
+          "Kn",
+          "Math",
+          "vn",
+          "vr"
+        ]
+      },
+      "XA": {
+        "sourceByteOffset": 958684,
+        "sourceByteEnd": 961341,
+        "sourceCodeUnitOffset": 958193,
+        "sourceCodeUnitEnd": 960842,
+        "sourceCodePointOffset": 958193,
+        "sourceCodePointEnd": 960842,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 88417
+        },
+        "sourceCodeUnitLength": 2649,
+        "fragmentSha256": "2433634fa0fef0d3e3762d9a66c56ca20cf5245d1d33e6525070b8904e13647c",
+        "bindings": [
+          "XA"
+        ],
+        "freeRefs": [
+          "$e",
+          "At",
+          "Ge",
+          "Kn",
+          "Math",
+          "eo",
+          "gn",
+          "gr",
+          "j3",
+          "ot",
+          "to",
+          "tt",
+          "us",
+          "vn",
+          "w1"
+        ]
+      },
+      "Z3": {
+        "sourceByteOffset": 961341,
+        "sourceByteEnd": 961923,
+        "sourceCodeUnitOffset": 960842,
+        "sourceCodeUnitEnd": 961424,
+        "sourceCodePointOffset": 960842,
+        "sourceCodePointEnd": 961424,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 91066
+        },
+        "sourceCodeUnitLength": 582,
+        "fragmentSha256": "b12ca9e8f0c92ef37c1280cb837ace1fd176416a2b08cde30bebd9ccddf265c5",
+        "bindings": [
+          "Z3"
+        ],
+        "freeRefs": [
+          "Float32Array",
+          "Math",
+          "lt"
+        ]
+      },
+      "YA": {
+        "sourceByteOffset": 961923,
+        "sourceByteEnd": 963721,
+        "sourceCodeUnitOffset": 961424,
+        "sourceCodeUnitEnd": 963214,
+        "sourceCodePointOffset": 961424,
+        "sourceCodePointEnd": 963214,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 91648
+        },
+        "sourceCodeUnitLength": 1790,
+        "fragmentSha256": "2210b9e31d90459fd1d3b9f3a9ec87e32b829ba59789a8d1f19eefc20b4c7473",
+        "bindings": [
+          "YA"
+        ],
+        "freeRefs": [
+          "At",
+          "Fn",
+          "Kn",
+          "Math",
+          "Mo",
+          "Z3",
+          "gn",
+          "ot",
+          "tt",
+          "us",
+          "vn"
+        ]
+      },
+      "tv": {
+        "sourceByteOffset": 963721,
+        "sourceByteEnd": 964421,
+        "sourceCodeUnitOffset": 963214,
+        "sourceCodeUnitEnd": 963914,
+        "sourceCodePointOffset": 963214,
+        "sourceCodePointEnd": 963914,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 93438
+        },
+        "sourceCodeUnitLength": 700,
+        "fragmentSha256": "1ce2c4d8bd282c103c940088fbc8e014b2169f1b700b77253cfcbc2d2efad54a",
+        "bindings": [
+          "tv"
+        ],
+        "freeRefs": [
+          "At",
+          "Math",
+          "us"
+        ]
+      },
+      "$A": {
+        "sourceByteOffset": 964421,
+        "sourceByteEnd": 964832,
+        "sourceCodeUnitOffset": 963914,
+        "sourceCodeUnitEnd": 964325,
+        "sourceCodePointOffset": 963914,
+        "sourceCodePointEnd": 964325,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 94138
+        },
+        "sourceCodeUnitLength": 411,
+        "fragmentSha256": "c581040e8491e25dd6fe87e7d71e1353e228dc6871516b94742962012ce79bc2",
+        "bindings": [
+          "$A"
+        ],
+        "freeRefs": [
+          "Kn",
+          "Math",
+          "gn",
+          "tv",
+          "zi"
+        ]
+      },
+      "ZA": {
+        "sourceByteOffset": 964832,
+        "sourceByteEnd": 966102,
+        "sourceCodeUnitOffset": 964325,
+        "sourceCodeUnitEnd": 965595,
+        "sourceCodePointOffset": 964325,
+        "sourceCodePointEnd": 965595,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 94549
+        },
+        "sourceCodeUnitLength": 1270,
+        "fragmentSha256": "4254b6829a7623931bb7db59daa139e48de7181464cea116b8f4592db98f559b",
+        "bindings": [
+          "ZA"
+        ],
+        "freeRefs": [
+          "At",
+          "Fn",
+          "Ge",
+          "Ja",
+          "Kn",
+          "Math",
+          "Mo",
+          "eo",
+          "to",
+          "vn"
+        ]
+      },
+      "jA": {
+        "sourceByteOffset": 966102,
+        "sourceByteEnd": 966889,
+        "sourceCodeUnitOffset": 965595,
+        "sourceCodeUnitEnd": 966382,
+        "sourceCodePointOffset": 965595,
+        "sourceCodePointEnd": 966382,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 95819
+        },
+        "sourceCodeUnitLength": 787,
+        "fragmentSha256": "019d93851899d985cd13446cd1532c0ff17d31686807b63fa9cd36e16cc81f34",
+        "bindings": [
+          "jA"
+        ],
+        "freeRefs": [
+          "Ge",
+          "Kn",
+          "Math",
+          "gn",
+          "tt",
+          "us"
+        ]
+      },
+      "JA": {
+        "sourceByteOffset": 966889,
+        "sourceByteEnd": 969352,
+        "sourceCodeUnitOffset": 966382,
+        "sourceCodeUnitEnd": 968829,
+        "sourceCodePointOffset": 966382,
+        "sourceCodePointEnd": 968829,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 96606
+        },
+        "sourceCodeUnitLength": 2447,
+        "fragmentSha256": "90831446cbd4f857b44522001c10048305909dfe870e1254d01286874d1ac06f",
+        "bindings": [
+          "JA"
+        ],
+        "freeRefs": [
+          "At",
+          "Ge",
+          "Kn",
+          "Math",
+          "gn",
+          "ja",
+          "ot",
+          "tt",
+          "us"
+        ]
+      },
+      "KA": {
+        "sourceByteOffset": 969352,
+        "sourceByteEnd": 971062,
+        "sourceCodeUnitOffset": 968829,
+        "sourceCodeUnitEnd": 970539,
+        "sourceCodePointOffset": 968829,
+        "sourceCodePointEnd": 970539,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 99053
+        },
+        "sourceCodeUnitLength": 1710,
+        "fragmentSha256": "bf670ce4d7e64665ef2055a5b0324509edc492401468e15fee2347932de8a330",
+        "bindings": [
+          "KA"
+        ],
+        "freeRefs": [
+          "At",
+          "Ge",
+          "Kn",
+          "M1",
+          "Math",
+          "Mo",
+          "gn",
+          "j3",
+          "lt",
+          "ot",
+          "tt",
+          "us",
+          "vr"
+        ]
+      },
+      "J3": {
+        "sourceByteOffset": 971062,
+        "sourceByteEnd": 971793,
+        "sourceCodeUnitOffset": 970539,
+        "sourceCodeUnitEnd": 971270,
+        "sourceCodePointOffset": 970539,
+        "sourceCodePointEnd": 971270,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 100763
+        },
+        "sourceCodeUnitLength": 731,
+        "fragmentSha256": "9ac2bfe701b3493a3dd686f4c7483b6e67a6b38accbc9d7a782560d298fb012f",
+        "bindings": [
+          "J3"
+        ],
+        "freeRefs": [
+          "$A",
+          "GA",
+          "HA",
+          "JA",
+          "KA",
+          "Math",
+          "VA",
+          "WA",
+          "XA",
+          "YA",
+          "ZA",
+          "jA",
+          "qA",
+          "wf"
+        ]
+      },
+      "Q3": {
+        "sourceByteOffset": 971793,
+        "sourceByteEnd": 971856,
+        "sourceCodeUnitOffset": 971270,
+        "sourceCodeUnitEnd": 971333,
+        "sourceCodePointOffset": 971270,
+        "sourceCodePointEnd": 971333,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 101494
+        },
+        "sourceCodeUnitLength": 63,
+        "fragmentSha256": "2dba10b7ff74831a775a353b246ce19e3492651d5b74e2ba8f9e1f2157ed943f",
+        "bindings": [
+          "Q3"
+        ],
+        "freeRefs": [
+          "zi"
+        ]
+      },
+      "nv": {
+        "sourceByteOffset": 971856,
+        "sourceByteEnd": 972025,
+        "sourceCodeUnitOffset": 971333,
+        "sourceCodeUnitEnd": 971502,
+        "sourceCodePointOffset": 971333,
+        "sourceCodePointEnd": 971502,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 101557
+        },
+        "sourceCodeUnitLength": 169,
+        "fragmentSha256": "6e79adcd37e107d04a2a3e39049f647703df3b812eaa7564b3b22f5ea578738e",
+        "bindings": [
+          "nv"
+        ],
+        "freeRefs": [
+          "lt"
+        ]
+      },
+      "QA": {
+        "sourceByteOffset": 972025,
+        "sourceByteEnd": 975681,
+        "sourceCodeUnitOffset": 971502,
+        "sourceCodeUnitEnd": 975158,
+        "sourceCodePointOffset": 971502,
+        "sourceCodePointEnd": 975158,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 101726
+        },
+        "sourceCodeUnitLength": 3656,
+        "fragmentSha256": "bf32eaa284d0c61ceef9893a9098bbcbaac7841e34882605682f1b7c7796d39c",
+        "bindings": [
+          "QA"
+        ],
+        "freeRefs": [
+          "$e",
+          "Float32Array",
+          "Fn",
+          "Ge",
+          "Kn",
+          "Map",
+          "Math",
+          "Q3",
+          "S1",
+          "gn",
+          "lt",
+          "vr",
+          "zi"
+        ]
+      },
+      "eR": {
+        "sourceByteOffset": 975681,
+        "sourceByteEnd": 976146,
+        "sourceCodeUnitOffset": 975158,
+        "sourceCodeUnitEnd": 975623,
+        "sourceCodePointOffset": 975158,
+        "sourceCodePointEnd": 975623,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 105382
+        },
+        "sourceCodeUnitLength": 465,
+        "fragmentSha256": "f8cb124871b5b4f447f5e234d92c2e0e12bc1aeb2d9e6436dccb6fb1e00e378d",
+        "bindings": [
+          "eR"
+        ],
+        "freeRefs": [
+          "Math",
+          "eo",
+          "ev",
+          "gn",
+          "gr",
+          "to",
+          "tt"
+        ]
+      },
+      "tR": {
+        "sourceByteOffset": 976146,
+        "sourceByteEnd": 976986,
+        "sourceCodeUnitOffset": 975623,
+        "sourceCodeUnitEnd": 976463,
+        "sourceCodePointOffset": 975623,
+        "sourceCodePointEnd": 976463,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 105847
+        },
+        "sourceCodeUnitLength": 840,
+        "fragmentSha256": "fca9c7578e73f060c863f697156a5806758bb4694221fc2d503bfd422403661e",
+        "bindings": [
+          "tR"
+        ],
+        "freeRefs": [
+          "K3",
+          "Kn",
+          "eR",
+          "gn",
+          "tt",
+          "vr",
+          "zi"
+        ]
+      },
+      "K3": {
+        "sourceByteOffset": 976986,
+        "sourceByteEnd": 977026,
+        "sourceCodeUnitOffset": 976463,
+        "sourceCodeUnitEnd": 976503,
+        "sourceCodePointOffset": 976463,
+        "sourceCodePointEnd": 976503,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 106687
+        },
+        "sourceCodeUnitLength": 40,
+        "fragmentSha256": "2c33f8a2cc37e980042bdefca8d51033904afe7a4769ed6d171c8c8c82a53c3f",
+        "bindings": [
+          "K3"
+        ],
+        "freeRefs": []
+      },
+      "Oc": {
+        "sourceByteOffset": 977026,
+        "sourceByteEnd": 979204,
+        "sourceCodeUnitOffset": 976503,
+        "sourceCodeUnitEnd": 978681,
+        "sourceCodePointOffset": 976503,
+        "sourceCodePointEnd": 978681,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 106727
+        },
+        "sourceCodeUnitLength": 2178,
+        "fragmentSha256": "f872a0f6e6e79678d0eb218974e9d1b1d07d1eb978502046851028b18e204192",
+        "bindings": [
+          "Oc"
+        ],
+        "freeRefs": [
+          "At",
+          "Float32Array",
+          "M1",
+          "Math",
+          "Q3",
+          "eo",
+          "ev",
+          "gn",
+          "gr",
+          "lt",
+          "nv",
+          "to",
+          "tt",
+          "vr",
+          "zi"
+        ]
+      },
+      "nR": {
+        "sourceByteOffset": 979204,
+        "sourceByteEnd": 979990,
+        "sourceCodeUnitOffset": 978681,
+        "sourceCodeUnitEnd": 979451,
+        "sourceCodePointOffset": 978681,
+        "sourceCodePointEnd": 979451,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 108905
+        },
+        "sourceCodeUnitLength": 770,
+        "fragmentSha256": "c4f114afc3b1feda755182181ba34506061e04e8bb6abb0b61eae00e9e601f9d",
+        "bindings": [
+          "nR"
+        ],
+        "freeRefs": [
+          "Kn",
+          "Oc"
+        ]
+      },
+      "eb": {
+        "sourceByteOffset": 979990,
+        "sourceByteEnd": 980110,
+        "sourceCodeUnitOffset": 979451,
+        "sourceCodeUnitEnd": 979571,
+        "sourceCodePointOffset": 979451,
+        "sourceCodePointEnd": 979571,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 109675
+        },
+        "sourceCodeUnitLength": 120,
+        "fragmentSha256": "c0d24e0b33b015f786d5089ee007d8315323d0a9d2d3e0bc946053258e731a15",
+        "bindings": [
+          "eb"
+        ],
+        "freeRefs": [
+          "QA",
+          "nR",
+          "tR"
+        ]
+      },
+      "tb": {
+        "sourceByteOffset": 980110,
+        "sourceByteEnd": 980196,
+        "sourceCodeUnitOffset": 979571,
+        "sourceCodeUnitEnd": 979657,
+        "sourceCodePointOffset": 979571,
+        "sourceCodePointEnd": 979657,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 109795
+        },
+        "sourceCodeUnitLength": 86,
+        "fragmentSha256": "701f0f57a03b1fa4eecb2e5f980f523a02b67219f2832ae6074404c14cf43291",
+        "bindings": [
+          "tb",
+          "iR",
+          "T1",
+          "nb"
+        ],
+        "freeRefs": [
+          "lt"
+        ]
+      },
+      "zr": {
+        "sourceByteOffset": 980196,
+        "sourceByteEnd": 980482,
+        "sourceCodeUnitOffset": 979657,
+        "sourceCodeUnitEnd": 979943,
+        "sourceCodePointOffset": 979657,
+        "sourceCodePointEnd": 979943,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 109881
+        },
+        "sourceCodeUnitLength": 286,
+        "fragmentSha256": "2e62c68e083867d64a599fd9764cd41211672a59626733b292be37817787049c",
+        "bindings": [
+          "zr"
+        ],
+        "freeRefs": [
+          "$e",
+          "Ge",
+          "T1",
+          "iR",
+          "lt",
+          "nb",
+          "tb"
+        ]
+      },
+      "sR": {
+        "sourceByteOffset": 980482,
+        "sourceByteEnd": 980617,
+        "sourceCodeUnitOffset": 979943,
+        "sourceCodeUnitEnd": 980078,
+        "sourceCodePointOffset": 979943,
+        "sourceCodePointEnd": 980078,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 110167
+        },
+        "sourceCodeUnitLength": 135,
+        "fragmentSha256": "600b652eadffade2f502e1a028764d587e656e42ca35fa00ff2300dd6e44a31d",
+        "bindings": [
+          "sR"
+        ],
+        "freeRefs": []
+      },
+      "ib": {
+        "sourceByteOffset": 980617,
+        "sourceByteEnd": 981344,
+        "sourceCodeUnitOffset": 980078,
+        "sourceCodeUnitEnd": 980805,
+        "sourceCodePointOffset": 980078,
+        "sourceCodePointEnd": 980805,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 110302
+        },
+        "sourceCodeUnitLength": 727,
+        "fragmentSha256": "f26802e506c1f1dbdf82e56dae78c76034ac2d895f5cea0a360b7d342ce9e5c2",
+        "bindings": [
+          "ib"
+        ],
+        "freeRefs": [
+          "At",
+          "Math",
+          "gn",
+          "ot",
+          "tt",
+          "tv",
+          "us"
+        ]
+      },
+      "oR": {
+        "sourceByteOffset": 981344,
+        "sourceByteEnd": 990519,
+        "sourceCodeUnitOffset": 980805,
+        "sourceCodeUnitEnd": 989958,
+        "sourceCodePointOffset": 980805,
+        "sourceCodePointEnd": 989958,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 111029
+        },
+        "sourceCodeUnitLength": 9153,
+        "fragmentSha256": "af0c0cfd083d3556296ec37c372504eccceb3cd8de19e1cb9c556ab37ca57112",
+        "bindings": [
+          "oR"
+        ],
+        "freeRefs": [
+          "$e",
+          "At",
+          "Fn",
+          "Ge",
+          "Ja",
+          "Kn",
+          "Math",
+          "Mo",
+          "Y3",
+          "_f",
+          "eo",
+          "gn",
+          "gr",
+          "ib",
+          "ja",
+          "ot",
+          "sR",
+          "to",
+          "tt",
+          "us",
+          "vn",
+          "zi",
+          "zr"
+        ]
+      },
+      "rR": {
+        "sourceByteOffset": 990519,
+        "sourceByteEnd": 994929,
+        "sourceCodeUnitOffset": 989958,
+        "sourceCodeUnitEnd": 994360,
+        "sourceCodePointOffset": 989958,
+        "sourceCodePointEnd": 994360,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 120182
+        },
+        "sourceCodeUnitLength": 4402,
+        "fragmentSha256": "88a88d9f52257513e96800dcc21dcc427f54ac7a9fdcc5d308747ec10f2fffbf",
+        "bindings": [
+          "rR"
+        ],
+        "freeRefs": [
+          "$e",
+          "At",
+          "Fn",
+          "Ge",
+          "Ja",
+          "Kn",
+          "_f",
+          "ja",
+          "ot",
+          "tt",
+          "us",
+          "vn",
+          "zi"
+        ]
+      },
+      "aR": {
+        "sourceByteOffset": 994929,
+        "sourceByteEnd": 998132,
+        "sourceCodeUnitOffset": 994360,
+        "sourceCodeUnitEnd": 997551,
+        "sourceCodePointOffset": 994360,
+        "sourceCodePointEnd": 997551,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 124584
+        },
+        "sourceCodeUnitLength": 3191,
+        "fragmentSha256": "cd4eeffc4dba62893798d08734fd0df92ccc301f0cdec2d4a77bb0832b1b4219",
+        "bindings": [
+          "aR"
+        ],
+        "freeRefs": [
+          "At",
+          "Ge",
+          "Ja",
+          "Kn",
+          "Math",
+          "Mo",
+          "eo",
+          "gn",
+          "gr",
+          "ot",
+          "to",
+          "tt",
+          "vn",
+          "vr",
+          "zr"
+        ]
+      },
+      "lR": {
+        "sourceByteOffset": 998132,
+        "sourceByteEnd": 1001349,
+        "sourceCodeUnitOffset": 997551,
+        "sourceCodeUnitEnd": 1000764,
+        "sourceCodePointOffset": 997551,
+        "sourceCodePointEnd": 1000764,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 127775
+        },
+        "sourceCodeUnitLength": 3213,
+        "fragmentSha256": "c00a4d7ffa959eff1599ce18359e09bf25bac872a4feb36763b0dac11ac527e6",
+        "bindings": [
+          "lR"
+        ],
+        "freeRefs": [
+          "$e",
+          "At",
+          "Fn",
+          "Ge",
+          "Ja",
+          "Kn",
+          "eo",
+          "gn",
+          "gr",
+          "ja",
+          "ot",
+          "to",
+          "tt",
+          "us",
+          "vn",
+          "zr"
+        ]
+      },
+      "sb": {
+        "sourceByteOffset": 1001349,
+        "sourceByteEnd": 1001497,
+        "sourceCodeUnitOffset": 1000764,
+        "sourceCodeUnitEnd": 1000912,
+        "sourceCodePointOffset": 1000764,
+        "sourceCodePointEnd": 1000912,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 130988
+        },
+        "sourceCodeUnitLength": 148,
+        "fragmentSha256": "726490afccb869092e1ca169ef60ae41f189999f0787ae2c9a858461f22b42b2",
+        "bindings": [
+          "sb"
+        ],
+        "freeRefs": [
+          "aR",
+          "lR",
+          "oR",
+          "rR"
+        ]
+      },
+      "expr@968878": {
+        "sourceByteOffset": 1001497,
+        "sourceByteEnd": 1001504,
+        "sourceCodeUnitOffset": 1000912,
+        "sourceCodeUnitEnd": 1000919,
+        "sourceCodePointOffset": 1000912,
+        "sourceCodePointEnd": 1000919,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 131136
+        },
+        "sourceCodeUnitLength": 7,
+        "fragmentSha256": "60d019ffd026981a35bf591276fa5fbef67f0fec7cbab8d668f8a55e8e38260a",
+        "bindings": [],
+        "freeRefs": [
+          "J3",
+          "_i"
+        ]
+      },
+      "expr@968885": {
+        "sourceByteOffset": 1001504,
+        "sourceByteEnd": 1001511,
+        "sourceCodeUnitOffset": 1000919,
+        "sourceCodeUnitEnd": 1000926,
+        "sourceCodePointOffset": 1000919,
+        "sourceCodePointEnd": 1000926,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 131143
+        },
+        "sourceCodeUnitLength": 7,
+        "fragmentSha256": "82ed116145302c25ebc18d5032fb84cb2b2a17e0bc3bdf4d1c5b0ed89dc95971",
+        "bindings": [],
+        "freeRefs": [
+          "_i",
+          "eb"
+        ]
+      },
+      "expr@968892": {
+        "sourceByteOffset": 1001511,
+        "sourceByteEnd": 1001518,
+        "sourceCodeUnitOffset": 1000926,
+        "sourceCodeUnitEnd": 1000933,
+        "sourceCodePointOffset": 1000926,
+        "sourceCodePointEnd": 1000933,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 131150
+        },
+        "sourceCodeUnitLength": 7,
+        "fragmentSha256": "84617db3324cca31ec6e675e8cfa1b7691895903c1b90e0616f5b79262166433",
+        "bindings": [],
+        "freeRefs": [
+          "_i",
+          "sb"
+        ]
+      },
+      "t0": {
+        "sourceByteOffset": 1047053,
+        "sourceByteEnd": 1047216,
+        "sourceCodeUnitOffset": 1046371,
+        "sourceCodeUnitEnd": 1046534,
+        "sourceCodePointOffset": 1046371,
+        "sourceCodePointEnd": 1046534,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 176595
+        },
+        "sourceCodeUnitLength": 163,
+        "fragmentSha256": "1b544cce0ff4d22a3e75754d2ef0966284baf1a8f154dc25b3e797c052bd79cc",
+        "bindings": [
+          "t0"
+        ],
+        "freeRefs": [
+          "Math"
+        ]
+      },
+      "rl": {
+        "sourceByteOffset": 1047216,
+        "sourceByteEnd": 1047518,
+        "sourceCodeUnitOffset": 1046534,
+        "sourceCodeUnitEnd": 1046836,
+        "sourceCodePointOffset": 1046534,
+        "sourceCodePointEnd": 1046836,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 176758
+        },
+        "sourceCodeUnitLength": 302,
+        "fragmentSha256": "75834cfd56f126f2a309ce64406e791ee0f0dbee3fdf7041680f99d8e6aab521",
+        "bindings": [
+          "rl"
+        ],
+        "freeRefs": [
+          "Math",
+          "t0"
+        ]
+      },
+      "P1": {
+        "sourceByteOffset": 1047608,
+        "sourceByteEnd": 1047634,
+        "sourceCodeUnitOffset": 1046926,
+        "sourceCodeUnitEnd": 1046952,
+        "sourceCodePointOffset": 1046926,
+        "sourceCodePointEnd": 1046952,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 177150
+        },
+        "sourceCodeUnitLength": 26,
+        "fragmentSha256": "05f69345256b66acc26733e6d497bf2f4452d3d0ad7fa7a316376367a940122d",
+        "bindings": [
+          "P1",
+          "fb"
+        ],
+        "freeRefs": []
+      },
+      "hv": {
+        "sourceByteOffset": 1047634,
+        "sourceByteEnd": 1047918,
+        "sourceCodeUnitOffset": 1046952,
+        "sourceCodeUnitEnd": 1047236,
+        "sourceCodePointOffset": 1046952,
+        "sourceCodePointEnd": 1047236,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 177176
+        },
+        "sourceCodeUnitLength": 284,
+        "fragmentSha256": "fe5f02039b1f8a36b864a275298a561b081b8affdcc329d904f44adb1f07bdc7",
+        "bindings": [
+          "hv"
+        ],
+        "freeRefs": [
+          "Math",
+          "P1",
+          "fb",
+          "rl"
+        ]
+      },
+      "db": {
+        "sourceByteOffset": 1047918,
+        "sourceByteEnd": 1047937,
+        "sourceCodeUnitOffset": 1047236,
+        "sourceCodeUnitEnd": 1047255,
+        "sourceCodePointOffset": 1047236,
+        "sourceCodePointEnd": 1047255,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 177460
+        },
+        "sourceCodeUnitLength": 19,
+        "fragmentSha256": "fe772208311856b7965c9b7f3815c998c0600459c48af933b7fdb582f504121f",
+        "bindings": [
+          "db"
+        ],
+        "freeRefs": [
+          "WeakSet"
+        ]
+      },
+      "io": {
+        "sourceByteOffset": 1048021,
+        "sourceByteEnd": 1048883,
+        "sourceCodeUnitOffset": 1047339,
+        "sourceCodeUnitEnd": 1048201,
+        "sourceCodePointOffset": 1047339,
+        "sourceCodePointEnd": 1048201,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 177563
+        },
+        "sourceCodeUnitLength": 862,
+        "fragmentSha256": "97d0f83c3ffa9de9b647f5c2c3e54f15f2357362d50f3a40b3c371ffdda0e1a3",
+        "bindings": [
+          "io"
+        ],
+        "freeRefs": [
+          "Array",
+          "Ii",
+          "Lc",
+          "Map",
+          "Math",
+          "Qe",
+          "db",
+          "fb",
+          "hv",
+          "wt"
+        ]
+      }
+    }
+  }
+}

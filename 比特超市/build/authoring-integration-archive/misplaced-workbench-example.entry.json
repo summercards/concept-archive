@@ -1,0 +1,194 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.harbor-service-workbench",
+  "designStatus": "implemented-unverified",
+  "registryEntry": {
+    "id": "new.harbor-service-workbench",
+    "source": "workbench-example.js",
+    "name": "港区原创维修工作台",
+    "summary": "原创港区维修工作台：四腿钢框架、真实厚度木台面、下层板、背侧加劲梁、带缝隙抽屉与钢把手、脚垫及材质变体；尚未进行宿主几何、渲染或运行验收。",
+    "tags": ["原创", "港区", "维修", "工作台", "程序化资产"],
+    "contract": {
+      "units": "m",
+      "size": [1.4, 0.9, 0.65],
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": ["paint_grey", "paint_blue", "steel_dark", "wood_pallet", "rubber"],
+      "requiredParts": [
+        "frame",
+        "supportRails",
+        "top",
+        "workSurface",
+        "shelf",
+        "backBrace",
+        "drawer",
+        "drawerSlides",
+        "handle",
+        "feet",
+        "badge"
+      ],
+      "options": {
+        "seed": { "type": "integer", "default": 0, "values": [0, 1, 5] },
+        "color": { "type": "string", "default": "paint_grey", "values": ["paint_grey", "paint_blue"] },
+        "drawerOpen": { "type": "number", "default": 0, "values": [0, 0.12] },
+        "wear": { "type": "boolean", "default": false, "values": [false, true], "note": "开启时仅将宿主 ctx.rng 的确定性样本传给可选磨损材质参数。" }
+      },
+      "collidersRequired": true,
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": ["prop.shelf_rack", "prop.toolbox_cart"],
+        "referenceScope": "仅结构级参考：工作面、承重框架与收纳层级；未声称比较测量为 true。"
+      }
+    },
+    "acceptance": {
+      "catalog": "unverified",
+      "geometry": "unverified",
+      "visual": "unverified",
+      "runtime": "unverified"
+    }
+  },
+  "designContract": {
+    "intent": "制作原创港区维修工作台，不复刻原版资产或复制原源码。",
+    "coordinateSystem": {
+      "units": "m",
+      "up": "+Y",
+      "forward": "+Z",
+      "origin": "bottom-center",
+      "sizeOrder": ["widthX", "heightY", "depthZ"],
+      "size": [1.4, 0.9, 0.65],
+      "nominalBounds": { "min": [-0.7, 0, -0.325], "max": [0.7, 0.9, 0.325] },
+      "sizeToleranceM": 0.01,
+      "protrusionsAndMotionEnvelope": "默认静态姿态真实 bbox 目标为 nominalBounds；抽屉打开 0.12m 时前向运动包围范围扩展至 z=0.445，写入 boundsEnvelope，不改变 nominal size。"
+    },
+    "silhouette": {
+      "front": "低矮木质工作面配漆装钢前缘，中央抽屉带可见窄缝与横向钢把手。",
+      "side": "四腿开放式钢框架，下层木板后退，台面保持真实厚度并由周边支撑梁承重。",
+      "back": "四腿后侧以横梁和两根斜向加劲梁形成开放式三角稳定结构。",
+      "designEvidence": ["原创程序化结构设计；非原版复刻"]
+    },
+    "functionalParts": [
+      { "name": "frame", "role": "四根落地钢腿，形成主要承重路径", "parent": "root", "sizeM": [0.06, 0.78, 0.06], "positionM": "四角" },
+      { "name": "supportRails", "role": "台面下前后左右承重框", "parent": "root", "sizeM": [1.25, 0.055, 0.51], "positionM": [0, 0.78, 0] },
+      { "name": "top", "role": "台面包边和顶层结构", "parent": "root", "sizeM": [1.4, 0.06, 0.65], "positionM": [0, 0.87, 0] },
+      { "name": "workSurface", "role": "具有真实 0.06m 厚度的木质维修工作面", "parent": "top", "sizeM": [1.4, 0.06, 0.65], "positionM": [0, 0.87, 0] },
+      { "name": "shelf", "role": "带前后钢边梁的下层木质置物板", "parent": "root", "sizeM": [1.12, 0.055, 0.45], "positionM": [0, 0.235, -0.005] },
+      { "name": "backBrace", "role": "背侧横向和斜向加劲构件", "parent": "root", "sizeM": [1.18, 0.055, 0.055], "positionM": [0, 0.67, -0.265] },
+      { "name": "drawer", "role": "具独立底板、侧板、前板和前向开启动作的抽屉", "parent": "root", "sizeM": [0.72, 0.14, 0.27], "positionM": [0, 0.62, 0.14] },
+      { "name": "drawerSlides", "role": "抽屉两侧钢滑轨", "parent": "root", "sizeM": [0.045, 0.025, 0.28], "positionM": [-0.39, 0.59, 0.13] },
+      { "name": "handle", "role": "横向钢拉手及两端安装座", "parent": "root", "sizeM": [0.24, 0.035, 0.035], "positionM": [0, 0.62, 0.31] },
+      { "name": "feet", "role": "四个橡胶接地脚垫，明确落地关系", "parent": "root", "sizeM": [0.085, 0.06, 0.085], "positionM": "四角" },
+      { "name": "badge", "role": "小型材质标签板，用于维修台身份识别", "parent": "root", "sizeM": [0.18, 0.035, 0.006], "positionM": [-0.47, 0.867, 0.321] }
+    ],
+    "openingsAndThickness": {
+      "topM": 0.06,
+      "shelfM": 0.055,
+      "frameM": 0.06,
+      "drawerFrontM": 0.03,
+      "drawerGapM": 0.018,
+      "clearLegSpace": "腿间保持开放，不使用整体实心碰撞盒封堵。",
+      "visibleInterior": "开放式腿间和下层板上方空间可见；抽屉由独立前板、底板、侧板与滑轨表达，不使用实心外壳冒充收纳腔。"
+    },
+    "assembly": {
+      "connections": ["台面由四周支撑梁承托", "下层板由钢前后边梁约束", "抽屉两侧固定到 drawerSlides", "斜撑连接后腿与背侧加劲梁"],
+      "hingeAxes": [],
+      "fastenersAndWelds": ["钢腿与横梁为框架连接关系", "把手两端有独立安装座"],
+      "loadPath": "木台面 → 四周支撑梁 → 四根钢腿 → 橡胶脚垫 → 地面。"
+    },
+    "seamsAndHardware": {
+      "drawerGapM": 0.018,
+      "panelGapM": 0.012,
+      "bevelRadiusM": 0.004,
+      "handleProjectionM": 0.035,
+      "lockGeometry": "不适用：该原创工作台使用开放式抽屉拉手，不设置锁体。",
+      "geometryVersusDecal": "台面厚度、抽屉缝、钢把手、滑轨、脚垫和加劲梁均为实际几何；标签仅作为表面材质信息。"
+    },
+    "surfaceAndUV": {
+      "mappingStrategy": "所有盒体通过 ctx.kit.metricBox 建立米制 UV；圆柱与管件通过 ctx.kit.cylinder/tube，并使用宿主材质缓存。",
+      "materialSpecifications": [
+        { "id": "paint_grey", "role": "默认漆面", "status": "declared-unverified" },
+        { "id": "paint_blue", "role": "漆面颜色变体", "status": "declared-unverified" },
+        { "id": "steel_dark", "role": "钢腿、横梁、滑轨、把手和加劲梁", "status": "declared-unverified" },
+        { "id": "wood_pallet", "role": "台面、下层板和抽屉底板", "status": "declared-unverified" },
+        { "id": "rubber", "role": "脚垫", "status": "declared-unverified" }
+      ],
+      "texelDensityMeasurements": [],
+      "uvDirectionAndSeams": "以米为尺度；盒体按表面方向生成 UV，管件按长度与周向生成 UV；尚未在真实棋盘格预览中检查。",
+      "decals": ["M-14 标签材质由 ctx.mats.label 提供；未声明为验收证据"],
+      "ownership": "ctx.mats 返回的材质均为宿主共享缓存；dispose 只释放本次几何，不释放材质。"
+    },
+    "collision": {
+      "space": "model-local",
+      "colliders": "8 个分拆 AABB：台面、四腿、下层板、抽屉、背侧梁；腿间空间保持可进入。",
+      "surfaceIdentifiers": ["wood_pallet", "steel_dark", "rubber", "paint_grey", "paint_blue"],
+      "requiredCornerChecks": 8,
+      "openingPolicy": "不提供整体实心 AABB；抽屉和开放腿间保持结构级可用空间。",
+      "dynamicPolicy": "drawerOpen 仅改变抽屉、滑轨和把手的前向静态变体位置；该示例不声明动态 update。"
+    },
+    "sockets": {
+      "definitions": { "workSurface": { "position": [0, 0.9, 0], "purpose": "维修物件放置面" } },
+      "orientationConvention": "模型局部坐标，+Y 向上、+Z 朝正面。",
+      "motionPolicy": "workSurface 固定在台面，不随抽屉变体移动。"
+    },
+    "variants": {
+      "optionDefinitions": {
+        "seed": { "type": "integer", "default": 0, "values": [0, 1, 5] },
+        "color": { "type": "string", "default": "paint_grey", "values": ["paint_grey", "paint_blue"] },
+        "drawerOpen": { "type": "number", "default": 0, "values": [0, 0.12] },
+        "wear": { "type": "boolean", "default": false, "values": [false, true] }
+      },
+      "allowedCombinations": "所有 color/seed 组合允许；drawerOpen 只改变抽屉组件位置；wear 只允许使用宿主 ctx.rng 提供确定性样本。",
+      "coverageMatrix": ["seed=0,color=paint_grey,drawerOpen=0", "seed=1,color=paint_blue,drawerOpen=0.12", "seed=5,color=paint_grey,drawerOpen=0"],
+      "invariants": ["几何尺寸不因 color 改变", "requiredParts 保持可查", "默认静置 bbox 满足 nominalBounds", "colliders 保持有限且不堵腿间空间"],
+      "status": "声明完成，尚未执行真实变体验收。"
+    },
+    "seed": {
+      "default": 0,
+      "testSeeds": [0, 1, 5],
+      "provider": "宿主按 options.seed 为每次 build 提供隔离的 ctx.rng；本模型仅在 wear=true 时消费一个样本。",
+      "allowedChanges": ["可选磨损材质参数"],
+      "invariants": ["功能结构", "requiredParts", "尺寸", "碰撞有效性"],
+      "normalization": "比较几何、层级、材质名与 userData；排除 UUID。"
+    },
+    "dynamic": {
+      "enabled": false,
+      "decision": "固定静态工作台示例；不声明 dynamic 选项。非默认 drawerOpen=0.12 时可由宿主按需调用 root.userData.update(dt) 做简单展示循环，默认姿态不循环。",
+      "dtUnits": "s",
+      "attachment": "reset 与 dispose 挂在 root.userData，符合 build_authored.py hooks 约定。",
+      "motions": [],
+      "noMergeParts": ["drawer", "drawerSlides", "handle"],
+      "resetRequirements": ["恢复构建时抽屉姿态", "保持几何不重建", "不推进随机序列"],
+      "disposeRequirements": ["几何释放幂等", "不释放 ctx.mats 共享材质", "无计时器或监听器"]
+    },
+    "lodAndBudget": {
+      "referenceMeasurements": [
+        { "assetId": "prop.shelf_rack", "scope": "结构级参考，未做本次实测" },
+        { "assetId": "prop.toolbox_cart", "scope": "结构级参考，未做本次实测" }
+      ],
+      "levels": [{ "name": "catalog", "triangles": 6000, "maxMeshes": 60, "note": "example 设计目标，不是统一项目标准。" }],
+      "limits": { "triangles": 6000, "drawCalls": 60, "materials": 5, "textures": null, "textureMemoryBytes": null, "buildTimeMs": null, "frameCostMs": null },
+      "rationale": "按工作台近距离结构可见性设置 example 预算；用户指定 triangles=6000、maxMeshes=60，未以 crate_wood1288v 等参考数字宣称已测量通过。",
+      "noLodReason": "固定静态工作台为 catalog 示例，未实现 LOD；需真实预览后再验收预算。"
+    }
+  },
+  "qualityComparators": ["prop.shelf_rack", "prop.toolbox_cart"],
+  "comparatorScope": "仅结构级参考，不声明比较测量 true。",
+  "verificationPlan": {
+    "gate": "catalog",
+    "geometry": ["finite position/normal/UV/transform", "真实 bbox 与 nominalBounds", "requiredParts 实际几何 descendants", "米制 UV", "collider 八角", "socket", "determinism"],
+    "render": ["三角度材质图", "clay 图", "wire 图", "抽屉变体图", "实际打开图片检查"],
+    "runtime": ["userData.reset 幂等", "userData.dispose 幂等", "变体覆盖", "内存趋势", "console/pageerror/资源失败", "预算"],
+    "acceptanceWriteback": "所有 acceptance 保持 unverified；本 entry 不声明 geometry、render/visual 或 runtime pass。"
+  },
+  "evidence": {
+    "root": null,
+    "commands": [],
+    "versions": {},
+    "sourceDigest": null,
+    "contractDigest": null,
+    "testReports": [],
+    "images": { "threeAngles": [], "clay": [], "wire": [], "detailsAndVariants": [] },
+    "results": { "catalog": "未执行", "geometry": "未执行", "render": "未执行", "runtime": "未执行" },
+    "notExecuted": ["未注册主项目", "未运行主项目构建", "未运行真实宿主几何验收", "未完成渲染检查", "未完成运行时与内存验收"]
+  }
+}

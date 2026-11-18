@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-17T06:49:46.318Z",
+  "command": [
+    "--root",
+    "/Users/zyq/WorkBuddy/2026-11-15-17-10-04",
+    "--id",
+    "new.nordic-spruce",
+    "--base-url",
+    "http://127.0.0.1:8099/index.html",
+    "--playwright",
+    "/Users/zyq/work/wc/node_modules/playwright",
+    "--out-dir",
+    "outputs/nordic-spruce/iteration1"
+  ],
+  "root": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04",
+  "id": "new.nordic-spruce",
+  "baseUrl": "http://127.0.0.1:8099/index.html",
+  "playwright": "/Users/zyq/work/wc/node_modules/playwright",
+  "outDir": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/outputs/nordic-spruce/iteration1",
+  "projectFilesBefore": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/registry.json",
+      "sha256": "6ba7dc6ccaf831560618b86e4882d6d77b8729a8f1138e9d148706fab61e6aee"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored.js",
+      "sha256": "935653425ab3144bc1c75624c1f0f72e10219b58b8548f1381d5a5d788cd19c0"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/previews.js",
+      "sha256": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/app.js",
+      "sha256": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+    },
+    "assets/authored/nordic-spruce.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/nordic-spruce.js",
+      "sha256": "e70dffc89f9de0ceca8855699f40b1c31a476da77f18699be5858f14f92667cb"
+    },
+    "assets/authored/contracts/nordic-spruce.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/contracts/nordic-spruce.json",
+      "sha256": "76d3a8160e19febd60fb975654df83c5cd8ba5778dfe9f179c6a264bb8ef34f5"
+    }
+  },
+  "projectFilesAfter": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/registry.json",
+      "sha256": "6ba7dc6ccaf831560618b86e4882d6d77b8729a8f1138e9d148706fab61e6aee"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored.js",
+      "sha256": "935653425ab3144bc1c75624c1f0f72e10219b58b8548f1381d5a5d788cd19c0"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/previews.js",
+      "sha256": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/app.js",
+      "sha256": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+    },
+    "assets/authored/nordic-spruce.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/nordic-spruce.js",
+      "sha256": "e70dffc89f9de0ceca8855699f40b1c31a476da77f18699be5858f14f92667cb"
+    },
+    "assets/authored/contracts/nordic-spruce.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/contracts/nordic-spruce.json",
+      "sha256": "76d3a8160e19febd60fb975654df83c5cd8ba5778dfe9f179c6a264bb8ef34f5"
+    }
+  },
+  "catalog": {
+    "status": "UNVERIFIED",
+    "fullPass": false,
+    "publicApi": {
+      "catalog": true,
+      "item": {
+        "id": "new.nordic-spruce",
+        "source": "nordic-spruce.js",
+        "sourceHash": "e70dffc89f9de0ceca8855699f40b1c31a476da77f18699be5858f14f92667cb",
+        "anchor": "assets/authored/nordic-spruce.js",
+        "contract": {
+          "units": "m",
+          "size": [
+            5.4,
+            14,
+            5.4
+          ],
+          "sizeTolerance": {
+            "meters": 0.01,
+            "percent": 0.01
+          },
+          "origin": "bottom-center",
+          "forward": "+Z",
+          "qualityTier": "catalog",
+          "materials": [
+            "wood_dark",
+            "tarp"
+          ],
+          "requiredParts": [
+            "trunk",
+            "root-flare",
+            "branches.primary",
+            "branches.secondary",
+            "foliage.lower",
+            "foliage.middle",
+            "foliage.upper",
+            "leader"
+          ],
+          "options": {
+            "seed": {
+              "type": "integer",
+              "default": 7,
+              "values": [
+                7,
+                19,
+                43
+              ]
+            }
+          },
+          "variantEnvelopes": [],
+          "collidersRequired": true,
+          "dynamic": false,
+          "budget": {
+            "triangles": 350000,
+            "maxMeshes": 12
+          },
+          "baseline": {
+            "type": "new-design",
+            "referenceAssets": [],
+            "scope": "现库无同尺度树木参考，不虚构植物比较通过。对照现有资产的结构、资源归属、实际预览和证据规范，树形按本设计契约验收。"
+          }
+        },
+        "acceptance": {
+          "catalog": "unverified",
+          "geometry": "unverified",
+          "visual": "unverified",
+          "runtime": "unverified"
+        }
+      },
+      "builder": {
+        "type": "object",
+        "hasBuild": true,
+        "keys": [
+          "build"
+        ]
+      },
+      "authoredContext": true,
+      "inspectAuthored": true,
+      "inspectResult": {
+        "ok": true,
+        "shape": [
+          "build",
+          "ctx",
+          "inspect"
+        ]
+      },
+      "publicContract": {
+        "authoredContext": "window.PREVIEWS.authoredContext(id, options) => { THREE, kit, mats, rng, sharedMaterials: Set<THREE.Material> }",
+        "inspectAuthored": "window.PREVIEWS.inspectAuthored(id, options) => object | Promise<object>（仅检查公开返回形状）",
+        "builder": "window.AUTHORED_BUILDERS[id] => { build }",
+        "catalog": "window.AUTHORED_CATALOG.items[] => { id, contract, acceptance }"
+      }
+    },
+    "entry": {
+      "id": "new.nordic-spruce",
+      "source": "nordic-spruce.js",
+      "sourceHash": "e70dffc89f9de0ceca8855699f40b1c31a476da77f18699be5858f14f92667cb",
+      "anchor": "assets/authored/nordic-spruce.js",
+      "contract": {
+        "units": "m",
+        "size": [
+          5.4,
+          14,
+          5.4
+        ],
+        "sizeTolerance": {
+          "meters": 0.01,
+          "percent": 0.01
+        },
+        "origin": "bottom-center",
+        "forward": "+Z",
+        "qualityTier": "catalog",
+        "materials": [
+          "wood_dark",
+          "tarp"
+        ],
+        "requiredParts": [
+          "trunk",
+          "root-flare",
+          "branches.primary",
+          "branches.secondary",
+          "foliage.lower",
+          "foliage.middle",
+          "foliage.upper",
+          "leader"
+        ],
+        "options": {
+          "seed": {
+            "type": "integer",
+            "default": 7,
+            "values": [
+              7,
+              19,
+              43
+            ]
+          }
+        },
+        "variantEnvelopes": [],
+        "collidersRequired": true,
+        "dynamic": false,
+        "budget": {
+          "triangles": 350000,
+          "maxMeshes": 12
+        },
+        "baseline": {
+          "type": "new-design",
+          "referenceAssets": [],
+          "scope": "现库无同尺度树木参考，不虚构植物比较通过。对照现有资产的结构、资源归属、实际预览和证据规范，树形按本设计契约验收。"
+        }
+      },
+      "acceptance": {
+        "catalog": "unverified",
+        "geometry": "unverified",
+        "visual": "unverified",
+        "runtime": "unverified"
+      }
+    }
+  },
+  "geometry": {
+    "status": "FAIL",
+    "automatic": true,
+    "checks": {},
+    "determinism": {},
+    "variants": []
+  },
+  "runtime": {
+    "status": "FAIL",
+    "automatic": true,
+    "notExecutedMemory": [
+      "无法在本验证器中可靠执行浏览器堆内存/显存回收证明"
+    ],
+    "mountCycles": {}
+  },
+  "visual": {
+    "status": "UNVERIFIED",
+    "scope": "截图生成不等于真实视觉验收；本脚本始终不写 visual pass",
+    "screenshots": [],
+    "controls": {}
+  },
+  "pageConsole": [],
+  "errors": [
+    "runner: page.evaluate: Execution context was destroyed, most likely because of a navigation.\n    at run (/Users/zyq/.workbuddy/skills/code-asset-authoring/scripts/verify_asset.cjs:740:33)\n    at async /Users/zyq/.workbuddy/skills/code-asset-authoring/scripts/verify_asset.cjs:811:18"
+  ],
+  "shaderMessages": [],
+  "network": {
+    "externalRejected": [],
+    "failed": []
+  },
+  "automaticChecks": {
+    "passed": false,
+    "failures": [
+      "page.evaluate: Execution context was destroyed, most likely because of a navigation.",
+      "页面存在 error/pageerror/requestfailed",
+      "真实页面截图少于5张"
+    ]
+  },
+  "normalizedReportSha256": "8a17873ced4625fedcae479c600dcb3a21c29d9257c19547a470cad63a974c7e"
+}

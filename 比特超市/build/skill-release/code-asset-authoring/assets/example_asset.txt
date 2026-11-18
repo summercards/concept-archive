@@ -1,0 +1,10 @@
+CODE ASSET AUTHORING 资源索引
+
+model-template.js：未实现脚手架，build 默认抛错；不能当作成品。
+asset-contract.template.json：原创设计契约模板，未知项必须填写或明确不适用。
+workbench-example.js：原创维修工作台学习样本，不自动注册到用户正式资产库。
+workbench-example.entry.json：样本完整契约包，registryEntry 才是 registry.assets 的一条记录。
+
+当前宿主使用源码生成几何与程序材质；技能包不包含原版引擎或原版游戏源码。
+示例需目标 CODE ASSET LEDGER 提供 THREE、kit、mats、rng 与 authored 预览链。
+静态检查或打包不代表质量通过。自动报告 geometry/run 范围与视觉验收分开。

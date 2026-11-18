@@ -1,0 +1,211 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.harbor-repair-cabinet",
+  "designStatus": "draft-unimplemented",
+  "instructions": [
+    "将此文件作为完整设计契约，按 assetId 关联 registry；只将 registryEntry 作为一个对象放入 registry.json 根对象 `{schemaVersion: 1, assets: []}` 的 assets 数组。",
+    "此模板以 1.2×1.8×0.5 米双门维修柜为设计示例，不代表已构造、已测量或已通过验收。",
+    "按实际新设计替换名称、部件及尺寸；补齐 null、待确认文字和需要的数组。未填写不能视为通过。",
+    "先确认显式 root 和宿主 API，再实现 source；按可信参考实测设置预算，不使用统一阈值。",
+    "仅允许 export function build(ctx, options = {}) 单一导出，helpers 放在 build 内；仅面向可信本地源码的静态约束；不是安全沙箱，工厂不隔离恶意代码。",
+    "在 scaffold 与 check 之间实现模型、填全契约；check 不生成 authored.js，必须随后显式运行项目 build_authored.py --root，再 verify，最后按需 pack。未实现脚手架在 runtime 理应报未实现。",
+    "contract.size 是默认状态名义尺寸；按实际变体填写 contract.variantEnvelopes 的 options/min/max 与可选 size；userData.size 每次来自当前真实 bbox。"
+  ],
+  "registryEntry": {
+    "id": "new.harbor-repair-cabinet",
+    "source": "harbor-repair-cabinet.js",
+    "name": "港区双门维修柜（设计草稿）",
+    "summary": "拟制作带真实内腔、双门、层板、铰链与锁把的原创维修柜，尚未实现几何。",
+    "tags": ["原创", "港区", "维修柜", "设施"],
+    "contract": {
+      "units": "m",
+      "size": [1.2, 1.8, 0.5],
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [],
+      "requiredParts": [
+        "body", "frame", "back", "shelf", "base",
+        "door.left", "door.right", "hinge.left", "hinge.right",
+        "handle.left", "handle.right", "lock"
+      ],
+      "options": {},
+      "variantEnvelopes": [],
+      "collidersRequired": true,
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": []
+      }
+    },
+    "acceptance": {
+      "catalog": "unverified",
+      "geometry": "unverified",
+      "visual": "unverified",
+      "runtime": "unverified"
+    }
+  },
+  "designContract": {
+    "intent": "制作原创港区维修柜，而非原版整机或原版资产的逐点复刻。",
+    "coordinateSystem": {
+      "units": "m",
+      "up": "+Y",
+      "forward": "+Z",
+      "origin": "bottom-center",
+      "sizeOrder": ["widthX", "heightY", "depthZ"],
+      "size": [1.2, 1.8, 0.5],
+      "nominalBounds": {"min": [-0.6, 0, -0.25], "max": [0.6, 1.8, 0.25]},
+      "sizeToleranceM": null,
+      "protrusionsAndMotionEnvelope": "默认 size 为名义尺寸；待实测默认姿态及把手/脚座突出件，活动或变体范围写入 registryEntry.contract.variantEnvelopes；userData.size 按当前真实 bbox 更新。"
+    },
+    "silhouette": {
+      "front": "双门竖向柜体，保留底座、门框、门缝与功能五金层级。",
+      "side": "待确定背板、框体、门板与把手的前后层次及凸出量。",
+      "back": "待确定背板连接、安装孔和可见装配结构。",
+      "designEvidence": []
+    },
+    "functionalParts": [
+      {"name": "body", "role": "带内腔和可见内壁的外壳，不得用实心盒封堵柜口", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "frame", "role": "柜口翻边及门框", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "back", "role": "背板及其装配连接", "parent": "body", "sizeM": null, "positionM": null},
+      {"name": "shelf", "role": "具有厚度与支撑关系的层板", "parent": "body", "sizeM": null, "positionM": null},
+      {"name": "base", "role": "承重底座或脚座及接地关系", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "door.left", "role": "具独立厚度与可用转轴的左门", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "door.right", "role": "具独立厚度与可用转轴的右门", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "hinge.left", "role": "左门和门框之间的铰链连接", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "hinge.right", "role": "右门和门框之间的铰链连接", "parent": "root", "sizeM": null, "positionM": null},
+      {"name": "handle.left", "role": "随左门运动的把手和固定件", "parent": "door.left", "sizeM": null, "positionM": null},
+      {"name": "handle.right", "role": "随右门运动的把手和固定件", "parent": "door.right", "sizeM": null, "positionM": null},
+      {"name": "lock", "role": "锁体、锁孔及对应装配位置", "parent": "door.right", "sizeM": null, "positionM": null}
+    ],
+    "openingsAndThickness": {
+      "shellM": null,
+      "doorM": null,
+      "backM": null,
+      "shelfM": null,
+      "frameReturnM": null,
+      "clearOpeningSizeM": null,
+      "interiorDepthM": null,
+      "visibleInterior": "待补充开门后可见的内壁、层板、背板和连接细节。"
+    },
+    "assembly": {
+      "connections": [],
+      "hingeAxes": [],
+      "fastenersAndWelds": [],
+      "loadPath": "待说明柜体、层板、底座与地面的承重关系。"
+    },
+    "seamsAndHardware": {
+      "doorGapM": null,
+      "panelGapM": null,
+      "bevelRadiusM": null,
+      "handleProjectionM": null,
+      "lockGeometry": "待说明锁体尺寸、凸出量和可见几何。",
+      "geometryVersusDecal": "影响轮廓、开口、厚度及功能的结构使用几何；贴花仅承担表面信息。"
+    },
+    "surfaceAndUV": {
+      "mappingStrategy": "按实际宿主使用 metricBox、planeUV 或显式米制 UV；排查 Builder.box r0 默认 UV。",
+      "materialSpecifications": [],
+      "texelDensityMeasurements": [],
+      "uvDirectionAndSeams": "待逐表面说明方向、米制密度、接缝和允许的例外。",
+      "decals": [],
+      "decalRequirements": ["实际尺寸和方向", "表面偏移与边距", "无镜像文字或 z-fighting", "来源与使用权限"],
+      "ownership": "ctx.mats 缓存及共享纹理归宿主；ctx.sharedMaterials Set 由宿主追踪共享材质，作者不写入、删除、清空、替换或伪造；仅回收当前资产独占资源。"
+    },
+    "collision": {
+      "space": "model-local",
+      "colliders": [],
+      "surfaceIdentifiers": [],
+      "requiredCornerChecks": 8,
+      "openingPolicy": "保持可用柜口和层板空间，不用整体实心 AABB 堵住需要交互的开口。",
+      "dynamicPolicy": "待声明门体碰撞随动或宿主支持的替代策略，并检查全运动范围。"
+    },
+    "sockets": {
+      "definitions": {},
+      "orientationConvention": "待与宿主对齐；无挂点时明确不适用并说明理由。",
+      "motionPolicy": "待说明安装点是否固定在柜体或随门运动。"
+    },
+    "variants": {
+      "optionDefinitions": {},
+      "allowedCombinations": [],
+      "coverageMatrix": [],
+      "envelopeDefinition": {
+        "target": "registryEntry.contract.variantEnvelopes",
+        "itemShape": {
+          "options": {"选项名": "实际选项值"},
+          "min": [null, null, null],
+          "max": [null, null, null]
+        },
+        "optionalSize": [null, null, null],
+        "instructions": "以上仅为形状说明，不可直接登记 null；数组项填实测 finite min/max，size 可选。参考抽屉变体 options:{drawerOpen:0.12} 时按真实 bbox 测量，勿给维修柜虚构抽屉。"
+      },
+      "invariants": ["requiredParts 保持可查", "尺寸、开口与装配满足各变体契约", "userData.size 为每次 build/尺寸变化后当前真实 bbox"],
+      "status": "待明确是否提供变体；无变体时显式声明不适用。"
+    },
+    "seed": {
+      "default": null,
+      "testSeeds": [],
+      "provider": "宿主按 options.seed 为每次 build 提供独立确定性的 ctx.rng。",
+      "allowedChanges": [],
+      "invariants": ["功能结构", "requiredParts", "碰撞有效性"],
+      "normalization": "比较时排除 UUID 和时间戳；待记录实际摘要算法和对比字段。"
+    },
+    "dynamic": {
+      "enabled": null,
+      "decision": "待确认仅静态门姿态还是运行时开门；不得根据模板描述宣称已支持动态。",
+      "dtUnits": "s",
+      "attachment": "动态时将 hooks 挂载到 root.userData.update(dt)、root.userData.reset()；按资源所有权可提供 root.userData.dispose()。",
+      "stateInputs": [],
+      "motions": [],
+      "noMergeParts": ["door.left", "door.right", "handle.left", "handle.right", "lock"],
+      "resetRequirements": ["初始变换", "状态", "碰撞", "挂点", "不推进随机序列"],
+      "disposeRequirements": ["不释放 ctx.mats 共享缓存", "无残留监听或计时器", "重复调用安全"]
+    },
+    "lodAndBudget": {
+      "referenceMeasurements": [],
+      "levels": [],
+      "limits": {
+        "triangles": null,
+        "drawCalls": null,
+        "materials": null,
+        "textures": null,
+        "textureMemoryBytes": null,
+        "buildTimeMs": null,
+        "frameCostMs": null
+      },
+      "rationale": "待按可信参考资产、目标距离、测量环境与功能复杂度实测确定；null 不是零预算或通过。",
+      "noLodReason": null
+    }
+  },
+  "qualityComparators": [],
+  "comparatorRequiredFields": ["assetId", "功能层级和尺寸", "options 与 seed", "相机与 renderer 版本", "真实图片", "性能测量及解释"],
+  "verificationPlan": {
+    "gate": "catalog",
+    "catalogRenderer": "r160 棚拍，执行前核对实际版本与材质烘焙链。",
+    "fullSceneGate": "r180 full-scene 独立验收；原版整机待恢复，不宣称与 catalog 等价。",
+    "executionOrder": ["doctor 静态识别", "scaffold", "实现模型与填全契约", "check 静态检查", "python3 项目/tools/build_authored.py --root 显式根目录", "verify 动态/运行有限检查及截图", "按需 pack"],
+    "automaticScope": {
+      "static": ["doctor 项目和依赖识别", "check schema/路径/源码约束及契约基本一致性，不生成 authored.js"],
+      "geometry": ["finite attributes、法线、索引与退化面", "真实 bbox 及元数据", "requiredParts", "collider 八角包络与 socket 数值", "同默认 options 重建确定性"],
+      "variants": "默认及各选项一个非默认代表值（若存在），不代表所有值或组合。",
+      "runtime": "若干 userData.update/reset/dispose 调用、共享材质释放事件及重复挂载/console；不是完整生命周期或内存回收证明。",
+      "visual": "采集默认整体/正面/背面材质图与 clay/wire 图，visual 始终 UNVERIFIED。"
+    },
+    "supplementaryRequired": {
+      "geometry": ["真实结构及厚度", "米制 UV 密度/方向与贴花", "功能碰撞和挂点", "变体包络实测与额外 seed"],
+      "runtime": ["完整动态边界与生命周期", "全部契约要求的变体矩阵", "重复构建与释放的 memory 趋势", "完整共享资源所有权", "LOD 与预算"],
+      "visual": ["三角度最终材质 PNG（必要时补侧面）", "clay PNG", "wire PNG", "关键结构和动态近景", "实际打开图片逐项检查并独立记录"]
+    },
+    "acceptanceWriteback": "当前版本不回写 acceptance，registry 全部保持 unverified，builder 拒绝非 unverified。自动 visual 始终 UNVERIFIED，人工结论独立 hash 绑定，不覆盖自动报告；专门签证尚未实现。"
+  },
+  "evidence": {
+    "root": null,
+    "commands": [],
+    "versions": {},
+    "sourceDigest": null,
+    "contractDigest": null,
+    "testReports": [],
+    "images": {"threeAngles": [], "clay": [], "wire": [], "detailsAndVariants": []},
+    "results": {"catalog": "未执行", "geometry": "未执行", "visual": "未执行", "runtime": "未执行"},
+    "failures": [],
+    "notExecuted": ["几何尚未实现", "参考与预算尚未实测", "未运行宿主或浏览器验收", "未完成真实视觉检查", "r180 full-scene 未验收"]
+  }
+}

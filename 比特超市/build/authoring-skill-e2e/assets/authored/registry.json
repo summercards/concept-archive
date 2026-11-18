@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "new.harbor-service-workbench",
+      "source": "harbor-service-workbench.js",
+      "name": "港区原创维修工作台",
+      "summary": "原创四腿钢框架维修台，含真实厚度木台面、下层板、背侧加劲梁、抽屉和拉手、脚垫与平面标签；提供灰蓝换色及静态抽屉姿态，未完成真实视觉验收。",
+      "tags": [
+        "原创",
+        "港区",
+        "维修",
+        "工作台",
+        "程序化资产"
+      ],
+      "contract": {
+        "units": "m",
+        "size": [
+          1.4,
+          0.9,
+          0.65
+        ],
+        "origin": "bottom-center",
+        "forward": "+Z",
+        "qualityTier": "catalog",
+        "materials": [
+          "paint_grey",
+          "paint_blue",
+          "steel_dark",
+          "wood_pallet",
+          "rubber"
+        ],
+        "requiredParts": [
+          "frame",
+          "supportRails",
+          "top",
+          "workSurface",
+          "shelf",
+          "backBrace",
+          "drawer",
+          "drawerSlides",
+          "handle",
+          "feet",
+          "badge"
+        ],
+        "options": {
+          "seed": {
+            "type": "integer",
+            "default": 0,
+            "values": [
+              0,
+              1,
+              5
+            ],
+            "note": "仅兼容参数，不消费 ctx.rng，不改变几何或材质。"
+          },
+          "color": {
+            "type": "string",
+            "default": "paint_grey",
+            "values": [
+              "paint_grey",
+              "paint_blue"
+            ]
+          },
+          "drawerOpen": {
+            "type": "number",
+            "default": 0,
+            "values": [
+              0,
+              0.12
+            ],
+            "note": "构建时静态平移，不提供自动 update。"
+          }
+        },
+        "dynamic": false,
+        "collidersRequired": true,
+        "sizeTolerance": {
+          "meters": 0.01,
+          "percent": 0.01
+        },
+        "budget": {
+          "triangles": 6000,
+          "maxMeshes": 60
+        },
+        "nominalBounds": {
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.325
+          ]
+        },
+        "boundsEnvelope": {
+          "min": [
+            -0.7,
+            0,
+            -0.325
+          ],
+          "max": [
+            0.7,
+            0.9,
+            0.445
+          ]
+        },
+        "variantEnvelopes": [
+          {
+            "options": {
+              "drawerOpen": 0
+            },
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.325
+            ]
+          },
+          {
+            "options": {
+              "drawerOpen": 0.12
+            },
+            "min": [
+              -0.7,
+              0,
+              -0.325
+            ],
+            "max": [
+              0.7,
+              0.9,
+              0.445
+            ]
+          }
+        ],
+        "baseline": {
+          "type": "new-design",
+          "referenceAssets": [
+            "prop.shelf_rack",
+            "prop.toolbox_cart"
+          ],
+          "referenceScope": "仅承重框架和收纳层级的结构级参考；未执行比较测量，不声称 measured=true。"
+        }
+      },
+      "acceptance": {
+        "catalog": "unverified",
+        "geometry": "unverified",
+        "visual": "unverified",
+        "runtime": "unverified"
+      }
+    }
+  ]
+}

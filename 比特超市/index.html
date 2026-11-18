@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>比特超市 · 程序化资产库</title>
+<meta name="description" content="从单文件游戏工程里拆出来的可独立管理的代码资产：光影环境、模型台账、材质账簿、动画弹簧、数值调参、音效配方。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="#/">
+    <span class="brand-mark"></span>
+    <span class="brand-text">比特超市<em>程序化资产工程</em></span>
+  </a>
+  <div class="top-meta" id="topMeta"></div>
+</header>
+
+<div class="shell">
+  <aside class="rail" id="rail">
+    <div class="rail-head">
+      <div class="search">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.2"/><path d="M10.2 10.2L14 14"/></svg>
+        <input id="q" type="search" placeholder="搜资产 / 字段 / 锚点" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="chips" id="typeFilter"></div>
+      <div class="tags" id="tagFilter"></div>
+    </div>
+    <div class="navbox" id="navbox" data-open="1">
+      <button class="navbox-summary" id="navboxBtn" type="button" aria-expanded="true">
+        <span>资产清单</span><span class="navbox-count" id="navCount"></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="资产清单"></nav>
+    </div>
+    <div class="rail-foot">
+      <div class="rail-stat" id="railStat"></div>
+      <a class="rail-link" href="#/authoring">制作新资产 →</a>
+      <a class="rail-link" href="#/alignment">完整对标条件 →</a>
+      <a class="rail-link" href="#/matrix">登记覆盖核对 →</a>
+      <a class="rail-link" href="#/about">方法与边界 →</a>
+    </div>
+  </aside>
+
+  <main id="main" class="main"></main>
+</div>
+
+<script src="vendor/three.global.js"></script>
+<script src="vendor/three-addons.js"></script>
+<script src="assets/modules.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/authored.js"></script>
+<script src="assets/alignment-audit.js"></script>
+<script src="previews.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

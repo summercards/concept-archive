@@ -1,0 +1,62 @@
+{
+  "templateVersion": 1,
+  "assetId": "new.nordic-spruce",
+  "designStatus": "implemented-awaiting-current-verification",
+  "registryEntry": {
+    "id": "new.nordic-spruce",
+    "source": "nordic-spruce.js",
+    "name": "北欧高松 · 常绿针叶树",
+    "summary": "按高耸北欧常绿树造型制作的原创程序化树木：14 米高、窄锥冠，含根颈、渐细树干、下垂主枝、分级细枝和真实几何针叶。默认绿色、不覆雪，可用 seed 重建三种分枝形态。云杉式视觉设计，不作精确物种鉴定。",
+    "tags": ["原创", "北欧", "松树", "云杉式", "常绿", "针叶树", "植物", "程序化"],
+    "contract": {
+      "units": "m", "size": [5.4, 14, 5.4],
+      "sizeTolerance": {"meters": 0.01, "percent": 0.01},
+      "origin": "bottom-center", "forward": "+Z", "qualityTier": "catalog",
+      "materials": ["wood_dark", "tarp"],
+      "requiredParts": ["trunk", "root-flare", "branches.primary", "branches.secondary", "foliage.lower", "foliage.middle", "foliage.upper", "leader"],
+      "options": {"seed": {"type": "integer", "default": 7, "values": [7, 19, 43]}},
+      "variantEnvelopes": [], "collidersRequired": true, "dynamic": false,
+      "budget": {"triangles": 350000, "maxMeshes": 12},
+      "baseline": {"type": "new-design", "referenceAssets": [], "scope": "现库无同尺度树木参考，不虚构植物比较通过。对照现有资产的结构、资源归属、实际预览和证据规范，树形按本设计契约验收。"}
+    },
+    "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+    "evidence": {"report": "outputs/nordic-spruce/asset-review.html"}
+  },
+  "designContract": {
+    "intent": "用户将雾松澄清为北欧很高的松树。本轮制作14米高、绿色不覆雪的窄锥冠常绿针叶树，偏云杉式分枝视觉；不是盆栽，也不是雾凇冰雪效果。",
+    "coordinateSystem": {"units": "m", "up": "+Y", "forward": "+Z", "origin": "bottom-center", "sizeOrder": ["widthX", "heightY", "depthZ"], "size": [5.4, 14, 5.4], "nominalBounds": {"min": [-2.7, 0, -2.7], "max": [2.7, 14, 2.7]}, "sizeToleranceM": 0.01},
+    "silhouette": {"front": "修长窄锥冠，顶端尖细，冠幅约树高的四成，不做叠圆锥的玩具圣诞树。", "side": "主干轻弯，主枝下垂、末端稍翘，冠内可透空，枝层不等间距机械排列。", "back": "全向真实枝叶，不是单面剪影；各 seed 有自然不对称。", "designEvidence": ["用户文字澄清与本契约，最终以真实网页图片检查。"]},
+    "functionalParts": [
+      {"name": "trunk", "role": "上细下粗、轻弯的树干，带纵向树皮色差与几何沟脊。"},
+      {"name": "root-flare", "role": "不均匀伸展的根颈与根爪，接地而非花盆底座。"},
+      {"name": "branches.primary", "role": "分层主枝，接入树干，向外伸展下垂。"},
+      {"name": "branches.secondary", "role": "次枝和小枝，从主枝分出，承接针叶。"},
+      {"name": "foliage.lower", "role": "下冠深绿色针叶与新梢浅绿，真实锥尖针片几何。"},
+      {"name": "foliage.middle", "role": "中冠分级针叶，保留枝间透空与疏密变化。"},
+      {"name": "foliage.upper", "role": "上冠逐渐收窄的细密针叶。"},
+      {"name": "leader", "role": "顶梢枝条，与上冠针叶连接。"}
+    ],
+    "openingsAndThickness": {"bark": "树干和枝条均为有径向分段、封口的实体表面；枝接处合理相交。", "needles": "以交叉渐尖三角针叶构建可见轮廓，双面材质，无alpha图片卡片。针叶为近景游戏表示，不模拟每根针叶内部体积。", "clearSpace": "树冠不使用整块实心锥体；树下可站立空间由树干碰撞决定。"},
+    "assembly": {"connections": ["主枝根部接入树干", "次枝小枝与父枝连贯", "针叶沿小枝轴螺旋排列", "根颈落地", "顶梢与主干相连"], "motion": "本轮静态模型，不提供风摆。"},
+    "surfaceAndUV": {
+      "mappingStrategy": "树干枝条UV沿轴向长度与圆周米制展开，针叶UV按实际针长/宽。当前材质以几何与顶点色提供树皮和针叶层次，无外部图片纹理。",
+      "materialSpecifications": [{"category": "wood_dark", "recipe": "本树自有 MeshStandardMaterial，非旧木板纹理。灰棕粗糙非金属，树皮纵脊及顶点色差。"}, {"category": "tarp", "recipe": "仅复用现有账本允许类别作分类标识，实际为本树自有绿色针叶材质，不使用帆布烘焙配方。双面、粗糙、非金属、顶点色。"}],
+      "decals": [],
+      "ownership": "每次构造自有2组材质及8组合批几何，dispose只释放本资产，不变更ctx.mats或ctx.sharedMaterials。"
+    },
+    "collision": {"space": "model-local", "colliders": ["根颈/低干", "中干", "高干"], "surfaceIdentifiers": ["wood"], "requiredCornerChecks": 8, "method": "从归正后的真实树干/根颈三角面按高度裁切测量AABB。", "openingPolicy": "树冠和针叶不阻挡角色，仅树干/根颈有粗碰撞；不是全冠实心大盒。", "dynamicPolicy": "静态不随动。"},
+    "sockets": {"definitions": {"base": "模型放置原点", "tip": "实测最高顶梢点", "crown": "上冠主干参考点"}, "orientationConvention": "模型局部坐标+Y向上，无额外旋转约定。"},
+    "variants": {"optionDefinitions": {"seed": {"default": 7, "values": [7, 19, 43]}}, "coverageMatrix": [7, 19, 43], "invariants": ["树高14m与冠幅名义包络", "完整层级与requiredParts", "同seed稳定重建"], "changes": ["分枝偏角与长度", "层间错落", "针叶颜色和方向", "根爪数量与位置"]},
+    "seed": {"default": 7, "testSeeds": [7, 19, 43], "provider": "宿主为每次build按seed重置ctx.rng，不使用Math.random或时间。"},
+    "dynamic": {"enabled": false, "decision": "先提供静态独立资产。无风摆、落雪、落针或生长动画。", "disposeRequirements": ["幂等", "仅自有资源", "无计时器或RAF"]},
+    "lodAndBudget": {
+      "referenceMeasurements": [{"assetId": "prop.forklift", "meshes": 21, "triangles": 11628, "source": "既有outputs/props-ui-verification.json，非本轮重跑", "scope": "仅说明原库结构批次数；车辆不是针叶树面数标准。"}],
+      "limits": {"triangles": 350000, "drawCalls": 12, "materials": 2},
+      "rationale": "首次真实针叶树近景版本，密集细枝针叶需要较高三角数，以少网格合批限制绘制开销；不套用低面工业道具统一阈值。",
+      "noLodReason": "当前近景catalog模型。大规模森林需要另做远景LOD/实例化/阴影与移动端帧耗验收，不凭单树可运行宣称森林性能完成。"
+    }
+  },
+  "qualityComparators": [],
+  "verificationPlan": {"gate": "catalog", "renderer": "资产库当前r160棚拍", "automatic": ["静态入口契约", "几何finite/法线/索引/退化面", "真实尺寸部件碰撞与挂点", "确定性和seed代表值", "有限dispose与重复挂载", "多角度灰模线框截图"], "supplementary": ["三个seed完整抽样检查", "树形针叶材质实际看图", "首页NEW搜索和局域网", "树冠和树皮近景"], "acceptanceWriteback": "四项unverified保持，真实报告与图片检查独立。"},
+  "evidence": {"testReports": ["outputs/nordic-spruce/geometry-verification.json", "outputs/nordic-spruce/ui-verification.json"], "verificationMethod": "通用脚本第一次在大型几何JSON处理/导航阶段中断，保留失败记录；用同版本r160本地引擎逐TypedArray增量hash完成完整几何检查，并另测浏览器预览。两类证据分开，未沿用通用PASS。", "notExecuted": ["精确植物学物种认证", "r180整机集成", "风摆与雪效果", "远景LOD和森林实例化", "完整内存趋势与所有设备帧率"]}
+}

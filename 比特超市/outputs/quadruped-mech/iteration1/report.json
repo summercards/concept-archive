@@ -1,0 +1,1174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-18T02:46:56.308Z",
+  "command": [
+    "--root",
+    "/Users/zyq/WorkBuddy/2026-11-15-17-10-04",
+    "--id",
+    "new.quadruped-mech",
+    "--base-url",
+    "http://127.0.0.1:8099/index.html",
+    "--playwright",
+    "/Users/zyq/work/wc/node_modules/playwright",
+    "--out-dir",
+    "outputs/quadruped-mech/iteration1"
+  ],
+  "root": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04",
+  "id": "new.quadruped-mech",
+  "baseUrl": "http://127.0.0.1:8099/index.html",
+  "playwright": "/Users/zyq/work/wc/node_modules/playwright",
+  "outDir": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/outputs/quadruped-mech/iteration1",
+  "projectFilesBefore": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/registry.json",
+      "sha256": "3964c3ed69c169d5a91bad21d0492b29e48dc81629869a72e0023eaf3347ac95"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored.js",
+      "sha256": "35f1ba0fb055580723251097f69552970e9244a8254de34776e8989e249bfb20"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/previews.js",
+      "sha256": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/app.js",
+      "sha256": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+    },
+    "assets/authored/quadruped-mech.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/quadruped-mech.js",
+      "sha256": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967"
+    },
+    "assets/authored/contracts/quadruped-mech.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/contracts/quadruped-mech.json",
+      "sha256": "b538d6abc2b9cf7e161eebcacfd34fd42347b3a1da645e2d47de40983a7e208b"
+    }
+  },
+  "projectFilesAfter": {
+    "assets/authored/registry.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/registry.json",
+      "sha256": "3964c3ed69c169d5a91bad21d0492b29e48dc81629869a72e0023eaf3347ac95"
+    },
+    "assets/authored.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored.js",
+      "sha256": "35f1ba0fb055580723251097f69552970e9244a8254de34776e8989e249bfb20"
+    },
+    "previews.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/previews.js",
+      "sha256": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb"
+    },
+    "app.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/app.js",
+      "sha256": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+    },
+    "assets/authored/quadruped-mech.js": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/quadruped-mech.js",
+      "sha256": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967"
+    },
+    "assets/authored/contracts/quadruped-mech.json": {
+      "path": "/Users/zyq/WorkBuddy/2026-11-15-17-10-04/assets/authored/contracts/quadruped-mech.json",
+      "sha256": "b538d6abc2b9cf7e161eebcacfd34fd42347b3a1da645e2d47de40983a7e208b"
+    }
+  },
+  "catalog": {
+    "status": "UNVERIFIED",
+    "fullPass": false,
+    "publicApi": {
+      "catalog": true,
+      "item": {
+        "id": "new.quadruped-mech",
+        "source": "quadruped-mech.js",
+        "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+        "anchor": "assets/authored/quadruped-mech.js",
+        "contract": {
+          "units": "m",
+          "size": [
+            2.8,
+            2.8,
+            4.8
+          ],
+          "sizeTolerance": {
+            "meters": 0.03,
+            "percent": 0.02
+          },
+          "origin": "bottom-center",
+          "forward": "+Z",
+          "qualityTier": "catalog",
+          "materials": [
+            "paint_grey",
+            "paint_orange",
+            "steel_dark",
+            "gunmetal",
+            "rubber",
+            "hazard_stripes"
+          ],
+          "requiredParts": [
+            "body.chassis",
+            "body.front-plate",
+            "body.rear-power",
+            "turret.ring",
+            "turret.gun-mount",
+            "cannon.barrel",
+            "cannon.muzzle",
+            "cannon.recoil-sleeve",
+            "leg.front-left",
+            "leg.front-right",
+            "leg.rear-left",
+            "leg.rear-right"
+          ],
+          "options": {
+            "seed": {
+              "type": "integer",
+              "default": 7,
+              "values": [
+                7,
+                19,
+                43
+              ]
+            },
+            "armor": {
+              "type": "string",
+              "default": "grey",
+              "values": [
+                "grey",
+                "orange"
+              ]
+            }
+          },
+          "variantEnvelopes": [],
+          "collidersRequired": true,
+          "dynamic": true,
+          "budget": {
+            "triangles": 60000,
+            "maxMeshes": 180
+          },
+          "baseline": {
+            "type": "new-design",
+            "referenceAssets": [
+              "prop.forklift"
+            ],
+            "scope": "仅对照现有载具/机械资产的结构层级、材料所有权、碰撞与动画生命周期；不复刻原版外形。"
+          }
+        },
+        "acceptance": {
+          "catalog": "unverified",
+          "geometry": "unverified",
+          "visual": "unverified",
+          "runtime": "unverified"
+        }
+      },
+      "builder": {
+        "type": "object",
+        "hasBuild": true,
+        "keys": [
+          "build"
+        ]
+      },
+      "authoredContext": true,
+      "inspectAuthored": true,
+      "inspectResult": {
+        "ok": true,
+        "shape": [
+          "build",
+          "ctx",
+          "inspect"
+        ]
+      },
+      "publicContract": {
+        "authoredContext": "window.PREVIEWS.authoredContext(id, options) => { THREE, kit, mats, rng, sharedMaterials: Set<THREE.Material> }",
+        "inspectAuthored": "window.PREVIEWS.inspectAuthored(id, options) => object | Promise<object>（仅检查公开返回形状）",
+        "builder": "window.AUTHORED_BUILDERS[id] => { build }",
+        "catalog": "window.AUTHORED_CATALOG.items[] => { id, contract, acceptance }"
+      }
+    },
+    "entry": {
+      "id": "new.quadruped-mech",
+      "source": "quadruped-mech.js",
+      "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+      "anchor": "assets/authored/quadruped-mech.js",
+      "contract": {
+        "units": "m",
+        "size": [
+          2.8,
+          2.8,
+          4.8
+        ],
+        "sizeTolerance": {
+          "meters": 0.03,
+          "percent": 0.02
+        },
+        "origin": "bottom-center",
+        "forward": "+Z",
+        "qualityTier": "catalog",
+        "materials": [
+          "paint_grey",
+          "paint_orange",
+          "steel_dark",
+          "gunmetal",
+          "rubber",
+          "hazard_stripes"
+        ],
+        "requiredParts": [
+          "body.chassis",
+          "body.front-plate",
+          "body.rear-power",
+          "turret.ring",
+          "turret.gun-mount",
+          "cannon.barrel",
+          "cannon.muzzle",
+          "cannon.recoil-sleeve",
+          "leg.front-left",
+          "leg.front-right",
+          "leg.rear-left",
+          "leg.rear-right"
+        ],
+        "options": {
+          "seed": {
+            "type": "integer",
+            "default": 7,
+            "values": [
+              7,
+              19,
+              43
+            ]
+          },
+          "armor": {
+            "type": "string",
+            "default": "grey",
+            "values": [
+              "grey",
+              "orange"
+            ]
+          }
+        },
+        "variantEnvelopes": [],
+        "collidersRequired": true,
+        "dynamic": true,
+        "budget": {
+          "triangles": 60000,
+          "maxMeshes": 180
+        },
+        "baseline": {
+          "type": "new-design",
+          "referenceAssets": [
+            "prop.forklift"
+          ],
+          "scope": "仅对照现有载具/机械资产的结构层级、材料所有权、碰撞与动画生命周期；不复刻原版外形。"
+        }
+      },
+      "acceptance": {
+        "catalog": "unverified",
+        "geometry": "unverified",
+        "visual": "unverified",
+        "runtime": "unverified"
+      }
+    },
+    "contract": {
+      "units": "m",
+      "size": [
+        2.8,
+        2.8,
+        4.8
+      ],
+      "sizeTolerance": {
+        "meters": 0.03,
+        "percent": 0.02
+      },
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "paint_grey",
+        "paint_orange",
+        "steel_dark",
+        "gunmetal",
+        "rubber",
+        "hazard_stripes"
+      ],
+      "requiredParts": [
+        "body.chassis",
+        "body.front-plate",
+        "body.rear-power",
+        "turret.ring",
+        "turret.gun-mount",
+        "cannon.barrel",
+        "cannon.muzzle",
+        "cannon.recoil-sleeve",
+        "leg.front-left",
+        "leg.front-right",
+        "leg.rear-left",
+        "leg.rear-right"
+      ],
+      "options": {
+        "seed": {
+          "type": "integer",
+          "default": 7,
+          "values": [
+            7,
+            19,
+            43
+          ]
+        },
+        "armor": {
+          "type": "string",
+          "default": "grey",
+          "values": [
+            "grey",
+            "orange"
+          ]
+        }
+      },
+      "variantEnvelopes": [],
+      "collidersRequired": true,
+      "dynamic": true,
+      "budget": {
+        "triangles": 60000,
+        "maxMeshes": 180
+      },
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": [
+          "prop.forklift"
+        ],
+        "scope": "仅对照现有载具/机械资产的结构层级、材料所有权、碰撞与动画生命周期；不复刻原版外形。"
+      }
+    }
+  },
+  "geometry": {
+    "status": "FAIL",
+    "automatic": true,
+    "checks": {
+      "meshes": 244,
+      "vertices": 32690,
+      "triangles": 15816,
+      "degenerateTriangles": 0,
+      "attributes": 732,
+      "size": {
+        "measured": [
+          4.791283138783228,
+          2.655000000447035,
+          6.1326263370912155
+        ],
+        "declared": [
+          4.791283138783228,
+          2.655000000447035,
+          6.1326263370912155
+        ],
+        "expected": [
+          2.8,
+          2.8,
+          4.8
+        ],
+        "tolerance": [
+          0.055999999999999994,
+          0.055999999999999994,
+          0.096
+        ]
+      },
+      "checkenv": {
+        "isDefault": true,
+        "matchedIndex": null,
+        "options": {
+          "armor": "grey",
+          "seed": 7
+        },
+        "expectedSize": [
+          2.8,
+          2.8,
+          4.8
+        ],
+        "envelope": {
+          "min": [
+            -1.4,
+            0,
+            -2.4
+          ],
+          "max": [
+            1.4,
+            2.8,
+            2.4
+          ]
+        },
+        "boundsEnvelope": null,
+        "bbox": {
+          "min": [
+            -2.395641569391614,
+            -1.3877787807814457e-17,
+            -3.0663131685456078
+          ],
+          "max": [
+            2.395641569391614,
+            2.655000000447035,
+            3.066313168545608
+          ]
+        },
+        "geometryInside": false,
+        "withinTotalEnvelope": true,
+        "collidersInside": false
+      }
+    },
+    "determinism": {
+      "equal": true,
+      "firstSha256": "660af70b81aa537604c3cb81626a856929f126d2d772d46fd1afd1e56e17bf14",
+      "secondSha256": "660af70b81aa537604c3cb81626a856929f126d2d772d46fd1afd1e56e17bf14"
+    },
+    "variants": [
+      {
+        "key": "seed",
+        "value": 19,
+        "changedFromDefault": true,
+        "sha256": null,
+        "counts": {
+          "meshes": 244,
+          "vertices": 32690,
+          "triangles": 15816,
+          "degenerateTriangles": 0,
+          "attributes": 732,
+          "size": {
+            "measured": [
+              4.791283138783228,
+              2.655000000447035,
+              6.1326263370912155
+            ],
+            "declared": [
+              4.791283138783228,
+              2.655000000447035,
+              6.1326263370912155
+            ],
+            "expected": [
+              2.8,
+              2.8,
+              4.8
+            ],
+            "tolerance": [
+              0.055999999999999994,
+              0.055999999999999994,
+              0.096
+            ]
+          },
+          "checkenv": {
+            "isDefault": false,
+            "matchedIndex": null,
+            "options": {
+              "armor": "grey",
+              "seed": 19
+            },
+            "expectedSize": [
+              2.8,
+              2.8,
+              4.8
+            ],
+            "envelope": {
+              "min": [
+                -1.4,
+                0,
+                -2.4
+              ],
+              "max": [
+                1.4,
+                2.8,
+                2.4
+              ]
+            },
+            "boundsEnvelope": null,
+            "bbox": {
+              "min": [
+                -2.395641569391614,
+                -1.3877787807814457e-17,
+                -3.0663131685456078
+              ],
+              "max": [
+                2.395641569391614,
+                2.655000000447035,
+                3.066313168545608
+              ]
+            },
+            "geometryInside": false,
+            "withinTotalEnvelope": true,
+            "collidersInside": false
+          }
+        },
+        "size": {
+          "measured": [
+            4.791283138783228,
+            2.655000000447035,
+            6.1326263370912155
+          ],
+          "declared": [
+            4.791283138783228,
+            2.655000000447035,
+            6.1326263370912155
+          ],
+          "expected": [
+            2.8,
+            2.8,
+            4.8
+          ],
+          "tolerance": [
+            0.055999999999999994,
+            0.055999999999999994,
+            0.096
+          ]
+        },
+        "checkenv": {
+          "isDefault": false,
+          "matchedIndex": null,
+          "options": {
+            "armor": "grey",
+            "seed": 19
+          },
+          "expectedSize": [
+            2.8,
+            2.8,
+            4.8
+          ],
+          "envelope": {
+            "min": [
+              -1.4,
+              0,
+              -2.4
+            ],
+            "max": [
+              1.4,
+              2.8,
+              2.4
+            ]
+          },
+          "boundsEnvelope": null,
+          "bbox": {
+            "min": [
+              -2.395641569391614,
+              -1.3877787807814457e-17,
+              -3.0663131685456078
+            ],
+            "max": [
+              2.395641569391614,
+              2.655000000447035,
+              3.066313168545608
+            ]
+          },
+          "geometryInside": false,
+          "withinTotalEnvelope": true,
+          "collidersInside": false
+        },
+        "status": "FAIL",
+        "normalizedSha256": "5cf78b86cff56e258c7fa27311f0eb9a27c40e15f88928dd469bbd107421deca"
+      },
+      {
+        "key": "armor",
+        "value": "orange",
+        "changedFromDefault": false,
+        "sha256": null,
+        "counts": {
+          "meshes": 244,
+          "vertices": 32690,
+          "triangles": 15816,
+          "degenerateTriangles": 0,
+          "attributes": 732,
+          "size": {
+            "measured": [
+              4.791283138783228,
+              2.655000000447035,
+              6.1326263370912155
+            ],
+            "declared": [
+              4.791283138783228,
+              2.655000000447035,
+              6.1326263370912155
+            ],
+            "expected": [
+              2.8,
+              2.8,
+              4.8
+            ],
+            "tolerance": [
+              0.055999999999999994,
+              0.055999999999999994,
+              0.096
+            ]
+          },
+          "checkenv": {
+            "isDefault": false,
+            "matchedIndex": null,
+            "options": {
+              "armor": "orange",
+              "seed": 7
+            },
+            "expectedSize": [
+              2.8,
+              2.8,
+              4.8
+            ],
+            "envelope": {
+              "min": [
+                -1.4,
+                0,
+                -2.4
+              ],
+              "max": [
+                1.4,
+                2.8,
+                2.4
+              ]
+            },
+            "boundsEnvelope": null,
+            "bbox": {
+              "min": [
+                -2.395641569391614,
+                -1.3877787807814457e-17,
+                -3.0663131685456078
+              ],
+              "max": [
+                2.395641569391614,
+                2.655000000447035,
+                3.066313168545608
+              ]
+            },
+            "geometryInside": false,
+            "withinTotalEnvelope": true,
+            "collidersInside": false
+          }
+        },
+        "size": {
+          "measured": [
+            4.791283138783228,
+            2.655000000447035,
+            6.1326263370912155
+          ],
+          "declared": [
+            4.791283138783228,
+            2.655000000447035,
+            6.1326263370912155
+          ],
+          "expected": [
+            2.8,
+            2.8,
+            4.8
+          ],
+          "tolerance": [
+            0.055999999999999994,
+            0.055999999999999994,
+            0.096
+          ]
+        },
+        "checkenv": {
+          "isDefault": false,
+          "matchedIndex": null,
+          "options": {
+            "armor": "orange",
+            "seed": 7
+          },
+          "expectedSize": [
+            2.8,
+            2.8,
+            4.8
+          ],
+          "envelope": {
+            "min": [
+              -1.4,
+              0,
+              -2.4
+            ],
+            "max": [
+              1.4,
+              2.8,
+              2.4
+            ]
+          },
+          "boundsEnvelope": null,
+          "bbox": {
+            "min": [
+              -2.395641569391614,
+              -1.3877787807814457e-17,
+              -3.0663131685456078
+            ],
+            "max": [
+              2.395641569391614,
+              2.655000000447035,
+              3.066313168545608
+            ]
+          },
+          "geometryInside": false,
+          "withinTotalEnvelope": true,
+          "collidersInside": false
+        },
+        "status": "FAIL",
+        "normalizedSha256": "e96ce478b7c600575585d433e3baee5f21a3fd94fa8e30bde803beaf7e006e24"
+      }
+    ],
+    "warnings": [],
+    "normalized": {
+      "firstSha256": "660af70b81aa537604c3cb81626a856929f126d2d772d46fd1afd1e56e17bf14",
+      "secondSha256": "660af70b81aa537604c3cb81626a856929f126d2d772d46fd1afd1e56e17bf14"
+    },
+    "materialNames": [
+      "gunmetal",
+      "hazard_stripes",
+      "paint_grey",
+      "paint_orange",
+      "rubber",
+      "steel_dark"
+    ]
+  },
+  "runtime": {
+    "status": "FAIL",
+    "automatic": true,
+    "notExecutedMemory": [
+      "无法在本验证器中可靠执行浏览器堆内存/显存回收证明"
+    ],
+    "mountCycles": {
+      "attempted": 3,
+      "completed": 3,
+      "hookCounters": {
+        "build": 16,
+        "update": 3,
+        "reset": 1,
+        "dispose": 19
+      },
+      "status": "limitedpass"
+    },
+    "dynamic": true,
+    "hookPresence": {
+      "update": true,
+      "reset": true,
+      "dispose": true
+    },
+    "updateSamples": [
+      {
+        "dt": 0.016,
+        "stateSha256": "b7eba3b1919b4fc4593f1774aeb7044e78f4b886be6ee5e57daecb464370d99b"
+      },
+      {
+        "dt": 0.033,
+        "stateSha256": "79c77d61f21b44381cd2260296372f9dbc313709ca0b6ae786232093a28a7c20"
+      },
+      {
+        "dt": 0.05,
+        "stateSha256": "8c692bd8cfd88668859141d395801e48b7ece03acbbebe0758feadb917444126"
+      }
+    ],
+    "resetMatchesBaseline": true,
+    "dispose": {
+      "declared": true,
+      "calls": 8,
+      "errors": [],
+      "sharedMaterialDisposeEvents": 0,
+      "materialDisposeEvents": [
+        {
+          "name": "paint_grey",
+          "shared": false
+        },
+        {
+          "name": "paint_orange",
+          "shared": false
+        },
+        {
+          "name": "steel_dark",
+          "shared": false
+        },
+        {
+          "name": "gunmetal",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "hazard_stripes",
+          "shared": false
+        },
+        {
+          "name": "paint_grey",
+          "shared": false
+        },
+        {
+          "name": "paint_orange",
+          "shared": false
+        },
+        {
+          "name": "steel_dark",
+          "shared": false
+        },
+        {
+          "name": "gunmetal",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "hazard_stripes",
+          "shared": false
+        },
+        {
+          "name": "paint_grey",
+          "shared": false
+        },
+        {
+          "name": "paint_orange",
+          "shared": false
+        },
+        {
+          "name": "steel_dark",
+          "shared": false
+        },
+        {
+          "name": "gunmetal",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "hazard_stripes",
+          "shared": false
+        },
+        {
+          "name": "paint_grey",
+          "shared": false
+        },
+        {
+          "name": "paint_orange",
+          "shared": false
+        },
+        {
+          "name": "steel_dark",
+          "shared": false
+        },
+        {
+          "name": "gunmetal",
+          "shared": false
+        },
+        {
+          "name": "rubber",
+          "shared": false
+        },
+        {
+          "name": "hazard_stripes",
+          "shared": false
+        }
+      ]
+    },
+    "builderHookCounters": {
+      "build": 5,
+      "update": 3,
+      "reset": 1,
+      "dispose": 8
+    }
+  },
+  "visual": {
+    "status": "UNVERIFIED",
+    "scope": "截图生成不等于真实视觉验收；本脚本始终不写 visual pass",
+    "screenshots": [
+      {
+        "file": "material-overall.png",
+        "display": "原材质",
+        "view": "整体",
+        "bytes": 117376,
+        "sha256": "24ec16917490e1c1cea174e7c14c1bd5270325534aea486222bff0b3aedc4098",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.quadruped-mech",
+        "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+        "contractHash": "322e2b5a10158797515499e2e32f7168170bd102356ba9ad7eb605ccd25bb2e2",
+        "options": "{\"seed\":7,\"armor\":\"grey\"}",
+        "camera": "{\"fov\":34,\"position\":[8.244423887398264,5.2866485118354545,9.785617194618288],\"target\":[-0.0008221864128121759,1.3275000002235176,-0.0034838603884856933],\"yaw\":0.7,\"pitch\":0.3,\"distance\":13.397217592464141}"
+      },
+      {
+        "file": "material-front.png",
+        "display": "原材质",
+        "view": "正面",
+        "bytes": 123244,
+        "sha256": "7f9746ff36acef1f1af65b0465466603e14762b432e5f117652b7164fb1eea96",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.quadruped-mech",
+        "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+        "contractHash": "322e2b5a10158797515499e2e32f7168170bd102356ba9ad7eb605ccd25bb2e2",
+        "options": "{\"seed\":7,\"armor\":\"grey\"}",
+        "camera": "{\"fov\":34,\"position\":[-0.0008221864128121759,4.75879414603711,11.088957294322043],\"target\":[-0.0008221864128121759,1.3275000002235176,-0.0034838603884856933],\"yaw\":0,\"pitch\":0.3,\"distance\":11.611030543660217}"
+      },
+      {
+        "file": "material-back.png",
+        "display": "原材质",
+        "view": "背面",
+        "bytes": 142174,
+        "sha256": "2553ff11cf498f3fd12d928d0fa2c9f111b3a7121ef6869e1be064c3284d8d89",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.quadruped-mech",
+        "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+        "contractHash": "322e2b5a10158797515499e2e32f7168170bd102356ba9ad7eb605ccd25bb2e2",
+        "options": "{\"seed\":7,\"armor\":\"grey\"}",
+        "camera": "{\"fov\":34,\"position\":[-0.0008221864128108175,4.75879414603711,-11.095925015099013],\"target\":[-0.0008221864128121759,1.3275000002235176,-0.0034838603884856933],\"yaw\":3.141592653589793,\"pitch\":0.3,\"distance\":11.611030543660217}"
+      },
+      {
+        "file": "clay-overall.png",
+        "display": "纯灰几何",
+        "view": "整体",
+        "bytes": 129742,
+        "sha256": "3fe960751482b34e60d197857d175908222bcd4c944866e8a0b73e8ab0fdb43b",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.quadruped-mech",
+        "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+        "contractHash": "322e2b5a10158797515499e2e32f7168170bd102356ba9ad7eb605ccd25bb2e2",
+        "options": "{\"seed\":7,\"armor\":\"grey\"}",
+        "camera": "{\"fov\":34,\"position\":[8.244423887398264,5.2866485118354545,9.785617194618288],\"target\":[-0.0008221864128121759,1.3275000002235176,-0.0034838603884856933],\"yaw\":0.7,\"pitch\":0.3,\"distance\":13.397217592464141}"
+      },
+      {
+        "file": "wire-overall.png",
+        "display": "结构线框",
+        "view": "整体",
+        "bytes": 152041,
+        "sha256": "4ff2f4de334ee9cda8800cbb481e3f06b59074fa1f5e9980729f1f6aa19e00c6",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "renderer": {
+          "revision": "160",
+          "scope": "catalog-studio"
+        },
+        "assetId": "new.quadruped-mech",
+        "sourceHash": "1ed51d680989973a6240376bd32a5bb2ace2044481197d1864077f439a56c967",
+        "contractHash": "322e2b5a10158797515499e2e32f7168170bd102356ba9ad7eb605ccd25bb2e2",
+        "options": "{\"seed\":7,\"armor\":\"grey\"}",
+        "camera": "{\"fov\":34,\"position\":[8.244423887398264,5.2866485118354545,9.785617194618288],\"target\":[-0.0008221864128121759,1.3275000002235176,-0.0034838603884856933],\"yaw\":0.7,\"pitch\":0.3,\"distance\":13.397217592464141}"
+      }
+    ],
+    "controls": {
+      "display": [
+        "原材质",
+        "纯灰几何",
+        "结构线框"
+      ],
+      "views": [
+        "整体",
+        "正面",
+        "背面",
+        "俯视"
+      ],
+      "requiredDisplay": [
+        "原材质",
+        "纯灰几何",
+        "结构线框"
+      ],
+      "requiredViews": [
+        "整体",
+        "正面",
+        "背面",
+        "俯视"
+      ],
+      "status": "PASS"
+    }
+  },
+  "pageConsole": [],
+  "errors": [],
+  "shaderMessages": [],
+  "network": {
+    "externalRejected": [],
+    "failed": []
+  },
+  "automaticChecks": {
+    "passed": false,
+    "failures": [
+      "build#1 meshes 超过 contract.budget.maxMeshes",
+      "build#1 bbox size[0] 超出默认名义尺寸容差",
+      "build#1 bbox size[1] 超出默认名义尺寸容差",
+      "build#1 bbox size[2] 超出默认名义尺寸容差",
+      "build#1 bbox 超出当前 options 匹配的 contract envelope",
+      "build#1 collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "build#1 collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 meshes 超过 contract.budget.maxMeshes",
+      "build#2 bbox size[0] 超出默认名义尺寸容差",
+      "build#2 bbox size[1] 超出默认名义尺寸容差",
+      "build#2 bbox size[2] 超出默认名义尺寸容差",
+      "build#2 bbox 超出当前 options 匹配的 contract envelope",
+      "build#2 collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "build#2 collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 meshes 超过 contract.budget.maxMeshes",
+      "variant:seed=19 bbox size[0] 超出当前变体尺寸容差",
+      "variant:seed=19 bbox size[1] 超出当前变体尺寸容差",
+      "variant:seed=19 bbox size[2] 超出当前变体尺寸容差",
+      "variant:seed=19 bbox 超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "variant:seed=19 collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" meshes 超过 contract.budget.maxMeshes",
+      "variant:armor=\"orange\" bbox size[0] 超出当前变体尺寸容差",
+      "variant:armor=\"orange\" bbox size[1] 超出当前变体尺寸容差",
+      "variant:armor=\"orange\" bbox size[2] 超出当前变体尺寸容差",
+      "variant:armor=\"orange\" bbox 超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "variant:armor=\"orange\" collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 meshes 超过 contract.budget.maxMeshes",
+      "dynamic:update:0.016 bbox size[0] 超出默认名义尺寸容差",
+      "dynamic:update:0.016 bbox size[1] 超出默认名义尺寸容差",
+      "dynamic:update:0.016 bbox size[2] 超出默认名义尺寸容差",
+      "dynamic:update:0.016 bbox 超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.016 collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 meshes 超过 contract.budget.maxMeshes",
+      "dynamic:update:0.033 bbox size[0] 超出默认名义尺寸容差",
+      "dynamic:update:0.033 bbox size[1] 超出默认名义尺寸容差",
+      "dynamic:update:0.033 bbox size[2] 超出默认名义尺寸容差",
+      "dynamic:update:0.033 bbox 超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.033 collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 meshes 超过 contract.budget.maxMeshes",
+      "dynamic:update:0.05 bbox size[0] 超出默认名义尺寸容差",
+      "dynamic:update:0.05 bbox size[1] 超出默认名义尺寸容差",
+      "dynamic:update:0.05 bbox size[2] 超出默认名义尺寸容差",
+      "dynamic:update:0.05 bbox 超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:update:0.05 collider[15] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset meshes 超过 contract.budget.maxMeshes",
+      "dynamic:reset bbox size[0] 超出默认名义尺寸容差",
+      "dynamic:reset bbox size[1] 超出默认名义尺寸容差",
+      "dynamic:reset bbox size[2] 超出默认名义尺寸容差",
+      "dynamic:reset bbox 超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[0] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[1] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[2] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[3] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[4] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[5] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[6] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[7] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[8] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[9] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[10] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[11] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[12] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[13] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[14] 八角超出当前 options 匹配的 contract envelope",
+      "dynamic:reset collider[15] 八角超出当前 options 匹配的 contract envelope"
+    ]
+  },
+  "normalizedReportSha256": "f7fe6bf9c624256a81f4d44a66ca2ab20e086df7a7b23126514d1f2df4d365a9"
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "new.harbor-service-workbench",
+      "source": "harbor-service-workbench.js",
+      "name": "港区维修工作台 · 制作示例",
+      "defaultsize": [1.4, 0.9, 0.65],
+      "summary": "正式入库的原创制作示例：四腿钢框架、厚木台面、下层板、加劲梁、抽屉、拉手、脚垫与标签。支持灰/蓝换色及抽屉拉出，运行证据另见本轮独立报告。",
+      "tags": ["原创", "示例", "港区", "维修", "工作台", "程序化资产"],
+      "contract": {
+        "units": "m", "size": [1.4, 0.9, 0.65], "origin": "bottom-center", "forward": "+Z", "qualityTier": "catalog",
+        "materials": ["paint_grey", "paint_blue", "steel_dark", "wood_pallet", "rubber"],
+        "requiredParts": ["frame", "supportRails", "top", "workSurface", "shelf", "backBrace", "drawer", "drawerSlides", "handle", "feet", "badge"],
+        "options": {
+          "seed": {"type": "integer", "default": 0, "values": [0, 1, 5], "note": "仅兼容参数，不消费 ctx.rng，不改变几何或材质。"},
+          "color": {"type": "string", "default": "paint_grey", "values": ["paint_grey", "paint_blue"]},
+          "drawerOpen": {"type": "number", "default": 0, "values": [0, 0.12], "note": "构建时静态平移，不提供自动 update。"}
+        },
+        "dynamic": false, "collidersRequired": true,
+        "sizeTolerance": {"meters": 0.01, "percent": 0.01},
+        "budget": {"triangles": 6000, "maxMeshes": 60},
+        "nominalBounds": {"min": [-0.7, 0, -0.325], "max": [0.7, 0.9, 0.325]},
+        "boundsEnvelope": {"min": [-0.7, 0, -0.325], "max": [0.7, 0.9, 0.445]},
+        "variantEnvelopes": [
+          {"options": {"drawerOpen": 0}, "min": [-0.7, 0, -0.325], "max": [0.7, 0.9, 0.325]},
+          {"options": {"drawerOpen": 0.12}, "min": [-0.7, 0, -0.325], "max": [0.7, 0.9, 0.445]}
+        ],
+        "baseline": {"type": "new-design", "referenceAssets": ["prop.shelf_rack", "prop.toolbox_cart"], "referenceScope": "仅承重框架和收纳层级的结构级参考；未执行比较测量，不声称 measured=true。"}
+      },
+      "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+      "evidence": {"report": "outputs/workbench-review/release/report.json"}
+    },
+    {
+      "id": "new.rubber-duck",
+      "source": "rubber-duck.js",
+      "name": "小黄鸭 · 软胶玩具",
+      "summary": "原创代码生成的圆润软胶小黄鸭，连续鸭身与头颈、上翘尾部、独立上下鸭嘴、黑眼睛、水滴翅膀和底部气阀。默认黄色，支持奶油色变体；尺寸 15 × 18 × 21 cm。",
+      "tags": ["原创", "小黄鸭", "玩具", "软胶", "程序化", "可换色"],
+      "contract": {
+        "units": "m", "size": [0.15, 0.18, 0.21], "sizeTolerance": {"meters": 0.001, "percent": 0.01},
+        "origin": "bottom-center", "forward": "+Z", "qualityTier": "catalog",
+        "materials": ["rubber", "polymer_black", "plastic_grey"],
+        "requiredParts": ["body", "beak.upper", "beak.lower", "eye.left", "eye.right", "wing.left", "wing.right", "base.valve"],
+        "options": {"color": {"type": "string", "default": "yellow", "values": ["yellow", "cream"]}},
+        "variantEnvelopes": [], "collidersRequired": true, "dynamic": false,
+        "budget": {"triangles": 24000, "maxMeshes": 14},
+        "baseline": {"type": "new-design", "referenceAssets": ["prop.barrel"], "scope": "只对照现有道具的真实部件、分拆碰撞与资源规范；小黄鸭为近景有机曲面原创，不套用油桶的面数限制。"}
+      },
+      "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+      "evidence": {"report": "outputs/rubber-duck/asset-review.html"}
+    },
+    {
+      "id": "new.nordic-spruce",
+      "source": "nordic-spruce.js",
+      "name": "北欧高松 · 常绿针叶树",
+      "summary": "按高耸北欧常绿树造型制作的原创程序化树木：14 米高、窄锥冠，含根颈、渐细树干、下垂主枝、分级细枝和真实几何针叶。默认绿色、不覆雪，可用 seed 重建三种分枝形态。云杉式视觉设计，不作精确物种鉴定。",
+      "tags": ["原创", "北欧", "松树", "云杉式", "常绿", "针叶树", "植物", "程序化"],
+      "contract": {
+        "units": "m", "size": [5.4, 14, 5.4],
+        "sizeTolerance": {"meters": 0.01, "percent": 0.01},
+        "origin": "bottom-center", "forward": "+Z", "qualityTier": "catalog",
+        "materials": ["wood_dark", "tarp"],
+        "requiredParts": ["trunk", "root-flare", "branches.primary", "branches.secondary", "foliage.lower", "foliage.middle", "foliage.upper", "leader"],
+        "options": {"seed": {"type": "integer", "default": 7, "values": [7, 19, 43]}},
+        "variantEnvelopes": [], "collidersRequired": true, "dynamic": false,
+        "budget": {"triangles": 350000, "maxMeshes": 12},
+        "baseline": {"type": "new-design", "referenceAssets": [], "scope": "现库无同尺度树木参考，不虚构植物比较通过。对照现有资产的结构、资源归属、实际预览和证据规范，树形按本设计契约验收。"}
+      },
+      "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+      "evidence": {"report": "outputs/nordic-spruce/asset-review.html"}
+    },
+    {
+      "id": "new.quadruped-mech",
+      "source": "quadruped-mech.js",
+      "name": "四足机甲 · 火炮平台",
+      "summary": "原创程序化四足战斗机甲：装甲机身、四组分级机械腿、可摆动炮塔与一门带制退器和后坐套筒的火炮。支持灰/橙装甲与三种细节 seed，含待机微动、步态微动、炮塔摆动和四秒周期火炮后坐动画。",
+      "tags": ["原创", "四足", "机甲", "火炮", "动画", "程序化", "战斗载具"],
+      "contract": {
+        "units": "m", "size": [4.82, 2.68, 6.16], "sizeTolerance": {"meters": 0.05, "percent": 0.02},
+        "origin": "bottom-center", "forward": "+Z", "qualityTier": "catalog",
+        "materials": ["paint_grey", "paint_orange", "steel_dark", "gunmetal", "rubber", "hazard_stripes"],
+        "requiredParts": ["body.chassis", "body.front-plate", "body.rear-power", "turret.ring", "turret.gun-mount", "cannon.barrel", "cannon.muzzle", "cannon.recoil-sleeve", "leg.front-left", "leg.front-right", "leg.rear-left", "leg.rear-right"],
+        "options": {"seed": {"type": "integer", "default": 7, "values": [7, 19, 43]}, "armor": {"type": "string", "default": "grey", "values": ["grey", "orange"]}},
+        "variantEnvelopes": [], "collidersRequired": true, "dynamic": true,
+        "budget": {"triangles": 60000, "maxMeshes": 260},
+        "baseline": {"type": "new-design", "referenceAssets": ["prop.forklift"], "scope": "仅对照现有载具/机械资产的结构层级、材料所有权、碰撞与动画生命周期；不复刻原版外形。"}
+      },
+      "acceptance": {"catalog": "unverified", "geometry": "unverified", "visual": "unverified", "runtime": "unverified"},
+      "evidence": {"report": "outputs/quadruped-mech/asset-review.html"}
+    }
+  ]
+}

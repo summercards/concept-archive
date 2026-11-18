@@ -1,0 +1,1382 @@
+{
+  "source": {
+    "path": "/Users/zyq/work/工程参考/几猫国产3A大作_V1(4).html",
+    "bytes": 1425707,
+    "sha256": "9e55b5200b088adaf8e1152da04efc0d3b25e236e6baf2dee96f81e23e084966"
+  },
+  "generated": {
+    "path": "assets/code/container-builder.js",
+    "bytes": 45572,
+    "sha256": "1a13382d4dd8a66b50367b5cd97b3dcd8123cdf37bbdc5c4e53717e1c469c28d"
+  },
+  "extraction": {
+    "parser": "node:internal/deps/acorn/acorn/dist/acorn",
+    "parserVersion": "8.15.0",
+    "sourceUnit": "sourceByteOffset/sourceByteEnd are UTF-8 byte offsets; sourceCodeUnitOffset/sourceCodeUnitEnd are UTF-16 code-unit offsets; sourceCodePointOffset/sourceCodePointEnd are Unicode code-point offsets; sourceLineColumn is 1-based HTML Unicode code-unit line/column",
+    "originalScriptTagOffset": 32034,
+    "publicApi": [
+      "buildContainer(ctx,type,options={})",
+      "createDecalService(ctx,options={})",
+      "M3",
+      "zA",
+      "jn",
+      "Zg",
+      "qi",
+      "l3",
+      "Gi"
+    ],
+    "exactDependencies": [
+      "three@0.180.0",
+      "ctx.mats.get(name, options?)",
+      "ctx.mats.label(id, options?)",
+      "ctx.mats.decal(id)",
+      "canvasFactory(width,height) or browser document.createElement(\"canvas\")"
+    ],
+    "aliasAudit": {
+      "W": {
+        "originalBinding": "W",
+        "brExport": "Vector3",
+        "generated": "THREE.Vector3"
+      },
+      "un": {
+        "originalBinding": "un",
+        "brExport": "BoxGeometry",
+        "generated": "THREE.BoxGeometry"
+      },
+      "Ys": {
+        "originalBinding": "Ys",
+        "brExport": "CylinderGeometry",
+        "generated": "THREE.CylinderGeometry"
+      },
+      "Jr": {
+        "originalBinding": "Jr",
+        "brExport": "CatmullRomCurve3",
+        "generated": "THREE.CatmullRomCurve3"
+      },
+      "Kr": {
+        "originalBinding": "Kr",
+        "brExport": "TubeGeometry",
+        "generated": "THREE.TubeGeometry"
+      },
+      "Lt": {
+        "originalBinding": "Lt",
+        "brExport": "Quaternion",
+        "generated": "THREE.Quaternion"
+      },
+      "Ye": {
+        "originalBinding": "Ye",
+        "brExport": "Matrix4",
+        "generated": "THREE.Matrix4"
+      },
+      "In": {
+        "originalBinding": "In",
+        "brExport": "Euler",
+        "generated": "THREE.Euler"
+      },
+      "nt": {
+        "originalBinding": "nt",
+        "brExport": "BufferGeometry",
+        "generated": "THREE.BufferGeometry"
+      },
+      "et": {
+        "originalBinding": "et",
+        "brExport": "BufferAttribute",
+        "generated": "THREE.BufferAttribute"
+      },
+      "Qe": {
+        "originalBinding": "Qe",
+        "brExport": "Mesh",
+        "generated": "THREE.Mesh"
+      },
+      "wt": {
+        "originalBinding": "wt",
+        "brExport": "Group",
+        "generated": "THREE.Group"
+      },
+      "Qt": {
+        "originalBinding": "Qt",
+        "brExport": "MeshStandardMaterial",
+        "generated": "THREE.MeshStandardMaterial"
+      },
+      "Nn": {
+        "originalBinding": "Nn",
+        "brExport": "MeshBasicMaterial",
+        "generated": "THREE.MeshBasicMaterial"
+      },
+      "xs": {
+        "originalBinding": "xs",
+        "brExport": "CanvasTexture",
+        "generated": "THREE.CanvasTexture"
+      },
+      "rn": {
+        "originalBinding": "rn",
+        "brExport": "PlaneGeometry",
+        "generated": "THREE.PlaneGeometry"
+      },
+      "ar": {
+        "originalBinding": "ar",
+        "brExport": "LatheGeometry",
+        "generated": "THREE.LatheGeometry"
+      },
+      "Ae": {
+        "originalBinding": "Ae",
+        "brExport": "Vector2",
+        "generated": "THREE.Vector2"
+      },
+      "ls": {
+        "originalBinding": "ls",
+        "brExport": "SphereGeometry",
+        "generated": "THREE.SphereGeometry"
+      },
+      "Vn": {
+        "originalBinding": "Vn",
+        "brExport": "SRGBColorSpace",
+        "generated": "THREE.SRGBColorSpace"
+      },
+      "Ln": {
+        "originalBinding": "Ln",
+        "brExport": "LinearMipmapLinearFilter",
+        "generated": "THREE.LinearMipmapLinearFilter"
+      },
+      "Sn": {
+        "originalBinding": "Sn",
+        "brExport": "DoubleSide",
+        "generated": "THREE.DoubleSide"
+      },
+      "bs": {
+        "originalBinding": "bs",
+        "brExport": "MathUtils",
+        "generated": "THREE.MathUtils"
+      }
+    },
+    "materialContract": {
+      "get": {
+        "ids": [
+          "steel_galv",
+          "wood_pallet",
+          "paint_white",
+          "paint_<color>"
+        ],
+        "options": "{ vertexColors: true } is passed only for paint_<color>; other calls omit options"
+      },
+      "label": {
+        "ids": [
+          "SLTU 482915 7",
+          "HBMU 307144 2",
+          "NRDU 665201 9",
+          "OKTU 119873 4",
+          "VSLU 850362 1",
+          "TQLU 274590 6",
+          "22G1",
+          "42G1",
+          "45G1",
+          "最大总重 <gross> 千克",
+          "皮重 <tare> 千克  净重 <net> 千克",
+          "容积 <cu> 立方米"
+        ],
+        "options": "{ color: \"white\"|\"black\", font: \"stencil\"|\"sans\", distress: number }"
+      },
+      "decal": {
+        "ids": [
+          "logo_a",
+          "logo_b",
+          "logo_c",
+          "logo_d",
+          "csc_plate",
+          "caution_stripes",
+          "rust_run",
+          "grime_streak"
+        ],
+        "options": "no second argument; returns { material, aspect }"
+      }
+    },
+    "fragments": {
+      "o3": {
+        "sourceByteOffset": 839914,
+        "sourceByteEnd": 840004,
+        "sourceCodeUnitOffset": 839875,
+        "sourceCodeUnitEnd": 839965,
+        "sourceCodePointOffset": 839875,
+        "sourceCodePointEnd": 839965,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 94
+        },
+        "sourceCodeUnitLength": 90,
+        "anchor": "o3 declaration",
+        "fragmentSha256": "cf104f01372617a94d14561d627137a888cc99f19cab9957e8e6ea6750da206c"
+      },
+      "r3": {
+        "sourceByteOffset": 840005,
+        "sourceByteEnd": 840072,
+        "sourceCodeUnitOffset": 839966,
+        "sourceCodeUnitEnd": 840033,
+        "sourceCodePointOffset": 839966,
+        "sourceCodePointEnd": 840033,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 185
+        },
+        "sourceCodeUnitLength": 67,
+        "anchor": "r3 declaration",
+        "fragmentSha256": "b33d339930b43942f0afa751c91f2d574d57165aa56f9f2d294026cb7e955c47"
+      },
+      "oA": {
+        "sourceByteOffset": 840073,
+        "sourceByteEnd": 840134,
+        "sourceCodeUnitOffset": 840034,
+        "sourceCodeUnitEnd": 840095,
+        "sourceCodePointOffset": 840034,
+        "sourceCodePointEnd": 840095,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 253
+        },
+        "sourceCodeUnitLength": 61,
+        "anchor": "oA declaration",
+        "fragmentSha256": "37115a456d31b02793e0db77249813415c2949dbb50303bc6b9a6c3577d9e904"
+      },
+      "Ut": {
+        "sourceByteOffset": 840135,
+        "sourceByteEnd": 840248,
+        "sourceCodeUnitOffset": 840096,
+        "sourceCodeUnitEnd": 840209,
+        "sourceCodePointOffset": 840096,
+        "sourceCodePointEnd": 840209,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 315
+        },
+        "sourceCodeUnitLength": 113,
+        "anchor": "Ut declaration",
+        "fragmentSha256": "5973aaac401b2310bacef95c7ac2b6ec68d8d92d3fe66a7a53a59807f80d77b2"
+      },
+      "An": {
+        "sourceByteOffset": 840249,
+        "sourceByteEnd": 840297,
+        "sourceCodeUnitOffset": 840210,
+        "sourceCodeUnitEnd": 840258,
+        "sourceCodePointOffset": 840210,
+        "sourceCodePointEnd": 840258,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 429
+        },
+        "sourceCodeUnitLength": 48,
+        "anchor": "An declaration",
+        "fragmentSha256": "52c97cfc1353ded37761f507774028eaf98b06b8ac57c3bb79e2812e18e043e0"
+      },
+      "rA": {
+        "sourceByteOffset": 840298,
+        "sourceByteEnd": 840358,
+        "sourceCodeUnitOffset": 840259,
+        "sourceCodeUnitEnd": 840319,
+        "sourceCodePointOffset": 840259,
+        "sourceCodePointEnd": 840319,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 478
+        },
+        "sourceCodeUnitLength": 60,
+        "anchor": "rA declaration",
+        "fragmentSha256": "32293b767a63d5f7131efb997ee5bd91bfba94b1d02c174741dd9bd3e9b1012f"
+      },
+      "aA": {
+        "sourceByteOffset": 840359,
+        "sourceByteEnd": 840515,
+        "sourceCodeUnitOffset": 840320,
+        "sourceCodeUnitEnd": 840476,
+        "sourceCodePointOffset": 840320,
+        "sourceCodePointEnd": 840476,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 539
+        },
+        "sourceCodeUnitLength": 156,
+        "anchor": "aA declaration",
+        "fragmentSha256": "e6fe09ada5a33ccccc5d2a4d03976d84ebe1bddf994444e1909f0a70f88c6319"
+      },
+      "lA": {
+        "sourceByteOffset": 840515,
+        "sourceByteEnd": 840630,
+        "sourceCodeUnitOffset": 840476,
+        "sourceCodeUnitEnd": 840591,
+        "sourceCodePointOffset": 840476,
+        "sourceCodePointEnd": 840591,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 695
+        },
+        "sourceCodeUnitLength": 115,
+        "anchor": "lA declaration",
+        "fragmentSha256": "867cfebaa9f64a07c68af2fc353132f46ea057ee072c13edf3cf11b08ed4fb3c"
+      },
+      "Wg": {
+        "sourceByteOffset": 840630,
+        "sourceByteEnd": 840716,
+        "sourceCodeUnitOffset": 840591,
+        "sourceCodeUnitEnd": 840677,
+        "sourceCodePointOffset": 840591,
+        "sourceCodePointEnd": 840677,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 810
+        },
+        "sourceCodeUnitLength": 86,
+        "anchor": "Wg declaration",
+        "fragmentSha256": "d626b2dc28762386b5f9108b07bde34fb06f5f5bcda5602773930669dc9e7b24"
+      },
+      "ra": {
+        "sourceByteOffset": 840716,
+        "sourceByteEnd": 840902,
+        "sourceCodeUnitOffset": 840677,
+        "sourceCodeUnitEnd": 840863,
+        "sourceCodePointOffset": 840677,
+        "sourceCodePointEnd": 840863,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 896
+        },
+        "sourceCodeUnitLength": 186,
+        "anchor": "ra declaration",
+        "fragmentSha256": "3b6f5e7dbf006e3346437c75d41d06d08152642c955ecf4956c5a7552743bd1f"
+      },
+      "Ks": {
+        "sourceByteOffset": 840902,
+        "sourceByteEnd": 841689,
+        "sourceCodeUnitOffset": 840863,
+        "sourceCodeUnitEnd": 841650,
+        "sourceCodePointOffset": 840863,
+        "sourceCodePointEnd": 841650,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 1082
+        },
+        "sourceCodeUnitLength": 787,
+        "anchor": "Ks declaration",
+        "fragmentSha256": "4aef423763a319be4770d46e0a24448e7d6c91098f514136c2670b87d851c4de"
+      },
+      "a3": {
+        "sourceByteOffset": 841689,
+        "sourceByteEnd": 841802,
+        "sourceCodeUnitOffset": 841650,
+        "sourceCodeUnitEnd": 841763,
+        "sourceCodePointOffset": 841650,
+        "sourceCodePointEnd": 841763,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 1869
+        },
+        "sourceCodeUnitLength": 113,
+        "anchor": "a3 declaration",
+        "fragmentSha256": "39d7f3bb683853181dbb6efdf7b496e603b8eab77306d5a6ec9c50b61fd2274d"
+      },
+      "qa": {
+        "sourceByteOffset": 841802,
+        "sourceByteEnd": 842495,
+        "sourceCodeUnitOffset": 841763,
+        "sourceCodeUnitEnd": 842456,
+        "sourceCodePointOffset": 841763,
+        "sourceCodePointEnd": 842456,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 1982
+        },
+        "sourceCodeUnitLength": 693,
+        "anchor": "qa declaration",
+        "fragmentSha256": "9ce27c4cc988582da79cd22c6884260d7ec6de4c042ed2e0d59bc5d5b80e77f5"
+      },
+      "l3": {
+        "sourceByteOffset": 842495,
+        "sourceByteEnd": 857710,
+        "sourceCodeUnitOffset": 842456,
+        "sourceCodeUnitEnd": 857489,
+        "sourceCodePointOffset": 842456,
+        "sourceCodePointEnd": 857489,
+        "sourceLineColumn": {
+          "line": 5294,
+          "column": 2675
+        },
+        "sourceCodeUnitLength": 15033,
+        "anchor": "function l3(i,e=4)",
+        "fragmentSha256": "bbb0ed4a43d096ffad13a6f109456c7c0adaaefd6de9f2df56b84d65c2b82d55"
+      },
+      "Gi": {
+        "sourceByteOffset": 884012,
+        "sourceByteEnd": 885646,
+        "sourceCodeUnitOffset": 883759,
+        "sourceCodeUnitEnd": 885393,
+        "sourceCodePointOffset": 883759,
+        "sourceCodePointEnd": 885393,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 13983
+        },
+        "sourceCodeUnitLength": 1634,
+        "anchor": "Gi declaration",
+        "fragmentSha256": "c2db6a7b55b792b6c8f02bce57da0a175e6525f9cd42a2c796400a2195b22ec8"
+      },
+      "$a": {
+        "sourceByteOffset": 886586,
+        "sourceByteEnd": 886750,
+        "sourceCodeUnitOffset": 886333,
+        "sourceCodeUnitEnd": 886497,
+        "sourceCodePointOffset": 886333,
+        "sourceCodePointEnd": 886497,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16557
+        },
+        "sourceCodeUnitLength": 164,
+        "anchor": "$a declaration",
+        "fragmentSha256": "1c744d95a821cedda3a88ec6397281b11f281e7b176ea5499ccc365e712a0295"
+      },
+      "RA": {
+        "sourceByteOffset": 887017,
+        "sourceByteEnd": 887048,
+        "sourceCodeUnitOffset": 886764,
+        "sourceCodeUnitEnd": 886795,
+        "sourceCodePointOffset": 886764,
+        "sourceCodePointEnd": 886795,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16988
+        },
+        "sourceCodeUnitLength": 31,
+        "anchor": "RA declaration",
+        "fragmentSha256": "59732078586cf6ba69f755ed7b05c4d46c676a6f29b2ddcabda8f0245cc0ac28"
+      },
+      "mn": {
+        "sourceByteOffset": 887049,
+        "sourceByteEnd": 887103,
+        "sourceCodeUnitOffset": 886796,
+        "sourceCodeUnitEnd": 886850,
+        "sourceCodePointOffset": 886796,
+        "sourceCodePointEnd": 886850,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 17020
+        },
+        "sourceCodeUnitLength": 54,
+        "anchor": "mn declaration",
+        "fragmentSha256": "37c45b80300a1542e5859b1f7a5fd905661b3046d9989216898da149f2d1f6c0"
+      },
+      "Ir": {
+        "sourceByteOffset": 887104,
+        "sourceByteEnd": 887174,
+        "sourceCodeUnitOffset": 886851,
+        "sourceCodeUnitEnd": 886921,
+        "sourceCodePointOffset": 886851,
+        "sourceCodePointEnd": 886921,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 17075
+        },
+        "sourceCodeUnitLength": 70,
+        "anchor": "Ir declaration",
+        "fragmentSha256": "bac55cfab127fd9a070979b861cf8b295838eacb479883d2f4848e8bade4bc2f"
+      },
+      "f1": {
+        "sourceByteOffset": 891455,
+        "sourceByteEnd": 891464,
+        "sourceCodeUnitOffset": 891202,
+        "sourceCodeUnitEnd": 891211,
+        "sourceCodePointOffset": 891202,
+        "sourceCodePointEnd": 891211,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21426
+        },
+        "sourceCodeUnitLength": 9,
+        "anchor": "f1 declaration",
+        "fragmentSha256": "3cf40cb3dd9cf67ef48f9e54166942e56c35f089a04e98a0e5fe6a37d59b4454"
+      },
+      "Fc": {
+        "sourceByteOffset": 891465,
+        "sourceByteEnd": 891474,
+        "sourceCodeUnitOffset": 891212,
+        "sourceCodeUnitEnd": 891221,
+        "sourceCodePointOffset": 891212,
+        "sourceCodePointEnd": 891221,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21436
+        },
+        "sourceCodeUnitLength": 9,
+        "anchor": "Fc declaration",
+        "fragmentSha256": "afd753d9a006574084a2de46a89c67a17cad694cdf9d1ab08eafd52b1f302a71"
+      },
+      "g3": {
+        "sourceByteOffset": 891475,
+        "sourceByteEnd": 891484,
+        "sourceCodeUnitOffset": 891222,
+        "sourceCodeUnitEnd": 891231,
+        "sourceCodePointOffset": 891222,
+        "sourceCodePointEnd": 891231,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21446
+        },
+        "sourceCodeUnitLength": 9,
+        "anchor": "g3 declaration",
+        "fragmentSha256": "93ca0fe6d9dc815ba41f08f9acd63e786727742d8220bdfcb71226696253e000"
+      },
+      "d1": {
+        "sourceByteOffset": 891485,
+        "sourceByteEnd": 891493,
+        "sourceCodeUnitOffset": 891232,
+        "sourceCodeUnitEnd": 891240,
+        "sourceCodePointOffset": 891232,
+        "sourceCodePointEnd": 891240,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21456
+        },
+        "sourceCodeUnitLength": 8,
+        "anchor": "d1 declaration",
+        "fragmentSha256": "67b8db3bfffb740b421c662d17d8a113fdea0b85842e46d1815c5ff877921479"
+      },
+      "p1": {
+        "sourceByteOffset": 891494,
+        "sourceByteEnd": 891509,
+        "sourceCodeUnitOffset": 891241,
+        "sourceCodeUnitEnd": 891256,
+        "sourceCodePointOffset": 891241,
+        "sourceCodePointEnd": 891256,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21465
+        },
+        "sourceCodeUnitLength": 15,
+        "anchor": "p1 declaration",
+        "fragmentSha256": "f22f2af8d8a5faaac1061c98d80bd78d313c81840e84043589eda76ddedb79b2"
+      },
+      "m1": {
+        "sourceByteOffset": 893748,
+        "sourceByteEnd": 893762,
+        "sourceCodeUnitOffset": 893495,
+        "sourceCodeUnitEnd": 893509,
+        "sourceCodePointOffset": 893495,
+        "sourceCodePointEnd": 893509,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23719
+        },
+        "sourceCodeUnitLength": 14,
+        "anchor": "m1 declaration",
+        "fragmentSha256": "e64b292b6c406e1514e5e51c9fc3577b26fc89f4fb329bc65e16e3fcc3344712"
+      },
+      "Bc": {
+        "sourceByteOffset": 894273,
+        "sourceByteEnd": 894281,
+        "sourceCodeUnitOffset": 894020,
+        "sourceCodeUnitEnd": 894028,
+        "sourceCodePointOffset": 894020,
+        "sourceCodePointEnd": 894028,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24244
+        },
+        "sourceCodeUnitLength": 8,
+        "anchor": "Bc declaration",
+        "fragmentSha256": "7cca90788b71f738cbe86d7a8db96db55644e7c49e0bbf6929f5b90719fb7fb5"
+      },
+      "_3": {
+        "sourceByteOffset": 894282,
+        "sourceByteEnd": 894552,
+        "sourceCodeUnitOffset": 894029,
+        "sourceCodeUnitEnd": 894299,
+        "sourceCodePointOffset": 894029,
+        "sourceCodePointEnd": 894299,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24253
+        },
+        "sourceCodeUnitLength": 270,
+        "anchor": "_3 declaration",
+        "fragmentSha256": "5a4eb0a83ff745f05404c15cc653051b75e8eaba31cf066e15297d9ac2112a72"
+      },
+      "v1": {
+        "sourceByteOffset": 894553,
+        "sourceByteEnd": 894653,
+        "sourceCodeUnitOffset": 894300,
+        "sourceCodeUnitEnd": 894400,
+        "sourceCodePointOffset": 894300,
+        "sourceCodePointEnd": 894400,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24524
+        },
+        "sourceCodeUnitLength": 100,
+        "anchor": "v1 declaration",
+        "fragmentSha256": "ca7a497501b3511166c305833d6b2cdc809a6003f62f7e2454eb9a65c2614d46"
+      },
+      "v3": {
+        "sourceByteOffset": 894654,
+        "sourceByteEnd": 894694,
+        "sourceCodeUnitOffset": 894401,
+        "sourceCodeUnitEnd": 894441,
+        "sourceCodePointOffset": 894401,
+        "sourceCodePointEnd": 894441,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24625
+        },
+        "sourceCodeUnitLength": 40,
+        "anchor": "v3 declaration",
+        "fragmentSha256": "1cbefca4064313a1c4d4394cd2ea56daf7d9bb0a6302fc1d8f7e0568c2abf379"
+      },
+      "jg": {
+        "sourceByteOffset": 894695,
+        "sourceByteEnd": 894760,
+        "sourceCodeUnitOffset": 894442,
+        "sourceCodeUnitEnd": 894507,
+        "sourceCodePointOffset": 894442,
+        "sourceCodePointEnd": 894507,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24666
+        },
+        "sourceCodeUnitLength": 65,
+        "anchor": "jg declaration",
+        "fragmentSha256": "0c78017ca8066a83aa0f99ac9835a164f16a1ac92d2f951d988a94ac3061bcc5"
+      },
+      "Jt": {
+        "sourceByteOffset": 894761,
+        "sourceByteEnd": 894773,
+        "sourceCodeUnitOffset": 894508,
+        "sourceCodeUnitEnd": 894520,
+        "sourceCodePointOffset": 894508,
+        "sourceCodePointEnd": 894520,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24732
+        },
+        "sourceCodeUnitLength": 12,
+        "anchor": "Jt declaration",
+        "fragmentSha256": "58d7484a1e871fc9391d19198c970069217d28f9d727ac491d629bbb34a8545f"
+      },
+      "IA": {
+        "sourceByteOffset": 894774,
+        "sourceByteEnd": 894778,
+        "sourceCodeUnitOffset": 894521,
+        "sourceCodeUnitEnd": 894525,
+        "sourceCodePointOffset": 894521,
+        "sourceCodePointEnd": 894525,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24745
+        },
+        "sourceCodeUnitLength": 4,
+        "anchor": "IA declaration",
+        "fragmentSha256": "7fb2fd8655008c47a614cdefbbd3106f2f3718c8b77d6c8f4b359d1634a84484"
+      },
+      "x3": {
+        "sourceByteOffset": 894779,
+        "sourceByteEnd": 894789,
+        "sourceCodeUnitOffset": 894526,
+        "sourceCodeUnitEnd": 894536,
+        "sourceCodePointOffset": 894526,
+        "sourceCodePointEnd": 894536,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24750
+        },
+        "sourceCodeUnitLength": 10,
+        "anchor": "x3 declaration",
+        "fragmentSha256": "4ebf98b1378d182f17d5ea9096e85a37126e572dbe95021146ab5c44adad5a4f"
+      },
+      "y3": {
+        "sourceByteOffset": 894790,
+        "sourceByteEnd": 894797,
+        "sourceCodeUnitOffset": 894537,
+        "sourceCodeUnitEnd": 894544,
+        "sourceCodePointOffset": 894537,
+        "sourceCodePointEnd": 894544,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24761
+        },
+        "sourceCodeUnitLength": 7,
+        "anchor": "y3 declaration",
+        "fragmentSha256": "9f4f658b02f1a6f88b32924c2e44baad2a0a68f4acbfee62fb201ea4054f9034"
+      },
+      "bf": {
+        "sourceByteOffset": 894798,
+        "sourceByteEnd": 894805,
+        "sourceCodeUnitOffset": 894545,
+        "sourceCodeUnitEnd": 894552,
+        "sourceCodePointOffset": 894545,
+        "sourceCodePointEnd": 894552,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24769
+        },
+        "sourceCodeUnitLength": 7,
+        "anchor": "bf declaration",
+        "fragmentSha256": "3015ea18b1974b2f0c31644111c6626a79f06b1703992fb6b7c5d854dd5ec1f4"
+      },
+      "b3": {
+        "sourceByteOffset": 894806,
+        "sourceByteEnd": 894813,
+        "sourceCodeUnitOffset": 894553,
+        "sourceCodeUnitEnd": 894560,
+        "sourceCodePointOffset": 894553,
+        "sourceCodePointEnd": 894560,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24777
+        },
+        "sourceCodeUnitLength": 7,
+        "anchor": "b3 declaration",
+        "fragmentSha256": "68a49d7aad36a735df9aade35e96bff6575f45699c747a73bec1fcc268f3d7ae"
+      },
+      "Uo": {
+        "sourceByteOffset": 894814,
+        "sourceByteEnd": 894848,
+        "sourceCodeUnitOffset": 894561,
+        "sourceCodeUnitEnd": 894595,
+        "sourceCodePointOffset": 894561,
+        "sourceCodePointEnd": 894595,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24785
+        },
+        "sourceCodeUnitLength": 34,
+        "anchor": "Uo declaration",
+        "fragmentSha256": "3184b1e9ed548b13453fb6e1fbeed58d8839181ded168d5185481c3d35862360"
+      },
+      "x1": {
+        "sourceByteOffset": 894849,
+        "sourceByteEnd": 894880,
+        "sourceCodeUnitOffset": 894596,
+        "sourceCodeUnitEnd": 894627,
+        "sourceCodePointOffset": 894596,
+        "sourceCodePointEnd": 894627,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24820
+        },
+        "sourceCodeUnitLength": 31,
+        "anchor": "x1 declaration",
+        "fragmentSha256": "5d2b6ab39ed1c25467da3457165e055dd57a4b7fc1b92f4da26ba0d9a4fa06da"
+      },
+      "y1": {
+        "sourceByteOffset": 894881,
+        "sourceByteEnd": 894912,
+        "sourceCodeUnitOffset": 894628,
+        "sourceCodeUnitEnd": 894659,
+        "sourceCodePointOffset": 894628,
+        "sourceCodePointEnd": 894659,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24852
+        },
+        "sourceCodeUnitLength": 31,
+        "anchor": "y1 declaration",
+        "fragmentSha256": "0e41b6d565e3ca9dfaa0181e0fba0a18662802c3392a969a31ea25b264ec4188"
+      },
+      "Ly": {
+        "sourceByteOffset": 739960,
+        "sourceByteEnd": 741166,
+        "sourceCodeUnitOffset": 739921,
+        "sourceCodeUnitEnd": 741127,
+        "sourceCodePointOffset": 739921,
+        "sourceCodePointEnd": 741127,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 57375
+        },
+        "sourceCodeUnitLength": 1206,
+        "anchor": "Ly declaration",
+        "fragmentSha256": "c8ed0249566ad762bbe02a553daf7c7c3a48a29c7f9de781ea2c668f8cca9bac"
+      },
+      "sa": {
+        "sourceByteOffset": 737442,
+        "sourceByteEnd": 739960,
+        "sourceCodeUnitOffset": 737403,
+        "sourceCodeUnitEnd": 739921,
+        "sourceCodePointOffset": 737403,
+        "sourceCodePointEnd": 739921,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 54857
+        },
+        "sourceCodeUnitLength": 2518,
+        "anchor": "sa declaration",
+        "fragmentSha256": "d70c274e8193082615b94a222d2a27410c51da7b0c558f60c24d8884abbc212d"
+      },
+      "$e": {
+        "sourceByteOffset": 741179,
+        "sourceByteEnd": 741503,
+        "sourceCodeUnitOffset": 741140,
+        "sourceCodeUnitEnd": 741464,
+        "sourceCodePointOffset": 741140,
+        "sourceCodePointEnd": 741464,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 58594
+        },
+        "sourceCodeUnitLength": 324,
+        "anchor": "$e declaration",
+        "fragmentSha256": "fd4fe7017a32537555acc33b8267c0325b5bebee263461656af81e482bb8ebf1"
+      },
+      "Wi": {
+        "sourceByteOffset": 741503,
+        "sourceByteEnd": 742403,
+        "sourceCodeUnitOffset": 741464,
+        "sourceCodeUnitEnd": 742364,
+        "sourceCodePointOffset": 741464,
+        "sourceCodePointEnd": 742364,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 58918
+        },
+        "sourceCodeUnitLength": 900,
+        "anchor": "Wi declaration",
+        "fragmentSha256": "9ff0494519f4df6efc9b789888f81909af546ac87050f4e2de027eb4038026bd"
+      },
+      "ot": {
+        "sourceByteOffset": 742403,
+        "sourceByteEnd": 742706,
+        "sourceCodeUnitOffset": 742364,
+        "sourceCodeUnitEnd": 742667,
+        "sourceCodePointOffset": 742364,
+        "sourceCodePointEnd": 742667,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 59818
+        },
+        "sourceCodeUnitLength": 303,
+        "anchor": "ot declaration",
+        "fragmentSha256": "ced894422b55f778f98b84b9b400d740fef9f823206edf8c264c35b88e213895"
+      },
+      "Fn": {
+        "sourceByteOffset": 742706,
+        "sourceByteEnd": 743014,
+        "sourceCodeUnitOffset": 742667,
+        "sourceCodeUnitEnd": 742975,
+        "sourceCodePointOffset": 742667,
+        "sourceCodePointEnd": 742975,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60121
+        },
+        "sourceCodeUnitLength": 308,
+        "anchor": "Fn declaration",
+        "fragmentSha256": "049fc57caca70bc0c074e0b19863c4a543a31ddc71177beca8b9fdf4e06a9264"
+      },
+      "Dc": {
+        "sourceByteOffset": 743066,
+        "sourceByteEnd": 743287,
+        "sourceCodeUnitOffset": 743027,
+        "sourceCodeUnitEnd": 743248,
+        "sourceCodePointOffset": 743027,
+        "sourceCodePointEnd": 743248,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60481
+        },
+        "sourceCodeUnitLength": 221,
+        "anchor": "Dc declaration",
+        "fragmentSha256": "a8baf3ea1bb07c56ca26afd0575fb31e9c0eb9f3e5f8d21897bca4572f025fce"
+      },
+      "Lc": {
+        "sourceByteOffset": 743287,
+        "sourceByteEnd": 743534,
+        "sourceCodeUnitOffset": 743248,
+        "sourceCodeUnitEnd": 743495,
+        "sourceCodePointOffset": 743248,
+        "sourceCodePointEnd": 743495,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60702
+        },
+        "sourceCodeUnitLength": 247,
+        "anchor": "Lc declaration",
+        "fragmentSha256": "885dad993af68c37ec1b44954996ac2b5de250530fa4eb3fd33c02e4c018e44a"
+      },
+      "Ii": {
+        "sourceByteOffset": 743534,
+        "sourceByteEnd": 744179,
+        "sourceCodeUnitOffset": 743495,
+        "sourceCodeUnitEnd": 744140,
+        "sourceCodePointOffset": 743495,
+        "sourceCodePointEnd": 744140,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60949
+        },
+        "sourceCodeUnitLength": 645,
+        "anchor": "Ii declaration",
+        "fragmentSha256": "5b1785e4df9a4fe83f993d5d0d002dbc381b64584330a61b42fc1ab41dbd9763"
+      },
+      "h1": {
+        "sourceByteOffset": 886750,
+        "sourceByteEnd": 886833,
+        "sourceCodeUnitOffset": 886497,
+        "sourceCodeUnitEnd": 886580,
+        "sourceCodePointOffset": 886497,
+        "sourceCodePointEnd": 886580,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16721
+        },
+        "sourceCodeUnitLength": 83,
+        "anchor": "h1 declaration",
+        "fragmentSha256": "472833b3b6409ef5db5e4d63b746bd9724fc098d029b003ef1b63ffbb0c2ca5f"
+      },
+      "ri": {
+        "sourceByteOffset": 886833,
+        "sourceByteEnd": 887013,
+        "sourceCodeUnitOffset": 886580,
+        "sourceCodeUnitEnd": 886760,
+        "sourceCodePointOffset": 886580,
+        "sourceCodePointEnd": 886760,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 16804
+        },
+        "sourceCodeUnitLength": 180,
+        "anchor": "ri declaration",
+        "fragmentSha256": "b80c502c38cfc03192f023c5729ea2ce28d7aa1af8a3f17baf37371eb5806b07"
+      },
+      "p3": {
+        "sourceByteOffset": 887175,
+        "sourceByteEnd": 888633,
+        "sourceCodeUnitOffset": 886922,
+        "sourceCodeUnitEnd": 888380,
+        "sourceCodePointOffset": 886922,
+        "sourceCodePointEnd": 888380,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 17146
+        },
+        "sourceCodeUnitLength": 1458,
+        "anchor": "p3 declaration",
+        "fragmentSha256": "afc57a9cae37c764b56bcdbe329c38f09ffae5b6b8b2df17c3d1e626bc137fcb"
+      },
+      "m3": {
+        "sourceByteOffset": 888633,
+        "sourceByteEnd": 889095,
+        "sourceCodeUnitOffset": 888380,
+        "sourceCodeUnitEnd": 888842,
+        "sourceCodePointOffset": 888380,
+        "sourceCodePointEnd": 888842,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 18604
+        },
+        "sourceCodeUnitLength": 462,
+        "anchor": "m3 declaration",
+        "fragmentSha256": "2b05f023ce3e8b887679546534e66b7b9b6e7616eddcc900f40adea485fa593d"
+      },
+      "la": {
+        "sourceByteOffset": 889095,
+        "sourceByteEnd": 890184,
+        "sourceCodeUnitOffset": 888842,
+        "sourceCodeUnitEnd": 889931,
+        "sourceCodePointOffset": 888842,
+        "sourceCodePointEnd": 889931,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 19066
+        },
+        "sourceCodeUnitLength": 1089,
+        "anchor": "la declaration",
+        "fragmentSha256": "1d2777959b7a36ebcf823f3ddca5a0ab631e3fb9b51ada83a628bb17e9225ee4"
+      },
+      "CA": {
+        "sourceByteOffset": 890184,
+        "sourceByteEnd": 890305,
+        "sourceCodeUnitOffset": 889931,
+        "sourceCodeUnitEnd": 890052,
+        "sourceCodePointOffset": 889931,
+        "sourceCodePointEnd": 890052,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 20155
+        },
+        "sourceCodeUnitLength": 121,
+        "anchor": "CA declaration",
+        "fragmentSha256": "01ed5ad58e9012c3ab266ae7c741710e606adb2c2c70ec8189ffc2ed4e426ddd"
+      },
+      "Uc": {
+        "sourceByteOffset": 890305,
+        "sourceByteEnd": 890547,
+        "sourceCodeUnitOffset": 890052,
+        "sourceCodeUnitEnd": 890294,
+        "sourceCodePointOffset": 890052,
+        "sourceCodePointEnd": 890294,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 20276
+        },
+        "sourceCodeUnitLength": 242,
+        "anchor": "Uc declaration",
+        "fragmentSha256": "be476ccd09d22dd7fcf837afb382f0ca30a009117144e55c5d88ffc05cb015db"
+      },
+      "pr": {
+        "sourceByteOffset": 890547,
+        "sourceByteEnd": 891066,
+        "sourceCodeUnitOffset": 890294,
+        "sourceCodeUnitEnd": 890813,
+        "sourceCodePointOffset": 890294,
+        "sourceCodePointEnd": 890813,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 20518
+        },
+        "sourceCodeUnitLength": 519,
+        "anchor": "pr declaration",
+        "fragmentSha256": "2b5f0ddaf6f0e64c3b358d114d1bfe9645bf45b2b070aadc484da44b148e6a7a"
+      },
+      "cn": {
+        "sourceByteOffset": 891066,
+        "sourceByteEnd": 891102,
+        "sourceCodeUnitOffset": 890813,
+        "sourceCodeUnitEnd": 890849,
+        "sourceCodePointOffset": 890813,
+        "sourceCodePointEnd": 890849,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21037
+        },
+        "sourceCodeUnitLength": 36,
+        "anchor": "cn declaration",
+        "fragmentSha256": "4e2ca6fcb90ad4e632a68d3ff4eb78af1ff4ad8d12ebb0eedd0c025d1179ade3"
+      },
+      "Nc": {
+        "sourceByteOffset": 891102,
+        "sourceByteEnd": 891225,
+        "sourceCodeUnitOffset": 890849,
+        "sourceCodeUnitEnd": 890972,
+        "sourceCodePointOffset": 890849,
+        "sourceCodePointEnd": 890972,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21073
+        },
+        "sourceCodeUnitLength": 123,
+        "anchor": "Nc declaration",
+        "fragmentSha256": "a27642577b77204b9772cd36f4d2bd7c15b339b39399e0e961ba05ec3e096dcc"
+      },
+      "PA": {
+        "sourceByteOffset": 891225,
+        "sourceByteEnd": 891307,
+        "sourceCodeUnitOffset": 890972,
+        "sourceCodeUnitEnd": 891054,
+        "sourceCodePointOffset": 890972,
+        "sourceCodePointEnd": 891054,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21196
+        },
+        "sourceCodeUnitLength": 82,
+        "anchor": "PA declaration",
+        "fragmentSha256": "96fa95c2679e4dde26ba248d25e7134d94ac169ec4c25020a60587c4c295aad0"
+      },
+      "oa": {
+        "sourceByteOffset": 741170,
+        "sourceByteEnd": 741178,
+        "sourceCodeUnitOffset": 741131,
+        "sourceCodeUnitEnd": 741139,
+        "sourceCodePointOffset": 741131,
+        "sourceCodePointEnd": 741139,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 58585
+        },
+        "sourceCodeUnitLength": 8,
+        "anchor": "oa declaration",
+        "fragmentSha256": "c7671ee20e4d66085f354ad31efbbc60517e615a2ead7451b2264b188aa7be32"
+      },
+      "ky": {
+        "sourceByteOffset": 743018,
+        "sourceByteEnd": 743027,
+        "sourceCodeUnitOffset": 742979,
+        "sourceCodeUnitEnd": 742988,
+        "sourceCodePointOffset": 742979,
+        "sourceCodePointEnd": 742988,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60433
+        },
+        "sourceCodeUnitLength": 9,
+        "anchor": "ky declaration",
+        "fragmentSha256": "46943ea4d81d15dc29437d798b4961feadc9024a56f8751e0f4a96d53ef44744"
+      },
+      "Fy": {
+        "sourceByteOffset": 743028,
+        "sourceByteEnd": 743037,
+        "sourceCodeUnitOffset": 742989,
+        "sourceCodeUnitEnd": 742998,
+        "sourceCodePointOffset": 742989,
+        "sourceCodePointEnd": 742998,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60443
+        },
+        "sourceCodeUnitLength": 9,
+        "anchor": "Fy declaration",
+        "fragmentSha256": "2f7584d947d747d7ddbfa85fe5139a27389511ce239302c62052dbcc208749e6"
+      },
+      "Uy": {
+        "sourceByteOffset": 743038,
+        "sourceByteEnd": 743047,
+        "sourceCodeUnitOffset": 742999,
+        "sourceCodeUnitEnd": 743008,
+        "sourceCodePointOffset": 742999,
+        "sourceCodePointEnd": 743008,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60453
+        },
+        "sourceCodeUnitLength": 9,
+        "anchor": "Uy declaration",
+        "fragmentSha256": "c7f40846395397e8daf3958309fdcfeb1db7340b6d9c152f915181a1219b20fa"
+      },
+      "Ny": {
+        "sourceByteOffset": 743048,
+        "sourceByteEnd": 743056,
+        "sourceCodeUnitOffset": 743009,
+        "sourceCodeUnitEnd": 743017,
+        "sourceCodePointOffset": 743009,
+        "sourceCodePointEnd": 743017,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60463
+        },
+        "sourceCodeUnitLength": 8,
+        "anchor": "Ny declaration",
+        "fragmentSha256": "24513fd1b35987bd15963426daeeac37677b7a5e612ddd933e404e43e3501c85"
+      },
+      "Fg": {
+        "sourceByteOffset": 743057,
+        "sourceByteEnd": 743065,
+        "sourceCodeUnitOffset": 743018,
+        "sourceCodeUnitEnd": 743026,
+        "sourceCodePointOffset": 743018,
+        "sourceCodePointEnd": 743026,
+        "sourceLineColumn": {
+          "line": 4191,
+          "column": 60472
+        },
+        "sourceCodeUnitLength": 8,
+        "anchor": "Fg declaration",
+        "fragmentSha256": "0b3ab31eb1e86a0af0a07e5ddd4b1a4e0816a5aec19db8c8dd301d3abb15ae86"
+      },
+      "je": {
+        "sourceByteOffset": 891510,
+        "sourceByteEnd": 891668,
+        "sourceCodeUnitOffset": 891257,
+        "sourceCodeUnitEnd": 891415,
+        "sourceCodePointOffset": 891257,
+        "sourceCodePointEnd": 891415,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21481
+        },
+        "sourceCodeUnitLength": 158,
+        "anchor": "je declaration",
+        "fragmentSha256": "613f501a7c83692a7517388128060078c5eea02b41b36ce5d5aaee20b7157231"
+      },
+      "_o": {
+        "sourceByteOffset": 891668,
+        "sourceByteEnd": 891809,
+        "sourceCodeUnitOffset": 891415,
+        "sourceCodeUnitEnd": 891556,
+        "sourceCodePointOffset": 891415,
+        "sourceCodePointEnd": 891556,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21639
+        },
+        "sourceCodeUnitLength": 141,
+        "anchor": "_o declaration",
+        "fragmentSha256": "a65ed02313e72b03296cb9208c39683843c85a052ec85e309c603a289d005364"
+      },
+      "jn": {
+        "sourceByteOffset": 891813,
+        "sourceByteEnd": 893517,
+        "sourceCodeUnitOffset": 891560,
+        "sourceCodeUnitEnd": 893264,
+        "sourceCodePointOffset": 891560,
+        "sourceCodePointEnd": 893264,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 21784
+        },
+        "sourceCodeUnitLength": 1704,
+        "anchor": "var jn=class",
+        "fragmentSha256": "70614592fbff7a4bca68ba031909f3796aebaa426518413cfdddfa0b37eaf8bf"
+      },
+      "Zg": {
+        "sourceByteOffset": 893518,
+        "sourceByteEnd": 893664,
+        "sourceCodeUnitOffset": 893265,
+        "sourceCodeUnitEnd": 893411,
+        "sourceCodePointOffset": 893265,
+        "sourceCodePointEnd": 893411,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23489
+        },
+        "sourceCodeUnitLength": 146,
+        "anchor": "Zg declaration",
+        "fragmentSha256": "ea40cfc5ce2bf734384df581c027df0bee3e069754d6b533406c0ec47863951b"
+      },
+      "qi": {
+        "sourceByteOffset": 893664,
+        "sourceByteEnd": 893744,
+        "sourceCodeUnitOffset": 893411,
+        "sourceCodeUnitEnd": 893491,
+        "sourceCodePointOffset": 893411,
+        "sourceCodePointEnd": 893491,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23635
+        },
+        "sourceCodeUnitLength": 80,
+        "anchor": "qi declaration",
+        "fragmentSha256": "b6d8c32c83b5ed252b354b04984bd610c2887c75c9a969a1e1b988e6f39b9ff5"
+      },
+      "Mi": {
+        "sourceByteOffset": 893763,
+        "sourceByteEnd": 894044,
+        "sourceCodeUnitOffset": 893510,
+        "sourceCodeUnitEnd": 893791,
+        "sourceCodePointOffset": 893510,
+        "sourceCodePointEnd": 893791,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 23734
+        },
+        "sourceCodeUnitLength": 281,
+        "anchor": "Mi declaration",
+        "fragmentSha256": "b63076ed77b9e9a330a5623e6cac7c7015d548e23d6fff2df49bd97322968b7a"
+      },
+      "Jn": {
+        "sourceByteOffset": 894044,
+        "sourceByteEnd": 894269,
+        "sourceCodeUnitOffset": 893791,
+        "sourceCodeUnitEnd": 894016,
+        "sourceCodePointOffset": 893791,
+        "sourceCodePointEnd": 894016,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24015
+        },
+        "sourceCodeUnitLength": 225,
+        "anchor": "Jn declaration",
+        "fragmentSha256": "ddc1174f6d5b142699070224f9b1809acd9c5505d49639140a6d9c251e0c20aa"
+      },
+      "zA": {
+        "sourceByteOffset": 894913,
+        "sourceByteEnd": 903403,
+        "sourceCodeUnitOffset": 894660,
+        "sourceCodeUnitEnd": 903112,
+        "sourceCodePointOffset": 894660,
+        "sourceCodePointEnd": 903112,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 24884
+        },
+        "sourceCodeUnitLength": 8452,
+        "anchor": "function zA(i,e,t,n,s)",
+        "fragmentSha256": "3a3ca0afafde834addfe3e3d4f144a22fc5af6b7dcfd184b8a58bd2f58fd73a5"
+      },
+      "M3": {
+        "sourceByteOffset": 903403,
+        "sourceByteEnd": 904020,
+        "sourceCodeUnitOffset": 903112,
+        "sourceCodeUnitEnd": 903729,
+        "sourceCodePointOffset": 903112,
+        "sourceCodePointEnd": 903729,
+        "sourceLineColumn": {
+          "line": 5453,
+          "column": 33336
+        },
+        "sourceCodeUnitLength": 617,
+        "anchor": "function M3(i,e,t={})",
+        "fragmentSha256": "a7ad5141eab26da7d00742f354d18323c3aee5d77853b7f889c8a2f5b58761c4"
+      }
+    },
+    "includedBindings": [
+      "o3",
+      "r3",
+      "oA",
+      "Ut",
+      "An",
+      "rA",
+      "aA",
+      "lA",
+      "Wg",
+      "ra",
+      "Ks",
+      "a3",
+      "qa",
+      "l3",
+      "Gi",
+      "$a",
+      "RA",
+      "mn",
+      "Ir",
+      "f1",
+      "Fc",
+      "g3",
+      "d1",
+      "p1",
+      "m1",
+      "Bc",
+      "_3",
+      "v1",
+      "v3",
+      "jg",
+      "Jt",
+      "IA",
+      "x3",
+      "y3",
+      "bf",
+      "b3",
+      "Uo",
+      "x1",
+      "y1",
+      "Ly",
+      "sa",
+      "$e",
+      "Wi",
+      "ot",
+      "Fn",
+      "Dc",
+      "Lc",
+      "Ii",
+      "h1",
+      "ri",
+      "p3",
+      "m3",
+      "la",
+      "CA",
+      "Uc",
+      "pr",
+      "cn",
+      "Nc",
+      "PA",
+      "oa",
+      "ky",
+      "Fy",
+      "Uy",
+      "Ny",
+      "Fg",
+      "je",
+      "_o",
+      "jn",
+      "Zg",
+      "qi",
+      "Mi",
+      "Jn",
+      "zA",
+      "M3"
+    ]
+  }
+}

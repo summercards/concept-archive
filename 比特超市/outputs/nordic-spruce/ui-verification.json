@@ -1,0 +1,335 @@
+{
+  "status": "PASS",
+  "assetId": "new.nordic-spruce",
+  "scope": "真实网页三视图/灰模/线框/三个seed、3轮mount-unmount、首页NEW搜索、LAN、390宽。无完整GPU内存趋势证明。",
+  "sourceFiles": {
+    "assets/authored/nordic-spruce.js": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+    "assets/authored/contracts/nordic-spruce.json": "2ffec8a43c91ff929c3604670ea635a667eb3bab5fa52ca728fb47179b9a9af6",
+    "assets/authored/registry.json": "6ba7dc6ccaf831560618b86e4882d6d77b8729a8f1138e9d148706fab61e6aee",
+    "assets/authored.js": "c6d7eb42279ad5474f95bc657860ad57caa9d166b33c54bb4af35f8e01bbab9a",
+    "previews.js": "bccd0268186008c185954fc0288866669bc28e88b8853036bc57a351933553eb",
+    "app.js": "6f7128d50cdb050204e5e095f74843a306922f1b6475a36d27a1890a5ddd3a9e"
+  },
+  "stableInputs": true,
+  "loaded": {
+    "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+    "contract": {
+      "units": "m",
+      "size": [
+        5.4,
+        14,
+        5.4
+      ],
+      "sizeTolerance": {
+        "meters": 0.01,
+        "percent": 0.01
+      },
+      "origin": "bottom-center",
+      "forward": "+Z",
+      "qualityTier": "catalog",
+      "materials": [
+        "wood_dark",
+        "tarp"
+      ],
+      "requiredParts": [
+        "trunk",
+        "root-flare",
+        "branches.primary",
+        "branches.secondary",
+        "foliage.lower",
+        "foliage.middle",
+        "foliage.upper",
+        "leader"
+      ],
+      "options": {
+        "seed": {
+          "type": "integer",
+          "default": 7,
+          "values": [
+            7,
+            19,
+            43
+          ]
+        }
+      },
+      "variantEnvelopes": [],
+      "collidersRequired": true,
+      "dynamic": false,
+      "budget": {
+        "triangles": 350000,
+        "maxMeshes": 12
+      },
+      "baseline": {
+        "type": "new-design",
+        "referenceAssets": [],
+        "scope": "现库无同尺度树木参考，不虚构植物比较通过。对照现有资产的结构、资源归属、实际预览和证据规范，树形按本设计契约验收。"
+      }
+    },
+    "authored": 3,
+    "original": 283,
+    "revision": "160"
+  },
+  "shots": [
+    {
+      "file": "material-overall.png",
+      "sha256": "76973122bcc246527e88d8c425a347a5e544093b15a4cd8e64cf3d2d0c7fce9f",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    },
+    {
+      "file": "material-front.png",
+      "sha256": "e6855e2eb7643428ece846c1b06afa981513d53264de82f4c56ec03eace752b1",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          0,
+          16.48023466874287,
+          30.647021423149585
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0,
+        "pitch": 0.3,
+        "distance": 32.07981875705385
+      },
+      "engine": "160"
+    },
+    {
+      "file": "material-back.png",
+      "sha256": "685c9622dc2491a60e96714d6f27ec0e422bb18d87ccae3a09edfdcbf72da0c3",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          3.753177668926051e-15,
+          16.48023466874287,
+          -30.647021423149585
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0.3,
+        "distance": 32.07981875705385
+      },
+      "engine": "160"
+    },
+    {
+      "file": "clay-overall.png",
+      "sha256": "96e3cf7de56ed9cf21cdb75d103143c30f1e521d5fe5a32408cfd93730b94e33",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    },
+    {
+      "file": "wire-overall.png",
+      "sha256": "8febb6d07017acd9c487b212d3f425deffae2ab3941c29c6297231984104c38e",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    },
+    {
+      "file": "seed-19.png",
+      "sha256": "a24ae75950efb0fbff27179d764ef8c1792707d61b9d429c337e92f4d5ffdbd2",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 19
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    },
+    {
+      "file": "seed-43.png",
+      "sha256": "cc1288ae945dd4b852738b4c564942d3d871b9b56aac5cd66c5fac6796c9573f",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 43
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    },
+    {
+      "file": "crown-detail.png",
+      "sha256": "aa456b26bb7209ed6d9aab08819e895cc57c082872d218bfa8baa62f888ce361",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    },
+    {
+      "file": "material-portrait.png",
+      "sha256": "38adf004d04cb650577a090480af7c237fe7fd10fabdfbbf762904f83237194f",
+      "assetId": "new.nordic-spruce",
+      "sourceHash": "ef3bfaf11b418948812a2023745b4827edfc2000db6681160bb3711cd245236f",
+      "options": {
+        "seed": 7
+      },
+      "camera": {
+        "fov": 34,
+        "position": [
+          21.211529066863335,
+          17.185213756181895,
+          25.18321463155114
+        ],
+        "target": [
+          0,
+          7,
+          0
+        ],
+        "yaw": 0.7,
+        "pitch": 0.3,
+        "distance": 34.46537166189096
+      },
+      "engine": "160"
+    }
+  ],
+  "cycles": [
+    1,
+    2,
+    3
+  ],
+  "library": {
+    "recent": [
+      "#/a/new.nordic-spruce",
+      "#/a/new.rubber-duck",
+      "#/a/new.harbor-service-workbench"
+    ],
+    "search": "北欧",
+    "authored": 3,
+    "original": 283
+  },
+  "mobile": {
+    "width": 390,
+    "overflow": 0
+  },
+  "LAN": "http://10.30.70.199:8100/index.html#/a/new.nordic-spruce",
+  "errors": [],
+  "warnings": [
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x13c00848000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ]
+}
